@@ -1,0 +1,262 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+        <link rel="icon" href="_scroll_external/logos/59f13d845123/default-space-logo.svg">
+
+        <!-- Primary Meta Tags -->
+        <meta name="exp-export-timestamp" content="2024-09-05T09:13:50.316+0000">
+        <meta name="exp-page-id" content="192228318">
+        <meta name="exp-page-title" content="on prem | Resend IO Messages CKit">
+        <meta name="exp-page-version" content="15">
+        <meta name="exp-page-scroll-page-id" content="">
+        <meta name="exp-page-created" content="2022-01-05T11:50:07.703+0000">
+        <meta name="exp-page-last-modified" content="2022-04-13T14:32:39.023+0000">
+        <meta name="exp-page-labels" content="favourite">
+        <meta name="exp-page-context-keys" content="">
+        <meta name="exp-space-key" content="PIODOC">
+        <meta name="exp-space-title" content="protel.I/O documentation">
+
+        <!-- Additional Meta Tags -->
+        <meta name="exp-document-id" content="">
+        <meta name="exp-document-title" content="protel.I/O documentation">
+        <meta name="exp-version-status" content="">
+        <meta name="exp-version-id" content="">
+        <meta name="exp-version-name" content="">
+        <meta name="exp-version-description" content="">
+        <meta name="exp-version-date" content="">
+        <meta name="exp-variant-id" content="">
+        <meta name="exp-variant-name" content="">
+        <meta name="exp-variant-description" content="">
+        <meta name="exp-language-code" content="">
+        <meta name="exp-language-name" content="">
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/image-dimensions.css">
+
+
+            
+            
+<script src="js/search.js"></script>
+            <script id="search-worker" type="javascript/worker">
+    onmessage = function(event) {
+        // dispatch events to handling functions
+        var message = event.data;
+
+        if ((message.type === 'setup') && message.baseUrl) {
+            setup(message.baseUrl);
+        }
+
+        if (message.type === 'search-request') {
+            search(message.query);
+        }
+    }
+
+    var searchIndex;
+
+    function setup(baseUrl) {
+        importScripts(
+            baseUrl + 'js/lunr.js',
+            baseUrl + 'js/lunr-index.js',
+            baseUrl + 'js/lunr-data.js'
+        );
+        try {
+            // load lunr-extras if it exists, which contains language-specific files for languages other than english
+            importScripts(baseUrl + 'js/lunr-extras.js');
+        } catch (e) {}
+        searchIndex = lunr.Index.load(lunrIndex);
+    }
+
+    function search(query) {
+        var searchHits = searchIndex.search(query);
+        var results = searchHits.map(function (result) {
+            return lunrData.filter(function (d) {
+                return d.id === result.ref;
+            })[0]
+        });
+        postMessage({ type: 'search-results', results: results, query: query });
+    }
+</script>
+        <title>on prem | Resend IO Messages CKit</title>
+
+    <meta name="generator" content="Scroll HTML Exporter / K15t GmbH"></head>
+
+    <body id="onprem|ResendIOMessagesCKit-top" data-pageid="192228318" data-confluence-editor-version="v1" data-confluence-deployment-type="DATACENTER">
+
+        <div class="exp-grid-container">
+
+            <header class="exp-header"></header>
+
+            <div class="exp-logo">
+                <a href="protel.I_O-documentation.192227604.html">
+                    <span class="exp-logo-image" style="background-image: url(_scroll_external/logos/59f13d845123/default-space-logo.svg)" alt="protel.I/O documentation" title="protel.I/O documentation"></span>
+                </a>
+            </div>
+
+            <div class="exp-document-title">
+                <h1 class="exp-document-title-heading scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h1 scroll-relative-h1" data-scroll-heading-rank="1" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="1" id="no-src_generated-id-68922b3596096cd28c800fac89993e74632b5a425bf5fb0f410f73f96933f694">
+                    <a href="protel.I_O-documentation.192227604.html">
+                        protel.I/O documentation
+                    </a>
+                </h1>
+            </div>
+
+<div class="exp-search-container">
+    <input type="search" id="search-textbox" autocomplete="off" class="exp-search-input" style="margin-right: 0;">
+    <div class="exp-search-input-icon">
+        <svg data-exp-id="magnifier-icon" data-exp-component="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8.99452 14.5C10.5121 14.5 11.809 13.9669 12.8854 12.9007C13.9618 11.8345 14.5 10.5361 14.5 9.00548C14.5 7.48794 13.9631 6.19097 12.8893 5.11458C11.8155 4.03819 10.519 3.5 9 3.5C7.46786 3.5 6.16816 4.0369 5.1009 5.11071C4.03363 6.18453 3.5 7.48096 3.5 9C3.5 10.5321 4.0331 11.8318 5.09929 12.8991C6.1655 13.9664 7.46391 14.5 8.99452 14.5ZM9 16C8.02913 16 7.11974 15.816 6.27185 15.4479C5.42395 15.0799 4.68056 14.5799 4.04167 13.9479C3.40278 13.316 2.90278 12.576 2.54167 11.728C2.18056 10.88 2 9.97053 2 8.99956C2 8.04152 2.18403 7.13542 2.55208 6.28125C2.92014 5.42708 3.41864 4.68387 4.04758 4.0516C4.67653 3.41935 5.41569 2.91935 6.26508 2.5516C7.11449 2.18387 8.02548 2 8.99806 2C9.95769 2 10.8646 2.18403 11.7188 2.55208C12.5729 2.92014 13.316 3.42014 13.9479 4.05208C14.5799 4.68403 15.0799 5.42612 15.4479 6.27835C15.816 7.13058 16 8.0381 16 9.00094C16 9.83365 15.8615 10.6213 15.5846 11.3638C15.3078 12.1062 14.9254 12.7836 14.4375 13.3958L18 16.9583L16.9375 18L13.375 14.4583C12.7668 14.9459 12.0939 15.3247 11.3564 15.5948C10.6188 15.8649 9.83333 16 9 16Z" fill="currentColor" />
+        </svg>
+    </div>
+    <div id="search-suggestion-container" class="exp-search-suggestion-panel" data-exp-component="search-suggestion"></div>
+    <template id="exp-search-suggestion-option-template">
+        <div class="exp-search-suggestion-option-container search-form-suggestion">
+            <a class="exp-search-suggestion-option search-form-suggestion" href=""></a>
+        </div>
+    </template>
+</div>
+
+
+            <nav class="exp-sidebar-navigation">
+                <div class="exp-sidebar-navigation-sticky-wrapper">
+                    <iframe src="toc.html?pageId=192228318" border="0"></iframe>
+                </div>
+
+            </nav>
+
+
+            <nav aria-label="Breadcrumb" class="exp-breadcrumbs-wrapper">
+                <ol class="breadcrumbs">
+                        <li class="breadcrumb">
+                            <a href="protel.I_O-documentation.192227604.html" rel="prev" target="_self">protel.I/O documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Integrations.192227608.html" rel="prev" target="_self">Integrations</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="_General-Installation-Details.192227757.html" rel="prev" target="_self">_General Installation Details</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="on-prem.192228025.html" rel="prev" target="_self">on prem</a>
+                        </li>
+                    <li class="breadcrumb active" aria-current="page">
+                        on prem | Resend IO Messages CKit
+                    </li>
+                </ol>
+            </nav>
+
+
+            <main class="exp-content">
+                <article role="article">
+
+                    <header>
+                        <h1 class="article-heading scroll-h1 scroll-original-h1 scroll-relative-h1 scroll-custom-section-heading scroll-document-section-heading" role="heading" data-scroll-heading-rank="1" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="1" id="no-src_generated-id-4c52b7e9be5cd2290a6b376af3be2940cf28d4209d27076c4eee3b62cc36865a">
+                            on prem | Resend IO Messages CKit
+                        </h1>
+                    </header>
+
+                    <section class="page" id="content" role="main">
+                        <div id="main-content" class="wiki-content article-content js-tocBot-content">
+                            <p><style type="text/css">/*<![CDATA[*/
+div.rbtoc1725527630354 {padding: 0px;}
+div.rbtoc1725527630354 ul {margin-left: 0px;}
+div.rbtoc1725527630354 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p><div class="toc-macro rbtoc1725527630354">
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228318" data-scroll-link-target-source-id="192228318" data-scroll-link-type="document" href="on-prem-_-Resend-IO-Messages-CKit.192228318.html#onprem|ResendIOMessagesCKit-CKit" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Resend+IO+Messages+CKit#src-192228318_onprem|ResendIOMessagesCKit-CKit">CKit</a></li>
+<li><a data-scroll-target-source-id="192228318" data-scroll-link-target-source-id="192228318" data-scroll-link-type="document" href="on-prem-_-Resend-IO-Messages-CKit.192228318.html#onprem|ResendIOMessagesCKit-VersionsHistory" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Resend+IO+Messages+CKit#src-192228318_onprem|ResendIOMessagesCKit-VersionsHistory">Versions History</a></li>
+<li><a data-scroll-target-source-id="192228318" data-scroll-link-target-source-id="192228318" data-scroll-link-type="document" href="on-prem-_-Resend-IO-Messages-CKit.192228318.html#onprem|ResendIOMessagesCKit-InstallationGuide" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Resend+IO+Messages+CKit#src-192228318_onprem|ResendIOMessagesCKit-InstallationGuide">Installation Guide</a></li>
+<li><a data-scroll-target-source-id="192228318" data-scroll-link-target-source-id="192228318" data-scroll-link-type="document" href="on-prem-_-Resend-IO-Messages-CKit.192228318.html#onprem|ResendIOMessagesCKit-Userguide" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Resend+IO+Messages+CKit#src-192228318_onprem|ResendIOMessagesCKit-Userguide">User guide</a></li>
+</ul>
+</div><p></p><p style="text-align: left;"><br clear="none"></p><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p style="text-align: left;">This Ckit provides a user the following possibility</p><ul class="p-rich_text_list p-rich_text_list__bullet" style="text-align: left;"><li style="list-style-type: none;">to check, if an IO message is waiting in the queue to be processed (<em>Awaiting Pickup</em>)</li><li style="list-style-type: none;">to check, if an IO message has already been successfully processed (<em>Message Picked up</em>)</li><li style="list-style-type: none;">and to resend IO messages if needed (<em>Resend IO messages</em>)</li></ul></div></div><h2 id="onprem|ResendIOMessagesCKit-CKit" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="2" class="scroll-original-h1 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2"><span style="font-size: 24.0px;letter-spacing: -0.01em;">CKit</span></h2><p><span class="confluence-embedded-file-wrapper conf-macro"><a rel="nofollow" href="https://confluence.weareplanet.com/download/attachments/192228318/IOMessageModView.ckit?api=v2&amp;modificationDate=1645176780307&amp;version=2" shape="rect" class="confluence-embedded-file scroll-confluence-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.weareplanet.com/download/attachments/192228318/IOMessageModView.ckit?api=v2&amp;modificationDate=1645176780307&amp;version=2" data-scroll-link-local="true"><img alt="" src="_scroll_external/other/5cff84c0372f/placeholder-medium-file.png" height="250" class="scroll-document-image" data-scroll-image-id="44bc1303-d3a0-49a0-bf02-b2f38b28d253"></a></span></p><h2 id="onprem|ResendIOMessagesCKit-VersionsHistory" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="2" class="scroll-original-h1 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Versions History</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup span="1"><col span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="highlight-#b3d4ff confluenceTh" data-highlight-colour="#b3d4ff" title="Hintergrundfarbe : Hellblau 100 %" style="background-color:#b3d4ff;"><p>Version</p></th><th colspan="1" rowspan="1" class="highlight-#b3d4ff confluenceTh" data-highlight-colour="#b3d4ff" title="Hintergrundfarbe : Hellblau 100 %" style="background-color:#b3d4ff;"><p>Release</p></th><th colspan="1" rowspan="1" class="highlight-#b3d4ff confluenceTh" data-highlight-colour="#b3d4ff" title="Hintergrundfarbe : Hellblau 100 %" style="background-color:#b3d4ff;"><p>Version History</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>1.10</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p>18.02.2022&nbsp;</p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><ul style="list-style-type: square;"><li>User Group access rights<ul style="list-style-type: square;"><li>Instead of an X for permitted, a "Yes" or "No" is displayed</li></ul></li><li><p>Awaiting Pickup</p><ul style="list-style-type: square;"><li><span style="color: rgb(23,43,77);">Add a Drop-Down Box for the Message Type</span></li><li><span style="color: rgb(23,43,77);">Add the opportunity, if no ID is added, that all messages that are currently waiting to be picked up are displayed</span></li><li><span style="color: rgb(23,43,77);">Add a State Description</span></li></ul></li><li><p>Message Picked up</p><ul style="list-style-type: square;"><li>Add the&nbsp;<span style="color: rgb(23,43,77);">possibility to search for the CorrelationID</span></li></ul></li><li><p>Resend IO messages</p><ul style="list-style-type: square;"><li><p><span style="letter-spacing: 0.0px;">add the opportunity to resent multiple ID with "one" request</span></p></li></ul></li></ul></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>1.0</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>27.01.2022</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr></tbody></table></div><h2 id="onprem|ResendIOMessagesCKit-InstallationGuide" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="2" class="scroll-original-h1 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Installation Guide</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup span="1"><col span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="highlight-#b3d4ff confluenceTh" data-highlight-colour="#b3d4ff" title="Hintergrundfarbe : Hellblau 100 %" style="background-color:#b3d4ff;"><p>Step</p></th><th colspan="1" rowspan="1" class="highlight-#b3d4ff confluenceTh" data-highlight-colour="#b3d4ff" title="Hintergrundfarbe : Hellblau 100 %" style="background-color:#b3d4ff;"><p>Description</p></th><th colspan="1" rowspan="1" class="highlight-#b3d4ff confluenceTh" data-highlight-colour="#b3d4ff" title="Hintergrundfarbe : Hellblau 100 %" style="background-color:#b3d4ff;"><p>Image</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Download and copy the CKit file</span><strong style="text-align: left;"><span>&nbsp;</span></strong><span style="color: rgb(23,43,77);">to</span><span style="color: rgb(23,43,77);">&nbsp;</span><em style="text-align: left;">{ProtelPath}\System\Ckit\Xml</em></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Restart protel System Data and go to<span>&nbsp;</span></span><em style="text-align: left;">[protel SD &gt;&nbsp;Misc. -&gt; Construction Kit-&gt; IO Messaging</em></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/465f97153b19/image2022-1-5_11-55-35.png"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Click on<span>&nbsp;</span></span><strong style="text-align: left;">[Initialize]</strong><span style="color: rgb(23,43,77);"><span>&nbsp;</span>to&nbsp;initialize the CKit.<span>&nbsp;</span></span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="35eaacb3-7535-449f-a470-ba96328b3b0e" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/9178697b96ce/image2022-1-7_9-35-38.png" height="157"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>4</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(23,43,77);">Click on<span>&nbsp;</span></span><strong style="text-align: left;">[<span style="color: rgb(23,43,77);">User Group access rights</span>]</strong><span style="color: rgb(23,43,77);"><span>&nbsp;</span>to&nbsp;configure the User groups.<span>&nbsp;</span></span></p><p><span style="color: rgb(23,43,77);"><span>By default all user group don't have access (permitted No), w</span></span>ith a double-click on one item to enable permission to a group of users or disable permission. Example, double-click on “Front Office Agents” user group.</p><p><strong>Note</strong>: Only users in an enabled permission group user can access to edit reason function in Add-Ons</p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="6f412be2-29c5-4e78-8d85-316973541d48" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/8dd4e665a2b6/image2022-1-5_11-56-31.png" height="128"></span></p><p><br clear="none"></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="f032389a-9cbf-4809-83ce-30fae691c76a" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/7f4af1a00cdb/image2022-2-18_9-22-15.png" height="250"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>5</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Click on<span>&nbsp;</span></span><strong style="text-align: left;">[<span style="color: rgb(23,43,77);">IO Reservation Manipulate</span>]</strong><span style="color: rgb(23,43,77);"><span>&nbsp;</span>to check the Version.</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/d84647f070f4/image2022-2-18_9-23-45.png"></span></p></div></td></tr></tbody></table></div><h2 id="onprem|ResendIOMessagesCKit-Userguide" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="2" class="scroll-original-h1 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">User guide</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup span="1"><col span="1" style="width: 50.0px;"><col span="1" style="width: 325.0px;"><col span="1" style="width: 1596.0px;"></colgroup><thead><tr><th colspan="1" rowspan="1" class="highlight-blue confluenceTh" data-highlight-colour="blue" title="Hintergrundfarbe : Blau"><p>Step</p></th><th colspan="1" rowspan="1" class="highlight-blue confluenceTh" data-highlight-colour="blue" title="Hintergrundfarbe : Blau"><p>Description</p></th><th colspan="1" rowspan="1" class="highlight-blue confluenceTh" data-highlight-colour="blue" title="Hintergrundfarbe : Blau"><p>Image</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Go to <em>FO -&gt; Add-Ons -&gt; IO Messaging -&gt; Awaiting Pickup</em></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/6f45980372b2/image2022-1-5_12-12-16.png"></span></p><p><br clear="none"></p><p><br clear="none"></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>1a</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>System shows input window</p><p>You have the possibility to select between</p><ul><li>AllotmentID = kontinge.kontinnr</li><li>ProfileID = kunden.kdnr</li><li>ReservationID = buch.leistacc/buchold.buchnr/stobuch.buchnr</li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="18e70f08-13e6-4892-bcbf-094e972a5a73" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/8ffdf802ccd6/image2022-2-18_9-24-48.png" height="120"></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="e1e3e0f5-f375-43df-96c2-d3af09f1ee85" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/5ede5253bb9a/image2022-2-18_9-24-55.png" height="123"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>1b</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>If ID exists, system show list and the current State of the Message</p><ul style="list-style-type: square;"><li>Waiting to be picked up</li><li>Message is waiting for the recalcutation of the TaskServer</li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="e575e004-dcc2-4429-b503-6fa9839ba535" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/c7c05eb6d37f/image2022-2-18_9-30-49.png" height="129"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>1c</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>If no Message Type is selected and the ID input do not exist, system show, a list of all message that are waiting to be picked are displayed in the result.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="43b3588a-269b-4049-ad15-ad6cb1fd7bf4" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/09084652bf57/image2022-2-18_9-27-20.png" height="121"></span></p><p><br clear="none"></p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/e400fc326172/image2022-2-18_9-27-27.png"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>1d</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>If a specific Message Type is selected and the ID input do not exist, system show, a list of all message that are waiting to be picked are displayed in the result.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="9d8520f5-3684-427c-b398-d633ac332108" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/cd139fe31ad4/image2022-2-18_9-28-41.png" height="126"></span></p></div><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="d670fa33-40b2-4d65-a695-56becbee959b" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/5ea04d55c146/image2022-2-18_9-28-47.png" height="188"></span></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Go to <em>FO -&gt; Add-Ons -&gt; IO Messaging -&gt; Message Picked up</em></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/d12fc52c231c/image2022-1-5_12-12-27.png"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>2a</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>System shows input window</p><p>You have the possibility to select between</p><ul><li>AllotmentID = kontinge.kontinnr</li><li>CorrelationID = unique ID for the Message (provided by Kibana, or the integration partner)</li><li>ProfileID = kunden.kdnr</li><li>ReservationID = buch.leistacc/buchold.buchnr/stobuch.buchnr</li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="a484089d-a6a8-42c4-b0fa-fec20cf73bfc" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/a52d50adf04e/image2022-2-18_9-34-23.png" height="127"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>2b</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>If ID exists, system show list</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/fb258b7ee471/image2022-1-5_12-16-25.png"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>2c</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>If the ID input do not exist, system show message</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="90d9ea8a-aef0-4aec-b41b-062e9c87ed57" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/65b5dcf7aa03/image2022-1-5_12-16-37.png" height="201"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Go to <em>FO -&gt; Add-Ons -&gt; IO Messaging -&gt; Resent IO messages</em></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/fbfb0487044e/image2022-1-5_12-12-38.png"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>3a</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>System shows input window</p><p>You have the possibility to select between</p><ul><li>AllotmentID = kontinge.kontinnr</li><li>ProfileID = kunden.kdnr</li><li>ReservationID = buch.leistacc/buchold.buchnr/stobuch.buchnr</li></ul><p><br clear="none"></p><p>You have the possibility to select one ID or multiple IDs,&nbsp;multiple IDs must be separated with coma (,)</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="5dbd54ca-d0ca-4b2b-a84c-7ab14373daaf" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/9c9729807bd0/image2022-1-5_12-19-43.png" height="123"></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="875f254d-91a7-4343-a7cc-33d4a9cc7197" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/a95dccf767de/image2022-2-18_9-36-40.png" height="149"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>3b</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Users choose message type and input ID then click OK</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="17f56308-0fa1-4624-872f-6f7de3ab8c26" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/2660e79986c2/image2022-1-5_12-25-24.png" height="146"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>3c</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>If the ID input do not exist, system show message</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="af28276c-6d10-4047-a8eb-226c27917f83" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/063c727e5c8e/image2022-1-5_12-26-25.png" height="146"></span></p></div></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>3d</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>If user do not have permission, system show message:</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="600e5b31-1eb3-4204-b986-e5dd8c13c57c" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/8abcbc733b1b/image2022-1-5_12-24-50.png" height="147"></span></p></div></td></tr></tbody></table></div>
+                        </div>
+                    </section>
+
+                </article>
+            </main>
+
+
+                <nav class="exp-post-navigation-prev">
+                    <a href="on-Prem-_-protel-I_O-Support-Tool---User-Guide-internal.192228687.html" class="post-navigation-link">
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-prev">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                        <span>on Prem | protel I/O Support Tool - User Guide internal</span>
+                    </a>
+                </nav>
+
+                <nav class="exp-post-navigation-next">
+
+                    <a href="on-prem-_-Triggering-messages_-API-calls-(PWS).192228279.html" class="post-navigation-link">
+                        <span>on prem | Triggering messages: API calls (PWS)</span>
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-next">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-225.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                    </a>
+
+                </nav>
+
+
+            <nav class="exp-sidebar-toc js-tocBot">
+                <!-- content generated by toc.js  -->
+            </nav>
+
+            <div class="exp-sidebar-navigation-toggle">
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+            </div>
+
+            <div class="exp-scroll-to-top-container">
+                <a href="#onprem|ResendIOMessagesCKit-top" class="exp-scroll-to-top-link">↑ Back to top</a>
+            </div>
+
+        </div>
+
+
+
+<dialog class="exp-lightbox-container" aria-modal="true">
+    <div class="lightbox-toolbar">
+        <button type="button" class="exp-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox-content content">
+    </div>
+</dialog>
+
+<template id="exp-lightbox-wrapper-template">
+    <div class="exp-lightbox-wrapper">
+        <div class="exp-lightbox-toggle">
+            <button type="button" class="exp-lightbox-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                    <path fill="currentColor" d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+        <script src="js/tocbot.min.js"></script>
+        <script src="js/article-toc.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/iframe-resizer.parent.js"></script>
+
+    </body>
+
+</html>

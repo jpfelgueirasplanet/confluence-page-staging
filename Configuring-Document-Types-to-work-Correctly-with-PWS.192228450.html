@@ -1,0 +1,292 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+        <link rel="icon" href="_scroll_external/logos/59f13d845123/default-space-logo.svg">
+
+        <!-- Primary Meta Tags -->
+        <meta name="exp-export-timestamp" content="2024-09-05T09:13:17.033+0000">
+        <meta name="exp-page-id" content="192228450">
+        <meta name="exp-page-title" content="Configuring Document Types to work Correctly with PWS">
+        <meta name="exp-page-version" content="10">
+        <meta name="exp-page-scroll-page-id" content="">
+        <meta name="exp-page-created" content="2018-07-06T11:56:30.373+0000">
+        <meta name="exp-page-last-modified" content="2021-12-20T16:20:31.543+0000">
+        <meta name="exp-page-labels" content="">
+        <meta name="exp-page-context-keys" content="">
+        <meta name="exp-space-key" content="PIODOC">
+        <meta name="exp-space-title" content="protel.I/O documentation">
+
+        <!-- Additional Meta Tags -->
+        <meta name="exp-document-id" content="">
+        <meta name="exp-document-title" content="protel.I/O documentation">
+        <meta name="exp-version-status" content="">
+        <meta name="exp-version-id" content="">
+        <meta name="exp-version-name" content="">
+        <meta name="exp-version-description" content="">
+        <meta name="exp-version-date" content="">
+        <meta name="exp-variant-id" content="">
+        <meta name="exp-variant-name" content="">
+        <meta name="exp-variant-description" content="">
+        <meta name="exp-language-code" content="">
+        <meta name="exp-language-name" content="">
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/image-dimensions.css">
+
+
+            
+            
+<script src="js/search.js"></script>
+            <script id="search-worker" type="javascript/worker">
+    onmessage = function(event) {
+        // dispatch events to handling functions
+        var message = event.data;
+
+        if ((message.type === 'setup') && message.baseUrl) {
+            setup(message.baseUrl);
+        }
+
+        if (message.type === 'search-request') {
+            search(message.query);
+        }
+    }
+
+    var searchIndex;
+
+    function setup(baseUrl) {
+        importScripts(
+            baseUrl + 'js/lunr.js',
+            baseUrl + 'js/lunr-index.js',
+            baseUrl + 'js/lunr-data.js'
+        );
+        try {
+            // load lunr-extras if it exists, which contains language-specific files for languages other than english
+            importScripts(baseUrl + 'js/lunr-extras.js');
+        } catch (e) {}
+        searchIndex = lunr.Index.load(lunrIndex);
+    }
+
+    function search(query) {
+        var searchHits = searchIndex.search(query);
+        var results = searchHits.map(function (result) {
+            return lunrData.filter(function (d) {
+                return d.id === result.ref;
+            })[0]
+        });
+        postMessage({ type: 'search-results', results: results, query: query });
+    }
+</script>
+        <title>Configuring Document Types to work Correctly with PWS</title>
+
+    <meta name="generator" content="Scroll HTML Exporter / K15t GmbH"></head>
+
+    <body id="ConfiguringDocumentTypestoworkCorrectlywithPWS-top" data-pageid="192228450" data-confluence-editor-version="v1" data-confluence-deployment-type="DATACENTER">
+
+        <div class="exp-grid-container">
+
+            <header class="exp-header"></header>
+
+            <div class="exp-logo">
+                <a href="protel.I_O-documentation.192227604.html">
+                    <span class="exp-logo-image" style="background-image: url(_scroll_external/logos/59f13d845123/default-space-logo.svg)" alt="protel.I/O documentation" title="protel.I/O documentation"></span>
+                </a>
+            </div>
+
+            <div class="exp-document-title">
+                <h1 class="exp-document-title-heading scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h1 scroll-relative-h1" data-scroll-heading-rank="1" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="1" id="no-src_generated-id-ff66975760685555b51eb38c4236e1fb8eca92af97ec395cad977d89a23725ed">
+                    <a href="protel.I_O-documentation.192227604.html">
+                        protel.I/O documentation
+                    </a>
+                </h1>
+            </div>
+
+<div class="exp-search-container">
+    <input type="search" id="search-textbox" autocomplete="off" class="exp-search-input" style="margin-right: 0;">
+    <div class="exp-search-input-icon">
+        <svg data-exp-id="magnifier-icon" data-exp-component="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8.99452 14.5C10.5121 14.5 11.809 13.9669 12.8854 12.9007C13.9618 11.8345 14.5 10.5361 14.5 9.00548C14.5 7.48794 13.9631 6.19097 12.8893 5.11458C11.8155 4.03819 10.519 3.5 9 3.5C7.46786 3.5 6.16816 4.0369 5.1009 5.11071C4.03363 6.18453 3.5 7.48096 3.5 9C3.5 10.5321 4.0331 11.8318 5.09929 12.8991C6.1655 13.9664 7.46391 14.5 8.99452 14.5ZM9 16C8.02913 16 7.11974 15.816 6.27185 15.4479C5.42395 15.0799 4.68056 14.5799 4.04167 13.9479C3.40278 13.316 2.90278 12.576 2.54167 11.728C2.18056 10.88 2 9.97053 2 8.99956C2 8.04152 2.18403 7.13542 2.55208 6.28125C2.92014 5.42708 3.41864 4.68387 4.04758 4.0516C4.67653 3.41935 5.41569 2.91935 6.26508 2.5516C7.11449 2.18387 8.02548 2 8.99806 2C9.95769 2 10.8646 2.18403 11.7188 2.55208C12.5729 2.92014 13.316 3.42014 13.9479 4.05208C14.5799 4.68403 15.0799 5.42612 15.4479 6.27835C15.816 7.13058 16 8.0381 16 9.00094C16 9.83365 15.8615 10.6213 15.5846 11.3638C15.3078 12.1062 14.9254 12.7836 14.4375 13.3958L18 16.9583L16.9375 18L13.375 14.4583C12.7668 14.9459 12.0939 15.3247 11.3564 15.5948C10.6188 15.8649 9.83333 16 9 16Z" fill="currentColor" />
+        </svg>
+    </div>
+    <div id="search-suggestion-container" class="exp-search-suggestion-panel" data-exp-component="search-suggestion"></div>
+    <template id="exp-search-suggestion-option-template">
+        <div class="exp-search-suggestion-option-container search-form-suggestion">
+            <a class="exp-search-suggestion-option search-form-suggestion" href=""></a>
+        </div>
+    </template>
+</div>
+
+
+            <nav class="exp-sidebar-navigation">
+                <div class="exp-sidebar-navigation-sticky-wrapper">
+                    <iframe src="toc.html?pageId=192228450" border="0"></iframe>
+                </div>
+
+            </nav>
+
+
+            <nav aria-label="Breadcrumb" class="exp-breadcrumbs-wrapper">
+                <ol class="breadcrumbs">
+                        <li class="breadcrumb">
+                            <a href="protel.I_O-documentation.192227604.html" rel="prev" target="_self">protel.I/O documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Message-Documentation.192227615.html" rel="prev" target="_self">Message Documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Message-dictionary.192227633.html" rel="prev" target="_self">Message dictionary</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Profiles.192228116.html" rel="prev" target="_self">Profiles</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="__Profile---System-Data-Configuration.192228190.html" rel="prev" target="_self">__Profile - System Data Configuration</a>
+                        </li>
+                    <li class="breadcrumb active" aria-current="page">
+                        Configuring Document Types to work Correctly with PWS
+                    </li>
+                </ol>
+            </nav>
+
+
+            <main class="exp-content">
+                <article role="article">
+
+                    <header>
+                        <h1 class="article-heading scroll-h1 scroll-original-h1 scroll-relative-h1 scroll-custom-section-heading scroll-document-section-heading" role="heading" data-scroll-heading-rank="1" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="1" id="no-src_generated-id-b2394832a42a16957e94c158bf4edade68d21f512fc12d38b3ec0be8f4be51a3">
+                            Configuring Document Types to work Correctly with PWS
+                        </h1>
+                    </header>
+
+                    <section class="page" id="content" role="main">
+                        <div id="main-content" class="wiki-content article-content js-tocBot-content">
+                            <p><style type="text/css">/*<![CDATA[*/
+div.rbtoc1725527597051 {padding: 0px;}
+div.rbtoc1725527597051 ul {margin-left: 0px;}
+div.rbtoc1725527597051 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p><div class="toc-macro rbtoc1725527597051">
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228450" data-scroll-link-target-source-id="192228450" data-scroll-link-type="document" href="Configuring-Document-Types-to-work-Correctly-with-PWS.192228450.html#ConfiguringDocumentTypestoworkCorrectlywithPWS-PWS>3.5.X" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Configuring+Document+Types+to+work+Correctly+with+PWS#src-192228450_ConfiguringDocumentTypestoworkCorrectlywithPWS-PWS>3.5.X">PWS &gt; 3.5.X</a></li>
+<li><a data-scroll-target-source-id="192228450" data-scroll-link-target-source-id="192228450" data-scroll-link-type="document" href="Configuring-Document-Types-to-work-Correctly-with-PWS.192228450.html#ConfiguringDocumentTypestoworkCorrectlywithPWS-PWS<3.5.X" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Configuring+Document+Types+to+work+Correctly+with+PWS#src-192228450_ConfiguringDocumentTypestoworkCorrectlywithPWS-PWS<3.5.X">PWS &lt; 3.5.X</a></li>
+</ul>
+</div><p></p><h2 id="ConfiguringDocumentTypestoworkCorrectlywithPWS-PWS>3.5.X" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="2" class="scroll-original-h1 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">PWS &gt; 3.5.X</h2><ol><li>Create the document types in system data in whichever language is required.<br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="31fb2a66-82ec-457d-b9f6-be30db548da8" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/0e04972f6c3b/image2021-12-20_15-47-18.png" height="400"></span><br clear="none"><br clear="none"></li><li>From protel System Data&gt;Reservation&gt;OTA Mapping, select <strong>Document types</strong> from the dropdown box in the upper left corner.<br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="bbd04330-64b1-403c-b53b-6a8563f88d34" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/28e752b9f7e0/image2021-12-20_15-50-31.png" height="400"></span></li><li>In the table on the left side, you will see the <strong>Document types</strong>&nbsp;already defined in your protel System Data. From the dropdown menu on the right-hand side, directly below OTA Preferences, select Document.</li><li>To map the values from protel System Data with those taken from the OTA standard, please select your document type on the left side (1), select the corresponding OTA value on the right side (2), and click on Assign(3). In the table at the bottom of the dialog (4), you will now see the mapping completed.<br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="8bb3024d-a7f0-4e29-be0e-a74f824a650a" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/88bed818691d/image2021-12-20_15-55-52.png" height="400"></span></li><li><span style="color: rgb(0,0,0);">Proceed like this for all required document types.</span></li></ol><p><br clear="none"></p><h2 id="ConfiguringDocumentTypestoworkCorrectlywithPWS-PWS<3.5.X" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="2" class="scroll-original-h1 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">PWS &lt; 3.5.X</h2><p>1. Create the document types in system data in whichever language required</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="f11e9c70-e1b5-4e8c-b628-01d250579b20" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/3d32c8401153/image2018-7-6-17-27-8.png" height="250"></span></p><p>2. Highlight the relevant Document type</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="bb7d901d-82e6-453c-93c3-8f1e11daf39d" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/eecb14bfc576/image2018-7-6-17-27-40.png" height="250"></span></p><p><br clear="none"></p><p>3. Click on the 'World" Symbol under the budget button</p><p><br clear="none"></p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/33dc5339fe4e/image2018-7-6-17-28-10.png"></span></p><p><br clear="none"></p><p>4. Select English from the drop down list</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="5bd653d0-bbb7-4f57-8d3a-a1eed0fe3833" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/5f8571b7c655/image2018-7-6-17-28-42.png" height="250"></span></p><p>5. Enter in the exact naming of the document type as defined in the OTA DocTypes Code list</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup span="1"><col span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Document Type</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>DOC</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;Document Name</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Visa</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Passport</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Military identification</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>4</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Drivers license</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>5</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>National identity document</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>6</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Vaccination certificate</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>7</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Alien registration number</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>8</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Insurance policy number</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>9</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Tax exemption number&nbsp;</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>10</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Vehicle registration/license number</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>11</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Border crossing card</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>12</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Refugee travel document</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>13</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Pilot's license</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>14</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Permanent resident card</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>15</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Redress number</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>16</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Known traveler number</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>17</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Non-standard</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>18</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Merchant mariner</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>19</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Air Nexus card</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>20</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Crew member certificate</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>21</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Passport card</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>22</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Naturalization certificate</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>23</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>CPF (Cadastro de Pessoas Fisicas</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>24</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Cédula</p></td></tr></tbody></table></div><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="f99eb76d-15b2-46b5-9693-93e44b79e85d" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/413e0786a8ad/image2018-7-6-17-52-38.png" height="400"></span></p><p>The PWS will look in the internat table for the required translation. This can be checked with this query</p><p>select * from internat where class= 'xdoctype'</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="6cad5d62-f7fe-489d-b3d5-49da7a6baa86" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/de96be409f40/image2018-7-6-17-57-16.png" height="250"></span></p><p><br clear="none"></p><p><br clear="none"></p><p><br clear="none">if configured correctly when a user selects the relevant item</p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/8676b9aee41e/image2018-7-6-17-19-20.png"></span></p><p>&nbsp;Then the message will show this.</p><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;Customer Gender=</code><code class="string">"Male"</code><code class="plain"> BirthDate=</code><code class="string">"1982-02-27"</code><code class="plain"> VIP_Indicator=</code><code class="string">"true"</code><code class="plain"> Language=</code><code class="string">"en"</code><code class="plain"> CustomerValue=</code><code class="string">"Returning Gast|0;Stammgast|2"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;PersonName&gt;</code></div>
+<div class="line"><code class="plain">        &lt;NamePrefix&gt;Mr.&lt;/NamePrefix&gt;</code></div>
+<div class="line"><code class="plain">        &lt;GivenName&gt;Alexander&lt;/GivenName&gt;</code></div>
+<div class="line"><code class="plain">        &lt;Surname&gt;Richardson Changed&lt;/Surname&gt;</code></div>
+<div class="line"><code class="plain">        &lt;NameTitle&gt;Mr&lt;/NameTitle&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/PersonName&gt;</code></div>
+<div class="line"><code class="plain">    &lt;Telephone PhoneNumber=</code><code class="string">"0044 208 674 53 76"</code><code class="plain"> PhoneLocationType=</code><code class="string">"6"</code><code class="plain"> PhoneTechType=</code><code class="string">"1"</code><code class="plain"> DefaultInd=</code><code class="string">"true"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">    &lt;Telephone PhoneNumber=</code><code class="string">"Mobile"</code><code class="plain"> PhoneLocationType=</code><code class="string">"10"</code><code class="plain"> PhoneTechType=</code><code class="string">"5"</code><code class="plain"> DefaultInd=</code><code class="string">"false"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">    &lt;Telephone PhoneNumber=</code><code class="string">"Fax"</code><code class="plain"> PhoneLocationType=</code><code class="string">"6"</code><code class="plain"> PhoneTechType=</code><code class="string">"3"</code><code class="plain"> DefaultInd=</code><code class="string">"false"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">    &lt;Email EmailType=</code><code class="string">"1"</code><code class="plain">&gt;SecondEmail</code><code class="color1">@emails</code><code class="plain">.com&lt;/Email&gt;</code></div>
+<div class="line"><code class="plain">    &lt;Email DefaultInd=</code><code class="string">"true"</code><code class="plain"> EmailType=</code><code class="string">"1"</code><code class="plain">&gt;alexander_richardson</code><code class="color1">@live</code><code class="plain">.com&lt;/Email&gt;</code></div>
+<div class="line"><code class="plain">    &lt;Address Type=</code><code class="string">"1"</code><code class="plain"> DefaultInd=</code><code class="string">"true"</code><code class="plain"> UseType=</code><code class="string">"6"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">        &lt;AddressLine&gt;CRICKLADE AVENUE&lt;/AddressLine&gt;</code></div>
+<div class="line"><code class="plain">        &lt;AddressLine&gt;Add </code><code class="value">2</code><code class="plain">&lt;/AddressLine&gt;</code></div>
+<div class="line"><code class="plain">        &lt;AddressLine&gt;Add </code><code class="value">3</code><code class="plain">&lt;/AddressLine&gt;</code></div>
+<div class="line"><code class="plain">        &lt;CityName&gt;London&lt;/CityName&gt;</code></div>
+<div class="line"><code class="plain">        &lt;PostalCode&gt;SW2 3HH&lt;/PostalCode&gt;</code></div>
+<div class="line"><code class="plain">        &lt;StateProv&gt;REgion&lt;/StateProv&gt;</code></div>
+<div class="line"><code class="plain">        &lt;CountryName Code=</code><code class="string">"GB"</code><code class="plain">&gt;Großbritannien&lt;/CountryName&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/Address&gt;</code></div>
+<div class="line"><code class="plain">    &lt;Document DocID=</code><code class="string">"1234567891231"</code><code class="plain"> DocType=</code><code class="string">"4"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">    &lt;CustLoyalty ProgramID=</code><code class="string">"AMEX"</code><code class="plain"> MembershipID=</code><code class="string">"123456789"</code><code class="plain"> PrimaryLoyaltyIndicator=</code><code class="string">"true"</code><code class="plain"> AllianceLoyaltyLevelName=</code><code class="string">"Krisflyer"</code><code class="plain"> Remark=</code><code class="string">"Remarks Field"</code><code class="plain"> LoyalLevel=</code><code class="string">"Gold"</code><code class="plain"> SignupDate=</code><code class="string">"2017-08-13"</code><code class="plain"> EffectiveDate=</code><code class="string">"2017-08-20"</code><code class="plain"> ExpireDate=</code><code class="string">"2018-08-13"</code><code class="plain"> ShareMarketInd=</code><code class="string">"Yes"</code><code class="plain"> ShareSyncInd=</code><code class="string">"Yes"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">        &lt;SubAccountBalance Type=</code><code class="string">"1"</code><code class="plain"> Balance=</code><code class="string">"150000.00"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/CustLoyalty&gt;</code></div>
+<div class="line"><code class="plain">    &lt;EmployerInfo CompanyShortName=</code><code class="string">"Company 1"</code><code class="plain"> Department=</code><code class="string">"Department"</code><code class="plain">&gt;Company </code><code class="value">1</code><code class="plain">;Company </code><code class="value">2</code><code class="plain">&lt;/EmployerInfo&gt;</code></div>
+<div class="line"><code class="plain">&lt;/Customer&gt;</code></div>
+</div>
+</div>
+                        </div>
+                    </section>
+
+                </article>
+            </main>
+
+
+                <nav class="exp-post-navigation-prev">
+                    <a href="__Profile---System-Data-Configuration.192228190.html" class="post-navigation-link">
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-prev">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                        <span>__Profile - System Data Configuration</span>
+                    </a>
+                </nav>
+
+                <nav class="exp-post-navigation-next">
+
+                    <a href="Configuring-Gender-to-work-correctly-with-PWS.192228602.html" class="post-navigation-link">
+                        <span>Configuring Gender to work correctly with PWS</span>
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-next">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-225.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                    </a>
+
+                </nav>
+
+
+            <nav class="exp-sidebar-toc js-tocBot">
+                <!-- content generated by toc.js  -->
+            </nav>
+
+            <div class="exp-sidebar-navigation-toggle">
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+            </div>
+
+            <div class="exp-scroll-to-top-container">
+                <a href="#ConfiguringDocumentTypestoworkCorrectlywithPWS-top" class="exp-scroll-to-top-link">↑ Back to top</a>
+            </div>
+
+        </div>
+
+
+
+<dialog class="exp-lightbox-container" aria-modal="true">
+    <div class="lightbox-toolbar">
+        <button type="button" class="exp-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox-content content">
+    </div>
+</dialog>
+
+<template id="exp-lightbox-wrapper-template">
+    <div class="exp-lightbox-wrapper">
+        <div class="exp-lightbox-toggle">
+            <button type="button" class="exp-lightbox-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                    <path fill="currentColor" d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+        <script src="js/tocbot.min.js"></script>
+        <script src="js/article-toc.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/iframe-resizer.parent.js"></script>
+
+    </body>
+
+</html>

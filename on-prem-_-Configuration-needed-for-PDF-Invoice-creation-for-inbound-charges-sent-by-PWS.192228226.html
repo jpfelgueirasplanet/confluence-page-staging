@@ -1,0 +1,434 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+        <link rel="icon" href="_scroll_external/logos/59f13d845123/default-space-logo.svg">
+
+        <!-- Primary Meta Tags -->
+        <meta name="exp-export-timestamp" content="2024-09-05T09:13:49.686+0000">
+        <meta name="exp-page-id" content="192228226">
+        <meta name="exp-page-title" content="on prem | Configuration needed for PDF Invoice creation for inbound charges sent by PWS">
+        <meta name="exp-page-version" content="22">
+        <meta name="exp-page-scroll-page-id" content="">
+        <meta name="exp-page-created" content="2021-02-18T11:12:17.580+0000">
+        <meta name="exp-page-last-modified" content="2022-01-12T14:17:04.507+0000">
+        <meta name="exp-page-labels" content="favourite">
+        <meta name="exp-page-context-keys" content="">
+        <meta name="exp-space-key" content="PIODOC">
+        <meta name="exp-space-title" content="protel.I/O documentation">
+
+        <!-- Additional Meta Tags -->
+        <meta name="exp-document-id" content="">
+        <meta name="exp-document-title" content="protel.I/O documentation">
+        <meta name="exp-version-status" content="">
+        <meta name="exp-version-id" content="">
+        <meta name="exp-version-name" content="">
+        <meta name="exp-version-description" content="">
+        <meta name="exp-version-date" content="">
+        <meta name="exp-variant-id" content="">
+        <meta name="exp-variant-name" content="">
+        <meta name="exp-variant-description" content="">
+        <meta name="exp-language-code" content="">
+        <meta name="exp-language-name" content="">
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/image-dimensions.css">
+
+
+            
+            
+<script src="js/search.js"></script>
+            <script id="search-worker" type="javascript/worker">
+    onmessage = function(event) {
+        // dispatch events to handling functions
+        var message = event.data;
+
+        if ((message.type === 'setup') && message.baseUrl) {
+            setup(message.baseUrl);
+        }
+
+        if (message.type === 'search-request') {
+            search(message.query);
+        }
+    }
+
+    var searchIndex;
+
+    function setup(baseUrl) {
+        importScripts(
+            baseUrl + 'js/lunr.js',
+            baseUrl + 'js/lunr-index.js',
+            baseUrl + 'js/lunr-data.js'
+        );
+        try {
+            // load lunr-extras if it exists, which contains language-specific files for languages other than english
+            importScripts(baseUrl + 'js/lunr-extras.js');
+        } catch (e) {}
+        searchIndex = lunr.Index.load(lunrIndex);
+    }
+
+    function search(query) {
+        var searchHits = searchIndex.search(query);
+        var results = searchHits.map(function (result) {
+            return lunrData.filter(function (d) {
+                return d.id === result.ref;
+            })[0]
+        });
+        postMessage({ type: 'search-results', results: results, query: query });
+    }
+</script>
+        <title>on prem | Configuration needed for PDF Invoice creation for inbound charges sent by PWS</title>
+
+    <meta name="generator" content="Scroll HTML Exporter / K15t GmbH"></head>
+
+    <body id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-top" data-pageid="192228226" data-confluence-editor-version="v1" data-confluence-deployment-type="DATACENTER">
+
+        <div class="exp-grid-container">
+
+            <header class="exp-header"></header>
+
+            <div class="exp-logo">
+                <a href="protel.I_O-documentation.192227604.html">
+                    <span class="exp-logo-image" style="background-image: url(_scroll_external/logos/59f13d845123/default-space-logo.svg)" alt="protel.I/O documentation" title="protel.I/O documentation"></span>
+                </a>
+            </div>
+
+            <div class="exp-document-title">
+                <h1 class="exp-document-title-heading scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h1 scroll-relative-h1" data-scroll-heading-rank="1" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="1" id="no-src_generated-id-33428c0ece5e399ed35f429b8a4d2d90b7cf88b03672a6fb0d8b1b5f9c5f65dc">
+                    <a href="protel.I_O-documentation.192227604.html">
+                        protel.I/O documentation
+                    </a>
+                </h1>
+            </div>
+
+<div class="exp-search-container">
+    <input type="search" id="search-textbox" autocomplete="off" class="exp-search-input" style="margin-right: 0;">
+    <div class="exp-search-input-icon">
+        <svg data-exp-id="magnifier-icon" data-exp-component="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8.99452 14.5C10.5121 14.5 11.809 13.9669 12.8854 12.9007C13.9618 11.8345 14.5 10.5361 14.5 9.00548C14.5 7.48794 13.9631 6.19097 12.8893 5.11458C11.8155 4.03819 10.519 3.5 9 3.5C7.46786 3.5 6.16816 4.0369 5.1009 5.11071C4.03363 6.18453 3.5 7.48096 3.5 9C3.5 10.5321 4.0331 11.8318 5.09929 12.8991C6.1655 13.9664 7.46391 14.5 8.99452 14.5ZM9 16C8.02913 16 7.11974 15.816 6.27185 15.4479C5.42395 15.0799 4.68056 14.5799 4.04167 13.9479C3.40278 13.316 2.90278 12.576 2.54167 11.728C2.18056 10.88 2 9.97053 2 8.99956C2 8.04152 2.18403 7.13542 2.55208 6.28125C2.92014 5.42708 3.41864 4.68387 4.04758 4.0516C4.67653 3.41935 5.41569 2.91935 6.26508 2.5516C7.11449 2.18387 8.02548 2 8.99806 2C9.95769 2 10.8646 2.18403 11.7188 2.55208C12.5729 2.92014 13.316 3.42014 13.9479 4.05208C14.5799 4.68403 15.0799 5.42612 15.4479 6.27835C15.816 7.13058 16 8.0381 16 9.00094C16 9.83365 15.8615 10.6213 15.5846 11.3638C15.3078 12.1062 14.9254 12.7836 14.4375 13.3958L18 16.9583L16.9375 18L13.375 14.4583C12.7668 14.9459 12.0939 15.3247 11.3564 15.5948C10.6188 15.8649 9.83333 16 9 16Z" fill="currentColor" />
+        </svg>
+    </div>
+    <div id="search-suggestion-container" class="exp-search-suggestion-panel" data-exp-component="search-suggestion"></div>
+    <template id="exp-search-suggestion-option-template">
+        <div class="exp-search-suggestion-option-container search-form-suggestion">
+            <a class="exp-search-suggestion-option search-form-suggestion" href=""></a>
+        </div>
+    </template>
+</div>
+
+
+            <nav class="exp-sidebar-navigation">
+                <div class="exp-sidebar-navigation-sticky-wrapper">
+                    <iframe src="toc.html?pageId=192228226" border="0"></iframe>
+                </div>
+
+            </nav>
+
+
+            <nav aria-label="Breadcrumb" class="exp-breadcrumbs-wrapper">
+                <ol class="breadcrumbs">
+                        <li class="breadcrumb">
+                            <a href="protel.I_O-documentation.192227604.html" rel="prev" target="_self">protel.I/O documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Integrations.192227608.html" rel="prev" target="_self">Integrations</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="_General-Installation-Details.192227757.html" rel="prev" target="_self">_General Installation Details</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="on-prem.192228025.html" rel="prev" target="_self">on prem</a>
+                        </li>
+                    <li class="breadcrumb active" aria-current="page">
+                        on prem | Configuration needed for PDF Invoice creation for inbound charges sent by PWS
+                    </li>
+                </ol>
+            </nav>
+
+
+            <main class="exp-content">
+                <article role="article">
+
+                    <header>
+                        <h1 class="article-heading scroll-h1 scroll-original-h1 scroll-relative-h1 scroll-custom-section-heading scroll-document-section-heading" role="heading" data-scroll-heading-rank="1" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="1" id="no-src_generated-id-dc655b06765cf701857104857e84ef898b44f6241b5260774edf188f516d2cc0">
+                            on prem | Configuration needed for PDF Invoice creation for inbound charges sent by PWS
+                        </h1>
+                    </header>
+
+                    <section class="page" id="content" role="main">
+                        <div id="main-content" class="wiki-content article-content js-tocBot-content">
+                            <p>This article explains which configuration needs to be in place for on prem properties to get the invoice forms created for inbound payments sent by PWS and additionally be able to send&nbsp;correct data out to any integration partner via HTNG_HotelCheckOutNotifRS in order to enable PDF invoice sending via email to the guest on their side.</p><p>It is split into two major cases - properties which are using fiscalization of invoices (+ special part for German properties with KSV) and properties which are not using fiscalization at all.</p><p><style type="text/css">/*<![CDATA[*/
+div.rbtoc1725527629726 {padding: 0px;}
+div.rbtoc1725527629726 ul {margin-left: 0px;}
+div.rbtoc1725527629726 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p><div class="toc-macro rbtoc1725527629726">
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-Configurationneeded" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-Configurationneeded">Configuration needed</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-ActivatedFiscalization" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-ActivatedFiscalization">Activated Fiscalization</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-GeneralDetails" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-GeneralDetails">General Details</a></li>
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-KSV" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-KSV">KSV</a></li>
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-RKSV" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-RKSV">RKSV</a></li>
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-XSetUpsneeded" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-XSetUpsneeded">XSetUps needed</a></li>
+</ul>
+</li>
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-Propertieswithoutactivatedfiscalization" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-Propertieswithoutactivatedfiscalization">Properties without activated fiscalization</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-XSetUpsneeded.1" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-XSetUpsneeded.1">XSetUps needed</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-Logging/DebuggingPossibility" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-Logging/DebuggingPossibility">Logging/Debugging Possibility</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-TestingSteps" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-TestingSteps">Testing Steps</a></li>
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-NDebug(Comserver)withoutfiscalization" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-NDebug(Comserver)withoutfiscalization">NDebug (Comserver) without fiscalization</a></li>
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-LogfilePWS-withoutfiscalization" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-LogfilePWS-withoutfiscalization">Log file PWS - without fiscalization</a></li>
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-HTNGmessagesamples" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-HTNGmessagesamples">HTNG message samples</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-HTNG_ChargePostingRQ" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-HTNG_ChargePostingRQ">HTNG_ChargePostingRQ</a></li>
+<li><a data-scroll-target-source-id="192228226" data-scroll-link-target-source-id="192228226" data-scroll-link-type="document" href="on-prem-_-Configuration-needed-for-PDF-Invoice-creation-for-inbound-charges-sent-by-PWS.192228226.html#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-HTNG_HotelCheckOutNotifRQ" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/on+prem+%7C+Configuration+needed+for+PDF+Invoice+creation+for+inbound+charges+sent+by+PWS#src-192228226_onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-HTNG_HotelCheckOutNotifRQ">HTNG_HotelCheckOutNotifRQ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><p></p><h2 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-Configurationneeded" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="2" class="scroll-original-h1 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Configuration needed</h2><p><br clear="none"></p><div class="confluence-information-macro confluence-information-macro-note"><p class="title conf-macro-render">PRE-REQUISITES</p><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>The invoice form will be generated by the COMServer (not PWS) and therefore it is important to check the comserver.ini settings in regards to:</p><ul><li>correct program path (path also used for the client stations - not the local one of the server, e.g. c:\protel) in order to look up the form templates in the correct location and in order to save the created invoices in the right path</li><li>all necessary taxkey ini entries existing in order to fill the replacement codes properly on the invoice</li></ul><p><br clear="none"></p><p>Please also make sure</p><ul><li><span style="color: rgb(0,0,0);">that you install LibreOfficePortable (not OpenOffice) on the same server the COMServer is installed at<br clear="none">(check further down the respective link)<br clear="none"><br clear="none"></span></li><li><span style="color: rgb(0,0,0);"><u><strong>COMServer application</strong></u><br clear="none">that it gets installed with the windows user the COMServer is running on<br clear="none"><br clear="none"><em>or<br clear="none"><br clear="none"></em></span></li><li><span style="color: rgb(0,0,0);"><u><strong>COMServer service</strong></u></span><span style="color: rgb(0,0,0);"><br clear="none"></span><span style="color: rgb(0,0,0);">that the service will be logged in with the windows user you installed the LibreOffice application with</span><span style="color: rgb(0,0,0);"><br clear="none"></span><span style="color: rgb(0,0,0);"><br clear="none"></span><div class="scroll-title-macro scroll-title-macro-type-figure"><img data-image-src="/download/attachments/192228226/image2021-4-20_17-4-10.png?version=1&amp;modificationDate=1618938250767&amp;api=v2" data-linked-resource-id="192228739" data-linked-resource-default-alias="image2021-4-20_17-4-10.png" data-scroll-image-id="fdd65aa2-5f79-48c0-a829-20e8607bb9dd" src="_scroll_external/attachments/10d6e71c9d79/image2021-4-20_17-4-10.png" data-linked-resource-version="1" data-base-url="https://confluence.weareplanet.com" data-linked-resource-content-type="image/png" class="confluence-embedded-image scroll-document-image scroll-titled-element scroll-title-macro-link-target" data-linked-resource-type="attachment" height="250" id="55302ba6-8876-488a-a2f1-a7b9ca9e5448"><div class="scroll-title-macro-caption scroll-title-after">image2021-4-20_17-4-10.png</div></div><span style="color: rgb(0,0,0);"><br clear="none"></span></li></ul></div></div><h3 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-ActivatedFiscalization" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="3" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">Activated Fiscalization</h3><h4 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-GeneralDetails" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="4" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="4" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h4 scroll-relative-h4">General Details</h4><p>General details for setting up fiscalization could be found here:</p><p><a rel="nofollow" href="https://wiki.protel.net/index.php?title=Fiscal_invoices" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://wiki.protel.net/index.php?title=Fiscal_invoices" data-scroll-link-local="false">https://wiki.protel.net/index.php?title=Fiscal_invoices</a></p><h4 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-KSV" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="4" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="4" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h4 scroll-relative-h4">KSV</h4><p>Mandatory for all German properties latest 31st March 2021:</p><p><a href="https://confluence.weareplanet.com/display/SMD/KassenSichV+%7C+fiskaltrust" class="scroll-confluence-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.weareplanet.com/display/SMD/KassenSichV+%7C+fiskaltrust" data-scroll-link-local="true">KassenSichV | fiskaltrust</a></p><h4 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-RKSV" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="4" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="4" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h4 scroll-relative-h4">RKSV</h4><p>Mandatory for all Austrian properties starting from 1st April 2017:</p><p><a rel="nofollow" href="http://help.protel.net/rksv_spe+mpe_user_de.pdf" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="http://help.protel.net/rksv_spe+mpe_user_de.pdf" data-scroll-link-local="false">http://help.protel.net/rksv_spe+mpe_user_de.pdf</a></p><h4 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-XSetUpsneeded" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="4" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="4" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h4 scroll-relative-h4">XSetUps needed</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup span="1"><col span="1"><col span="1"><col span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Group</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Identifier</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Value</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Notes / Explanation</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Level<br clear="none">(local/global)</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>invoice</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>rtf_to_pdf_tool</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">C:\protel\LibreOfficePortable\App\libreoffice\program\soffice.exe --headless --convert-to pdf --outdir $outputPath $input</code></div>
+</div>
+</div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p>LibreOfficePortable - earlier OpenOffice - is an OpenSource tool, which&nbsp;converts RTF to PDF.&nbsp;<br clear="none"><span style="color: rgb(29,28,29);"><span><br clear="none"></span></span>The XSetUp value mentioned depends on the LibreOfficePortable installation path</p><div class="confluence-information-macro confluence-information-macro-information"><p class="title conf-macro-render">Important</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>If there is a space in the folder names defining the path please add the whole path in "" <br clear="none">-&nbsp;otherwise the system will not convert the invoice!</p><p><u>Sample:</u></p><p>"C:\Program Files\LibreOfficeProtable\program\soffice.ex<span style="color: rgb(0,0,0);">e"&nbsp;--headless --convert-to pdf --outdir $outputPath $input</span></p></div></div><p class="auto-cursor-target">Download link:</p><p class="auto-cursor-target"><a rel="nofollow" href="https://de.libreoffice.org/download/portable-versions/" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://de.libreoffice.org/download/portable-versions/" data-scroll-link-local="false">https://de.libreoffice.org/download/portable-versions/</a></p><p class="auto-cursor-target"><a rel="nofollow" href="https://www.libreoffice.org/download/download/?lang=en-GB" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://www.libreoffice.org/download/download/?lang=en-GB" data-scroll-link-local="false">https://www.libreoffice.org/download/download/?lang=en-GB</a></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p>local</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">pws</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">io_default_invoice</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p class="auto-cursor-target">Internal ref no. of the Default Invoice form, e.g. 2</p><div class="scroll-code scroll-highlighted-code-block" data-language="sql" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">formular.internnr</code></div>
+</div>
+</div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(255,0,0);"><strong>The invoice form used for creating a PDF file needs to be in HED format.</strong></span></p><p></p><div class="scroll-title-macro scroll-title-macro-type-figure"><img data-image-src="/download/attachments/192228226/image2021-5-10_10-52-33.png?version=1&amp;modificationDate=1620643953820&amp;api=v2" data-linked-resource-id="192229489" data-linked-resource-default-alias="image2021-5-10_10-52-33.png" data-scroll-image-id="f476958e-18fa-4ca6-bf1f-ddb883e0ef18" src="_scroll_external/attachments/70aea22bee79/image2021-5-10_10-52-33.png" data-linked-resource-version="1" data-base-url="https://confluence.weareplanet.com" data-linked-resource-content-type="image/png" class="confluence-embedded-image scroll-document-image scroll-titled-element scroll-title-macro-link-target" data-linked-resource-type="attachment" height="250" id="206a085b-0b33-4608-bbe0-07127c715d27"><div class="scroll-title-macro-caption scroll-title-after">image2021-5-10_10-52-33.png</div></div><p></p><p></p><div class="scroll-title-macro scroll-title-macro-type-figure"><img data-image-src="/download/attachments/192228226/image2021-2-18_11-51-45.png?version=1&amp;modificationDate=1613649105963&amp;api=v2" data-linked-resource-id="192228793" data-linked-resource-default-alias="image2021-2-18_11-51-45.png" data-scroll-image-id="4ba83f96-54cc-4fa2-aac8-a4f34c7e5115" src="_scroll_external/attachments/24434d1a8692/image2021-2-18_11-51-45.png" data-linked-resource-version="1" data-base-url="https://confluence.weareplanet.com" data-linked-resource-content-type="image/png" class="confluence-embedded-image scroll-document-image scroll-titled-element scroll-title-macro-link-target" data-linked-resource-type="attachment" height="250" id="0a6b1ce2-d173-4683-9da9-cafd1f461ce9"><div class="scroll-title-macro-caption scroll-title-after">image2021-2-18_11-51-45.png</div></div><p></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p>local</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>pws</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(29,28,29);">io_default_fiscal_code</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p>Internal ref no. of the Default Invoice fiscal code, e.g. 2</p><div class="scroll-code scroll-highlighted-code-block" data-language="sql" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">fiscalcd.ref</code></div>
+</div>
+</div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p></p><div class="scroll-title-macro scroll-title-macro-type-figure"><img data-image-src="/download/attachments/192228226/image2021-2-18_11-42-33.png?version=1&amp;modificationDate=1613648553183&amp;api=v2" data-linked-resource-id="192228737" data-linked-resource-default-alias="image2021-2-18_11-42-33.png" data-scroll-image-id="acd17141-b92c-4104-929b-b34d9aa95fc6" src="_scroll_external/attachments/8277ebe1056f/image2021-2-18_11-42-33.png" data-linked-resource-version="1" data-base-url="https://confluence.weareplanet.com" data-linked-resource-content-type="image/png" class="confluence-embedded-image scroll-document-image scroll-titled-element scroll-title-macro-link-target" data-linked-resource-type="attachment" height="250" id="18ff5e9c-6131-4c8b-b0a8-b6cc87d3a7ae"><div class="scroll-title-macro-caption scroll-title-after">image2021-2-18_11-42-33.png</div></div><p></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p>local</p></td></tr></tbody></table></div><h3 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-Propertieswithoutactivatedfiscalization" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="3" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">Properties without activated fiscalization</h3><h4 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-XSetUpsneeded.1" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="4" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="4" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h4 scroll-relative-h4">XSetUps needed</h4><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup span="1"><col span="1"><col span="1"><col span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Group</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Identifier</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Value</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Notes /Explanation</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>local/global</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>invoice</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>rtf_to_pdf_tool</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><div class="scroll-code scroll-highlighted-code-block" data-title="XSetUp Value" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="title">XSetUp Value</div><div class="defaultnew content" data-title="XSetUp Value">
+<div class="line"><code class="plain">C:\protel\LibreOfficePortable\App\libreoffice\program\soffice.exe --headless --convert-to pdf --outdir $outputPath $input</code></div>
+</div>
+</div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p>LibreOfficePortable - earlier OpenOffice - is an OpenSource tool, which&nbsp;converts RTF to PDF.&nbsp;<br clear="none"><span style="color: rgb(29,28,29);"><span><br clear="none"></span></span>The XSetUp value mentioned depends on the LibreOfficePortable installation path</p><div class="confluence-information-macro confluence-information-macro-information"><p class="title conf-macro-render">Important</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>If there is a space in the folder names defining the path please add the whole path in "" <br clear="none">-&nbsp;otherwise the system will not convert the invoice!</p><p><u>Sample:</u></p><p>"C:\Program Files\LibreOfficePortable\program\soffice.exe"</p></div></div><p class="auto-cursor-target">Download link:</p><p class="auto-cursor-target"><a rel="nofollow" href="https://de.libreoffice.org/download/portable-versions/" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://de.libreoffice.org/download/portable-versions/" data-scroll-link-local="false">https://de.libreoffice.org/download/portable-versions/</a></p><p class="auto-cursor-target"><a rel="nofollow" href="https://www.libreoffice.org/download/download/?lang=en-GB" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://www.libreoffice.org/download/download/?lang=en-GB" data-scroll-link-local="false">https://www.libreoffice.org/download/download/?lang=en-GB</a></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p>local</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">pws</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">io_default_invoice</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p class="auto-cursor-target">Internal ref no. of the Default Invoice form</p><div class="scroll-code scroll-highlighted-code-block" data-language="sql" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">formular.internnr</code></div>
+</div>
+</div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p>The invoice form used for creating a PDF file needs to be in HED format.</p><p></p><div class="scroll-title-macro scroll-title-macro-type-figure"><img data-image-src="/download/attachments/192228226/image2021-5-10_10-52-16.png?version=1&amp;modificationDate=1620643936747&amp;api=v2" data-linked-resource-id="192229569" data-linked-resource-default-alias="image2021-5-10_10-52-16.png" data-scroll-image-id="22c479af-2bd4-447d-b8ae-7d5546e2b3d5" src="_scroll_external/attachments/eebae1bf6ea4/image2021-5-10_10-52-16.png" data-linked-resource-version="1" data-base-url="https://confluence.weareplanet.com" data-linked-resource-content-type="image/png" class="confluence-embedded-image scroll-document-image scroll-titled-element scroll-title-macro-link-target" data-linked-resource-type="attachment" height="250" id="a3018cc8-21f4-40ac-86b0-fee9b08c3967"><div class="scroll-title-macro-caption scroll-title-after">image2021-5-10_10-52-16.png</div></div><p></p><p></p><div class="scroll-title-macro scroll-title-macro-type-figure"><img data-image-src="/download/attachments/192228226/image2021-2-18_11-51-45.png?version=1&amp;modificationDate=1613649105963&amp;api=v2" data-linked-resource-id="192228793" data-linked-resource-default-alias="image2021-2-18_11-51-45.png" data-scroll-image-id="a042982a-8d66-4aa5-9004-385bf3221d32" src="_scroll_external/attachments/24434d1a8692/image2021-2-18_11-51-45.png" data-linked-resource-version="1" data-base-url="https://confluence.weareplanet.com" data-linked-resource-content-type="image/png" class="confluence-embedded-image scroll-document-image scroll-titled-element scroll-title-macro-link-target" data-linked-resource-type="attachment" height="250" id="d51e0e6f-4324-47dc-9aad-433a82dcbcb6"><div class="scroll-title-macro-caption scroll-title-after">image2021-2-18_11-51-45.png</div></div><p></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p>local</p></td></tr></tbody></table></div><h2 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-Logging/DebuggingPossibility" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="2" class="scroll-original-h1 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Logging/Debugging Possibility</h2><h3 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-TestingSteps" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="3" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">Testing Steps</h3><ol><li>Find a reservation that departs on the current business date of the hotel</li><li>Activate NDebug (Level 1) at the Comserver (start it as an application if it is only running as a service)</li><li>Post a payment that balances the invoice through the 3rd party system (HTNG_ChargePostingRQ)</li><li>Send a CheckOut&nbsp;through the 3rd party system (HTNG_HotelCheckOutNotifRQ)</li><li>Check the outbound HTNG_HotelCheckOutNotifRS in Kibana</li></ol><h3 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-NDebug(Comserver)withoutfiscalization" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="3" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">NDebug (Comserver) without fiscalization</h3><p>The following snippet is showing how the NDebug on Comserver level would look like in case of an incoming payment which balances an invoice without using fiscalization.</p><p>You can see the invoice creation as well as the conversion to PDF.</p><p>In case you encounter any issues with this use case, a NDebug like the following would be necessary to analyze the issue further.</p><div class="scroll-code scroll-highlighted-code-block" data-title="NDebug COMServer" data-linenumbers="true" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="title">NDebug COMServer</div><div class="defaultnew content" data-title="NDebug COMServer">
+<div class="line"><code class="plain">Exec_CheckOut(LeistAcc=(</code><code class="value">626131</code><code class="plain">), ShowDialog=(</code><code class="value">0</code><code class="plain">), fiscalCode=(</code><code class="value">0</code><code class="plain">), formRef=(</code><code class="value">45</code><code class="plain">)): called </code></div>
+<div class="line"><code class="plain">------------------- Exec_CheckOut: Is fiscalizing system? False</code></div>
+<div class="line"><code class="plain">pci::printInternal(): typeOfInvoice=(Invoice) leistAcc=(</code><code class="value">626131</code><code class="plain">) buch.GetBuchNr()=(</code><code class="value">626131</code><code class="plain">) invoiceWindow=(</code><code class="value">0</code><code class="plain">) invoicePrintMode=(</code><code class="value">2</code><code class="plain">) currency=(</code><code class="value">0</code><code class="plain">) fiscalizeCodeNo=(</code><code class="value">0</code><code class="plain">) leistArray=(NULL)</code></div>
+<div class="line"><code class="plain">TPrintRech::TPrintRech(): Rechnungsart=(Invoice) Buch=(gesetzt) Rechnung=(</code><code class="value">0</code><code class="plain">) Method=(</code><code class="value">2</code><code class="plain">) DoGetRechnungsNr=(</code><code class="value">1</code><code class="plain">) InvoiceCurrency=(</code><code class="value">0</code><code class="plain">) FiscalizeCodeNo=(</code><code class="value">0</code><code class="plain">) VOIDFiscalizeCodeNo=(</code><code class="value">0</code><code class="plain">) VOIDInvoiceNo=(</code><code class="value">0</code><code class="plain">) LA=(NULL) invoiceStornoData=(NULL) OriginalInvoiceDate=(NULL) _CustomPrefix=(NULL) _AddToTextHist=(</code><code class="keyword">false</code><code class="plain">) Kopien=(</code><code class="value">0</code><code class="plain">) AdditionalRef=(-</code><code class="value">1</code><code class="plain">) _BuchNrReservation=(</code><code class="value">626131</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TPrintRech::TPrintRech(): MethodAdd=(</code><code class="value">0</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TPrintTech::TPrintRech(): call CalcTaxesField()</code></div>
+<div class="line"><code class="plain">TLeistArray::CalcTaxesField(): T=(</code><code class="value">0.00</code><code class="plain">) EPreis=(</code><code class="value">1521</code><code class="plain">,</code><code class="value">00</code><code class="plain">) Taxes=(</code><code class="value">0.00</code><code class="plain">) SumTaxes=(</code><code class="value">0.00</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TLeistArray::CalcTaxesField(): T=(</code><code class="value">25.00</code><code class="plain">) EPreis=(</code><code class="value">100</code><code class="plain">,</code><code class="value">00</code><code class="plain">) Taxes=(</code><code class="value">20.00</code><code class="plain">) SumTaxes=(</code><code class="value">20.00</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TLeistArray::CalcTaxesField(): T=(</code><code class="value">18.00</code><code class="plain">) EPreis=(</code><code class="value">28803</code><code class="plain">,</code><code class="value">00</code><code class="plain">) Taxes=(</code><code class="value">4393.68</code><code class="plain">) SumTaxes=(</code><code class="value">4413.68</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TLeistArray::CalcTaxesField(): T=(</code><code class="value">0.00</code><code class="plain">) EPreis=(</code><code class="value">1521</code><code class="plain">,</code><code class="value">00</code><code class="plain">) Taxes=(</code><code class="value">0.00</code><code class="plain">) SumTaxes=(</code><code class="value">4413.68</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TLeistArray::CalcTaxesField(): T=(</code><code class="value">25.00</code><code class="plain">) EPreis=(</code><code class="value">100</code><code class="plain">,</code><code class="value">00</code><code class="plain">) Taxes=(</code><code class="value">20.00</code><code class="plain">) SumTaxes=(</code><code class="value">4433.68</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TLeistArray::CalcTaxesField(): T=(</code><code class="value">18.00</code><code class="plain">) EPreis=(</code><code class="value">28803</code><code class="plain">,</code><code class="value">00</code><code class="plain">) Taxes=(</code><code class="value">4393.68</code><code class="plain">) SumTaxes=(</code><code class="value">8827.36</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TLeistArray::CalcTaxesField(): T=(</code><code class="value">0.00</code><code class="plain">) EPreis=(</code><code class="value">1521</code><code class="plain">,</code><code class="value">00</code><code class="plain">) Taxes=(</code><code class="value">0.00</code><code class="plain">) SumTaxes=(</code><code class="value">8827.36</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TLeistArray::CalcTaxesField(): T=(</code><code class="value">25.00</code><code class="plain">) EPreis=(</code><code class="value">100</code><code class="plain">,</code><code class="value">00</code><code class="plain">) Taxes=(</code><code class="value">20.00</code><code class="plain">) SumTaxes=(</code><code class="value">8847.36</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TLeistArray::CalcTaxesField(): T=(</code><code class="value">18.00</code><code class="plain">) EPreis=(</code><code class="value">28803</code><code class="plain">,</code><code class="value">00</code><code class="plain">) Taxes=(</code><code class="value">4393.68</code><code class="plain">) SumTaxes=(</code><code class="value">13241.04</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TLeistArray::CalcTaxesField(): T=(</code><code class="value">0.00</code><code class="plain">) EPreis=(</code><code class="value">1521</code><code class="plain">,</code><code class="value">00</code><code class="plain">) Taxes=(</code><code class="value">0.00</code><code class="plain">) SumTaxes=(</code><code class="value">13241.04</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TLeistArray::CalcTaxesField(): T=(</code><code class="value">25.00</code><code class="plain">) EPreis=(</code><code class="value">100</code><code class="plain">,</code><code class="value">00</code><code class="plain">) Taxes=(</code><code class="value">20.00</code><code class="plain">) SumTaxes=(</code><code class="value">13261.04</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TLeistArray::CalcTaxesField(): T=(</code><code class="value">18.00</code><code class="plain">) EPreis=(</code><code class="value">28803</code><code class="plain">,</code><code class="value">00</code><code class="plain">) Taxes=(</code><code class="value">4393.68</code><code class="plain">) SumTaxes=(</code><code class="value">17654.72</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TLeistArray::CalcTaxesField(): SumTaxes=(</code><code class="value">17654.72</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TJHighEdit::TJHighEdit(</code><code class="value">95</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TJHighEdit::TJHighEdit(</code><code class="value">111</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TJHighEdit::TJHighEdit(</code><code class="value">120</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TJHighEdit::TJHighEdit(</code><code class="value">158</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">Form.GetFile FormNr=</code><code class="value">45</code></div>
+<div class="line"><code class="plain">Loadfile e:\protels\protel4\FORMULAR\DEBEURAFA.HED</code></div>
+<div class="line"><code class="plain">TJHighEdit::LoadHedDoc(): Dateiname=(e:\protels\protel4\FORMULAR\DEBEURAFA.HED)</code></div>
+<div class="line"><code class="plain">TPrintRech::prepareUsedInvoiceEntries(): createRechHist=(</code><code class="keyword">true</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TPrintRech::Generiere(): usedInvoiceEntries=()</code></div>
+<div class="line"><code class="plain">TJHighEdit::SaveHedDoc(): Dateiname=(e:\protels\protel4\RECH\</code><code class="value">02271294</code><code class="plain">.hed)</code></div>
+<div class="line"><code class="plain">TPrintRech::Generiere(): UsedREchHist-&gt;AddData: buchNr=(</code><code class="value">626131</code><code class="plain">) Rechnung=(</code><code class="value">0</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">TJHighEdit::SaveRtfDoc(): fileName=(e:\protels\protel4\RECH\</code><code class="value">02271294</code><code class="plain">.rtf)</code></div>
+<div class="line"><code class="plain">TJHighEdit::SaveRtfDoc(): rc=(</code><code class="value">1</code><code class="plain">)</code></div>
+<div class="line"><code class="plain">convertRtfToPdf(): pdfFileName=(</code><code class="value">02271294</code><code class="plain">.pdf) pdfPath=(e:\protels\protel4\RECH)</code></div>
+<div class="line"><code class="plain">convertRtfToPdf(): convert=(Entering NExecuteHTTPCommand Stack=</code><code class="value">977660</code><code class="plain"> Command=</code><code class="string">'GetComputerName'</code><code class="plain"> Param=</code><code class="string">''</code></div>
+<div class="line"><code class="string">"C:\Program Files\LibreOffice\program\soffice.exe"</code><code class="plain"> --headless --convert-to pdf --outdir e:\protels\protel4\RECH e:\protels\protel4\RECH\</code><code class="value">02271294</code><code class="plain">.rtf)</code></div>
+<div class="line"><code class="plain">pci::printInternal(): pdfFileName=(e:\protels\protel4\RECH\</code><code class="value">02271294</code><code class="plain">.pdf)</code></div>
+<div class="line"><code class="plain">pci::printInternal(): ending=(pdf)</code></div>
+<div class="line"><code class="plain">TJHighEdit::~TJHighEdit(</code><code class="value">165</code><code class="plain">) thread: </code><code class="value">11816</code><code class="plain"> handle: 9802e0</code></div>
+<div class="line"><code class="plain">TJHighEdit::~TJHighEdit() ProtelMainWindow=</code><code class="value">68196666</code><code class="plain"> parent=</code><code class="value">0</code></div>
+</div>
+</div><h3 class="auto-cursor-target scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3" id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-LogfilePWS-withoutfiscalization" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="3">Log file PWS -&nbsp;without fiscalization</h3><div class="scroll-code scroll-highlighted-code-block" data-title="PWS log file" data-linenumbers="true" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="title">PWS log file</div><div class="defaultnew content" data-title="PWS log file">
+<div class="line"><code class="plain">[.|</code><code class="value">2021</code><code class="plain">-</code><code class="value">01</code><code class="plain">-</code><code class="value">20</code><code class="plain"> </code><code class="value">17</code><code class="plain">:</code><code class="value">00</code><code class="plain">:</code><code class="value">25</code><code class="plain">|</code><code class="value">015</code><code class="plain">|</code><code class="value">2</code><code class="plain">.|INF]: CheckOut: pp_func_checkout &lt;======== pp_func_checkout?leistacc=</code><code class="value">626131</code><code class="plain">&amp;showdialog=</code><code class="value">0</code><code class="plain">&amp;formref=</code><code class="value">45</code></div>
+<div class="line"><code class="plain">[.|</code><code class="value">2021</code><code class="plain">-</code><code class="value">01</code><code class="plain">-</code><code class="value">20</code><code class="plain"> </code><code class="value">17</code><code class="plain">:</code><code class="value">00</code><code class="plain">:</code><code class="value">28</code><code class="plain">|</code><code class="value">015</code><code class="plain">|</code><code class="value">2</code><code class="plain">.|INF]: CheckOut: pp_func_checkout ========&gt; &lt;?xml version=</code><code class="string">"1.0"</code><code class="plain"> encoding=</code><code class="string">"ISO-8859-1"</code><code class="plain"> standalone=</code><code class="string">"yes"</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;error&gt;&lt;id&gt;</code><code class="value">0</code><code class="plain">&lt;/id&gt;&lt;text&gt;ok&lt;/text&gt;&lt;/error&gt;</code></div>
+<div class="line"><code class="plain">[.|</code><code class="value">2021</code><code class="plain">-</code><code class="value">01</code><code class="plain">-</code><code class="value">20</code><code class="plain"> </code><code class="value">17</code><code class="plain">:</code><code class="value">00</code><code class="plain">:</code><code class="value">28</code><code class="plain">|</code><code class="value">015</code><code class="plain">|</code><code class="value">2</code><code class="plain">.|SQL]: Sql (6ms,#</code><code class="value">1</code><code class="plain">): SELECT TOP </code><code class="value">1</code><code class="plain"> rh.mpehotel,rh.rechnr,rh.voidinv,rh.fisccode,rh.kdnr,rh.formnr,rh.archive,rh.</code><code class="keyword">void</code><code class="plain">,rh.crystal,rh.deposit,rh.autogen,rh.name,rh.datum,rh.resno,rh.sum_zahl,rh.sum_belast FROM [dbo].[rechhist] rh WHERE resno = </code><code class="value">626131</code><code class="plain"> AND invindex = </code><code class="value">0</code><code class="plain"> </code></div>
+<div class="line"><code class="plain">[.|</code><code class="value">2021</code><code class="plain">-</code><code class="value">01</code><code class="plain">-</code><code class="value">20</code><code class="plain"> </code><code class="value">17</code><code class="plain">:</code><code class="value">00</code><code class="plain">:</code><code class="value">28</code><code class="plain">|</code><code class="value">015</code><code class="plain">|</code><code class="value">2</code><code class="plain">.|INF]: MessageResultSender[HTNG_HotelCheckOutNotifRS]: Send successfully Test_AKO_6</code></div>
+</div>
+</div><h3 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-HTNGmessagesamples" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="3" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">HTNG message samples</h3><h4 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-HTNG_ChargePostingRQ" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="4" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="4" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h4 scroll-relative-h4">HTNG_ChargePostingRQ</h4><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">env</code><code class="plain">:Envelope </code><code class="color1">xmlns:env</code><code class="plain">=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">s</code><code class="plain">:Body </code><code class="color1">xmlns:s</code><code class="plain">=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain"> </code><code class="color1">xmlns:xsd</code><code class="plain">=</code><code class="string">"http://www.w3.org/2001/XMLSchema"</code><code class="plain"> </code><code class="color1">xmlns:xsi</code><code class="plain">=</code><code class="string">"http://www.w3.org/2001/XMLSchema-instance"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">        &lt;</code><code class="keyword">HTNG_ChargePostingRQ</code><code class="plain"> </code><code class="color1">xmlns</code><code class="plain">=</code><code class="string">"http://htng.org/2014B"</code><code class="plain"> </code><code class="color1">Version</code><code class="plain">=</code><code class="string">"0"</code><code class="plain"> </code><code class="color1">CorrelationID</code><code class="plain">=</code><code class="string">"TEST_AKO_Charge_5"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;</code><code class="keyword">POS</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;</code><code class="keyword">Source</code><code class="plain"> </code><code class="color1">xmlns</code><code class="plain">=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;</code><code class="keyword">RequestorID</code><code class="plain"> </code><code class="color1">ID</code><code class="plain">=</code><code class="string">"2885"</code><code class="plain"> </code><code class="color1">Type</code><code class="plain">=</code><code class="string">"10"</code><code class="plain"> </code><code class="color1">ID_Context</code><code class="plain">=</code><code class="string">"protelIO"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;</code><code class="keyword">BookingChannel</code><code class="plain"> </code><code class="color1">Type</code><code class="plain">=</code><code class="string">"4"</code><code class="plain"> </code><code class="color1">Primary</code><code class="plain">=</code><code class="string">"true"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/</code><code class="keyword">Source</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/</code><code class="keyword">POS</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;</code><code class="keyword">Posting</code><code class="plain"> </code><code class="color1">ID</code><code class="plain">=</code><code class="string">"1"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;</code><code class="keyword">RevenueCenter</code><code class="plain"> </code><code class="color1">Description</code><code class="plain">=</code><code class="string">"Kiosk"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;</code><code class="keyword">Terminal</code><code class="plain"> </code><code class="color1">ID</code><code class="plain">=</code><code class="string">"Web Payment"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/</code><code class="keyword">RevenueCenter</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;</code><code class="keyword">TotalPostingAmount</code><code class="plain"> </code><code class="color1">Amount</code><code class="plain">=</code><code class="string">"-150.00"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;</code><code class="keyword">Transaction</code><code class="plain"> </code><code class="color1">TicketID</code><code class="plain">=</code><code class="string">"1"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;</code><code class="keyword">RevenueDetails</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;</code><code class="keyword">RevenueDetail</code><code class="plain"> </code><code class="color1">Description</code><code class="plain">=</code><code class="string">"MSC"</code><code class="plain"> </code><code class="color1">PMSRevenueCode</code><code class="plain">=</code><code class="string">"6"</code><code class="plain"> </code><code class="color1">Amount</code><code class="plain">=</code><code class="string">"-150.00"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"EUR"</code><code class="plain"> </code><code class="color1">SubTypeID</code><code class="plain">=</code><code class="string">"Payment"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;</code><code class="keyword">ExtendedPrice</code><code class="plain"> </code><code class="color1">AmountAfterTax</code><code class="plain">=</code><code class="string">"-150.00"</code><code class="plain"> </code><code class="color1">DecimalPlaces</code><code class="plain">=</code><code class="string">"2"</code><code class="plain"> </code><code class="color1">Quantity</code><code class="plain">=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;</code><code class="keyword">Account</code><code class="plain"> </code><code class="color1">ID</code><code class="plain">=</code><code class="string">"1443"</code><code class="plain"> </code><code class="color1">Type</code><code class="plain">=</code><code class="string">"14"</code><code class="plain"> </code><code class="color1">ID_Context</code><code class="plain">=</code><code class="string">"protelIO"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/</code><code class="keyword">RevenueDetail</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/</code><code class="keyword">RevenueDetails</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/</code><code class="keyword">Transaction</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/</code><code class="keyword">Posting</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/</code><code class="keyword">HTNG_ChargePostingRQ</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/</code><code class="keyword">s</code><code class="plain">:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/</code><code class="keyword">env</code><code class="plain">:Envelope&gt;</code></div>
+</div>
+</div><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;?</code><code class="keyword">xml</code><code class="plain"> </code><code class="color1">version</code><code class="plain">=</code><code class="string">'1.0'</code><code class="plain"> </code><code class="color1">encoding</code><code class="plain">=</code><code class="string">'utf-8'</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;</code><code class="keyword">env</code><code class="plain">:Envelope </code><code class="color1">xmlns:env</code><code class="plain">=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">env</code><code class="plain">:Header&gt;</code></div>
+<div class="line"><code class="plain">        &lt;</code><code class="keyword">htnga</code><code class="plain">:CorrelationID </code><code class="color1">xmlns:htnga</code><code class="plain">=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;TEST_AKO_Charge_5&lt;/</code><code class="keyword">htnga</code><code class="plain">:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">        &lt;</code><code class="keyword">Source</code><code class="plain"> </code><code class="color1">xmlns</code><code class="plain">=</code><code class="string">"http://protel.io/soap"</code><code class="plain"> </code><code class="color1">Product</code><code class="plain">=</code><code class="string">"protel On Premise SPE"</code><code class="plain"> </code><code class="color1">ProductVersion</code><code class="plain">=</code><code class="string">"21.02000"</code><code class="plain"> </code><code class="color1">Module</code><code class="plain">=</code><code class="string">"protel.WebServices"</code><code class="plain"> </code><code class="color1">ModuleVersion</code><code class="plain">=</code><code class="string">"0.0.0.8413"</code><code class="plain"> </code><code class="color1">Service</code><code class="plain">=</code><code class="string">"io.protel.onpremise"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/</code><code class="keyword">env</code><code class="plain">:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">env</code><code class="plain">:Body&gt;</code></div>
+<div class="line"><code class="plain">        &lt;</code><code class="keyword">HTNG_ChargePostingRS</code><code class="plain"> </code><code class="color1">xmlns</code><code class="plain">=</code><code class="string">"http://htng.org/2014B"</code><code class="plain"> </code><code class="color1">TimeStamp</code><code class="plain">=</code><code class="string">"2020-09-28T11:27:43.9196437Z"</code><code class="plain"> </code><code class="color1">Version</code><code class="plain">=</code><code class="string">"3.000"</code><code class="plain"> </code><code class="color1">CorrelationID</code><code class="plain">=</code><code class="string">"TEST_AKO_Charge_5"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;</code><code class="keyword">Success</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/</code><code class="keyword">HTNG_ChargePostingRS</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/</code><code class="keyword">env</code><code class="plain">:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/</code><code class="keyword">env</code><code class="plain">:Envelope&gt;</code></div>
+</div>
+</div><h4 id="onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-HTNG_HotelCheckOutNotifRQ" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="4" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="4" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h4 scroll-relative-h4">HTNG_HotelCheckOutNotifRQ</h4><div class="confluence-information-macro confluence-information-macro-information"><p class="title conf-macro-render">Good to know</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>The part sent in "px:DocumentData" in the Response (RS) message holds the base64-encoded PDF file and needs to be decoded by the Integration partner.</p><p class="auto-cursor-target">With the following tool (or any similar one) you can check the data from the RS on your own:</p><p class="auto-cursor-target"><a rel="nofollow" href="https://base64.guru/converter/decode/file" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://base64.guru/converter/decode/file" data-scroll-link-local="false">https://base64.guru/converter/decode/file</a></p></div></div><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">env</code><code class="plain">:Envelope </code><code class="color1">xmlns:env</code><code class="plain">=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">env</code><code class="plain">:Header </code><code class="color1">xmlns:p</code><code class="plain">=</code><code class="string">"http://protel.io/soap"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">        &lt;</code><code class="keyword">htnga</code><code class="plain">:CorrelationID </code><code class="color1">xmlns:htnga</code><code class="plain">=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;Test_AKO_6&lt;/</code><code class="keyword">htnga</code><code class="plain">:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/</code><code class="keyword">env</code><code class="plain">:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">env</code><code class="plain">:Body&gt;</code></div>
+<div class="line"><code class="plain">        &lt;</code><code class="keyword">HTNG_HotelCheckOutNotifRQ</code><code class="plain"> </code><code class="color1">xmlns</code><code class="plain">=</code><code class="string">"http://htng.org/2014B"</code><code class="plain"> </code><code class="color1">Version</code><code class="plain">=</code><code class="string">"3.000"</code><code class="plain"> </code><code class="color1">CorrelationID</code><code class="plain">=</code><code class="string">"Test_AKO_6"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;</code><code class="keyword">POS</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;</code><code class="keyword">Source</code><code class="plain"> </code><code class="color1">xmlns</code><code class="plain">=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;</code><code class="keyword">RequestorID</code><code class="plain"> </code><code class="color1">ID</code><code class="plain">=</code><code class="string">"2885"</code><code class="plain"> </code><code class="color1">Type</code><code class="plain">=</code><code class="string">"10"</code><code class="plain"> </code><code class="color1">ID_Context</code><code class="plain">=</code><code class="string">"protelIO"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/</code><code class="keyword">Source</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/</code><code class="keyword">POS</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;</code><code class="keyword">UniqueID</code><code class="plain"> </code><code class="color1">ID</code><code class="plain">=</code><code class="string">"1443"</code><code class="plain"> </code><code class="color1">Type</code><code class="plain">=</code><code class="string">"14"</code><code class="plain"> </code><code class="color1">ID_Context</code><code class="plain">=</code><code class="string">"protelIO"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;</code><code class="keyword">HotelReservations</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;</code><code class="keyword">HotelReservation</code><code class="plain"> </code><code class="color1">xmlns</code><code class="plain">=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain"> </code><code class="color1">ResStatus</code><code class="plain">=</code><code class="string">"In-House"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;</code><code class="keyword">UniqueID</code><code class="plain"> </code><code class="color1">ID</code><code class="plain">=</code><code class="string">"1443"</code><code class="plain"> </code><code class="color1">Type</code><code class="plain">=</code><code class="string">"14"</code><code class="plain"> </code><code class="color1">ID_Context</code><code class="plain">=</code><code class="string">"protelIO"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/</code><code class="keyword">HotelReservation</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/</code><code class="keyword">HotelReservations</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/</code><code class="keyword">HTNG_HotelCheckOutNotifRQ</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/</code><code class="keyword">env</code><code class="plain">:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/</code><code class="keyword">env</code><code class="plain">:Envelope&gt;</code></div>
+</div>
+</div><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;?</code><code class="keyword">xml</code><code class="plain"> </code><code class="color1">version</code><code class="plain">=</code><code class="string">'1.0'</code><code class="plain"> </code><code class="color1">encoding</code><code class="plain">=</code><code class="string">'utf-8'</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;</code><code class="keyword">env</code><code class="plain">:Envelope </code><code class="color1">xmlns:env</code><code class="plain">=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">env</code><code class="plain">:Header&gt;</code></div>
+<div class="line"><code class="plain">        &lt;</code><code class="keyword">htnga</code><code class="plain">:CorrelationID </code><code class="color1">xmlns:htnga</code><code class="plain">=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;Test_AKO_6&lt;/</code><code class="keyword">htnga</code><code class="plain">:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">        &lt;</code><code class="keyword">Source</code><code class="plain"> </code><code class="color1">xmlns</code><code class="plain">=</code><code class="string">"http://protel.io/soap"</code><code class="plain"> </code><code class="color1">Product</code><code class="plain">=</code><code class="string">"protel On Premise SPE"</code><code class="plain"> </code><code class="color1">ProductVersion</code><code class="plain">=</code><code class="string">"21.02000"</code><code class="plain"> </code><code class="color1">Module</code><code class="plain">=</code><code class="string">"protel.WebServices"</code><code class="plain"> </code><code class="color1">ModuleVersion</code><code class="plain">=</code><code class="string">"0.0.0.8413"</code><code class="plain"> </code><code class="color1">Service</code><code class="plain">=</code><code class="string">"io.protel.onpremise"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/</code><code class="keyword">env</code><code class="plain">:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">env</code><code class="plain">:Body&gt;</code></div>
+<div class="line"><code class="plain">        &lt;</code><code class="keyword">HTNG_HotelCheckOutNotifRS</code><code class="plain"> </code><code class="color1">xmlns</code><code class="plain">=</code><code class="string">"http://htng.org/2014B"</code><code class="plain"> </code><code class="color1">TimeStamp</code><code class="plain">=</code><code class="string">"2020-09-28T11:28:12.2502538Z"</code><code class="plain"> </code><code class="color1">Version</code><code class="plain">=</code><code class="string">"3.000"</code><code class="plain"> </code><code class="color1">CorrelationID</code><code class="plain">=</code><code class="string">"Test_AKO_6"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;</code><code class="keyword">Success</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;</code><code class="keyword">TPA_Extensions</code><code class="plain"> </code><code class="color1">xmlns:px</code><code class="plain">=</code><code class="string">"http://protel.io/htng/extensions"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;</code><code class="keyword">px</code><code class="plain">:DocumentExtensions&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;</code><code class="keyword">px</code><code class="plain">:DocumentData </code><code class="color1">Type</code><code class="plain">=</code><code class="string">"Invoice"</code><code class="plain"> </code><code class="color1">ID</code><code class="plain">=</code><code class="string">"419"</code><code class="plain"> </code><code class="color1">ID_Context</code><code class="plain">=</code><code class="string">"protelIO"</code><code class="plain">&gt;JVBERi0xLjYKJcOkw7zDtsOfCjIgM...&lt;/</code><code class="keyword">px</code><code class="plain">:DocumentData&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/</code><code class="keyword">px</code><code class="plain">:DocumentExtensions&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/</code><code class="keyword">TPA_Extensions</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/</code><code class="keyword">HTNG_HotelCheckOutNotifRS</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/</code><code class="keyword">env</code><code class="plain">:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/</code><code class="keyword">env</code><code class="plain">:Envelope&gt;</code></div>
+</div>
+</div>
+                        </div>
+                    </section>
+
+                </article>
+            </main>
+
+
+                <nav class="exp-post-navigation-prev">
+                    <a href="Manual-Correction-(Support-Tool-Use-Cases).192228180.html" class="post-navigation-link">
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-prev">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                        <span>Manual Correction (Support-Tool Use Cases)</span>
+                    </a>
+                </nav>
+
+                <nav class="exp-post-navigation-next">
+
+                    <a href="on-prem-_-Convert-to-EOD-DQE-reports-to-Excel.192228150.html" class="post-navigation-link">
+                        <span>on prem | Convert to EOD DQE reports to Excel</span>
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-next">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-225.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                    </a>
+
+                </nav>
+
+
+            <nav class="exp-sidebar-toc js-tocBot">
+                <!-- content generated by toc.js  -->
+            </nav>
+
+            <div class="exp-sidebar-navigation-toggle">
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+            </div>
+
+            <div class="exp-scroll-to-top-container">
+                <a href="#onprem|ConfigurationneededforPDFInvoicecreationforinboundchargessentbyPWS-top" class="exp-scroll-to-top-link">↑ Back to top</a>
+            </div>
+
+        </div>
+
+
+
+<dialog class="exp-lightbox-container" aria-modal="true">
+    <div class="lightbox-toolbar">
+        <button type="button" class="exp-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox-content content">
+    </div>
+</dialog>
+
+<template id="exp-lightbox-wrapper-template">
+    <div class="exp-lightbox-wrapper">
+        <div class="exp-lightbox-toggle">
+            <button type="button" class="exp-lightbox-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                    <path fill="currentColor" d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+        <script src="js/tocbot.min.js"></script>
+        <script src="js/article-toc.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/iframe-resizer.parent.js"></script>
+
+    </body>
+
+</html>

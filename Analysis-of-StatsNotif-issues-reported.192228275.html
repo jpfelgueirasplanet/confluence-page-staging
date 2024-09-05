@@ -1,0 +1,277 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+        <link rel="icon" href="_scroll_external/logos/59f13d845123/default-space-logo.svg">
+
+        <!-- Primary Meta Tags -->
+        <meta name="exp-export-timestamp" content="2024-09-05T09:14:05.599+0000">
+        <meta name="exp-page-id" content="192228275">
+        <meta name="exp-page-title" content="Analysis of StatsNotif issues reported">
+        <meta name="exp-page-version" content="10">
+        <meta name="exp-page-scroll-page-id" content="">
+        <meta name="exp-page-created" content="2020-03-09T12:28:42.387+0000">
+        <meta name="exp-page-last-modified" content="2021-04-26T09:52:54.140+0000">
+        <meta name="exp-page-labels" content="favourite">
+        <meta name="exp-page-context-keys" content="">
+        <meta name="exp-space-key" content="PIODOC">
+        <meta name="exp-space-title" content="protel.I/O documentation">
+
+        <!-- Additional Meta Tags -->
+        <meta name="exp-document-id" content="">
+        <meta name="exp-document-title" content="protel.I/O documentation">
+        <meta name="exp-version-status" content="">
+        <meta name="exp-version-id" content="">
+        <meta name="exp-version-name" content="">
+        <meta name="exp-version-description" content="">
+        <meta name="exp-version-date" content="">
+        <meta name="exp-variant-id" content="">
+        <meta name="exp-variant-name" content="">
+        <meta name="exp-variant-description" content="">
+        <meta name="exp-language-code" content="">
+        <meta name="exp-language-name" content="">
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/image-dimensions.css">
+
+
+            
+            
+<script src="js/search.js"></script>
+            <script id="search-worker" type="javascript/worker">
+    onmessage = function(event) {
+        // dispatch events to handling functions
+        var message = event.data;
+
+        if ((message.type === 'setup') && message.baseUrl) {
+            setup(message.baseUrl);
+        }
+
+        if (message.type === 'search-request') {
+            search(message.query);
+        }
+    }
+
+    var searchIndex;
+
+    function setup(baseUrl) {
+        importScripts(
+            baseUrl + 'js/lunr.js',
+            baseUrl + 'js/lunr-index.js',
+            baseUrl + 'js/lunr-data.js'
+        );
+        try {
+            // load lunr-extras if it exists, which contains language-specific files for languages other than english
+            importScripts(baseUrl + 'js/lunr-extras.js');
+        } catch (e) {}
+        searchIndex = lunr.Index.load(lunrIndex);
+    }
+
+    function search(query) {
+        var searchHits = searchIndex.search(query);
+        var results = searchHits.map(function (result) {
+            return lunrData.filter(function (d) {
+                return d.id === result.ref;
+            })[0]
+        });
+        postMessage({ type: 'search-results', results: results, query: query });
+    }
+</script>
+        <title>Analysis of StatsNotif issues reported</title>
+
+    <meta name="generator" content="Scroll HTML Exporter / K15t GmbH"></head>
+
+    <body id="AnalysisofStatsNotifissuesreported-top" data-pageid="192228275" data-confluence-editor-version="v1" data-confluence-deployment-type="DATACENTER">
+
+        <div class="exp-grid-container">
+
+            <header class="exp-header"></header>
+
+            <div class="exp-logo">
+                <a href="protel.I_O-documentation.192227604.html">
+                    <span class="exp-logo-image" style="background-image: url(_scroll_external/logos/59f13d845123/default-space-logo.svg)" alt="protel.I/O documentation" title="protel.I/O documentation"></span>
+                </a>
+            </div>
+
+            <div class="exp-document-title">
+                <h1 class="exp-document-title-heading scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h1 scroll-relative-h1" data-scroll-heading-rank="1" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="1" id="no-src_generated-id-2282c1213bac59fdbfba95844d2f1e150b41620d0902fcd3f10f9fbbea362e2d">
+                    <a href="protel.I_O-documentation.192227604.html">
+                        protel.I/O documentation
+                    </a>
+                </h1>
+            </div>
+
+<div class="exp-search-container">
+    <input type="search" id="search-textbox" autocomplete="off" class="exp-search-input" style="margin-right: 0;">
+    <div class="exp-search-input-icon">
+        <svg data-exp-id="magnifier-icon" data-exp-component="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8.99452 14.5C10.5121 14.5 11.809 13.9669 12.8854 12.9007C13.9618 11.8345 14.5 10.5361 14.5 9.00548C14.5 7.48794 13.9631 6.19097 12.8893 5.11458C11.8155 4.03819 10.519 3.5 9 3.5C7.46786 3.5 6.16816 4.0369 5.1009 5.11071C4.03363 6.18453 3.5 7.48096 3.5 9C3.5 10.5321 4.0331 11.8318 5.09929 12.8991C6.1655 13.9664 7.46391 14.5 8.99452 14.5ZM9 16C8.02913 16 7.11974 15.816 6.27185 15.4479C5.42395 15.0799 4.68056 14.5799 4.04167 13.9479C3.40278 13.316 2.90278 12.576 2.54167 11.728C2.18056 10.88 2 9.97053 2 8.99956C2 8.04152 2.18403 7.13542 2.55208 6.28125C2.92014 5.42708 3.41864 4.68387 4.04758 4.0516C4.67653 3.41935 5.41569 2.91935 6.26508 2.5516C7.11449 2.18387 8.02548 2 8.99806 2C9.95769 2 10.8646 2.18403 11.7188 2.55208C12.5729 2.92014 13.316 3.42014 13.9479 4.05208C14.5799 4.68403 15.0799 5.42612 15.4479 6.27835C15.816 7.13058 16 8.0381 16 9.00094C16 9.83365 15.8615 10.6213 15.5846 11.3638C15.3078 12.1062 14.9254 12.7836 14.4375 13.3958L18 16.9583L16.9375 18L13.375 14.4583C12.7668 14.9459 12.0939 15.3247 11.3564 15.5948C10.6188 15.8649 9.83333 16 9 16Z" fill="currentColor" />
+        </svg>
+    </div>
+    <div id="search-suggestion-container" class="exp-search-suggestion-panel" data-exp-component="search-suggestion"></div>
+    <template id="exp-search-suggestion-option-template">
+        <div class="exp-search-suggestion-option-container search-form-suggestion">
+            <a class="exp-search-suggestion-option search-form-suggestion" href=""></a>
+        </div>
+    </template>
+</div>
+
+
+            <nav class="exp-sidebar-navigation">
+                <div class="exp-sidebar-navigation-sticky-wrapper">
+                    <iframe src="toc.html?pageId=192228275" border="0"></iframe>
+                </div>
+
+            </nav>
+
+
+            <nav aria-label="Breadcrumb" class="exp-breadcrumbs-wrapper">
+                <ol class="breadcrumbs">
+                        <li class="breadcrumb">
+                            <a href="protel.I_O-documentation.192227604.html" rel="prev" target="_self">protel.I/O documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Integrations.192227608.html" rel="prev" target="_self">Integrations</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="IDeaS.192227707.html" rel="prev" target="_self">IDeaS</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="IDeaS---FAQ.192227810.html" rel="prev" target="_self">IDeaS - FAQ</a>
+                        </li>
+                    <li class="breadcrumb active" aria-current="page">
+                        Analysis of StatsNotif issues reported
+                    </li>
+                </ol>
+            </nav>
+
+
+            <main class="exp-content">
+                <article role="article">
+
+                    <header>
+                        <h1 class="article-heading scroll-h1 scroll-original-h1 scroll-relative-h1 scroll-custom-section-heading scroll-document-section-heading" role="heading" data-scroll-heading-rank="1" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="1" id="no-src_generated-id-84046b1241d6ed80e1b59deaa04b07c1eabc139f61bfb68afbaf881869029734">
+                            Analysis of StatsNotif issues reported
+                        </h1>
+                    </header>
+
+                    <section class="page" id="content" role="main">
+                        <div id="main-content" class="wiki-content article-content js-tocBot-content">
+                            <p><style type="text/css">/*<![CDATA[*/
+div.rbtoc1725527645637 {padding: 0px;}
+div.rbtoc1725527645637 ul {margin-left: 0px;}
+div.rbtoc1725527645637 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p><div class="toc-macro rbtoc1725527645637">
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228275" data-scroll-link-target-source-id="192228275" data-scroll-link-type="document" href="Analysis-of-StatsNotif-issues-reported.192228275.html#AnalysisofStatsNotifissuesreported-Case1-SummaryStatisticsNotReceived/IncompleteSummaryStatisticsReceived" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Analysis+of+StatsNotif+issues+reported#src-192228275_AnalysisofStatsNotifissuesreported-Case1-SummaryStatisticsNotReceived/IncompleteSummaryStatisticsReceived">Case 1 - Summary Statistics Not Received / Incomplete Summary Statistics Received</a></li>
+<li><a data-scroll-target-source-id="192228275" data-scroll-link-target-source-id="192228275" data-scroll-link-type="document" href="Analysis-of-StatsNotif-issues-reported.192228275.html#AnalysisofStatsNotifissuesreported-Case2-IDP/IDP2/IDP3SummaryStatisticsNotReceived" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Analysis+of+StatsNotif+issues+reported#src-192228275_AnalysisofStatsNotifissuesreported-Case2-IDP/IDP2/IDP3SummaryStatisticsNotReceived">Case 2 - IDP / IDP2 / IDP3 Summary Statistics Not Received</a></li>
+<li><a data-scroll-target-source-id="192228275" data-scroll-link-target-source-id="192228275" data-scroll-link-type="document" href="Analysis-of-StatsNotif-issues-reported.192228275.html#AnalysisofStatsNotifissuesreported-Case3-CheckingReportedDiscrepancies(onprem)" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Analysis+of+StatsNotif+issues+reported#src-192228275_AnalysisofStatsNotifissuesreported-Case3-CheckingReportedDiscrepancies(onprem)">Case 3 - Checking Reported Discrepancies (on prem)</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228275" data-scroll-link-target-source-id="192228275" data-scroll-link-type="document" href="Analysis-of-StatsNotif-issues-reported.192228275.html#AnalysisofStatsNotifissuesreported-ExecutingthestoredprocedureviaSQLManagementStudio" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Analysis+of+StatsNotif+issues+reported#src-192228275_AnalysisofStatsNotifissuesreported-ExecutingthestoredprocedureviaSQLManagementStudio">Executing the stored procedure via SQL Management Studio</a></li>
+<li><a data-scroll-target-source-id="192228275" data-scroll-link-target-source-id="192228275" data-scroll-link-type="document" href="Analysis-of-StatsNotif-issues-reported.192228275.html#AnalysisofStatsNotifissuesreported-Displaythecalculatednumbers" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Analysis+of+StatsNotif+issues+reported#src-192228275_AnalysisofStatsNotifissuesreported-Displaythecalculatednumbers">Display the calculated numbers</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228275" data-scroll-link-target-source-id="192228275" data-scroll-link-type="document" href="Analysis-of-StatsNotif-issues-reported.192228275.html#AnalysisofStatsNotifissuesreported-SQLManagementStudio" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Analysis+of+StatsNotif+issues+reported#src-192228275_AnalysisofStatsNotifissuesreported-SQLManagementStudio">SQL Management Studio</a></li>
+<li><a data-scroll-target-source-id="192228275" data-scroll-link-target-source-id="192228275" data-scroll-link-type="document" href="Analysis-of-StatsNotif-issues-reported.192228275.html#AnalysisofStatsNotifissuesreported-SQLEditor-protelFO" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Analysis+of+StatsNotif+issues+reported#src-192228275_AnalysisofStatsNotifissuesreported-SQLEditor-protelFO">SQL Editor - protel FO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><p></p><p><br clear="none"></p><h2 id="AnalysisofStatsNotifissuesreported-Case1-SummaryStatisticsNotReceived/IncompleteSummaryStatisticsReceived" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Case 1 -&nbsp;<span style="color: rgb(32,33,36);">Summary Statistics Not Received /&nbsp;Incomplete Summary Statistics Received</span></h2><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 99.9017%;"><colgroup span="1"><col span="1" style="width: 1.4771%;"><col span="1" style="width: 24.6184%;"><col span="1" style="width: 3.6107%;"><col span="1" style="width: 6.61962%;"><col span="1" style="width: 36.7088%;"><col span="1" style="width: 26.8067%;"></colgroup><tbody><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p><br clear="none"></p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Action</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Tool / Source</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Filter</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Sample</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Comment</p></th></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p><br clear="none"></p></th><th colspan="5" rowspan="1" class="confluenceTh"><p>Kibana steps</p></th></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p>1</p></th><td colspan="1" rowspan="1" class="confluenceTd"><p>Check for the relevant day and property if you can find the set of 6 Stats messages for the BDE time</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Kibana</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>"StatsAnalysis"</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p>HotelID: 5632 AND RequestMessageName: *StatsNotifRQ AND LogMessage: "New request coming in"</p><p><br clear="none"></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="34390391-6563-431b-b00f-088ddb40d418" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/c80847985348/image2020-3-9_12-38-46.png" height="250"></span></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><ul><li><em><strong>all there?&nbsp;</strong></em><br clear="none">→ go on with the next step<br clear="none"><br clear="none"></li><li><strong><em>all or some of them missing?&nbsp;</em></strong><br clear="none">→ go on with the steps regarding PWS logfile<br clear="none">→ if it is a pAir property please open a PMI / partner support ticket for this</li></ul></td></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p>2</p></th><td colspan="1" rowspan="1" class="confluenceTd"><p>Check the CorrelationIDs one by one in a separate tab</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Kibana</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>"StatsAnalysisCID"</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p>"88a60b49-9109-4928-b399-c8c09a3fd417"</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="f42dfcd3-18ec-4569-96f2-62549b4f1c76" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/33aa2928376e/image2020-3-9_12-46-39.png" height="250"></span></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p>3</p></th><td colspan="1" rowspan="1" class="confluenceTd"><p>Check the message for the RS with LogMessage "New request coming in" for a 'Success' element</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Kibana</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>"StatsAnalysisCID"</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="eb0db8fd-030f-45bc-a4a1-92ee0ce6072d" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/e9a9b1994bec/image2020-3-9_12-49-18.png" height="250"></span></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><ul><li><em><strong>all have Success?</strong></em><br clear="none">→ please provide a screenshot of all CorrelationIDs (from first step) to IDeaS stating that we have checked all of them and all of them were replied back from their side with a Success<br clear="none">→ they need to check on their end what is wrong and provide the exact issue<br clear="none"><br clear="none"></li><li><em><strong>for all or some of them you cannot find a Success, but an Error element in the RS message?</strong><br clear="none"></em>→ if you don't know what the error means, create a PMI / partner support ticket with your findings<br clear="none">→ re-trigger the messages:<br clear="none"><a data-scroll-target-source-id="192228307" data-scroll-link-target-source-id="192228307" data-scroll-link-type="document" href="How-to-trigger-Statistic-messages-manually-(on-prem).192228307.html" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/pages/viewpage.action?pageId=192228307">How to trigger Statistic messages manually (on prem)</a></li></ul></td></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p><br clear="none"></p></th><th colspan="5" rowspan="1" class="confluenceTh"><p>PWS logfile steps</p></th></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p>4</p></th><td colspan="1" rowspan="1" class="confluenceTd"><p>Check the PWS logfile of the relevant day for any Exceptions regarding the StatsNotif messages which are missing</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>PWS Logfile</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>-</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><u><em>Extract from PWS log file how it should look like for each of the 6 StatsNotif messages (sample is for mpehotel 6):</em></u></p><div class="expand-container"><p class="expand-control-text">Log file extract</p><div class="expand-content"><p>[.|2020-03-05 00:05:32|066|2.|INF]: EndOfDay finished for instance 6. <br clear="none">[.|2020-03-05 00:05:32|087|2.|INF]: EndOfDayNotifierHandler started for MPE 6 <br clear="none">[.|2020-03-05 00:05:32|087|2.|INF]: protel.IO.Processors.EndOfDayMessageUpdateProcessor (Finished) started for MPE-Hotel 6 <br clear="none">[.|2020-03-05 00:05:32|087|2.|INF]: EndOfDayMessageUpdateProcessor: Calling end of day finished for MPE 6 <br clear="none">[.|2020-03-05 00:05:32|087|2.|INF]: MessageTriggerBus: TriggerAll AfterEndOfDay - 1 trigger services reached. <br clear="none">[.|2020-03-05 00:05:34|058|2.|INF]: WebSocketClient[Hash=43602126]: Sending &lt;ACK&gt;329d1b53-9959-4f65-98d7-1bef6006185c&lt;/ACK&gt; <br clear="none">[.|2020-03-05 00:05:34|058|2.|INF]: WebSocketMessageReceiver: Recieved execution time 00:00:00.0014714 <br clear="none">[.|2020-03-05 00:05:34|020|2.|INF]: WebSocketHandler: HandleIncommingMessage CorrelationID_HEADER:329d1b53-9959-4f65-98d7-1bef6006185c, CorrelationID_MESSAGE: 329d1b53-9959-4f65-98d7-1bef6006185c</p></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><ul><li><em><strong>any Exceptions found in the log file during the specific timeframe?</strong></em><br clear="none">→ please create a PMI / partner support ticket with all your findings<br clear="none"><br clear="none"></li><li><strong><em>you couldn't find Exceptions at all in the logfile?</em></strong><br clear="none">→ check the Logging levels of the PWS if Exceptions and Errors are activated - if not, activate them and wait if it occurs again (you have to re-trigger the Stats messages for sure</li></ul></td></tr></tbody></table></div><h2 id="AnalysisofStatsNotifissuesreported-Case2-IDP/IDP2/IDP3SummaryStatisticsNotReceived" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Case 2 -&nbsp;<span style="color: rgb(34,34,34);">IDP /&nbsp;</span><span style="color: rgb(34,34,34);">IDP2 /&nbsp;</span><span style="color: rgb(34,34,34);">IDP3&nbsp;</span><span style="color: rgb(34,34,34);">Summary Statistics Not Received</span></h2><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup span="1"><col span="1"><col span="1" style="width: 24.6184%;"><col span="1" style="width: 3.6107%;"><col span="1" style="width: 6.61962%;"><col span="1" style="width: 36.7088%;"><col span="1" style="width: 26.8067%;"></colgroup><tbody><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p><br clear="none"></p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Action</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Tool / Source</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Filter</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Sample</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Comment</p></th></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p><br clear="none"></p></th><th colspan="5" rowspan="1" class="confluenceTh"><p>SMP steps</p></th></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p>1</p></th><td colspan="1" rowspan="1" class="confluenceTd"><p>Check SCS for IDP times and if 'Last Triggered' column is filled correctly</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>SMP / SCS</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>-</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="88912a2c-4d58-4740-bac9-1b0da618b486" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/e986a9854b94/image2020-3-9_16-30-2.png" height="250"></span></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p><br clear="none"></p></th><th colspan="5" rowspan="1" class="confluenceTh"><p>Kibana steps</p></th></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p>2</p></th><td colspan="1" rowspan="1" class="confluenceTd"><p>Check for the relevant day and property if you can find the IOTriggerNotifRQ message for the specific time.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Kibana</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>"TriggerNotifAnalysis"</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p>HotelID: 2980 AND RequestMessageName: *Trigger* AND LogMessage: "New request coming in"</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="104b41ef-f272-4801-a8f8-e26565998439" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/78f2de9424fb/image2020-3-9_16-32-3.png" height="250"></span></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><ul><li><strong><em>TriggerNotif message found?</em></strong><br clear="none">→ go on with next step<br clear="none"><br clear="none"></li><li><strong><em>TriggerNotif message not found?</em></strong><br clear="none">→ check if the property has a SCS Bob installation<br clear="none">→ if it is there please create a&nbsp;PMI / partner support ticket with your findings</li></ul></td></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p>3</p></th><td colspan="1" rowspan="1" class="confluenceTd"><p>Check for the relevant day and property if you can find the set of 6 Stats messages for the BDE time</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Kibana</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>"StatsAnalysis"</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p>HotelID: 5632 AND RequestMessageName: *StatsNotifRQ AND LogMessage: "New request coming in"</p><p><br clear="none"></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="11004ac5-693e-441d-9413-43556b6a18fc" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/c80847985348/image2020-3-9_12-38-46.png" height="250"></span></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><ul><li><em><strong>all there?&nbsp;</strong></em><br clear="none">→ go on with the next step<br clear="none"><br clear="none"></li><li><strong><em>all or some of them missing?&nbsp;</em></strong><br clear="none">→ go on with the steps regarding PWS logfile<br clear="none"><span style="color: rgb(23,43,77);">→ if it is a pAir property please open a PMI / partner support ticket for this<br clear="none"></span></li><li>→ re-trigger the messages:<br clear="none"><a data-scroll-target-source-id="192228307" data-scroll-link-target-source-id="192228307" data-scroll-link-type="document" href="How-to-trigger-Statistic-messages-manually-(on-prem).192228307.html" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/pages/viewpage.action?pageId=192228307">How to trigger Statistic messages manually (on prem)</a><span style="color: rgb(23,43,77);"><br clear="none"></span></li></ul></td></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p>4</p></th><td colspan="1" rowspan="1" class="confluenceTd"><p>Check the CorrelationIDs one by one in a separate tab</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Kibana</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>"StatsAnalysisCID"</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p>"88a60b49-9109-4928-b399-c8c09a3fd417"</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="76afa611-7d14-431c-be22-b594f344a548" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/33aa2928376e/image2020-3-9_12-46-39.png" height="250"></span></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p>5</p></th><td colspan="1" rowspan="1" class="confluenceTd"><p>Check the message for the RS with LogMessage "New request coming in" for a 'Success' element</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Kibana</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>"StatsAnalysisCID"</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="135b5f83-314d-4092-8213-8e266555174f" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/e9a9b1994bec/image2020-3-9_12-49-18.png" height="250"></span></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><ul><li><em><strong>all have Success?</strong></em><br clear="none">→ please provide a screenshot of all CorrelationIDs (from first step) to IDeaS stating that we have checked all of them and all of them were replied back from their side with a Success<br clear="none">→ they need to check on their end what is wrong and provide the exact issue<br clear="none"><br clear="none"></li><li><em><strong>for all or some of them you cannot find a Success, but an Error element in the RS message?</strong><br clear="none"></em>→ if you don't know what the error means, create a&nbsp;PMI / partner support ticket with your findings<br clear="none">→ re-trigger the messages:<br clear="none"><a data-scroll-target-source-id="192228203" data-scroll-link-target-source-id="192228203" data-scroll-link-type="document" href="How-to-trigger-Statistic-messages-via-SCS-job.192228203.html" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/How+to+trigger+Statistic+messages+via+SCS+job">How to trigger Statistic messages via SCS job</a></li></ul></td></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p><br clear="none"></p></th><th colspan="5" rowspan="1" class="confluenceTh"><p>PWS logfile steps</p></th></tr><tr><th colspan="1" rowspan="1" class="numberingColumn confluenceTh"><p>6</p></th><td colspan="1" rowspan="1" class="confluenceTd"><p>Check the PWS logfile of the relevant day for any Exceptions regarding the TriggerNotif or StatsNotif messages which are missing</p><p>→ you can search for the CorrelationID of the TriggerNotif in the logfile</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>PWS Logfile</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>-</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><u><em>Extract from PWS log file how it should look like for each of the 6 StatsNotif messages (sample is for mpehotel 6):</em></u></p></div><div class="expand-container"><p class="expand-control-text">Log file extract</p><div class="expand-content"><p>...</p><p>[.|2020-03-09 10:00:01|021|2.|INF]: WebSocketMessageReceiver: Recieved execution time 00:00:00.0089877<br clear="none">[.|2020-03-09 10:00:01|024|2.|INF]: WebSocketHandler: HandleIncommingMessage CorrelationID_HEADER:a7a39a5b-33b8-45fa-8511-01951c4c5a73, CorrelationID_MESSAGE: a7a39a5b-33b8-45fa-8511-01951c4c5a73<br clear="none">[.|2020-03-09 10:00:01|006|2.|INF]: OTA_StatsNotifTriggerProcessor: Generating OTA_HotelStatsNotifRQ HTNG_PastDailySegmentRoomTypeStatistics_v1 for Hotel 250 / CID: fc3f83e2-3892-44c6-8ce9-f83273717e5f (45 Days)...<br clear="none">[.|2020-03-09 10:00:01|020|2.|INF]: OTA_StatsNotifTriggerProcessor: Generating OTA_HotelStatsNotifRQ HTNG_CurrentDailyPropertyStatistics_v1 for Hotel 250 / CID: 1af0d95b-0c1a-4e01-ae1f-f5c5d3db2c74 (365 Days)...<br clear="none">[.|2020-03-09 10:00:01|042|2.|INF]: OTA_StatsNotifTriggerProcessor: Generating OTA_HotelStatsNotifRQ HTNG_PastDailyPropertyStatistics_v1 for Hotel 250 / CID: 2c1404fe-ce58-4e4a-966d-3ce0f86bcdbe (45 Days)...<br clear="none">[.|2020-03-09 10:00:01|023|2.|INF]: OTA_StatsNotifTriggerProcessor: Generating OTA_HotelStatsNotifRQ HTNG_PastDailyRoomTypeStatistics_v1 for Hotel 250 / CID: da983c7d-0e73-424c-8437-07eb27577383 (45 Days)...<br clear="none">[.|2020-03-09 10:00:01|036|2.|INF]: OTA_StatsNotifTriggerProcessor: Generating OTA_HotelStatsNotifRQ HTNG_CurrentDailySegmentRoomTypeStatistics_v1 for Hotel 250 / CID: 71a9c300-4e4f-43d1-82f4-08c21cd66fe2 (365 Days)...<br clear="none">[.|2020-03-09 10:00:01|026|2.|INF]: OTA_StatsNotifTriggerProcessor: Generating OTA_HotelStatsNotifRQ HTNG_CurrentDailyRoomTypeStatistics_v1 for Hotel 250 / CID: e953aca9-97ac-49f7-bcee-50bc29046b98 (365 Days)...</p><p>....</p><p>[.|2020-03-09 10:00:08|042|2.|INF]: OTA_StatsNotifTriggerProcessor: ...generated<br clear="none">[.|2020-03-09 10:00:08|042|2.|INF]: OTA_StatsNotifTriggerProcessor: Start sending OTA_HotelStatsNotifRQ HTNG_PastDailyPropertyStatistics_v1 for Hotel 250 / CID: 2c1404fe-ce58-4e4a-966d-3ce0f86bcdbe (45 Days)...</p><p>[.|2020-03-09 10:00:08|042|2.|INF]: OTA_StatsNotifTriggerProcessor: ...finished</p><p>....</p><p>(this then follows for all 6 types)</p></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><ul><li><em><strong>any Exceptions found in the log file during the specific timeframe?</strong></em><br clear="none">→ please create a PMI / partner support ticket with all your findings<br clear="none"><br clear="none"></li><li><strong><em>you couldn't find Exceptions at all in the logfile?</em></strong><br clear="none">→ check the Logging levels of the PWS if Exceptions and Errors are activated - if not, activate them and wait if it occurs again (you have to re-trigger the Stats messages for sure</li></ul></td></tr></tbody></table></div><h2 class="auto-cursor-target scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2" id="AnalysisofStatsNotifissuesreported-Case3-CheckingReportedDiscrepancies(onprem)" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2">Case 3 - Checking Reported Discrepancies (on prem)</h2><p><em><strong>PWS release version &gt;= 2.16.x</strong></em></p><p>This version includes a stored procedure which is used to calculate the numbers for the Stats messages.<br clear="none">It also allows you to check the included reservations/allotments which might help in case you discover any discrepancies when comparing the numbers to any reports in protel.</p><p>In order to see the calculated content of this stored procedure, you need to run it first of all.<br clear="none">You can achieve that by</p><ul><li>either triggering the messages manually</li><li>or execute the stored procedure via SQL Management Studio.</li></ul><h3 id="AnalysisofStatsNotifissuesreported-ExecutingthestoredprocedureviaSQLManagementStudio" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">Executing the stored procedure via SQL Management Studio</h3><ol><li>Find it and select 'Execute Stored Procedure'<br clear="none"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="180" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/b1acfe6728d5/image2020-7-6_9-18-37.png" height="250"></span>&nbsp;<span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="452" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/5b84dcac1d60/image2020-7-6_9-22-3.png" height="250"></span>&nbsp;<span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="374" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/ca9bbed3afa4/image2020-7-6_9-27-33.png" height="250"></span></li><li>Tick All "Pass Null Value"<br clear="none"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="277" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/f9399606ab7a/image2020-7-6_9-27-55.png" height="250"></span><br clear="none"><br clear="none"></li></ol><h3 id="AnalysisofStatsNotifissuesreported-Displaythecalculatednumbers" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">Display the calculated numbers</h3><h4 id="AnalysisofStatsNotifissuesreported-SQLManagementStudio" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="4" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="4" class="scroll-original-h4 scroll-custom-section-heading scroll-document-section-heading scroll-h4 scroll-relative-h4">SQL Management Studio</h4><ol><li>Enter the Start and End date + MPE Hotel number<br clear="none"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="468" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/dadcff15c646/image2020-7-6_9-28-12.png" height="250"></span><br clear="none"><br clear="none"></li><li>Execute the query in order to display the numbers<br clear="none"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="453" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/aab0749f04d1/image2020-7-6_9-31-38.png" height="250"></span></li></ol><h4 id="AnalysisofStatsNotifissuesreported-SQLEditor-protelFO" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="4" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="4" class="scroll-original-h4 scroll-custom-section-heading scroll-document-section-heading scroll-h4 scroll-relative-h4">SQL Editor - protel FO</h4><p>Sample query:</p><div class="scroll-code scroll-highlighted-code-block" data-language="sql" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="keyword">EXEC</code><code class="plain"> proteluser.pws_getreservationstatistics</code></div>
+<div class="line"><code class="plain">        @start = </code><code class="string">'2021-04-11'</code><code class="plain">,</code></div>
+<div class="line"><code class="plain">        @</code><code class="keyword">end</code><code class="plain"> = </code><code class="string">'2021-04-15'</code><code class="plain">,</code></div>
+<div class="line"><code class="plain">        @mpe = 1</code></div>
+</div>
+</div><p class="auto-cursor-target"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="419" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/35252fcadf68/image2020-7-6_9-32-55.png" height="250"></span></p>
+                        </div>
+                    </section>
+
+                </article>
+            </main>
+
+
+                <nav class="exp-post-navigation-prev">
+                    <a href="IDeaS---FAQ.192227810.html" class="post-navigation-link">
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-prev">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                        <span>IDeaS - FAQ</span>
+                    </a>
+                </nav>
+
+                <nav class="exp-post-navigation-next">
+
+                    <a href="Correlation-ID-format.192228252.html" class="post-navigation-link">
+                        <span>Correlation ID format</span>
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-next">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-225.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                    </a>
+
+                </nav>
+
+
+            <nav class="exp-sidebar-toc js-tocBot">
+                <!-- content generated by toc.js  -->
+            </nav>
+
+            <div class="exp-sidebar-navigation-toggle">
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+            </div>
+
+            <div class="exp-scroll-to-top-container">
+                <a href="#AnalysisofStatsNotifissuesreported-top" class="exp-scroll-to-top-link">↑ Back to top</a>
+            </div>
+
+        </div>
+
+
+
+<dialog class="exp-lightbox-container" aria-modal="true">
+    <div class="lightbox-toolbar">
+        <button type="button" class="exp-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox-content content">
+    </div>
+</dialog>
+
+<template id="exp-lightbox-wrapper-template">
+    <div class="exp-lightbox-wrapper">
+        <div class="exp-lightbox-toggle">
+            <button type="button" class="exp-lightbox-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                    <path fill="currentColor" d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+        <script src="js/tocbot.min.js"></script>
+        <script src="js/article-toc.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/iframe-resizer.parent.js"></script>
+
+    </body>
+
+</html>

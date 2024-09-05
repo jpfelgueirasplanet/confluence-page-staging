@@ -1,0 +1,393 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+        <link rel="icon" href="_scroll_external/logos/59f13d845123/default-space-logo.svg">
+
+        <!-- Primary Meta Tags -->
+        <meta name="exp-export-timestamp" content="2024-09-05T09:13:49.038+0000">
+        <meta name="exp-page-id" content="192228675">
+        <meta name="exp-page-title" content="TransposeRevenueCategory17.xlst">
+        <meta name="exp-page-version" content="2">
+        <meta name="exp-page-scroll-page-id" content="">
+        <meta name="exp-page-created" content="2018-07-05T12:40:39.700+0000">
+        <meta name="exp-page-last-modified" content="2021-10-18T17:46:46.050+0000">
+        <meta name="exp-page-labels" content="">
+        <meta name="exp-page-context-keys" content="">
+        <meta name="exp-space-key" content="PIODOC">
+        <meta name="exp-space-title" content="protel.I/O documentation">
+
+        <!-- Additional Meta Tags -->
+        <meta name="exp-document-id" content="">
+        <meta name="exp-document-title" content="protel.I/O documentation">
+        <meta name="exp-version-status" content="">
+        <meta name="exp-version-id" content="">
+        <meta name="exp-version-name" content="">
+        <meta name="exp-version-description" content="">
+        <meta name="exp-version-date" content="">
+        <meta name="exp-variant-id" content="">
+        <meta name="exp-variant-name" content="">
+        <meta name="exp-variant-description" content="">
+        <meta name="exp-language-code" content="">
+        <meta name="exp-language-name" content="">
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/image-dimensions.css">
+
+
+            
+            
+<script src="js/search.js"></script>
+            <script id="search-worker" type="javascript/worker">
+    onmessage = function(event) {
+        // dispatch events to handling functions
+        var message = event.data;
+
+        if ((message.type === 'setup') && message.baseUrl) {
+            setup(message.baseUrl);
+        }
+
+        if (message.type === 'search-request') {
+            search(message.query);
+        }
+    }
+
+    var searchIndex;
+
+    function setup(baseUrl) {
+        importScripts(
+            baseUrl + 'js/lunr.js',
+            baseUrl + 'js/lunr-index.js',
+            baseUrl + 'js/lunr-data.js'
+        );
+        try {
+            // load lunr-extras if it exists, which contains language-specific files for languages other than english
+            importScripts(baseUrl + 'js/lunr-extras.js');
+        } catch (e) {}
+        searchIndex = lunr.Index.load(lunrIndex);
+    }
+
+    function search(query) {
+        var searchHits = searchIndex.search(query);
+        var results = searchHits.map(function (result) {
+            return lunrData.filter(function (d) {
+                return d.id === result.ref;
+            })[0]
+        });
+        postMessage({ type: 'search-results', results: results, query: query });
+    }
+</script>
+        <title>TransposeRevenueCategory17.xlst</title>
+
+    <meta name="generator" content="Scroll HTML Exporter / K15t GmbH"></head>
+
+    <body id="TransposeRevenueCategory17.xlst-top" data-pageid="192228675" data-confluence-editor-version="v1" data-confluence-deployment-type="DATACENTER">
+
+        <div class="exp-grid-container">
+
+            <header class="exp-header"></header>
+
+            <div class="exp-logo">
+                <a href="protel.I_O-documentation.192227604.html">
+                    <span class="exp-logo-image" style="background-image: url(_scroll_external/logos/59f13d845123/default-space-logo.svg)" alt="protel.I/O documentation" title="protel.I/O documentation"></span>
+                </a>
+            </div>
+
+            <div class="exp-document-title">
+                <h1 class="exp-document-title-heading scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h1 scroll-relative-h1" data-scroll-heading-rank="1" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="1" id="no-src_generated-id-d91e156060323443173c91d331d5a3eaf7cb36318d618eb894991d96ec2d143f">
+                    <a href="protel.I_O-documentation.192227604.html">
+                        protel.I/O documentation
+                    </a>
+                </h1>
+            </div>
+
+<div class="exp-search-container">
+    <input type="search" id="search-textbox" autocomplete="off" class="exp-search-input" style="margin-right: 0;">
+    <div class="exp-search-input-icon">
+        <svg data-exp-id="magnifier-icon" data-exp-component="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8.99452 14.5C10.5121 14.5 11.809 13.9669 12.8854 12.9007C13.9618 11.8345 14.5 10.5361 14.5 9.00548C14.5 7.48794 13.9631 6.19097 12.8893 5.11458C11.8155 4.03819 10.519 3.5 9 3.5C7.46786 3.5 6.16816 4.0369 5.1009 5.11071C4.03363 6.18453 3.5 7.48096 3.5 9C3.5 10.5321 4.0331 11.8318 5.09929 12.8991C6.1655 13.9664 7.46391 14.5 8.99452 14.5ZM9 16C8.02913 16 7.11974 15.816 6.27185 15.4479C5.42395 15.0799 4.68056 14.5799 4.04167 13.9479C3.40278 13.316 2.90278 12.576 2.54167 11.728C2.18056 10.88 2 9.97053 2 8.99956C2 8.04152 2.18403 7.13542 2.55208 6.28125C2.92014 5.42708 3.41864 4.68387 4.04758 4.0516C4.67653 3.41935 5.41569 2.91935 6.26508 2.5516C7.11449 2.18387 8.02548 2 8.99806 2C9.95769 2 10.8646 2.18403 11.7188 2.55208C12.5729 2.92014 13.316 3.42014 13.9479 4.05208C14.5799 4.68403 15.0799 5.42612 15.4479 6.27835C15.816 7.13058 16 8.0381 16 9.00094C16 9.83365 15.8615 10.6213 15.5846 11.3638C15.3078 12.1062 14.9254 12.7836 14.4375 13.3958L18 16.9583L16.9375 18L13.375 14.4583C12.7668 14.9459 12.0939 15.3247 11.3564 15.5948C10.6188 15.8649 9.83333 16 9 16Z" fill="currentColor" />
+        </svg>
+    </div>
+    <div id="search-suggestion-container" class="exp-search-suggestion-panel" data-exp-component="search-suggestion"></div>
+    <template id="exp-search-suggestion-option-template">
+        <div class="exp-search-suggestion-option-container search-form-suggestion">
+            <a class="exp-search-suggestion-option search-form-suggestion" href=""></a>
+        </div>
+    </template>
+</div>
+
+
+            <nav class="exp-sidebar-navigation">
+                <div class="exp-sidebar-navigation-sticky-wrapper">
+                    <iframe src="toc.html?pageId=192228675" border="0"></iframe>
+                </div>
+
+            </nav>
+
+
+            <nav aria-label="Breadcrumb" class="exp-breadcrumbs-wrapper">
+                <ol class="breadcrumbs">
+                        <li class="breadcrumb">
+                            <a href="protel.I_O-documentation.192227604.html" rel="prev" target="_self">protel.I/O documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="General.192227619.html" rel="prev" target="_self">General</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="protel.-I_O-ESB.192227689.html" rel="prev" target="_self">protel. I/O ESB</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="ESB-Filter.192227872.html" rel="prev" target="_self">ESB Filter</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Different-Integration-Partner.192228220.html" rel="prev" target="_self">Different Integration Partner</a>
+                        </li>
+                    <li class="breadcrumb active" aria-current="page">
+                        TransposeRevenueCategory17.xlst
+                    </li>
+                </ol>
+            </nav>
+
+
+            <main class="exp-content">
+                <article role="article">
+
+                    <header>
+                        <h1 class="article-heading scroll-h1 scroll-original-h1 scroll-relative-h1 scroll-custom-section-heading scroll-document-section-heading" role="heading" data-scroll-heading-rank="1" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="1" id="no-src_generated-id-e9df50c924a434ee79796777887d4a5d8e3e321a673e78f1138a931471c90b4d">
+                            TransposeRevenueCategory17.xlst
+                        </h1>
+                    </header>
+
+                    <section class="page" id="content" role="main">
+                        <div id="main-content" class="wiki-content article-content js-tocBot-content">
+                            <p><style type="text/css">/*<![CDATA[*/
+div.rbtoc1725527629055 {padding: 0px;}
+div.rbtoc1725527629055 ul {margin-left: 0px;}
+div.rbtoc1725527629055 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p><div class="toc-macro rbtoc1725527629055">
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228675" data-scroll-link-target-source-id="192228675" data-scroll-link-type="document" href="TransposeRevenueCategory17.xlst.192228675.html#TransposeRevenueCategory17.xlst-DevelopmentTickets" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/TransposeRevenueCategory17.xlst#src-192228675_TransposeRevenueCategory17.xlst-DevelopmentTickets">Development Tickets</a></li>
+<li><a data-scroll-target-source-id="192228675" data-scroll-link-target-source-id="192228675" data-scroll-link-type="document" href="TransposeRevenueCategory17.xlst.192228675.html#TransposeRevenueCategory17.xlst-Whoshouldusethisfilter?" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/TransposeRevenueCategory17.xlst#src-192228675_TransposeRevenueCategory17.xlst-Whoshouldusethisfilter?">Who should use this filter?</a></li>
+<li><a data-scroll-target-source-id="192228675" data-scroll-link-target-source-id="192228675" data-scroll-link-type="document" href="TransposeRevenueCategory17.xlst.192228675.html#TransposeRevenueCategory17.xlst-howdoIapplyittoamanifest?" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/TransposeRevenueCategory17.xlst#src-192228675_TransposeRevenueCategory17.xlst-howdoIapplyittoamanifest?">how do I apply it to a manifest?</a></li>
+<li><a data-scroll-target-source-id="192228675" data-scroll-link-target-source-id="192228675" data-scroll-link-type="document" href="TransposeRevenueCategory17.xlst.192228675.html#TransposeRevenueCategory17.xlst-WhataretheFilterscalled?" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/TransposeRevenueCategory17.xlst#src-192228675_TransposeRevenueCategory17.xlst-WhataretheFilterscalled?">What are the Filters called?</a></li>
+<li><a data-scroll-target-source-id="192228675" data-scroll-link-target-source-id="192228675" data-scroll-link-type="document" href="TransposeRevenueCategory17.xlst.192228675.html#TransposeRevenueCategory17.xlst-Whatdoesitdo?" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/TransposeRevenueCategory17.xlst#src-192228675_TransposeRevenueCategory17.xlst-Whatdoesitdo?">What does it do?</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228675" data-scroll-link-target-source-id="192228675" data-scroll-link-type="document" href="TransposeRevenueCategory17.xlst.192228675.html#TransposeRevenueCategory17.xlst-<Base>Amount-MessageBeforetheTransposition" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/TransposeRevenueCategory17.xlst#src-192228675_TransposeRevenueCategory17.xlst-<Base>Amount-MessageBeforetheTransposition">&lt;Base&gt; Amount - Message Before the Transposition</a></li>
+<li><a data-scroll-target-source-id="192228675" data-scroll-link-target-source-id="192228675" data-scroll-link-type="document" href="TransposeRevenueCategory17.xlst.192228675.html#TransposeRevenueCategory17.xlst-<Base>Amount-MessageAftertheTransposition" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/TransposeRevenueCategory17.xlst#src-192228675_TransposeRevenueCategory17.xlst-<Base>Amount-MessageAftertheTransposition">&lt;Base&gt; Amount - Message After the Transposition</a></li>
+<li><a data-scroll-target-source-id="192228675" data-scroll-link-target-source-id="192228675" data-scroll-link-type="document" href="TransposeRevenueCategory17.xlst.192228675.html#TransposeRevenueCategory17.xlst-<Total>Amount-MessageBeforeTransposition" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/TransposeRevenueCategory17.xlst#src-192228675_TransposeRevenueCategory17.xlst-<Total>Amount-MessageBeforeTransposition">&lt;Total&gt; Amount - Message Before Transposition</a></li>
+<li><a data-scroll-target-source-id="192228675" data-scroll-link-target-source-id="192228675" data-scroll-link-type="document" href="TransposeRevenueCategory17.xlst.192228675.html#TransposeRevenueCategory17.xlst-<Total>Amount-MessageAfterTransposition" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/TransposeRevenueCategory17.xlst#src-192228675_TransposeRevenueCategory17.xlst-<Total>Amount-MessageAfterTransposition">&lt;Total&gt; Amount - Message After Transposition</a></li>
+</ul>
+</li>
+<li><a data-scroll-target-source-id="192228675" data-scroll-link-target-source-id="192228675" data-scroll-link-type="document" href="TransposeRevenueCategory17.xlst.192228675.html#TransposeRevenueCategory17.xlst-CodebehindtheFilter" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/TransposeRevenueCategory17.xlst#src-192228675_TransposeRevenueCategory17.xlst-CodebehindtheFilter">Code behind the Filter</a></li>
+</ul>
+</div><p></p><p><br clear="none"></p><p><br clear="none"></p><h2 id="TransposeRevenueCategory17.xlst-DevelopmentTickets" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Development Tickets</h2><p><span class="scroll-jira-issue-placeholder" data-scroll-ref="jira-issue-ee28f7394b8afc5088eb3387c79c01d4" data-scroll-jira-issue-key="IO-2039" data-scroll-jira-issue-show-summary="true">IO-2039</span></p><p><span class="scroll-jira-issue-placeholder" data-scroll-ref="jira-issue-c33e167d5534f67f06bdef56cc0e979d" data-scroll-jira-issue-key="IO-2385" data-scroll-jira-issue-show-summary="true">IO-2385</span></p><h2 id="TransposeRevenueCategory17.xlst-Whoshouldusethisfilter?" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Who should use this filter?</h2><p>This filter should be used with any vendor who requires the actual nightly rate and not just the logis value.&nbsp;</p><p><br clear="none"></p><h2 id="TransposeRevenueCategory17.xlst-howdoIapplyittoamanifest?" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">how do I apply it to a manifest?</h2><p>For applying a filter to a manifest see this confluence page</p><p>(To be written)</p><h2 id="TransposeRevenueCategory17.xlst-WhataretheFilterscalled?" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">What are the Filters called?</h2><p>The primary part of the filter name is TransposeRevenueCategory17.xlst however a file has to be created by the IO Dev team for each new vendor</p><p>//As of Today the current filters are called</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup span="1"><col span="1"></colgroup><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><pre style="margin-left: 10.0px;"><span>gov:/sequences/protel/out/filters/RevinateCrmTransposeRevenueCategory17.xml</span></pre></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><pre style="margin-left: 10.0px;"><span>gov:/sequences/protel/out/filters/RevinateSurveyTransposeRevenueCategory17.xml</span></pre></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><pre style="margin-left: 10.0px;"><span>gov:/sequences/protel/out/filters/CendynCrmTransposeRevenueCategory17.xml</span></pre></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><pre style="margin-left: 10.0px;"><span>gov:/sequences/protel/out/filters/WindsurfersTransposeRevenueCategory17.xml</span></pre></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><pre style="margin-left: 10.0px;"><span>gov:/sequences/protel/out/filters/GetoakyCrmTransposeRevenueCategory17.xml</span></pre></td></tr></tbody></table></div><p><br clear="none"></p><p>&nbsp;<strong style="">gov:sequences/protel/out/filters/GenericTransposeRevenueCategory17.xml</strong></p><h2 id="TransposeRevenueCategory17.xlst-Whatdoesitdo?" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">What does it do?</h2><p>The filter which sits within the Manifest for the vendor is responsible for making sure that the values in AmountBeforeTax and AmountAfterTax are correct according to the night rate value of the reservation.</p><p><br clear="none"></p><h3 id="TransposeRevenueCategory17.xlst-<Base>Amount-MessageBeforetheTransposition" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">&lt;Base&gt; Amount - Message Before the Transposition</h3><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;Rate EffectiveDate=</code><code class="string">"2018-01-14"</code><code class="plain"> ExpireDate=</code><code class="string">"2018-01-15"</code><code class="plain"> RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> UnitMultiplier=</code><code class="string">"1"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;Base AmountAfterTax=</code><code class="string">"91.20"</code><code class="plain"> AmountBeforeTax=</code><code class="string">"85.23"</code><code class="plain"> CurrencyCode=</code><code class="string">"EUR"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">    &lt;TPA_Extensions&gt;</code></div>
+<div class="line"><code class="plain">        &lt;px:RateAmountExtensions End=</code><code class="string">"2018-01-15"</code><code class="plain"> Start=</code><code class="string">"2018-01-14"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=</code><code class="string">"96.00"</code><code class="plain"> AmountBeforeTax=</code><code class="string">"89.26"</code><code class="plain"> RevenueCategoryCode=</code><code class="string">"17"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=</code><code class="string">"91.20"</code><code class="plain"> AmountBeforeTax=</code><code class="string">"85.23"</code><code class="plain"> RevenueCategoryCode=</code><code class="string">"9"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=</code><code class="string">"4.80"</code><code class="plain"> AmountBeforeTax=</code><code class="string">"4.03"</code><code class="plain"> RevenueCategoryCode=</code><code class="string">"3"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/px:RateAmountExtensions&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/TPA_Extensions&gt;</code></div>
+<div class="line"><code class="plain">&lt;/Rate&gt;</code></div>
+</div>
+</div><h3 id="TransposeRevenueCategory17.xlst-<Base>Amount-MessageAftertheTransposition" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">&lt;Base&gt; Amount - Message After the Transposition</h3><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;Rate EffectiveDate=</code><code class="string">"2018-01-14"</code><code class="plain"> ExpireDate=</code><code class="string">"2018-01-15"</code><code class="plain"> RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> UnitMultiplier=</code><code class="string">"1"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;Base AmountAfterTax=</code><code class="string">"96.00"</code><code class="plain"> AmountBeforeTax=</code><code class="string">"89.26"</code><code class="plain"> CurrencyCode=</code><code class="string">"EUR"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">    &lt;TPA_Extensions&gt;</code></div>
+<div class="line"><code class="plain">        &lt;px:RateAmountExtensions End=</code><code class="string">"2018-01-15"</code><code class="plain"> Start=</code><code class="string">"2018-01-14"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=</code><code class="string">"96.00"</code><code class="plain"> AmountBeforeTax=</code><code class="string">"89.26"</code><code class="plain"> RevenueCategoryCode=</code><code class="string">"17"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=</code><code class="string">"91.20"</code><code class="plain"> AmountBeforeTax=</code><code class="string">"85.23"</code><code class="plain"> RevenueCategoryCode=</code><code class="string">"9"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=</code><code class="string">"4.80"</code><code class="plain"> AmountBeforeTax=</code><code class="string">"4.03"</code><code class="plain"> RevenueCategoryCode=</code><code class="string">"3"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/px:RateAmountExtensions&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/TPA_Extensions&gt;</code></div>
+<div class="line"><code class="plain">&lt;/Rate&gt;</code></div>
+</div>
+</div><p>The revenue values from @RevenueCategoryCode=17 inside the &lt;TPA_Extension&gt; have been applied to&nbsp;@AmountBeforeTax and @AmountAfterTax in the &lt;Base&gt; section</p><h3 id="TransposeRevenueCategory17.xlst-<Total>Amount-MessageBeforeTransposition" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">&lt;Total&gt; Amount - Message Before Transposition</h3><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;Total AmountBeforeTax=\"</code><code class="value">362.21</code><code class="plain">\" AmountAfterTax=\"</code><code class="value">400.00</code><code class="plain">\" CurrencyCode=\"EUR\"&gt;</code></div>
+<div class="line"><code class="plain">    &lt;TPA_Extensions&gt;</code></div>
+<div class="line"><code class="plain">        &lt;px:RateAmountExtensions xmlns:px=\"http:</code><code class="comments">//protel.io/htng/extensions\" End=\"2017-10-16T00:00:00\" Start=\"2017-10-14T00:00:00\"&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=\"</code><code class="value">0.00</code><code class="plain">\" AmountBeforeTax=\"</code><code class="value">0.00</code><code class="plain">\" RevenueCategoryCode=\"</code><code class="value">3</code><code class="plain">\" CurrencyCode=\"EUR\"/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=\"</code><code class="value">134.00</code><code class="plain">\" AmountBeforeTax=\"</code><code class="value">120.37</code><code class="plain">\" RevenueCategoryCode=\"</code><code class="value">6</code><code class="plain">\" CurrencyCode=\"EUR\"/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=\"</code><code class="value">400.00</code><code class="plain">\" AmountBeforeTax=\"</code><code class="value">362.21</code><code class="plain">\" RevenueCategoryCode=\"</code><code class="value">9</code><code class="plain">\" CurrencyCode=\"EUR\"/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=\"</code><code class="value">534.00</code><code class="plain">\" AmountBeforeTax=\"</code><code class="value">482.58</code><code class="plain">\" RevenueCategoryCode=\"</code><code class="value">17</code><code class="plain">\" CurrencyCode=\"EUR\"/&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/px:RateAmountExtensions&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/TPA_Extensions&gt;</code></div>
+<div class="line"><code class="plain">&lt;/Total&gt;</code></div>
+</div>
+</div><h3 id="TransposeRevenueCategory17.xlst-<Total>Amount-MessageAfterTransposition" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">&lt;Total&gt; Amount - Message After Transposition</h3><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;Total AmountBeforeTax=\"</code><code class="value">482.58</code><code class="plain">\" AmountAfterTax=\"</code><code class="value">534.00</code><code class="plain">\" CurrencyCode=\"EUR\"&gt;</code></div>
+<div class="line"><code class="plain">    &lt;TPA_Extensions&gt;</code></div>
+<div class="line"><code class="plain">        &lt;px:RateAmountExtensions xmlns:px=\"http:</code><code class="comments">//protel.io/htng/extensions\" End=\"2017-10-16T00:00:00\" Start=\"2017-10-14T00:00:00\"&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=\"</code><code class="value">0.00</code><code class="plain">\" AmountBeforeTax=\"</code><code class="value">0.00</code><code class="plain">\" RevenueCategoryCode=\"</code><code class="value">3</code><code class="plain">\" CurrencyCode=\"EUR\"/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=\"</code><code class="value">134.00</code><code class="plain">\" AmountBeforeTax=\"</code><code class="value">120.37</code><code class="plain">\" RevenueCategoryCode=\"</code><code class="value">6</code><code class="plain">\" CurrencyCode=\"EUR\"/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=\"</code><code class="value">400.00</code><code class="plain">\" AmountBeforeTax=\"</code><code class="value">362.21</code><code class="plain">\" RevenueCategoryCode=\"</code><code class="value">9</code><code class="plain">\" CurrencyCode=\"EUR\"/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;px:RateAmount AmountAfterTax=\"</code><code class="value">534.00</code><code class="plain">\" AmountBeforeTax=\"</code><code class="value">482.58</code><code class="plain">\" RevenueCategoryCode=\"</code><code class="value">17</code><code class="plain">\" CurrencyCode=\"EUR\"/&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/px:RateAmountExtensions&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/TPA_Extensions&gt;</code></div>
+<div class="line"><code class="plain">&lt;/Total&gt;</code></div>
+</div>
+</div><p><br clear="none"></p><h2 id="TransposeRevenueCategory17.xlst-CodebehindtheFilter" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Code behind the Filter</h2><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;?xml version=</code><code class="string">"1.0"</code><code class="plain"> encoding=</code><code class="string">"UTF-8"</code><code class="plain"> ?&gt;</code></div>
+<div class="line"><code class="plain">&lt;xsl:transform xmlns:xsl=</code><code class="string">"http://www.w3.org/1999/XSL/Transform"</code><code class="plain"> version=</code><code class="string">"2.0"</code></div>
+<div class="line"><code class="plain">  xmlns:xs=</code><code class="string">"http://www.w3.org/2001/XMLSchema"</code></div>
+<div class="line"><code class="plain">  xmlns:px=</code><code class="string">"http://protel.io/htng/extensions"</code></div>
+<div class="line"><code class="plain">  exclude-result-prefixes=</code><code class="string">"xs"</code></div>
+<div class="line"><code class="plain">  xmlns=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain"> </code></div>
+<div class="line"><code class="plain">  xpath-</code><code class="keyword">default</code><code class="plain">-namespace=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">  &lt;xsl:output encoding=</code><code class="string">"UTF-8"</code><code class="plain"> indent=</code><code class="string">"yes"</code><code class="plain"> method=</code><code class="string">"xml"</code><code class="plain"> version=</code><code class="string">"1.0"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">  </code></div>
+<div class="line"><code class="plain">      &lt;xsl:template match=</code><code class="string">"@*|node()"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">        &lt;xsl:copy&gt;</code></div>
+<div class="line"><code class="plain">            &lt;xsl:apply-templates select=</code><code class="string">"@*|node()"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/xsl:copy&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/xsl:template&gt;</code></div>
+<div class="line"><code class="plain">    &lt;xsl:template match=</code><code class="string">"RoomStay/Total"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">        &lt;xsl:element name=</code><code class="string">"{local-name()}"</code><code class="plain"> namespace=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;xsl:copy-of select=</code><code class="string">"@*[name() != 'AmountBeforeTax' and name() != 'AmountAfterTax' and name() != 'AmountAfterTax']"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">            &lt;xsl:attribute name=</code><code class="string">"AmountBeforeTax"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;xsl:value-of select=</code><code class="string">"../TPA_Extensions/px:RateAmountExtensions/px:RateAmount[@RevenueCategoryCode = '17']/@AmountBeforeTax"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/xsl:attribute&gt;</code></div>
+<div class="line"><code class="plain">            &lt;xsl:attribute name=</code><code class="string">"AmountAfterTax"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;xsl:value-of select=</code><code class="string">"../TPA_Extensions/px:RateAmountExtensions/px:RateAmount[@RevenueCategoryCode = '17']/@AmountAfterTax"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/xsl:attribute&gt;</code></div>
+<div class="line"><code class="plain">            &lt;xsl:attribute name=</code><code class="string">"CurrencyCode"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;xsl:value-of select=</code><code class="string">"../TPA_Extensions/px:RateAmountExtensions/px:RateAmount[@RevenueCategoryCode = '17']/@CurrencyCode"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/xsl:attribute&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/xsl:element&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/xsl:template&gt;</code></div>
+<div class="line"><code class="plain">    </code></div>
+<div class="line"><code class="plain">    &lt;xsl:template match=</code><code class="string">"Rate"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">        &lt;xsl:element name=</code><code class="string">"{local-name()}"</code><code class="plain"> namespace=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;xsl:attribute name=</code><code class="string">"EffectiveDate"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;xsl:value-of select=</code><code class="string">"@EffectiveDate"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/xsl:attribute&gt; </code></div>
+<div class="line"><code class="plain">            &lt;xsl:attribute name=</code><code class="string">"ExpireDate"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;xsl:value-of select=</code><code class="string">"@ExpireDate"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/xsl:attribute&gt; </code></div>
+<div class="line"><code class="plain">            &lt;xsl:attribute name=</code><code class="string">"RateTimeUnit"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;xsl:value-of select=</code><code class="string">"@RateTimeUnit"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/xsl:attribute&gt;</code></div>
+<div class="line"><code class="plain">            &lt;xsl:attribute name=</code><code class="string">"UnitMultiplier"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;xsl:value-of select=</code><code class="string">"@UnitMultiplier"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/xsl:attribute&gt;</code></div>
+<div class="line"><code class="plain">            &lt;xsl:element name=</code><code class="string">"Base"</code><code class="plain"> namespace=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;xsl:attribute name=</code><code class="string">"AmountAfterTax"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;xsl:value-of select=</code><code class="string">"TPA_Extensions/px:RateAmountExtensions/px:RateAmount[@RevenueCategoryCode = '17']/@AmountAfterTax"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/xsl:attribute&gt;</code></div>
+<div class="line"><code class="plain">                &lt;xsl:attribute name=</code><code class="string">"AmountBeforeTax"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;xsl:value-of select=</code><code class="string">"TPA_Extensions/px:RateAmountExtensions/px:RateAmount[@RevenueCategoryCode = '17']/@AmountBeforeTax"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/xsl:attribute&gt;</code></div>
+<div class="line"><code class="plain">                &lt;xsl:attribute name=</code><code class="string">"CurrencyCode"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;xsl:value-of select=</code><code class="string">"Base/@CurrencyCode"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/xsl:attribute&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/xsl:element&gt;</code></div>
+<div class="line"><code class="plain">            &lt;xsl:element name=</code><code class="string">"Total"</code><code class="plain"> namespace=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;xsl:attribute name=</code><code class="string">"AmountAfterTax"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;xsl:value-of select=</code><code class="string">"TPA_Extensions/px:RateAmountExtensions/px:RateAmount[@RevenueCategoryCode = '17']/@AmountAfterTax"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/xsl:attribute&gt;</code></div>
+<div class="line"><code class="plain">                &lt;xsl:attribute name=</code><code class="string">"AmountBeforeTax"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;xsl:value-of select=</code><code class="string">"TPA_Extensions/px:RateAmountExtensions/px:RateAmount[@RevenueCategoryCode = '17']/@AmountBeforeTax"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/xsl:attribute&gt;</code></div>
+<div class="line"><code class="plain">                &lt;xsl:attribute name=</code><code class="string">"CurrencyCode"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;xsl:value-of select=</code><code class="string">"Base/@CurrencyCode"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/xsl:attribute&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/xsl:element&gt;</code></div>
+<div class="line"><code class="plain">            &lt;xsl:copy-of select=</code><code class="string">"TPA_Extensions"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/xsl:element&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/xsl:template&gt;</code></div>
+<div class="line"><code class="plain">&lt;/xsl:transform&gt;</code></div>
+</div>
+</div>
+                        </div>
+                    </section>
+
+                </article>
+            </main>
+
+
+                <nav class="exp-post-navigation-prev">
+                    <a href="Different-Integration-Partner.192228220.html" class="post-navigation-link">
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-prev">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                        <span>Different Integration Partner</span>
+                    </a>
+                </nav>
+
+                <nav class="exp-post-navigation-next">
+
+                    <a href="GHA-Mapping.192228246.html" class="post-navigation-link">
+                        <span>GHA Mapping</span>
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-next">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-225.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                    </a>
+
+                </nav>
+
+
+            <nav class="exp-sidebar-toc js-tocBot">
+                <!-- content generated by toc.js  -->
+            </nav>
+
+            <div class="exp-sidebar-navigation-toggle">
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+            </div>
+
+            <div class="exp-scroll-to-top-container">
+                <a href="#TransposeRevenueCategory17.xlst-top" class="exp-scroll-to-top-link">↑ Back to top</a>
+            </div>
+
+        </div>
+
+
+
+<dialog class="exp-lightbox-container" aria-modal="true">
+    <div class="lightbox-toolbar">
+        <button type="button" class="exp-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox-content content">
+    </div>
+</dialog>
+
+<template id="exp-lightbox-wrapper-template">
+    <div class="exp-lightbox-wrapper">
+        <div class="exp-lightbox-toggle">
+            <button type="button" class="exp-lightbox-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                    <path fill="currentColor" d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+        <script src="js/tocbot.min.js"></script>
+        <script src="js/article-toc.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/iframe-resizer.parent.js"></script>
+
+    </body>
+
+</html>

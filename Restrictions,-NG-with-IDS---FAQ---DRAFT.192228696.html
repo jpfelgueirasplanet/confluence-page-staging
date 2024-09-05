@@ -1,0 +1,345 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+        <link rel="icon" href="_scroll_external/logos/59f13d845123/default-space-logo.svg">
+
+        <!-- Primary Meta Tags -->
+        <meta name="exp-export-timestamp" content="2024-09-05T09:13:08.877+0000">
+        <meta name="exp-page-id" content="192228696">
+        <meta name="exp-page-title" content="Restrictions, NG with IDS - FAQ - DRAFT">
+        <meta name="exp-page-version" content="5">
+        <meta name="exp-page-scroll-page-id" content="">
+        <meta name="exp-page-created" content="2021-10-15T10:38:10.240+0000">
+        <meta name="exp-page-last-modified" content="2021-11-23T14:09:43.207+0000">
+        <meta name="exp-page-labels" content="">
+        <meta name="exp-page-context-keys" content="">
+        <meta name="exp-space-key" content="PIODOC">
+        <meta name="exp-space-title" content="protel.I/O documentation">
+
+        <!-- Additional Meta Tags -->
+        <meta name="exp-document-id" content="">
+        <meta name="exp-document-title" content="protel.I/O documentation">
+        <meta name="exp-version-status" content="">
+        <meta name="exp-version-id" content="">
+        <meta name="exp-version-name" content="">
+        <meta name="exp-version-description" content="">
+        <meta name="exp-version-date" content="">
+        <meta name="exp-variant-id" content="">
+        <meta name="exp-variant-name" content="">
+        <meta name="exp-variant-description" content="">
+        <meta name="exp-language-code" content="">
+        <meta name="exp-language-name" content="">
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/image-dimensions.css">
+
+
+            
+            
+<script src="js/search.js"></script>
+            <script id="search-worker" type="javascript/worker">
+    onmessage = function(event) {
+        // dispatch events to handling functions
+        var message = event.data;
+
+        if ((message.type === 'setup') && message.baseUrl) {
+            setup(message.baseUrl);
+        }
+
+        if (message.type === 'search-request') {
+            search(message.query);
+        }
+    }
+
+    var searchIndex;
+
+    function setup(baseUrl) {
+        importScripts(
+            baseUrl + 'js/lunr.js',
+            baseUrl + 'js/lunr-index.js',
+            baseUrl + 'js/lunr-data.js'
+        );
+        try {
+            // load lunr-extras if it exists, which contains language-specific files for languages other than english
+            importScripts(baseUrl + 'js/lunr-extras.js');
+        } catch (e) {}
+        searchIndex = lunr.Index.load(lunrIndex);
+    }
+
+    function search(query) {
+        var searchHits = searchIndex.search(query);
+        var results = searchHits.map(function (result) {
+            return lunrData.filter(function (d) {
+                return d.id === result.ref;
+            })[0]
+        });
+        postMessage({ type: 'search-results', results: results, query: query });
+    }
+</script>
+        <title>Restrictions, NG with IDS - FAQ - DRAFT</title>
+
+    <meta name="generator" content="Scroll HTML Exporter / K15t GmbH"></head>
+
+    <body id="Restrictions,NGwithIDS-FAQ-DRAFT-top" data-pageid="192228696" data-confluence-editor-version="v1" data-confluence-deployment-type="DATACENTER">
+
+        <div class="exp-grid-container">
+
+            <header class="exp-header"></header>
+
+            <div class="exp-logo">
+                <a href="protel.I_O-documentation.192227604.html">
+                    <span class="exp-logo-image" style="background-image: url(_scroll_external/logos/59f13d845123/default-space-logo.svg)" alt="protel.I/O documentation" title="protel.I/O documentation"></span>
+                </a>
+            </div>
+
+            <div class="exp-document-title">
+                <h1 class="exp-document-title-heading scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h1 scroll-relative-h1" data-scroll-heading-rank="1" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="1" id="no-src_generated-id-8241d2c9ce07b35c16bbe8e31388ad58fba078b1133528550606124492377cda">
+                    <a href="protel.I_O-documentation.192227604.html">
+                        protel.I/O documentation
+                    </a>
+                </h1>
+            </div>
+
+<div class="exp-search-container">
+    <input type="search" id="search-textbox" autocomplete="off" class="exp-search-input" style="margin-right: 0;">
+    <div class="exp-search-input-icon">
+        <svg data-exp-id="magnifier-icon" data-exp-component="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8.99452 14.5C10.5121 14.5 11.809 13.9669 12.8854 12.9007C13.9618 11.8345 14.5 10.5361 14.5 9.00548C14.5 7.48794 13.9631 6.19097 12.8893 5.11458C11.8155 4.03819 10.519 3.5 9 3.5C7.46786 3.5 6.16816 4.0369 5.1009 5.11071C4.03363 6.18453 3.5 7.48096 3.5 9C3.5 10.5321 4.0331 11.8318 5.09929 12.8991C6.1655 13.9664 7.46391 14.5 8.99452 14.5ZM9 16C8.02913 16 7.11974 15.816 6.27185 15.4479C5.42395 15.0799 4.68056 14.5799 4.04167 13.9479C3.40278 13.316 2.90278 12.576 2.54167 11.728C2.18056 10.88 2 9.97053 2 8.99956C2 8.04152 2.18403 7.13542 2.55208 6.28125C2.92014 5.42708 3.41864 4.68387 4.04758 4.0516C4.67653 3.41935 5.41569 2.91935 6.26508 2.5516C7.11449 2.18387 8.02548 2 8.99806 2C9.95769 2 10.8646 2.18403 11.7188 2.55208C12.5729 2.92014 13.316 3.42014 13.9479 4.05208C14.5799 4.68403 15.0799 5.42612 15.4479 6.27835C15.816 7.13058 16 8.0381 16 9.00094C16 9.83365 15.8615 10.6213 15.5846 11.3638C15.3078 12.1062 14.9254 12.7836 14.4375 13.3958L18 16.9583L16.9375 18L13.375 14.4583C12.7668 14.9459 12.0939 15.3247 11.3564 15.5948C10.6188 15.8649 9.83333 16 9 16Z" fill="currentColor" />
+        </svg>
+    </div>
+    <div id="search-suggestion-container" class="exp-search-suggestion-panel" data-exp-component="search-suggestion"></div>
+    <template id="exp-search-suggestion-option-template">
+        <div class="exp-search-suggestion-option-container search-form-suggestion">
+            <a class="exp-search-suggestion-option search-form-suggestion" href=""></a>
+        </div>
+    </template>
+</div>
+
+
+            <nav class="exp-sidebar-navigation">
+                <div class="exp-sidebar-navigation-sticky-wrapper">
+                    <iframe src="toc.html?pageId=192228696" border="0"></iframe>
+                </div>
+
+            </nav>
+
+
+            <nav aria-label="Breadcrumb" class="exp-breadcrumbs-wrapper">
+                <ol class="breadcrumbs">
+                        <li class="breadcrumb">
+                            <a href="protel.I_O-documentation.192227604.html" rel="prev" target="_self">protel.I/O documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Message-Documentation.192227615.html" rel="prev" target="_self">Message Documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Message-dictionary.192227633.html" rel="prev" target="_self">Message dictionary</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Availability,-Rates-&amp;-Packages,-Inventory.192228009.html" rel="prev" target="_self">Availability, Rates &amp; Packages, Inventory</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="OTA_HotelAvailNotifRQ_RS.192228253.html" rel="prev" target="_self">OTA_HotelAvailNotifRQ/RS</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="FAQ---OTA_HotelAvailNotifRQ_RS.192228375.html" rel="prev" target="_self">FAQ - OTA_HotelAvailNotifRQ/RS</a>
+                        </li>
+                    <li class="breadcrumb active" aria-current="page">
+                        Restrictions, NG with IDS - FAQ - DRAFT
+                    </li>
+                </ol>
+            </nav>
+
+
+            <main class="exp-content">
+                <article role="article">
+
+                    <header>
+                        <h1 class="article-heading scroll-h1 scroll-original-h1 scroll-relative-h1 scroll-custom-section-heading scroll-document-section-heading" role="heading" data-scroll-heading-rank="1" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="1" id="no-src_generated-id-33f11b07cc53bccd342bff2938cf1a7c64c87d12594753853f4c82d4382751b1">
+                            Restrictions, NG with IDS - FAQ - DRAFT
+                        </h1>
+                    </header>
+
+                    <section class="page" id="content" role="main">
+                        <div id="main-content" class="wiki-content article-content js-tocBot-content">
+                            <p><strong><style type="text/css">/*<![CDATA[*/
+div.rbtoc1725527588913 {padding: 0px;}
+div.rbtoc1725527588913 ul {margin-left: 0px;}
+div.rbtoc1725527588913 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></strong></p><div class="toc-macro rbtoc1725527588913"><strong>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228696" data-scroll-link-target-source-id="192228696" data-scroll-link-type="document" href="Restrictions,-NG-with-IDS---FAQ---DRAFT.192228696.html#Restrictions,NGwithIDSFAQDRAFT-AdvancedRateCode" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Restrictions%2C+NG+with+IDS+-+FAQ+-+DRAFT#src-192228696_Restrictions,NGwithIDSFAQDRAFT-AdvancedRateCode">Advanced Rate Code</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228696" data-scroll-link-target-source-id="192228696" data-scroll-link-type="document" href="Restrictions,-NG-with-IDS---FAQ---DRAFT.192228696.html#Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/Ratecodedetail" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Restrictions%2C+NG+with+IDS+-+FAQ+-+DRAFT#src-192228696_Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/Ratecodedetail">SD/Rate Configuration/Rate/Rate code detail</a></li>
+<li><a data-scroll-target-source-id="192228696" data-scroll-link-target-source-id="192228696" data-scroll-link-type="document" href="Restrictions,-NG-with-IDS---FAQ---DRAFT.192228696.html#Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/RoomRates" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Restrictions%2C+NG+with+IDS+-+FAQ+-+DRAFT#src-192228696_Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/RoomRates">SD/Rate Configuration/Rate/RoomRates</a></li>
+<li><a data-scroll-target-source-id="192228696" data-scroll-link-target-source-id="192228696" data-scroll-link-type="document" href="Restrictions,-NG-with-IDS---FAQ---DRAFT.192228696.html#Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/RoomRates/Adults,Priceperroom=>OTA_HotelRatePlanNotifRQWherethenumberofadultsisdefinedintheroomtypemaximumoccupancyimage2021-6-15_21-53-26.png145" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Restrictions%2C+NG+with+IDS+-+FAQ+-+DRAFT#src-192228696_Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/RoomRates/Adults,Priceperroom=>OTA_HotelRatePlanNotifRQWherethenumberofadultsisdefinedintheroomtypemaximumoccupancyimage2021-6-15_21-53-26.png145">SD/Rate Configuration/Rate/RoomRates/Adults, Price per room =&gt; OTA_HotelRatePlanNotifRQ Where the number of adults is defined in the room type maximum occupancy</a></li>
+<li><a data-scroll-target-source-id="192228696" data-scroll-link-target-source-id="192228696" data-scroll-link-type="document" href="Restrictions,-NG-with-IDS---FAQ---DRAFT.192228696.html#Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/RoomRates/Discountgroups,Priceperperson(Advancedratecode)" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Restrictions%2C+NG+with+IDS+-+FAQ+-+DRAFT#src-192228696_Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/RoomRates/Discountgroups,Priceperperson(Advancedratecode)">SD/Rate Configuration/Rate/RoomRates/Discount groups, Price per person (Advanced rate code)</a></li>
+<li><a data-scroll-target-source-id="192228696" data-scroll-link-target-source-id="192228696" data-scroll-link-type="document" href="Restrictions,-NG-with-IDS---FAQ---DRAFT.192228696.html#Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/Packages" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Restrictions%2C+NG+with+IDS+-+FAQ+-+DRAFT#src-192228696_Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/Packages">SD/Rate Configuration/Rate/Packages</a></li>
+</ul>
+</li>
+<li><a data-scroll-target-source-id="192228696" data-scroll-link-target-source-id="192228696" data-scroll-link-type="document" href="Restrictions,-NG-with-IDS---FAQ---DRAFT.192228696.html#Restrictions,NGwithIDSFAQDRAFT-RateStrategies" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Restrictions%2C+NG+with+IDS+-+FAQ+-+DRAFT#src-192228696_Restrictions,NGwithIDSFAQDRAFT-RateStrategies">Rate Strategies</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228696" data-scroll-link-target-source-id="192228696" data-scroll-link-type="document" href="Restrictions,-NG-with-IDS---FAQ---DRAFT.192228696.html#Restrictions,NGwithIDSFAQDRAFT-&quot;Close&quot;" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Restrictions%2C+NG+with+IDS+-+FAQ+-+DRAFT#src-192228696_Restrictions,NGwithIDSFAQDRAFT-&quot;Close&quot;">"Close"</a></li>
+<li><a data-scroll-target-source-id="192228696" data-scroll-link-target-source-id="192228696" data-scroll-link-type="document" href="Restrictions,-NG-with-IDS---FAQ---DRAFT.192228696.html#Restrictions,NGwithIDSFAQDRAFT-&quot;Closetoarrival&quot;" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Restrictions%2C+NG+with+IDS+-+FAQ+-+DRAFT#src-192228696_Restrictions,NGwithIDSFAQDRAFT-&quot;Closetoarrival&quot;">"Close to arrival"</a></li>
+<li><a data-scroll-target-source-id="192228696" data-scroll-link-target-source-id="192228696" data-scroll-link-type="document" href="Restrictions,-NG-with-IDS---FAQ---DRAFT.192228696.html#Restrictions,NGwithIDSFAQDRAFT-&quot;MinimumstayofXdays&quot;-bydefaultisMinLOSforstayperiod" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Restrictions%2C+NG+with+IDS+-+FAQ+-+DRAFT#src-192228696_Restrictions,NGwithIDSFAQDRAFT-&quot;MinimumstayofXdays&quot;-bydefaultisMinLOSforstayperiod">"Minimum stay of X days" - by default is MinLOS for stay period</a></li>
+<li><a data-scroll-target-source-id="192228696" data-scroll-link-target-source-id="192228696" data-scroll-link-type="document" href="Restrictions,-NG-with-IDS---FAQ---DRAFT.192228696.html#Restrictions,NGwithIDSFAQDRAFT-&quot;MinimumstayofXdays&quot;onarrival" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Restrictions%2C+NG+with+IDS+-+FAQ+-+DRAFT#src-192228696_Restrictions,NGwithIDSFAQDRAFT-&quot;MinimumstayofXdays&quot;onarrival">"Minimum stay of X days" on arrival</a></li>
+</ul>
+</li>
+</ul>
+</strong></div><p></p><p>Features from pAir NG which are supported in ARI updates through IDS</p><h2 id="Restrictions,NGwithIDSFAQDRAFT-AdvancedRateCode" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Advanced Rate Code</h2><ol><li><h3 id="Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/Ratecodedetail" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">SD/Rate Configuration/Rate/Rate code detail&nbsp;</h3><ol><li><p class="auto-cursor-target">Valid period =&gt;&nbsp;will affect OTA_HotelRatePlanNotifRQ and OTA_HotelAvailNotifRQ messages.&nbsp;No separate trigger for adding/modifying/removing a season.&nbsp;If valid period is set globally for the rate code - then the RoomRate season is ignored. Else if there is no season globally on the rate code - then each RoomRate is taken with its validity period. If there is no validity/season period defined neither on the global rate level nor on RoomRate level, then the validity of the rate is determined by the rest of rate configurations (e.g. rate strategies) and by the export period defined in the IDS as applicable for export. Multiple valid/season periods are as well supported&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:">&nbsp;</p><p class="auto-cursor-target"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="250" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/9af046667ee4/image2021-6-15_17-6-59.png"></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">StatusApplicationControl</code><code class="plain"> </code><code class="color1">Start</code><code class="plain">=</code><code class="string">"2021-06-24"</code><code class="plain"> </code><code class="color1">End</code><code class="plain">=</code><code class="string">"2021-06-26"</code><code class="plain"> </code><code class="color1">InvTypeCode</code><code class="plain">=</code><code class="string">"KING"</code><code class="plain"> </code><code class="color1">RatePlanCode</code><code class="plain">=</code><code class="string">"PTCS"</code><code class="plain">/&gt;</code></div>
+</div>
+</div><img alt="(warning)" data-emoticon-name="warning" class="emoticon emoticon-warning scroll-document-image" src="_scroll_external/icons/6ba5d19de63c/warning.svg" data-emoji-short-name=":warning:">&nbsp;Seasons should NOT overlap! Otherwise the rate calculation exported by the PMS will have errors in the calculation.<p class="auto-cursor-target"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="460" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/93f3140ae66b/image2021-6-15_16-49-1.png"></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">StatusApplicationControl</code><code class="plain"> </code><code class="color1">Start</code><code class="plain">=</code><code class="string">"2021-06-24"</code><code class="plain"> </code><code class="color1">End</code><code class="plain">=</code><code class="string">"2021-06-26"</code><code class="plain"> </code><code class="color1">InvTypeCode</code><code class="plain">=</code><code class="string">"KING"</code><code class="plain"> </code><code class="color1">RatePlanCode</code><code class="plain">=</code><code class="string">"PTCS"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">&lt;</code><code class="keyword">StatusApplicationControl</code><code class="plain"> </code><code class="color1">Start</code><code class="plain">=</code><code class="string">"2021-06-28"</code><code class="plain"> </code><code class="color1">End</code><code class="plain">=</code><code class="string">"2021-06-30"</code><code class="plain"> </code><code class="color1">InvTypeCode</code><code class="plain">=</code><code class="string">"KING"</code><code class="plain"> </code><code class="color1">RatePlanCode</code><code class="plain">=</code><code class="string">"PTCS"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">&lt;</code><code class="keyword">StatusApplicationControl</code><code class="plain"> </code><code class="color1">Start</code><code class="plain">=</code><code class="string">"2021-07-02"</code><code class="plain"> </code><code class="color1">End</code><code class="plain">=</code><code class="string">"2021-07-05"</code><code class="plain"> </code><code class="color1">InvTypeCode</code><code class="plain">=</code><code class="string">"KING"</code><code class="plain"> </code><code class="color1">RatePlanCode</code><code class="plain">=</code><code class="string">"PTCS"</code><code class="plain">/&gt;</code></div>
+</div>
+</div></li><li><p class="auto-cursor-target">Valid for length of stay - FROM =&gt; sent out in OTA_HotelAvailNotifRQ&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="220" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/62c96f7b2d87/image2021-6-15_16-50-15.png"></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">LengthOfStay</code><code class="plain"> </code><code class="color1">MinMaxMessageType</code><code class="plain">=</code><code class="string">"SetForwardMinStay"</code><code class="plain"> </code><code class="color1">TimeUnit</code><code class="plain">=</code><code class="string">"Day"</code><code class="plain"> </code><code class="color1">Time</code><code class="plain">=</code><code class="string">"3"</code><code class="plain">/&gt;</code></div>
+</div>
+</div></li><li><p class="auto-cursor-target">Valid for length of stay - TO =&gt;&nbsp;sent out in OTA_HotelAvailNotifRQ&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="220" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/a90800a720b2/image2021-6-15_16-50-48.png"></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">LengthOfStay</code><code class="plain"> </code><code class="color1">MinMaxMessageType</code><code class="plain">=</code><code class="string">"SetForwardMaxStay"</code><code class="plain"> </code><code class="color1">TimeUnit</code><code class="plain">=</code><code class="string">"Day"</code><code class="plain"> </code><code class="color1">Time</code><code class="plain">=</code><code class="string">"8"</code><code class="plain">/&gt;</code></div>
+</div>
+</div></li><li>Valid for nights - FROM =&gt; N/A&nbsp;<img alt="(error)" data-emoticon-name="cross" class="emoticon emoticon-cross scroll-document-image" src="_scroll_external/icons/c9cc713fcf92/error.svg" data-emoji-short-name=":cross:"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="220" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/743c068efb1c/image2021-6-15_16-51-58.png"></span></li><li>Valid for nights - TO =&gt; N/A&nbsp;<img alt="(error)" data-emoticon-name="cross" class="emoticon emoticon-cross scroll-document-image" src="_scroll_external/icons/c9cc713fcf92/error.svg" data-emoji-short-name=":cross:"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="220" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/a457dc960b50/image2021-6-15_17-10-29.png"></span></li><li><p class="auto-cursor-target">Valid for weekdays - ARRIVAL =&gt; OTA_HotelAvailNotifRQ&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"><br clear="none">The respective date will be sent as closed for arrival restriction.<br clear="none">There is no trigger to this restriction.<br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="220" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/2cd7ae45e709/image2021-6-15_17-11-34.png"></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">AvailStatusMessage</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">StatusApplicationControl</code><code class="plain"> </code><code class="color1">Start</code><code class="plain">=</code><code class="string">"2021-06-29"</code><code class="plain"> </code><code class="color1">End</code><code class="plain">=</code><code class="string">"2021-06-29"</code><code class="plain"> </code><code class="color1">InvTypeCode</code><code class="plain">=</code><code class="string">"KING"</code><code class="plain"> </code><code class="color1">RatePlanCode</code><code class="plain">=</code><code class="string">"PTCS"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">RestrictionStatus</code><code class="plain"> </code><code class="color1">Restriction</code><code class="plain">=</code><code class="string">"Arrival"</code><code class="plain"> </code><code class="color1">Status</code><code class="plain">=</code><code class="string">"Close"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">&lt;/</code><code class="keyword">AvailStatusMessage</code><code class="plain">&gt;</code></div>
+</div>
+</div></li><li><p class="auto-cursor-target">Valid for weekdays - STAY=&gt;&nbsp;OTA_HotelAvailNotifRQ&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"><br clear="none">The respective date will be sent as Master Close restriction<br clear="none">There is no trigger to this restriction<br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="220" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/434adcbe9405/image2021-6-15_17-11-0.png"></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">AvailStatusMessage</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">StatusApplicationControl</code><code class="plain"> </code><code class="color1">Start</code><code class="plain">=</code><code class="string">"2021-06-29"</code><code class="plain"> </code><code class="color1">End</code><code class="plain">=</code><code class="string">"2021-06-29"</code><code class="plain"> </code><code class="color1">InvTypeCode</code><code class="plain">=</code><code class="string">"KING"</code><code class="plain"> </code><code class="color1">RatePlanCode</code><code class="plain">=</code><code class="string">"PTCS"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">RestrictionStatus</code><code class="plain"> </code><code class="color1">Restriction</code><code class="plain">=</code><code class="string">"Master"</code><code class="plain"> </code><code class="color1">Status</code><code class="plain">=</code><code class="string">"Close"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">&lt;/</code><code class="keyword">AvailStatusMessage</code><code class="plain">&gt;</code></div>
+</div>
+</div><p class="auto-cursor-target">Valid for weekdays - STAY&nbsp;=&gt; OTA_HotelRatePlanNotifRQ&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"><br clear="none">Will affect the&nbsp;@Start-@End date periods sent for the rate calculations.<br clear="none"><br clear="none"></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">Rate</code><code class="plain"> </code><code class="color1">Mon</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Tue</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Weds</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Thur</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Fri</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Sat</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Sun</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Start</code><code class="plain">=</code><code class="string">"2021-07-11"</code><code class="plain"> </code><code class="color1">End</code><code class="plain">=</code><code class="string">"2021-07-14"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"EUR"</code><code class="plain"> </code><code class="color1">InvTypeCode</code><code class="plain">=</code><code class="string">"KING"</code><code class="plain"> </code><code class="color1">MinGuestApplicable</code><code class="plain">=</code><code class="string">"0"</code><code class="plain"> </code><code class="color1">MaxGuestApplicable</code><code class="plain">=</code><code class="string">"0"</code><code class="plain">&gt;</code></div>
+</div>
+</div></li></ol></li><li><h3 id="Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/RoomRates" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">SD/Rate Configuration/Rate/RoomRates</h3><ol><li>Valid period per room rate =&gt;will affect OTA_HotelRatePlanNotifRQ and OTA_HotelAvailNotifRQ messages. No separate trigger for adding/modifying/removing a season.&nbsp;If valid period is set globally for the rate code - then the RoomRate season is ignored. Else if there is no season globally on the rate code - then each RoomRate is taken with its validity period.&nbsp;If there is no validity/season period defined neither on the global rate level nor on RoomRate level, then the validity of the rate is determined by the rest of rate configurations (e.g. rate strategies) and by the export period defined in the IDS as applicable for export. Multiple valid periods are as well supported.&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:">&nbsp;<br clear="none"><img alt="(warning)" data-emoticon-name="warning" class="emoticon emoticon-warning scroll-document-image" src="_scroll_external/icons/6ba5d19de63c/warning.svg" data-emoji-short-name=":warning:">&nbsp;Seasons should NOT overlap! Otherwise the rate calculation exported by the PMS will have errors in the calculation.&nbsp;</li><li><p class="auto-cursor-target">Valid for length of stay - FROM =&gt; sent out in OTA_HotelAvailNotifRQ&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"><br clear="none">Can be configured to override the global rate restrictions if any are set. Or can be set per room rate.<br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="55eb5ad9-4015-46b6-965d-7fa2aa2fbe90" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/a4ce40557990/image2021-6-15_22-7-46.png" height="150"></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">LengthOfStay</code><code class="plain"> </code><code class="color1">MinMaxMessageType</code><code class="plain">=</code><code class="string">"SetForwardMinStay"</code><code class="plain"> </code><code class="color1">TimeUnit</code><code class="plain">=</code><code class="string">"Day"</code><code class="plain"> </code><code class="color1">Time</code><code class="plain">=</code><code class="string">"5"</code><code class="plain">/&gt;</code></div>
+</div>
+</div></li><li><p class="auto-cursor-target">Valid for length of stay - TO =&gt;&nbsp;sent out in OTA_HotelAvailNotifRQ&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"><br clear="none">Can be configured to override the global rate restrictions if any are set. Or can be set per room rate.<br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="32fe82f7-1223-42ec-bc96-0875a38714d5" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/a4ce40557990/image2021-6-15_22-7-46.png" height="150"></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">LengthOfStay</code><code class="plain"> </code><code class="color1">MinMaxMessageType</code><code class="plain">=</code><code class="string">"SetForwardMaxStay"</code><code class="plain"> </code><code class="color1">TimeUnit</code><code class="plain">=</code><code class="string">"Day"</code><code class="plain"> </code><code class="color1">Time</code><code class="plain">=</code><code class="string">"13"</code><code class="plain">/&gt;</code></div>
+</div>
+</div></li><li>Valid for nights - FROM =&gt; N/A&nbsp;<img alt="(error)" data-emoticon-name="cross" class="emoticon emoticon-cross scroll-document-image" src="_scroll_external/icons/c9cc713fcf92/error.svg" data-emoji-short-name=":cross:"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="438caef2-ba56-4ee5-aed0-87d5e3527ed5" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/1b75e59b7588/image2021-6-15_22-9-41.png" height="150"></span></li><li>Valid for night - TO =&gt; N/A&nbsp;<img alt="(error)" data-emoticon-name="cross" class="emoticon emoticon-cross scroll-document-image" src="_scroll_external/icons/c9cc713fcf92/error.svg" data-emoji-short-name=":cross:"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="72db77e0-8ce9-4bb6-95ff-a20b24e2636e" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/1b75e59b7588/image2021-6-15_22-9-41.png" height="150"></span></li><li><p class="auto-cursor-target">Valid for weekdays - ARRIVAL =&gt; OTA_HotelAvailNotifRQ&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"><br clear="none">The respective date will be sent as closed for arrival restriction<br clear="none">There is no trigger to this restriction.<br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="220" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/2cd7ae45e709/image2021-6-15_17-11-34.png"></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">AvailStatusMessage</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">StatusApplicationControl</code><code class="plain"> </code><code class="color1">Start</code><code class="plain">=</code><code class="string">"2021-06-29"</code><code class="plain"> </code><code class="color1">End</code><code class="plain">=</code><code class="string">"2021-06-29"</code><code class="plain"> </code><code class="color1">InvTypeCode</code><code class="plain">=</code><code class="string">"KING"</code><code class="plain"> </code><code class="color1">RatePlanCode</code><code class="plain">=</code><code class="string">"PTCS"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">RestrictionStatus</code><code class="plain"> </code><code class="color1">Restriction</code><code class="plain">=</code><code class="string">"Arrival"</code><code class="plain"> </code><code class="color1">Status</code><code class="plain">=</code><code class="string">"Close"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">&lt;/</code><code class="keyword">AvailStatusMessage</code><code class="plain">&gt;</code></div>
+</div>
+</div></li><li><p class="auto-cursor-target">Valid for weekdays - STAY =&gt; OTA_HotelAvailNotifRQ&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"><br clear="none">The respective date will be sent as Master Close restriction.<br clear="none">There is no trigger to this restriction.<br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="220" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/434adcbe9405/image2021-6-15_17-11-0.png"></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">AvailStatusMessage</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">StatusApplicationControl</code><code class="plain"> </code><code class="color1">Start</code><code class="plain">=</code><code class="string">"2021-06-29"</code><code class="plain"> </code><code class="color1">End</code><code class="plain">=</code><code class="string">"2021-06-29"</code><code class="plain"> </code><code class="color1">InvTypeCode</code><code class="plain">=</code><code class="string">"KING"</code><code class="plain"> </code><code class="color1">RatePlanCode</code><code class="plain">=</code><code class="string">"PTCS"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">RestrictionStatus</code><code class="plain"> </code><code class="color1">Restriction</code><code class="plain">=</code><code class="string">"Master"</code><code class="plain"> </code><code class="color1">Status</code><code class="plain">=</code><code class="string">"Close"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">&lt;/</code><code class="keyword">AvailStatusMessage</code><code class="plain">&gt;</code></div>
+</div>
+</div><p class="auto-cursor-target">Valid for weekdays - STAY&nbsp;=&gt; OTA_HotelRatePlanNotifRQ&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"><br clear="none">Will affect the&nbsp;@Start-@End date periods sent for the rate calculations.<br clear="none"><br clear="none"></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">Rate</code><code class="plain"> </code><code class="color1">Mon</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Tue</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Weds</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Thur</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Fri</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Sat</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Sun</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Start</code><code class="plain">=</code><code class="string">"2021-07-11"</code><code class="plain"> </code><code class="color1">End</code><code class="plain">=</code><code class="string">"2021-07-14"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"EUR"</code><code class="plain"> </code><code class="color1">InvTypeCode</code><code class="plain">=</code><code class="string">"KING"</code><code class="plain"> </code><code class="color1">MinGuestApplicable</code><code class="plain">=</code><code class="string">"0"</code><code class="plain"> </code><code class="color1">MaxGuestApplicable</code><code class="plain">=</code><code class="string">"0"</code><code class="plain">&gt;</code></div>
+</div>
+</div></li></ol></li><li><h3 class="auto-cursor-target scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3" id="Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/RoomRates/Adults,Priceperroom=>OTA_HotelRatePlanNotifRQWherethenumberofadultsisdefinedintheroomtypemaximumoccupancyimage2021-6-15_21-53-26.png145" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3">SD/Rate Configuration/Rate/RoomRates/Adults, Price per room =&gt; OTA_HotelRatePlanNotifRQ&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"><br clear="none">Where the number of adults is defined in the room type maximum occupancy<br clear="none"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="639ff0f8-4a52-4910-ade1-44f7e46419e4" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/671c6965c187/image2021-6-15_21-53-26.png" height="145"></span></h3><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">BaseByGuestAmts</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">BaseByGuestAmt</code><code class="plain"> </code><code class="color1">AmountAfterTax</code><code class="plain">=</code><code class="string">"100"</code><code class="plain"> </code><code class="color1">NumberOfGuests</code><code class="plain">=</code><code class="string">"1"</code><code class="plain"> </code><code class="color1">AgeQualifyingCode</code><code class="plain">=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">BaseByGuestAmt</code><code class="plain"> </code><code class="color1">AmountAfterTax</code><code class="plain">=</code><code class="string">"200"</code><code class="plain"> </code><code class="color1">NumberOfGuests</code><code class="plain">=</code><code class="string">"2"</code><code class="plain"> </code><code class="color1">AgeQualifyingCode</code><code class="plain">=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">BaseByGuestAmt</code><code class="plain"> </code><code class="color1">AmountAfterTax</code><code class="plain">=</code><code class="string">"300"</code><code class="plain"> </code><code class="color1">NumberOfGuests</code><code class="plain">=</code><code class="string">"3"</code><code class="plain"> </code><code class="color1">AgeQualifyingCode</code><code class="plain">=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">&lt;/</code><code class="keyword">BaseByGuestAmts</code><code class="plain">&gt;</code></div>
+</div>
+</div></li><li><h3 id="Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/RoomRates/Discountgroups,Priceperperson(Advancedratecode)" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">SD/Rate Configuration/Rate/RoomRates/Discount groups, Price per person (Advanced rate code)</h3><ol><li><p class="auto-cursor-target">Own room - only if Discount groups are configured and per the applied configuration. Up to 3 child buckets can be used =&gt; exported in OTA_HotelRatePlanNotifRQ&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="750" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/5155814ebcc1/image2021-6-15_21-49-37.png"></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;</code><code class="keyword">AdditionalGuestAmounts</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">AdditionalGuestAmount</code><code class="plain"> </code><code class="color1">AgeQualifyingCode</code><code class="plain">=</code><code class="string">"7"</code><code class="plain"> </code><code class="color1">MinAge</code><code class="plain">=</code><code class="string">"0"</code><code class="plain"> </code><code class="color1">MaxAge</code><code class="plain">=</code><code class="string">"1"</code><code class="plain"> </code><code class="color1">Amount</code><code class="plain">=</code><code class="string">"10.00"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"EUR"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">AdditionalGuestAmount</code><code class="plain"> </code><code class="color1">AgeQualifyingCode</code><code class="plain">=</code><code class="string">"8"</code><code class="plain"> </code><code class="color1">MinAge</code><code class="plain">=</code><code class="string">"2"</code><code class="plain"> </code><code class="color1">MaxAge</code><code class="plain">=</code><code class="string">"8"</code><code class="plain"> </code><code class="color1">Amount</code><code class="plain">=</code><code class="string">"30.00"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"EUR"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">    &lt;</code><code class="keyword">AdditionalGuestAmount</code><code class="plain"> </code><code class="color1">AgeQualifyingCode</code><code class="plain">=</code><code class="string">"9"</code><code class="plain"> </code><code class="color1">MinAge</code><code class="plain">=</code><code class="string">"9"</code><code class="plain"> </code><code class="color1">MaxAge</code><code class="plain">=</code><code class="string">"14"</code><code class="plain"> </code><code class="color1">Amount</code><code class="plain">=</code><code class="string">"60.00"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"EUR"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">&lt;/</code><code class="keyword">AdditionalGuestAmounts</code><code class="plain">&gt;</code></div>
+</div>
+</div></li><li>Extra Adult&nbsp;<img alt="(error)" data-emoticon-name="cross" class="emoticon emoticon-cross scroll-document-image" src="_scroll_external/icons/c9cc713fcf92/error.svg" data-emoji-short-name=":cross:"></li></ol></li><li><h3 id="Restrictions,NGwithIDSFAQDRAFT-SD/RateConfiguration/Rate/Packages" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">SD/Rate Configuration/Rate/Packages</h3></li></ol><h2 id="Restrictions,NGwithIDSFAQDRAFT-RateStrategies" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Rate Strategies</h2><p><br clear="none"></p><p>The following rate strategies are exported with OTA_HotelAvailNotifRQ. New/modify/delete include a trigger for the API.</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="800" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/56d1f879b354/image2021-6-15_22-57-21.png"></span></p><ol><li><h3 id="Restrictions,NGwithIDSFAQDRAFT-&quot;Close&quot;" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">"Close"&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:">&nbsp;</h3></li><li><h3 id="Restrictions,NGwithIDSFAQDRAFT-&quot;Closetoarrival&quot;" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">"Close to arrival"&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></h3></li><li><h3 id="Restrictions,NGwithIDSFAQDRAFT-&quot;MinimumstayofXdays&quot;-bydefaultisMinLOSforstayperiod" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">"Minimum stay of X days" - by default is MinLOS for stay period&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></h3></li><li><h3 id="Restrictions,NGwithIDSFAQDRAFT-&quot;MinimumstayofXdays&quot;onarrival" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="3" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h3 scroll-relative-h3">"Minimum stay of X days" on arrival&nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></h3><ol><li><p>The availability period set is applied on the&nbsp;@Start-@End time span - not on the week flags in the OTA messages</p></li><li><p>Click on "Only on arrival" to have the strategy based on the date of arrival<br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="b777029d-0b71-4de5-a6b1-6ceb8dae2e8d" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/23322ae0b06b/image2021-6-15_23-0-46.png" height="250"></span></p></li></ol></li></ol>
+                        </div>
+                    </section>
+
+                </article>
+            </main>
+
+
+                <nav class="exp-post-navigation-prev">
+                    <a href="FAQ---OTA_HotelAvailNotifRQ_RS.192228375.html" class="post-navigation-link">
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-prev">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                        <span>FAQ - OTA_HotelAvailNotifRQ/RS</span>
+                    </a>
+                </nav>
+
+                <nav class="exp-post-navigation-next">
+
+                    <a href="Sample-Messages-_-Use-Cases---OTA_HotelAvailNotifRQ_RS.192228598.html" class="post-navigation-link">
+                        <span>Sample Messages / Use Cases - OTA_HotelAvailNotifRQ/RS</span>
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-next">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-225.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                    </a>
+
+                </nav>
+
+
+            <nav class="exp-sidebar-toc js-tocBot">
+                <!-- content generated by toc.js  -->
+            </nav>
+
+            <div class="exp-sidebar-navigation-toggle">
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+            </div>
+
+            <div class="exp-scroll-to-top-container">
+                <a href="#Restrictions,NGwithIDS-FAQ-DRAFT-top" class="exp-scroll-to-top-link">↑ Back to top</a>
+            </div>
+
+        </div>
+
+
+
+<dialog class="exp-lightbox-container" aria-modal="true">
+    <div class="lightbox-toolbar">
+        <button type="button" class="exp-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox-content content">
+    </div>
+</dialog>
+
+<template id="exp-lightbox-wrapper-template">
+    <div class="exp-lightbox-wrapper">
+        <div class="exp-lightbox-toggle">
+            <button type="button" class="exp-lightbox-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                    <path fill="currentColor" d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+        <script src="js/tocbot.min.js"></script>
+        <script src="js/article-toc.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/iframe-resizer.parent.js"></script>
+
+    </body>
+
+</html>

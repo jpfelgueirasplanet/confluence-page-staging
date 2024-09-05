@@ -1,0 +1,417 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+        <link rel="icon" href="_scroll_external/logos/59f13d845123/default-space-logo.svg">
+
+        <!-- Primary Meta Tags -->
+        <meta name="exp-export-timestamp" content="2024-09-05T09:13:14.378+0000">
+        <meta name="exp-page-id" content="192228451">
+        <meta name="exp-page-title" content="FAQ - IO_LoyaltyAccountChargeRQ/RS">
+        <meta name="exp-page-version" content="3">
+        <meta name="exp-page-scroll-page-id" content="">
+        <meta name="exp-page-created" content="2021-12-03T12:43:07.237+0000">
+        <meta name="exp-page-last-modified" content="2021-12-08T12:17:46.080+0000">
+        <meta name="exp-page-labels" content="">
+        <meta name="exp-page-context-keys" content="">
+        <meta name="exp-space-key" content="PIODOC">
+        <meta name="exp-space-title" content="protel.I/O documentation">
+
+        <!-- Additional Meta Tags -->
+        <meta name="exp-document-id" content="">
+        <meta name="exp-document-title" content="protel.I/O documentation">
+        <meta name="exp-version-status" content="">
+        <meta name="exp-version-id" content="">
+        <meta name="exp-version-name" content="">
+        <meta name="exp-version-description" content="">
+        <meta name="exp-version-date" content="">
+        <meta name="exp-variant-id" content="">
+        <meta name="exp-variant-name" content="">
+        <meta name="exp-variant-description" content="">
+        <meta name="exp-language-code" content="">
+        <meta name="exp-language-name" content="">
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/image-dimensions.css">
+
+
+            
+            
+<script src="js/search.js"></script>
+            <script id="search-worker" type="javascript/worker">
+    onmessage = function(event) {
+        // dispatch events to handling functions
+        var message = event.data;
+
+        if ((message.type === 'setup') && message.baseUrl) {
+            setup(message.baseUrl);
+        }
+
+        if (message.type === 'search-request') {
+            search(message.query);
+        }
+    }
+
+    var searchIndex;
+
+    function setup(baseUrl) {
+        importScripts(
+            baseUrl + 'js/lunr.js',
+            baseUrl + 'js/lunr-index.js',
+            baseUrl + 'js/lunr-data.js'
+        );
+        try {
+            // load lunr-extras if it exists, which contains language-specific files for languages other than english
+            importScripts(baseUrl + 'js/lunr-extras.js');
+        } catch (e) {}
+        searchIndex = lunr.Index.load(lunrIndex);
+    }
+
+    function search(query) {
+        var searchHits = searchIndex.search(query);
+        var results = searchHits.map(function (result) {
+            return lunrData.filter(function (d) {
+                return d.id === result.ref;
+            })[0]
+        });
+        postMessage({ type: 'search-results', results: results, query: query });
+    }
+</script>
+        <title>FAQ - IO_LoyaltyAccountChargeRQ/RS</title>
+
+    <meta name="generator" content="Scroll HTML Exporter / K15t GmbH"></head>
+
+    <body id="FAQ-IO_LoyaltyAccountChargeRQ/RS-top" data-pageid="192228451" data-confluence-editor-version="v1" data-confluence-deployment-type="DATACENTER">
+
+        <div class="exp-grid-container">
+
+            <header class="exp-header"></header>
+
+            <div class="exp-logo">
+                <a href="protel.I_O-documentation.192227604.html">
+                    <span class="exp-logo-image" style="background-image: url(_scroll_external/logos/59f13d845123/default-space-logo.svg)" alt="protel.I/O documentation" title="protel.I/O documentation"></span>
+                </a>
+            </div>
+
+            <div class="exp-document-title">
+                <h1 class="exp-document-title-heading scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h1 scroll-relative-h1" data-scroll-heading-rank="1" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="1" id="no-src_generated-id-505d906e527f3257b3d408a259fe8ce9c7df01b58f195bd5581981a2fe2a60bf">
+                    <a href="protel.I_O-documentation.192227604.html">
+                        protel.I/O documentation
+                    </a>
+                </h1>
+            </div>
+
+<div class="exp-search-container">
+    <input type="search" id="search-textbox" autocomplete="off" class="exp-search-input" style="margin-right: 0;">
+    <div class="exp-search-input-icon">
+        <svg data-exp-id="magnifier-icon" data-exp-component="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8.99452 14.5C10.5121 14.5 11.809 13.9669 12.8854 12.9007C13.9618 11.8345 14.5 10.5361 14.5 9.00548C14.5 7.48794 13.9631 6.19097 12.8893 5.11458C11.8155 4.03819 10.519 3.5 9 3.5C7.46786 3.5 6.16816 4.0369 5.1009 5.11071C4.03363 6.18453 3.5 7.48096 3.5 9C3.5 10.5321 4.0331 11.8318 5.09929 12.8991C6.1655 13.9664 7.46391 14.5 8.99452 14.5ZM9 16C8.02913 16 7.11974 15.816 6.27185 15.4479C5.42395 15.0799 4.68056 14.5799 4.04167 13.9479C3.40278 13.316 2.90278 12.576 2.54167 11.728C2.18056 10.88 2 9.97053 2 8.99956C2 8.04152 2.18403 7.13542 2.55208 6.28125C2.92014 5.42708 3.41864 4.68387 4.04758 4.0516C4.67653 3.41935 5.41569 2.91935 6.26508 2.5516C7.11449 2.18387 8.02548 2 8.99806 2C9.95769 2 10.8646 2.18403 11.7188 2.55208C12.5729 2.92014 13.316 3.42014 13.9479 4.05208C14.5799 4.68403 15.0799 5.42612 15.4479 6.27835C15.816 7.13058 16 8.0381 16 9.00094C16 9.83365 15.8615 10.6213 15.5846 11.3638C15.3078 12.1062 14.9254 12.7836 14.4375 13.3958L18 16.9583L16.9375 18L13.375 14.4583C12.7668 14.9459 12.0939 15.3247 11.3564 15.5948C10.6188 15.8649 9.83333 16 9 16Z" fill="currentColor" />
+        </svg>
+    </div>
+    <div id="search-suggestion-container" class="exp-search-suggestion-panel" data-exp-component="search-suggestion"></div>
+    <template id="exp-search-suggestion-option-template">
+        <div class="exp-search-suggestion-option-container search-form-suggestion">
+            <a class="exp-search-suggestion-option search-form-suggestion" href=""></a>
+        </div>
+    </template>
+</div>
+
+
+            <nav class="exp-sidebar-navigation">
+                <div class="exp-sidebar-navigation-sticky-wrapper">
+                    <iframe src="toc.html?pageId=192228451" border="0"></iframe>
+                </div>
+
+            </nav>
+
+
+            <nav aria-label="Breadcrumb" class="exp-breadcrumbs-wrapper">
+                <ol class="breadcrumbs">
+                        <li class="breadcrumb">
+                            <a href="protel.I_O-documentation.192227604.html" rel="prev" target="_self">protel.I/O documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Message-Documentation.192227615.html" rel="prev" target="_self">Message Documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Message-dictionary.192227633.html" rel="prev" target="_self">Message dictionary</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Loyalty.192227901.html" rel="prev" target="_self">Loyalty</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="IO_LoyaltyAccountChargeRQ_RS.192228322.html" rel="prev" target="_self">IO_LoyaltyAccountChargeRQ/RS</a>
+                        </li>
+                    <li class="breadcrumb active" aria-current="page">
+                        FAQ - IO_LoyaltyAccountChargeRQ/RS
+                    </li>
+                </ol>
+            </nav>
+
+
+            <main class="exp-content">
+                <article role="article">
+
+                    <header>
+                        <h1 class="article-heading scroll-h1 scroll-original-h1 scroll-relative-h1 scroll-custom-section-heading scroll-document-section-heading" role="heading" data-scroll-heading-rank="1" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="1" id="no-src_generated-id-40d8a85eb566cc6da514c1c6cf99846070ac1451c906cec91e96601226b6e479">
+                            FAQ - IO_LoyaltyAccountChargeRQ/RS
+                        </h1>
+                    </header>
+
+                    <section class="page" id="content" role="main">
+                        <div id="main-content" class="wiki-content article-content js-tocBot-content">
+                            <p class="auto-cursor-target"><style type="text/css">/*<![CDATA[*/
+div.rbtoc1725527594399 {padding: 0px;}
+div.rbtoc1725527594399 ul {margin-left: 0px;}
+div.rbtoc1725527594399 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p><div class="toc-macro rbtoc1725527594399">
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228451" data-scroll-link-target-source-id="192228451" data-scroll-link-type="document" href="FAQ---IO_LoyaltyAccountChargeRQ_RS.192228451.html#FAQIO_LoyaltyAccountChargeRQ/RS-HowtocheckthemessageinthePWSLogfile?" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/pages/viewpage.action?pageId=192228451#src-192228451_FAQIO_LoyaltyAccountChargeRQ/RS-HowtocheckthemessageinthePWSLogfile?">How to check the message in the PWS Logfile?</a></li>
+<li><a data-scroll-target-source-id="192228451" data-scroll-link-target-source-id="192228451" data-scroll-link-type="document" href="FAQ---IO_LoyaltyAccountChargeRQ_RS.192228451.html#FAQIO_LoyaltyAccountChargeRQ/RS-OnPremiseJSONinformation-Redemption" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/pages/viewpage.action?pageId=192228451#src-192228451_FAQIO_LoyaltyAccountChargeRQ/RS-OnPremiseJSONinformation-Redemption">OnPremise JSON information - Redemption</a></li>
+<li><a data-scroll-target-source-id="192228451" data-scroll-link-target-source-id="192228451" data-scroll-link-type="document" href="FAQ---IO_LoyaltyAccountChargeRQ_RS.192228451.html#FAQIO_LoyaltyAccountChargeRQ/RS-OnPremiseJSONinformation-Cancellation" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/pages/viewpage.action?pageId=192228451#src-192228451_FAQIO_LoyaltyAccountChargeRQ/RS-OnPremiseJSONinformation-Cancellation">OnPremise JSON information - Cancellation</a></li>
+</ul>
+</div><p></p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 100.0%;"><colgroup span="1"><col span="1" style="width: 6.82745%;"><col span="1" style="width: 7.64128%;"><col span="1" style="width: 81.2667%;"><col span="1" style="width: 4.28093%;"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Topic/Question</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Use Case</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Solution</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>System</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><h2 id="FAQIO_LoyaltyAccountChargeRQ/RS-HowtocheckthemessageinthePWSLogfile?" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="2" class="scroll-original-h4 scroll-non-section-heading scroll-h2 scroll-relative-h2">How to check the message in the PWS Logfile?</h2></td><td colspan="1" rowspan="1" class="confluenceTd"><p>OnPremise will inform the PWS about the information that needs to be sent to the external partner.</p><p>To check what information OnPremise has provided to the PWS, in the PWS LogFile the following information is stored.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">INFO: 172.21.252.21:8031 Request : /io/loyaltyaccountcharge?format=json</code></div>
+<div class="line"><code class="plain">[.|2021-12-07 10:50:48|026|2.|INF]: IO_LoyaltyAccountChargeApiService: Received: {"correlationId":"9A064BB0-B0D5-4209-9217-E0D0136EFAD0","mpe":7,"accountID":"8700977087","loyaltyName":"GHA DISCOVERY","loyaltyLevel":"TITANIUM","loyaltyStatus":0,"primaryInd":0,"userName":"","userGroup":"","userDepartment":"","userEmail":"","userID":"-2","stayInfo":{"reservationID":2390688,"arrivalDate":"2019-09-01","departureDate":"2019-09-03"},"currencyCode":"AED","transactionAmount":{"points":10,"amount":"36.73","currencyCode":"AED","exchangeRate":0.27224199999999998}}</code></div>
+<div class="line"><code class="plain">[.|2021-12-07 10:50:49|026|2.|INF]: IO_LoyaltyAccountChargeApiService: Answered: {"data":{"success":"","correlationId":"9A064BB0-B0D5-4209-9217-E0D0136EFAD0","accountID":"8700977087","loyaltyName":"GHA DISCOVERY","loyaltyLevel":"TITANIUM","loyaltyStatus":0,"primaryInd":1,"transactionReference":"CU3QQDFN89DI2SGKK10SH74CU5","transactionTime":"0001-01-01","accountBalance":{"points":5371,"type":"D$","amount":19728.7572,"currencyCode":"AED","exchangeRate":0.27224218664924316},"accountRedeemed":{"points":10.0,"type":"D$","amount":36.732,"currencyCode":"AED","exchangeRate":0.27224218664924316}},"success":true,"error":"Success","errorCode":0}</code></div>
+</div>
+</div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p>onPremise</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><h2 id="FAQIO_LoyaltyAccountChargeRQ/RS-OnPremiseJSONinformation-Redemption" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="2" class="scroll-original-h4 scroll-non-section-heading scroll-h2 scroll-relative-h2">OnPremise JSON information - Redemption&nbsp;</h2></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(29,28,29);">OnPremise uses a JSON message to inform the PWS that a message should be sent.</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(23,43,77);"><u><strong>JSON from onPrem to PWS</strong></u></span></p><u>Endpoint</u>:&nbsp;<span style="color: rgb(33,33,33);"><span style="color: rgb(33,33,33);"><a rel="nofollow" href="http://172.21.252.21:8031/io/loyaltyaccountcharge?format=json" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="http://172.21.252.21:8031/io/loyaltyaccountcharge?format=json" data-scroll-link-local="false">http://172.21.252.21:8031/io/loyaltyaccountcharge?format=json</a></span></span><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">{</code></div>
+<div class="line"><code class="plain">    "CorrelationId" : "LaureenTest_Charge2",</code></div>
+<div class="line"><code class="plain">    "Mpe": 7,</code></div>
+<div class="line">&nbsp;</div>
+<div class="line"><code class="plain">    "CurrencyCode": "AED",</code></div>
+<div class="line">&nbsp;</div>
+<div class="line"><code class="plain">    "AccountID": "12898323",</code></div>
+<div class="line"><code class="plain">    "LoyaltyName" : "GHA",</code></div>
+<div class="line"><code class="plain">    "LoyaltyLevel" : "Gold",</code></div>
+<div class="line"><code class="plain">    "LoyaltyStatus": 0,</code></div>
+<div class="line"><code class="plain">    "PrimaryInd": 0,</code></div>
+<div class="line">&nbsp;</div>
+<div class="line"><code class="plain">    "UserName": "HelloWorld",</code></div>
+<div class="line"><code class="plain">    "UserGroup": "Gruppe",</code></div>
+<div class="line"><code class="plain">    "UserDepartment": "Department",</code></div>
+<div class="line"><code class="plain">    "UserEmail": "EMail@Email",</code></div>
+<div class="line"><code class="plain">    "UserID": "12312",</code></div>
+<div class="line">&nbsp;</div>
+<div class="line"><code class="plain">    "TransactionAmount": </code></div>
+<div class="line"><code class="plain">    {</code></div>
+<div class="line"><code class="plain">        "Points": "10",</code></div>
+<div class="line"><code class="plain">        "Type": "D$",</code></div>
+<div class="line"><code class="plain">        "Amount": "37.64",</code></div>
+<div class="line"><code class="plain">        "CurrencyCode": "AED",</code></div>
+<div class="line"><code class="plain">        "ExchangeRate": "0.27821"</code></div>
+<div class="line"><code class="plain">    },</code></div>
+<div class="line">&nbsp;</div>
+<div class="line"><code class="plain">    "StayInfo": </code></div>
+<div class="line"><code class="plain">    {</code></div>
+<div class="line"><code class="plain">        "ReservationID": "2390534",</code></div>
+<div class="line"><code class="plain">        "ArrivalDate": "2019-08-15",</code></div>
+<div class="line"><code class="plain">        "DepartureDate": "2019-08-19"</code></div>
+<div class="line"><code class="plain">    }</code></div>
+<div class="line"><code class="plain">}</code></div>
+</div>
+</div><u style="letter-spacing: 0.0px;"><strong>Success</strong></u><p><strong>JSON from PWS to OnPrem</strong></p><u>Endpoint</u>:&nbsp;<span style="color: rgb(33,33,33);"><a rel="nofollow" href="http://172.21.252.21:8031/io/loyaltyaccountcharge?format=json" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="http://172.21.252.21:8031/io/loyaltyaccountcharge?format=json" data-scroll-link-local="false">http://172.21.252.21:8031/io/loyaltyaccountcharge?format=json</a></span><br clear="none"><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">{</code></div>
+<div class="line"><code class="plain">    "data": {</code></div>
+<div class="line"><code class="plain">        "success": "",</code></div>
+<div class="line"><code class="plain">        "correlationId": "LaureenTest_Charge2",</code></div>
+<div class="line"><code class="plain">        "accountID": "12898323",</code></div>
+<div class="line"><code class="plain">        "loyaltyName": "GHA",</code></div>
+<div class="line"><code class="plain">        "loyaltyLevel": "Gold",</code></div>
+<div class="line"><code class="plain">        "loyaltyStatus": 0,</code></div>
+<div class="line"><code class="plain">        "primaryInd": 1,</code></div>
+<div class="line"><code class="plain">        "transactionReference": "JO6T79AFPFH027MOZCJ3OC5JZW",</code></div>
+<div class="line"><code class="plain">        "accountBalance": {</code></div>
+<div class="line"><code class="plain">            "points": 1823,</code></div>
+<div class="line"><code class="plain">            "type": "D$",</code></div>
+<div class="line"><code class="plain">            "amount": 6696.243600000001,</code></div>
+<div class="line"><code class="plain">            "currencyCode": "AED",</code></div>
+<div class="line"><code class="plain">            "exchangeRate": 0</code></div>
+<div class="line"><code class="plain">        },</code></div>
+<div class="line"><code class="plain">        "accountRedeemed": {</code></div>
+<div class="line"><code class="plain">            "points": 10.0,</code></div>
+<div class="line"><code class="plain">            "type": "D$",</code></div>
+<div class="line"><code class="plain">            "amount": 36.732,</code></div>
+<div class="line"><code class="plain">            "currencyCode": "AED",</code></div>
+<div class="line"><code class="plain">            "exchangeRate": 0</code></div>
+<div class="line"><code class="plain">        }</code></div>
+<div class="line"><code class="plain">    },</code></div>
+<div class="line"><code class="plain">    "success": true,</code></div>
+<div class="line"><code class="plain">    "error": "Success",</code></div>
+<div class="line"><code class="plain">    "errorCode": 0</code></div>
+<div class="line"><code class="plain">}</code></div>
+</div>
+</div><u style="letter-spacing: 0.0px;"><strong>Error</strong></u><p><strong>JSON from PWS to OnPrem</strong></p><p><u>Endpoint</u>:&nbsp;<span style="color: rgb(33,33,33);"><a rel="nofollow" href="http://172.21.252.21:8031/io/loyaltyaccountcharge?format=json" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="http://172.21.252.21:8031/io/loyaltyaccountcharge?format=json" data-scroll-link-local="false">http://172.21.252.21:8031/io/loyaltyaccountcharge?format=json</a></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">{</code></div>
+<div class="line"><code class="plain">    "data": {</code></div>
+<div class="line"><code class="plain">        "errors": [</code></div>
+<div class="line"><code class="plain">            "No member found matching the member code."</code></div>
+<div class="line"><code class="plain">        ],</code></div>
+<div class="line"><code class="plain">        "correlationId": "LaureenTest_Charge2"</code></div>
+<div class="line"><code class="plain">    },</code></div>
+<div class="line"><code class="plain">    "success": true,</code></div>
+<div class="line"><code class="plain">    "error": "Success",</code></div>
+<div class="line"><code class="plain">    "errorCode": 0</code></div>
+<div class="line"><code class="plain">}</code></div>
+</div>
+</div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p>OnPremise</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><h2 id="FAQIO_LoyaltyAccountChargeRQ/RS-OnPremiseJSONinformation-Cancellation" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="2" class="scroll-original-h4 scroll-non-section-heading scroll-h2 scroll-relative-h2">OnPremise JSON information - Cancellation</h2></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(29,28,29);">OnPremise uses a JSON message to inform the PWS that a message should be sent.</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><strong>JSON from OnPrem to PWS</strong></p><p><u>Endpoint</u>:&nbsp;<span style="color: rgb(33,33,33);"><a rel="nofollow" href="http://172.21.252.21:8031/io/loyaltyvoidaccountcharge?format=json" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="http://172.21.252.21:8031/io/loyaltyvoidaccountcharge?format=json" data-scroll-link-local="false">http://172.21.252.21:8031/io/loyaltyvoidaccountcharge?format=json</a></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">{</code></div>
+<div class="line"><code class="plain">    "CorrelationId" : "LaureenTest_Void1",</code></div>
+<div class="line"><code class="plain">    "Mpe": 7,</code></div>
+<div class="line">&nbsp;</div>
+<div class="line"><code class="plain">    "CurrencyCode": "AED",</code></div>
+<div class="line">&nbsp;</div>
+<div class="line"><code class="plain">    "AccountID": "12898323",</code></div>
+<div class="line"><code class="plain">    "LoyaltyName" : "GHA",</code></div>
+<div class="line"><code class="plain">    "LoyaltyLevel" : "Gold",</code></div>
+<div class="line"><code class="plain">    "LoyaltyStatus": 0,</code></div>
+<div class="line"><code class="plain">    "PrimaryInd": 0,</code></div>
+<div class="line">&nbsp;</div>
+<div class="line"><code class="plain">    "TransactionReference" : "77",</code></div>
+<div class="line">&nbsp;</div>
+<div class="line"><code class="plain">    "UserName": "HelloWorld",</code></div>
+<div class="line"><code class="plain">    "UserGroup": "Gruppe",</code></div>
+<div class="line"><code class="plain">    "UserDepartment": "Department",</code></div>
+<div class="line"><code class="plain">    "UserEmail": "EMail@Email",</code></div>
+<div class="line"><code class="plain">    "UserID": "12312",</code></div>
+<div class="line">&nbsp;</div>
+<div class="line"><code class="plain">    "TransactionAmount": </code></div>
+<div class="line"><code class="plain">    {</code></div>
+<div class="line"><code class="plain">        "Points": "10",</code></div>
+<div class="line"><code class="plain">        "Type": "D$",</code></div>
+<div class="line"><code class="plain">        "Amount": "37.64",</code></div>
+<div class="line"><code class="plain">        "CurrencyCode": "AED",</code></div>
+<div class="line"><code class="plain">        "ExchangeRate": "0.27821"</code></div>
+<div class="line"><code class="plain">    },</code></div>
+<div class="line">&nbsp;</div>
+<div class="line"><code class="plain">    "StayInfo": </code></div>
+<div class="line"><code class="plain">    {</code></div>
+<div class="line"><code class="plain">        "ReservationID": "2390534",</code></div>
+<div class="line"><code class="plain">        "ArrivalDate": "2019-08-15",</code></div>
+<div class="line"><code class="plain">        "DepartureDate": "2019-08-19"</code></div>
+<div class="line"><code class="plain">    }</code></div>
+<div class="line"><code class="plain">}</code></div>
+</div>
+</div><p class="auto-cursor-target"><strong>JSON from PWS to OnPrem</strong></p><p><u>Endpoint</u><span style="color: rgb(33,33,33);"><a rel="nofollow" href="http://172.21.252.21:8031/io/loyaltyvoidaccountcharge?format=json" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="http://172.21.252.21:8031/io/loyaltyvoidaccountcharge?format=json" data-scroll-link-local="false">http://172.21.252.21:8031/io/loyaltyvoidaccountcharge?format=json</a></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">{</code></div>
+<div class="line"><code class="plain">    "data": {</code></div>
+<div class="line"><code class="plain">        "success": "",</code></div>
+<div class="line"><code class="plain">        "correlationId": "LaureenTest_Void1",</code></div>
+<div class="line"><code class="plain">        "accountID": "12898323",</code></div>
+<div class="line"><code class="plain">        "loyaltyName": "GHA",</code></div>
+<div class="line"><code class="plain">        "loyaltyLevel": "Gold",</code></div>
+<div class="line"><code class="plain">        "loyaltyStatus": 0,</code></div>
+<div class="line"><code class="plain">        "primaryInd": 1,</code></div>
+<div class="line"><code class="plain">        "accountBalance": {</code></div>
+<div class="line"><code class="plain">            "points": 1783,</code></div>
+<div class="line"><code class="plain">            "type": "D$",</code></div>
+<div class="line"><code class="plain">            "amount": 6549.3156,</code></div>
+<div class="line"><code class="plain">            "currencyCode": "AED",</code></div>
+<div class="line"><code class="plain">            "exchangeRate": 0</code></div>
+<div class="line"><code class="plain">        },</code></div>
+<div class="line"><code class="plain">        "accountRedeemed": {</code></div>
+<div class="line"><code class="plain">            "points": 10.0,</code></div>
+<div class="line"><code class="plain">            "type": "D$",</code></div>
+<div class="line"><code class="plain">            "amount": 36.732,</code></div>
+<div class="line"><code class="plain">            "currencyCode": "AED",</code></div>
+<div class="line"><code class="plain">            "exchangeRate": 0</code></div>
+<div class="line"><code class="plain">        }</code></div>
+<div class="line"><code class="plain">    },</code></div>
+<div class="line"><code class="plain">    "success": true,</code></div>
+<div class="line"><code class="plain">    "error": "Success",</code></div>
+<div class="line"><code class="plain">    "errorCode": 0</code></div>
+<div class="line"><code class="plain">}</code></div>
+</div>
+</div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p>OnPremise</p></td></tr></tbody></table></div>
+                        </div>
+                    </section>
+
+                </article>
+            </main>
+
+
+                <nav class="exp-post-navigation-prev">
+                    <a href="IO_LoyaltyAccountChargeRQ_RS.192228322.html" class="post-navigation-link">
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-prev">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                        <span>IO_LoyaltyAccountChargeRQ/RS</span>
+                    </a>
+                </nav>
+
+                <nav class="exp-post-navigation-next">
+
+                    <a href="Sample-Messages-_-Use-Cases---IO_LoyaltyAccountChargeRQ_RS.192228542.html" class="post-navigation-link">
+                        <span>Sample Messages / Use Cases - IO_LoyaltyAccountChargeRQ/RS</span>
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-next">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-225.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                    </a>
+
+                </nav>
+
+
+            <nav class="exp-sidebar-toc js-tocBot">
+                <!-- content generated by toc.js  -->
+            </nav>
+
+            <div class="exp-sidebar-navigation-toggle">
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+            </div>
+
+            <div class="exp-scroll-to-top-container">
+                <a href="#FAQ-IO_LoyaltyAccountChargeRQ/RS-top" class="exp-scroll-to-top-link">↑ Back to top</a>
+            </div>
+
+        </div>
+
+
+
+<dialog class="exp-lightbox-container" aria-modal="true">
+    <div class="lightbox-toolbar">
+        <button type="button" class="exp-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox-content content">
+    </div>
+</dialog>
+
+<template id="exp-lightbox-wrapper-template">
+    <div class="exp-lightbox-wrapper">
+        <div class="exp-lightbox-toggle">
+            <button type="button" class="exp-lightbox-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                    <path fill="currentColor" d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+        <script src="js/tocbot.min.js"></script>
+        <script src="js/article-toc.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/iframe-resizer.parent.js"></script>
+
+    </body>
+
+</html>

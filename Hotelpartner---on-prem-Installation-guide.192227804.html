@@ -1,0 +1,690 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+        <link rel="icon" href="_scroll_external/logos/59f13d845123/default-space-logo.svg">
+
+        <!-- Primary Meta Tags -->
+        <meta name="exp-export-timestamp" content="2024-09-05T09:14:04.459+0000">
+        <meta name="exp-page-id" content="192227804">
+        <meta name="exp-page-title" content="Hotelpartner - on prem Installation guide">
+        <meta name="exp-page-version" content="93">
+        <meta name="exp-page-scroll-page-id" content="">
+        <meta name="exp-page-created" content="2020-05-22T17:54:26.547+0000">
+        <meta name="exp-page-last-modified" content="2024-03-18T16:40:09.447+0000">
+        <meta name="exp-page-labels" content="">
+        <meta name="exp-page-context-keys" content="">
+        <meta name="exp-space-key" content="PIODOC">
+        <meta name="exp-space-title" content="protel.I/O documentation">
+
+        <!-- Additional Meta Tags -->
+        <meta name="exp-document-id" content="">
+        <meta name="exp-document-title" content="protel.I/O documentation">
+        <meta name="exp-version-status" content="">
+        <meta name="exp-version-id" content="">
+        <meta name="exp-version-name" content="">
+        <meta name="exp-version-description" content="">
+        <meta name="exp-version-date" content="">
+        <meta name="exp-variant-id" content="">
+        <meta name="exp-variant-name" content="">
+        <meta name="exp-variant-description" content="">
+        <meta name="exp-language-code" content="">
+        <meta name="exp-language-name" content="">
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/image-dimensions.css">
+
+
+            
+            
+<script src="js/search.js"></script>
+            <script id="search-worker" type="javascript/worker">
+    onmessage = function(event) {
+        // dispatch events to handling functions
+        var message = event.data;
+
+        if ((message.type === 'setup') && message.baseUrl) {
+            setup(message.baseUrl);
+        }
+
+        if (message.type === 'search-request') {
+            search(message.query);
+        }
+    }
+
+    var searchIndex;
+
+    function setup(baseUrl) {
+        importScripts(
+            baseUrl + 'js/lunr.js',
+            baseUrl + 'js/lunr-index.js',
+            baseUrl + 'js/lunr-data.js'
+        );
+        try {
+            // load lunr-extras if it exists, which contains language-specific files for languages other than english
+            importScripts(baseUrl + 'js/lunr-extras.js');
+        } catch (e) {}
+        searchIndex = lunr.Index.load(lunrIndex);
+    }
+
+    function search(query) {
+        var searchHits = searchIndex.search(query);
+        var results = searchHits.map(function (result) {
+            return lunrData.filter(function (d) {
+                return d.id === result.ref;
+            })[0]
+        });
+        postMessage({ type: 'search-results', results: results, query: query });
+    }
+</script>
+        <title>Hotelpartner - on prem Installation guide</title>
+
+    <meta name="generator" content="Scroll HTML Exporter / K15t GmbH"></head>
+
+    <body id="Hotelpartner-onpremInstallationguide-top" data-pageid="192227804" data-confluence-editor-version="v1" data-confluence-deployment-type="DATACENTER">
+
+        <div class="exp-grid-container">
+
+            <header class="exp-header"></header>
+
+            <div class="exp-logo">
+                <a href="protel.I_O-documentation.192227604.html">
+                    <span class="exp-logo-image" style="background-image: url(_scroll_external/logos/59f13d845123/default-space-logo.svg)" alt="protel.I/O documentation" title="protel.I/O documentation"></span>
+                </a>
+            </div>
+
+            <div class="exp-document-title">
+                <h1 class="exp-document-title-heading scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h1 scroll-relative-h1" data-scroll-heading-rank="1" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="1" id="no-src_generated-id-779394b0f8a50a50396fec38b82d42cc471f99222456a6eab9d866d24b477868">
+                    <a href="protel.I_O-documentation.192227604.html">
+                        protel.I/O documentation
+                    </a>
+                </h1>
+            </div>
+
+<div class="exp-search-container">
+    <input type="search" id="search-textbox" autocomplete="off" class="exp-search-input" style="margin-right: 0;">
+    <div class="exp-search-input-icon">
+        <svg data-exp-id="magnifier-icon" data-exp-component="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8.99452 14.5C10.5121 14.5 11.809 13.9669 12.8854 12.9007C13.9618 11.8345 14.5 10.5361 14.5 9.00548C14.5 7.48794 13.9631 6.19097 12.8893 5.11458C11.8155 4.03819 10.519 3.5 9 3.5C7.46786 3.5 6.16816 4.0369 5.1009 5.11071C4.03363 6.18453 3.5 7.48096 3.5 9C3.5 10.5321 4.0331 11.8318 5.09929 12.8991C6.1655 13.9664 7.46391 14.5 8.99452 14.5ZM9 16C8.02913 16 7.11974 15.816 6.27185 15.4479C5.42395 15.0799 4.68056 14.5799 4.04167 13.9479C3.40278 13.316 2.90278 12.576 2.54167 11.728C2.18056 10.88 2 9.97053 2 8.99956C2 8.04152 2.18403 7.13542 2.55208 6.28125C2.92014 5.42708 3.41864 4.68387 4.04758 4.0516C4.67653 3.41935 5.41569 2.91935 6.26508 2.5516C7.11449 2.18387 8.02548 2 8.99806 2C9.95769 2 10.8646 2.18403 11.7188 2.55208C12.5729 2.92014 13.316 3.42014 13.9479 4.05208C14.5799 4.68403 15.0799 5.42612 15.4479 6.27835C15.816 7.13058 16 8.0381 16 9.00094C16 9.83365 15.8615 10.6213 15.5846 11.3638C15.3078 12.1062 14.9254 12.7836 14.4375 13.3958L18 16.9583L16.9375 18L13.375 14.4583C12.7668 14.9459 12.0939 15.3247 11.3564 15.5948C10.6188 15.8649 9.83333 16 9 16Z" fill="currentColor" />
+        </svg>
+    </div>
+    <div id="search-suggestion-container" class="exp-search-suggestion-panel" data-exp-component="search-suggestion"></div>
+    <template id="exp-search-suggestion-option-template">
+        <div class="exp-search-suggestion-option-container search-form-suggestion">
+            <a class="exp-search-suggestion-option search-form-suggestion" href=""></a>
+        </div>
+    </template>
+</div>
+
+
+            <nav class="exp-sidebar-navigation">
+                <div class="exp-sidebar-navigation-sticky-wrapper">
+                    <iframe src="toc.html?pageId=192227804" border="0"></iframe>
+                </div>
+
+            </nav>
+
+
+            <nav aria-label="Breadcrumb" class="exp-breadcrumbs-wrapper">
+                <ol class="breadcrumbs">
+                        <li class="breadcrumb">
+                            <a href="protel.I_O-documentation.192227604.html" rel="prev" target="_self">protel.I/O documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Integrations.192227608.html" rel="prev" target="_self">Integrations</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Hotelpartner.192227765.html" rel="prev" target="_self">Hotelpartner</a>
+                        </li>
+                    <li class="breadcrumb active" aria-current="page">
+                        Hotelpartner - on prem Installation guide
+                    </li>
+                </ol>
+            </nav>
+
+
+            <main class="exp-content">
+                <article role="article">
+
+                    <header>
+                        <h1 class="article-heading scroll-h1 scroll-original-h1 scroll-relative-h1 scroll-custom-section-heading scroll-document-section-heading" role="heading" data-scroll-heading-rank="1" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="1" id="no-src_generated-id-18329f81e7ad772dbae1f0efffb0592c39eb741eb7aa288b4b20d5bcdcf1a828">
+                            Hotelpartner - on prem Installation guide
+                        </h1>
+                    </header>
+
+                    <section class="page" id="content" role="main">
+                        <div id="main-content" class="wiki-content article-content js-tocBot-content">
+                            <p><span style="color: rgb(51,51,51);"><style type="text/css">/*<![CDATA[*/
+div.rbtoc1725527644546 {padding: 0px;}
+div.rbtoc1725527644546 ul {margin-left: 0px;}
+div.rbtoc1725527644546 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></span></p><div class="toc-macro rbtoc1725527644546">
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192227804" data-scroll-link-target-source-id="192227804" data-scroll-link-type="document" href="Hotelpartner---on-prem-Installation-guide.192227804.html#HotelpartneronpremInstallationguide-AbouttheInterface:Hotelpartner" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Hotelpartner+-+on+prem+Installation+guide#src-192227804_HotelpartneronpremInstallationguide-AbouttheInterface:Hotelpartner">About the Interface: Hotelpartner</a></li>
+<li><a data-scroll-target-source-id="192227804" data-scroll-link-target-source-id="192227804" data-scroll-link-type="document" href="Hotelpartner---on-prem-Installation-guide.192227804.html#HotelpartneronpremInstallationguide-ContactInformation-IntegrationPartner" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Hotelpartner+-+on+prem+Installation+guide#src-192227804_HotelpartneronpremInstallationguide-ContactInformation-IntegrationPartner">Contact Information - Integration Partner</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192227804" data-scroll-link-target-source-id="192227804" data-scroll-link-type="document" href="Hotelpartner---on-prem-Installation-guide.192227804.html#HotelpartneronpremInstallationguide-Generalsteps" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Hotelpartner+-+on+prem+Installation+guide#src-192227804_HotelpartneronpremInstallationguide-Generalsteps">General steps</a></li>
+<li><a data-scroll-target-source-id="192227804" data-scroll-link-target-source-id="192227804" data-scroll-link-type="document" href="Hotelpartner---on-prem-Installation-guide.192227804.html#HotelpartneronpremInstallationguide-OnewayInstallation" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Hotelpartner+-+on+prem+Installation+guide#src-192227804_HotelpartneronpremInstallationguide-OnewayInstallation">One way Installation</a></li>
+<li><a data-scroll-target-source-id="192227804" data-scroll-link-target-source-id="192227804" data-scroll-link-type="document" href="Hotelpartner---on-prem-Installation-guide.192227804.html#HotelpartneronpremInstallationguide-TwowayInstallation" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Hotelpartner+-+on+prem+Installation+guide#src-192227804_HotelpartneronpremInstallationguide-TwowayInstallation">Two way Installation</a></li>
+</ul>
+</li>
+</ul>
+</div><p></p><h2 id="HotelpartneronpremInstallationguide-AbouttheInterface:Hotelpartner" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">About the Interface: <span style="color: rgb(0,0,0);"><a data-scroll-target-source-id="192227765" data-scroll-link-target-source-id="192227765" data-scroll-link-type="document" href="Hotelpartner.192227765.html" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Hotelpartner">Hotelpartner</a></span></h2><p><br clear="none"></p><h2 id="HotelpartneronpremInstallationguide-ContactInformation-IntegrationPartner" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2"><strong>Contact Information&nbsp;</strong><strong>- Integration Partner</strong></h2><p><strong>Slack Channel:&nbsp;</strong>#<span style="color: rgb(0,0,0);">htng_hotelpartner</span></p><p><strong>General phone number:&nbsp;</strong><span style="color: rgb(58,59,60);">+49 (40) 3069 888 18</span><strong><br clear="none">Support / Installer phone number:&nbsp;&nbsp;<span style="color: rgb(0,0,0);">-</span></strong></p><p><strong>General email address:&nbsp;</strong><a rel="nofollow" style="text-decoration: none;" href="mailto:info@hotelpartner-ym.com" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="mailto:info@hotelpartner-ym.com" data-scroll-link-local="false">info@hotelpartner-ym.com</a><strong><span style="color: rgb(255,0,0);"><br clear="none"></span></strong><strong>Support / Installer email address:&nbsp;&nbsp;</strong><a rel="nofollow" style="text-decoration: none;" href="mailto:pp@hotelpartner-ym.com" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="mailto:pp@hotelpartner-ym.com" data-scroll-link-local="false">pp@hotelpartner-ym.com</a></p><p><br clear="none"></p><p><strong>Contact persons for installations</strong></p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 634.4px;"><colgroup span="1"><col span="1" style="width: 0.0px;"><col span="1" style="width: 0.0px;"><col span="1" style="width: 0.0px;"><col span="1" style="width: 0.0px;"><col span="1" style="width: 0.0px;"></colgroup><thead><tr><th colspan="1" rowspan="1" style="text-align: left;" class="confluenceTh"><p>Name</p></th><th colspan="1" rowspan="1" style="text-align: left;" class="confluenceTh"><p>Position (Support / Installer)</p></th><th colspan="1" rowspan="1" style="text-align: left;" class="confluenceTh"><p>Email</p></th><th colspan="1" rowspan="1" style="text-align: left;" class="confluenceTh"><p>Slack</p></th><th colspan="1" rowspan="1" style="text-align: left;" class="confluenceTh"><p>Phone number</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Pascal Ploch</span></p></td><td colspan="1" rowspan="1" style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(58,59,60);">Implementation specialist</span></p></td><td colspan="1" rowspan="1" style="text-align: left;" class="confluenceTd"><p><a rel="nofollow" style="text-decoration: none;" href="mailto:pp@hotelpartner-ym.com" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="mailto:pp@hotelpartner-ym.com" data-scroll-link-local="false">pp@hotelpartner-ym.com</a></p></td><td colspan="1" rowspan="1" style="text-align: left;" class="confluenceTd"><p>&nbsp; &nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></p></td><td colspan="1" rowspan="1" style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">+49 (0)40 3069 888 12</span></p></td></tr></tbody></table></div><p><span style="font-size: 16.0px;font-weight: bold;letter-spacing: -0.006em;">Installation Steps</span></p><div class="table-wrap"><table class="wrapped confluenceTable tableenhancer tableenhancer-rownums-onceBeforeSorting"><colgroup span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><h3 id="HotelpartneronpremInstallationguide-Generalsteps" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="3" class="scroll-original-h4 scroll-non-section-heading scroll-h3 scroll-relative-h3"><strong><em>General steps</em></strong></h3></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Examples</p></th></tr></thead><tbody><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">If there is the<span>&nbsp;</span></span>old interface via IDS in use: Deactivate<span style="color: rgb(23,43,77);"><span>&nbsp;</span>it before you switch to the new one because of incoming reservations</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="b6cd0acd-2b70-4a09-a3ec-a56d8cbc594c" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/4fccdeac342d/image2020-6-3_21-16-7.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);"><span class="inline-comment-marker" data-ref="3323453b-65bb-414b-ad3e-2223990f56e6">Hotelpartner uses a different Token for each IO installation, but the same Endpoint.<br clear="none"><br clear="none">Request authentication details (only the Token is needed) from the Integration partner for the new installation and request them to send you the authentication details on private Slack message or encrypted file by email and inform you by phone about the password.</span></span></p><p><span style="color: rgb(23,43,77);"> Please provide them the HotelID as well - internally for Protel this is the CloudID&nbsp;</span></p><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="d2770aa1-19d8-49db-9d90-ca72c17706a2" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/297ce8209ce7/image2020-6-3_20-37-4.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(23,43,77);">General Preparation </span>On Premise</p><p><br clear="none"></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><a rel="nofollow" style="text-decoration: none;text-align: left;" href="https://confluence.protel.net/display/CUCH/Customer+Checklists?preview=/93228458/93228891/IO_Pre-Setup-Checklist_Partner_en.pdf" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/display/CUCH/Customer+Checklists?preview=/93228458/93228891/IO_Pre-Setup-Checklist_Partner_en.pdf" data-scroll-link-local="false">IO_Pre-Setup-Checklist</a><br clear="none"><br clear="none"></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>4</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(0,51,102);">Special XSetup Configuration</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p class="auto-cursor-target"><strong><span class="inline-comment-marker" data-ref="fcb38914-2420-4eb1-9ceb-514b33dd2d21">MPE/SPE xsetup: Global</span></strong></p><div class="table-wrap"><table class="wrapped confluenceTable" data-mce-resize="false"><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Group</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Identifier</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Value&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Notes/Explanation</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>reservation</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>disableconfno&nbsp;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The input field for the confirmation number (PL-Number) is set to read-only (grayed out), and the number cannot be changed.</p></td></tr></tbody></table></div><p style="text-align: left;">Starting with PWS 2.16 version, the xsetup will be available to be automatically set in the PWS UI:</p><p style="text-align: left;"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="b0ffc285-264d-4ade-9cc3-37bc9bd0c293" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/b523d19aaef1/image2020-6-19_9-40-43.png" height="250"></span></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>5</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span class="inline-comment-marker" data-ref="230e3db1-d605-406c-aa63-30a80d2c9b85">I/O Module licence to system data</span></p><ul style="list-style-type: square;"><li><span class="inline-comment-marker" data-ref="230e3db1-d605-406c-aa63-30a80d2c9b85"><span style="color: rgb(23,43,77);">Add<span>&nbsp;</span></span><em>Parameter3: com.hotelpartner.<span class="sp-highlight-term underline themetransparent sp-cursor-pointer" style="text-decoration: underline;">rms</span><span>&nbsp;</span></em><span style="color: rgb(23,43,77);">as parameter</span></span></li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="9a2f70a2-25be-4c8b-82f8-176d28c9b3ad" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/2d1dad4708db/image2020-9-25_12-51-42.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>6</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">Bob installation</span></span></p><ul style="list-style-type: square;"><li><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">depending on the Hotelpartner product ordered by the customer (RMS or RMS+CRS), please pay attention to the Service ID which you insert:&nbsp;<br clear="none">-&nbsp;<span><strong>com.hotelpartner.rms_rms</strong> (RMS <strong>without</strong> CRS functionality)<br clear="none">-&nbsp;<strong>com.hotelpartner.rms</strong> (RMS + CRS functionality)</span></span></span></li></ul><ul style="list-style-type: square;"><li><span style="color: rgb(23,43,77);">one for OnPremise (if not existing), one for the Integration, <span class="inline-comment-marker" data-ref="2b9eeaa2-fca7-4ddd-9728-662858623c52">and one for IDS</span>&nbsp;<span>&nbsp;<br clear="none"><br clear="none"></span></span></li><li>provide the token corresponding to the integration partner&nbsp;<span style="color: rgb(23,43,77);">on private Slack message or encrypted file by email and inform you by phone about the password.<br clear="none"><br clear="none"></span></li><li><span style="color: rgb(0,0,0);">Special Bob configuration&nbsp;</span><br clear="none"><span style="color: rgb(23,43,77);"><span class="inline-comment-marker" data-ref="8fb42081-6815-45ca-aef7-91e70e346d6d">Insert in the field the Target as io.protel.ids</span><br clear="none"><br clear="none"></span><span style="color: rgb(23,43,77);"><u>Important</u>:&nbsp;In case the installation is just for the Hotelpartner RMS (without the CRS function of reservation import) then no IDS installation is needed, so no Bob IDS installation either.</span></li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="bb1b6241-491d-4328-af52-450a0002843d" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/ffadb984796e/image2020-6-3_20-51-2.png" height="150"></span><br clear="none"><br clear="none"><br clear="none"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="120b0077-fd82-4987-ba85-d1e8cc636be9" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/2d98160e5463/image2020-9-25_12-55-14.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>7</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>PWS Configuration</p><ul><li>update to the latest release&nbsp;version&nbsp;</li><li>update I/O configuration</li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>8</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a rel="nofollow" href="https://confluence.protel.net/pages/viewpage.action?pageId=51250278" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/pages/viewpage.action?pageId=51250278" data-scroll-link-local="false">Manual Correction (Support-Tool Use Case)</a><span class="auto-cursor-target">&nbsp;</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr></tbody></table></div><div class="table-wrap"><table class="wrapped confluenceTable tableenhancer tableenhancer-rownums-onceBeforeSorting"><colgroup span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><h3 id="HotelpartneronpremInstallationguide-OnewayInstallation" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="3" class="scroll-original-h4 scroll-non-section-heading scroll-h3 scroll-relative-h3"><em><strong>One way Installation</strong></em></h3></th><th colspan="1" rowspan="1" class="confluenceTh"><p><br clear="none"></p></th></tr></thead><tbody><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>PWS Configuration</p><ul><li>enable LiveMode and activate ToggleTrigger for required message types for 1-way connection</li></ul><div class="table-wrap"><table class="wrapped confluenceTable" data-mce-resize="false"><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p><span style="color: rgb(0,0,0);">Message type</span></p></th><th colspan="1" rowspan="1" class="confluenceTh"><p><span style="color: rgb(0,0,0);">LiveMode</span></p></th><th colspan="1" rowspan="1" class="confluenceTh"><p><span style="color: rgb(0,0,0);">ToggleTrigger</span></p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);"><span class="inline-comment-marker" data-ref="4f43dd44-f752-462e-bb9c-d2b610f9013a">OTA_HotelResNotifRQ</span> </span></p></td><td colspan="1" rowspan="1" style="text-align: center;" class="confluenceTd"><p><img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></p></td><td colspan="1" rowspan="1" style="text-align: center;" class="confluenceTd"><p><img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>OTA_HotelStatsNotifRQ</p></td><td colspan="1" rowspan="1" style="text-align: center;" class="confluenceTd"><p><img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></p></td><td colspan="1" rowspan="1" style="text-align: center;" class="confluenceTd"><p><img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>IO_StatsNotifRQ</p></td><td colspan="1" rowspan="1" style="text-align: center;" class="confluenceTd"><p><img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></p></td><td colspan="1" rowspan="1" style="text-align: center;" class="confluenceTd"><p><img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>OTA_HotelInvCountNotifRQ&nbsp;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&nbsp; &nbsp; &nbsp; &nbsp;<img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></p></td></tr></tbody></table></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="c25f52ec-9653-40b3-b1fa-b40981215c40" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/5a3bce36f333/image2022-9-20_10-17-59.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">Create a test reservation in the future (at least one year after the system date) &amp;&nbsp;provide the reservation number to your integration partner</span></p><ul><li>make a modification and finally a cancellation of your test reservation. Verify in Kibana that outgoing OTA_HotelResNotifRQ is answered by OTA_HotelResNotifRS and no error occurs.&nbsp;</li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span>Create and start bulk uploads</span></p><ul><li><span>for reservations (OTA_HotelResNotifRQ) <br clear="none">for the last <span style="color: rgb(23,43,77);">2 years in the past and 2 years in the future, starting with the 1 January and ending 31 of December<br clear="none"></span></span><span><br clear="none"></span></li></ul><div class="expand-container"><div class="expand-content"><p><span><span style="color: rgb(29,28,29);">Check for failed messages after the bulk upload</span><span style="color: rgb(23,43,77);">:&nbsp;</span><a rel="nofollow" style="text-decoration: none;text-align: left;" href="https://confluence.protel.net/pages/viewpage.action?pageId=51250278" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/pages/viewpage.action?pageId=51250278" data-scroll-link-local="false">Manual Correction (Support-Tool Use Cases)</a><span style="color: rgb(23,43,77);">&nbsp;</span></span></p><p><span>In case you have issues with a stuck bulk upload, investigate why messages were not sent. As an option, delete the old job and create a new one.&nbsp;</span></p></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>4</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Provide Hotelpartner the Market codes and Source codes from the System Data</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="ceea8d03-9970-4db0-a631-139b39d91e4a" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/448c0189b8ce/image2020-9-23_18-2-27.png" height="250"></span></p></div><br clear="none"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="d1a23988-89c2-421e-827b-bbb244049536" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/e8d06f651aa8/image2020-9-23_18-3-24.png" height="250"></span>&nbsp; &nbsp;<span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="b29f108f-1b2d-4319-bcf1-c3822fc0d874" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/ccd4e0b0f4db/image2020-9-23_18-4-9.png" height="250"></span></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>5</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span><span style="color: rgb(0,0,0);">Configuring an IDS Instance for I/O:</span>&nbsp;</span><a rel="nofollow" href="https://confluence.protel.net/pages/viewpage.action?pageId=82379662" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/pages/viewpage.action?pageId=82379662" data-scroll-link-local="false">How to configure a protel I/O IDS</a><span>&nbsp;<br clear="none"><br clear="none"></span></p><ul><li><span><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);">Special IDS configuration</span></span></span></li></ul><p><span><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);"><span style="color: rgb(255,0,0);"><u>Important note:</u></span><span style="color: rgb(23,43,77);"><span style="color: rgb(255,0,0);"> The IDS is needed only for the reservation Import for HotelPartner</span><br clear="none"><br clear="none"></span></span></span></span></p><ul style="text-align: left;"><li><span style="color: rgb(0,0,0);">ESB server connection</span></li><li><span style="color: rgb(0,0,0);">Add new instance</span></li><li>Comserver URL</li><li>URL for Import</li><li>SQL database</li><li>Configure the Email Notification</li><li>Token and Module Name in the Special Tab</li><li>Activation of PCI Proxy is not required</li><li><span><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);">the configuration for the children age range -&nbsp; supports only Description 8 (children) - double check if the customer will use it</span></span></span></span></li><li>Create DCS mapping (a<span style="letter-spacing: 0.0px;">sk Hotelpartner and the customer which <strong>rate plan codes</strong> / <strong>room types</strong> / <strong>Source codes</strong> are needed to be mapped in Protel and then include them in the DCS matchings.</span><span style="letter-spacing: 0.0px;">&nbsp;</span><u style="letter-spacing: 0.0px;">Please note</u><span style="letter-spacing: 0.0px;"> that the codes are case sensitive and have to be matched exactly as they are mentioned - double check with HotelPartner how they send the values, as per our mapping or if they use their own values)</span><p><br clear="none"></p><u>Note:</u> for a connection test, one rate code and room type is enough to be mapped in the DCS mapping</li></ul><p><span><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);"><br clear="none"><br clear="none"></span></span></span></span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(255,0,0);"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="909755c5-5e54-4dc8-8301-369d4418dc52" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/472551c9079c/image-2024-3-11_16-18-38.png" height="221"></span><br clear="none"><br clear="none"></span></p><p><span style="color: rgb(255,0,0);"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="fcfb74c6-bfb4-47c1-8011-0fb98b5280e3" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/45d43e7f0478/image-2024-3-11_16-22-9.png" height="180"></span></span></p><p><span style="color: rgb(0,0,0);">DCS mapping</span></p></div><p><span style="color: rgb(0,0,0);"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="600" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/82d9b9877aae/image2020-6-18_11-25-49.png"></span><br clear="none"><br clear="none"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="b9fd6cca-0ccc-4587-ad5c-310d4a80f69f" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/067a9bab8dc0/image2020-6-18_11-26-12.png" height="250"></span></span></p></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>6</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><s>Start a full data export after all settings in the IDS are done, to make sure that Hotelpartner receives the availability data.</s></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><br clear="none"></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>7</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p class="auto-cursor-target"><span style="color: rgb(0,0,0);">Data Validation Report - DQE</span></p><div class="expand-container"><div class="expand-content"><ul><li><span style="color: rgb(23,43,77);">after checking if the bulk successfully finished, provide the integration partner the&nbsp;Hotel Status Report with the Net values. Hotelpartner will process the DQE and send you a report afterwards.&nbsp;</span></li><li><span style="color: rgb(23,43,77);">The Integration partner will process the DQE and send you a report afterwards</span></li><li><span style="color: rgb(23,43,77);">The report is to be found in the tab Add-Ons of the front office</span></li></ul></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr></tbody></table></div><div class="table-wrap"><table class="wrapped confluenceTable tableenhancer tableenhancer-rownums-onceBeforeSorting"><colgroup span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><h3 id="HotelpartneronpremInstallationguide-TwowayInstallation" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="3" class="scroll-original-h4 scroll-non-section-heading scroll-h3 scroll-relative-h3"><span style="color: rgb(51,51,51);"><em><strong>Two way Installation</strong></em></span></h3></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Examples</p></th></tr></thead><tbody><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p class="auto-cursor-target"><span style="letter-spacing: 0.0px;">Important notice for the&nbsp;</span><span style="letter-spacing: 0.0px;">Best Western properties</span><span style="letter-spacing: 0.0px;">: m</span><span style="letter-spacing: 0.0px;">ake a screenshot <span class="inline-comment-marker" data-ref="16fb6555-d141-44f8-85d6-0047b0eccc73">from&nbsp;</span><span class="sp-highlight-term underline themetransparent sp-cursor-pointer"><span class="inline-comment-marker" data-ref="16fb6555-d141-44f8-85d6-0047b0eccc73">OnPremise</span></span><span class="inline-comment-marker" data-ref="16fb6555-d141-44f8-85d6-0047b0eccc73">&nbsp;System Data</span> with the short names of the&nbsp;<strong>rate groups&nbsp;</strong>as well</span></p></div><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p>Rate Groups<br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="3758cef3-66db-4bdf-9e44-b8559d718a33" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/3ba61631360f/image2021-2-5_12-13-34.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>PWS Configuration</p><ul><li>enable LiveMode for required message types for 2-way connection<br clear="none"><br clear="none"></li></ul><div class="table-wrap"><table class="wrapped confluenceTable" data-mce-resize="false"><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Message Type</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>LiveMode</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">OTA_HotelRatePlanNotifRS&nbsp;</span></p></td><td colspan="1" rowspan="1" style="text-align: center;" class="confluenceTd"><p><img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">OTA_HotelAvailNotifRS&nbsp;</span></p></td><td colspan="1" rowspan="1" style="text-align: center;" class="confluenceTd"><p><img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></p></td></tr></tbody></table></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="85ea8ffa-2671-48f0-90f7-5af6454d7b88" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/a1af690cbbc5/image2021-2-5_20-18-40.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);">IDS configuration</span></span></span></p><p><span><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);">Activate in the IDS the&nbsp;<strong>Import Reservations</strong></span></span></span></span></p><ul style="list-style-type: square;"><li><span><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);"><u>Important notes:</u><span style="color: rgb(23,43,77);">&nbsp;<br clear="none"><span class="inline-comment-marker" data-ref="94571e77-c824-409d-9457-88bd7babe211"><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);">HotelPartner supports only Description 8 (children)</span></span></span></span><br clear="none"></span></span></span></span></li></ul><p><br clear="none"></p><div class="content-wrapper"><p><br clear="none"></p></div><p><span><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);"><br clear="none"></span></span></span></span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="d8b8562f-8503-47d6-ae86-924395a4113d" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/2411f1e11668/image2020-6-3_21-25-15.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>4</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(0,0,0);">Test an incoming Reservation&nbsp;</span></p><p><span style="color: rgb(0,0,0);">(OTA_HotelResNotifRQ) </span></p><div class="expand-container"><div class="expand-content"><ul><li><span style="color: rgb(23,43,77);">Create a test reservation with CC details. Verify if the details have been correctly saved in the PMS.<br clear="none"></span></li><li><span style="color: rgb(23,43,77);">ask the Integration partner to cancel the reservation after the verification is done.</span><span style="color: rgb(23,43,77);"><br clear="none"></span></li></ul></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p><div class="content-wrapper"><p class="auto-cursor-target">Incoming reservation example</p><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">    &lt;?xml version=</code><code class="string">'1.0'</code><code class="plain"> encoding=</code><code class="string">'utf-8'</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;env:Envelope xmlns:env=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;Header xmlns=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">        &lt;CorrelationID xmlns=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;RESOUT9118681L1&lt;/CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;Body xmlns=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">        &lt;OTA_HotelResNotifRQ xmlns=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain"> xmlns:ns2=</code><code class="string">"http://htng.org/2014B"</code><code class="plain"> xmlns:ns4=</code><code class="string">"http://protel.io/htng/extensions"</code><code class="plain"> xmlns:ns3=</code><code class="string">"http://protel.io/soap"</code><code class="plain"> ResStatus=</code><code class="string">"Commit"</code><code class="plain"> EchoToken=</code><code class="string">"RESOUT9118681L1"</code><code class="plain"> TimeStamp=</code><code class="string">"2021-02-08T10:43:37"</code><code class="plain"> Target=</code><code class="string">"Production"</code><code class="plain"> TargetName=</code><code class="string">"protel"</code><code class="plain"> Version=</code><code class="string">"4"</code><code class="plain"> CorrelationID=</code><code class="string">"RESOUT9118681L1"</code><code class="plain"> PrimaryLangID=</code><code class="string">"de"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;POS&gt;</code></div>
+<div class="line"><code class="plain">                &lt;Source&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RequestorID Type=</code><code class="string">"10"</code><code class="plain"> ID_Context=</code><code class="string">"protelIO"</code><code class="plain"> ID=</code><code class="string">"11897"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;BookingChannel Type=</code><code class="string">"4"</code><code class="plain"> Primary=</code><code class="string">"true"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/Source&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/POS&gt;</code></div>
+<div class="line"><code class="plain">            &lt;HotelReservations&gt;</code></div>
+<div class="line"><code class="plain">                &lt;HotelReservation ResStatus=</code><code class="string">"Reserved"</code><code class="plain"> CreateDateTime=</code><code class="string">"2021-02-08T09:37:00"</code><code class="plain"> CreatorID=</code><code class="string">"Booking"</code><code class="plain"> LastModifyDateTime=</code><code class="string">"2021-02-08T09:37:00"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;UniqueID Type=</code><code class="string">"14"</code><code class="plain"> ID_Context=</code><code class="string">"CRS"</code><code class="plain"> ID=</code><code class="string">"C5R1736373963"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RoomStays&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;RoomStay MarketCode=</code><code class="string">"WEB"</code><code class="plain"> SourceOfBusiness=</code><code class="string">"Expedia"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;RoomTypes&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;RoomType NumberOfUnits=</code><code class="string">"1"</code><code class="plain"> IsRoom=</code><code class="string">"true"</code><code class="plain"> RoomTypeCode=</code><code class="string">"ER"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/RoomTypes&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;RatePlans&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;RatePlan RatePlanCode=</code><code class="string">"TEST"</code><code class="plain"> EffectiveDate=</code><code class="string">"2021-02-09"</code><code class="plain"> ExpireDate=</code><code class="string">"2021-02-10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/RatePlans&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;RoomRates&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;RoomRate RoomTypeCode=</code><code class="string">"ER"</code><code class="plain"> EffectiveDate=</code><code class="string">"2021-02-09"</code><code class="plain"> ExpireDate=</code><code class="string">"2021-02-10"</code><code class="plain"> RatePlanCode=</code><code class="string">"TEST"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;Rates&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;Rate RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> UnitMultiplier=</code><code class="string">"1"</code><code class="plain"> EffectiveDate=</code><code class="string">"2021-02-09"</code><code class="plain"> ExpireDate=</code><code class="string">"2021-02-10"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                            &lt;Base AmountAfterTax=</code><code class="string">"59.40"</code><code class="plain"> CurrencyCode=</code><code class="string">"GBP"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                            &lt;Total AmountAfterTax=</code><code class="string">"59.40"</code><code class="plain"> CurrencyCode=</code><code class="string">"GBP"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;/Rate&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;/Rates&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;/RoomRate&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/RoomRates&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;GuestCounts&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;GuestCount AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> Count=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/GuestCounts&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;TimeSpan Start=</code><code class="string">"2021-02-09"</code><code class="plain"> End=</code><code class="string">"2021-02-10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;Guarantee GuaranteeType=</code><code class="string">"CC/DC/Voucher"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;GuaranteesAccepted&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;GuaranteeAccepted&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;PaymentCard CardType=</code><code class="string">"1"</code><code class="plain"> CardCode=</code><code class="string">"MasterCard"</code><code class="plain"> MaskedCardNumber=</code><code class="string">"XXXXXXXXXXXX2571"</code><code class="plain"> EncryptionKey=</code><code class="string">"vPbbvPdb-L9NJ-jMPS-mLoL-BZiFthkP39X"</code><code class="plain"> ExpireDate=</code><code class="string">"0421"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                            &lt;CardHolderName&gt;Hotel Reservation Servi&lt;/CardHolderName&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;/PaymentCard&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;/GuaranteeAccepted&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;/GuaranteesAccepted&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/Guarantee&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;Total AmountAfterTax=</code><code class="string">"59.40"</code><code class="plain"> CurrencyCode=</code><code class="string">"GBP"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;BasicPropertyInfo HotelCode=</code><code class="string">"11897"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;ResGuestRPHs&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;ResGuestRPH RPH=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/ResGuestRPHs&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/RoomStay&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/RoomStays&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;ResGuests&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;ResGuest ResGuestRPH=</code><code class="string">"1"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;Profiles&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;ProfileInfo&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;Profile ProfileType=</code><code class="string">"1"</code><code class="plain"> CreateDateTime=</code><code class="string">"2021-02-08T09:37:00"</code><code class="plain"> LastModifyDateTime=</code><code class="string">"2021-02-08T09:37:00"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;Customer&gt;</code></div>
+<div class="line"><code class="plain">                                            &lt;PersonName&gt;</code></div>
+<div class="line"><code class="plain">                                                &lt;GivenName&gt;Test&lt;/GivenName&gt;</code></div>
+<div class="line"><code class="plain">                                                &lt;Surname&gt;Profile&lt;/Surname&gt;</code></div>
+<div class="line"><code class="plain">                                            &lt;/PersonName&gt;</code></div>
+<div class="line"><code class="plain">                                            &lt;Telephone PhoneNumber=</code><code class="string">"49 221 2077600"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                            &lt;Email&gt;u5df7nc0oy</code><code class="color1">@m</code><code class="plain">.expediapartnercentral.com&lt;/Email&gt;</code></div>
+<div class="line"><code class="plain">                                            &lt;Address&gt;</code></div>
+<div class="line"><code class="plain">                                                &lt;AddressLine/&gt;</code></div>
+<div class="line"><code class="plain">                                                &lt;CityName/&gt;</code></div>
+<div class="line"><code class="plain">                                                &lt;PostalCode/&gt;</code></div>
+<div class="line"><code class="plain">                                                &lt;CountryName Code=</code><code class="string">""</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                            &lt;/Address&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;/Customer&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;/Profile&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;/ProfileInfo&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/Profiles&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/ResGuest&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/ResGuests&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;ResGlobalInfo&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;Comments&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;Comment&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;Text&gt;Global Remarks: </code><code class="value">1.13</code><code class="plain"> / </code><code class="value">1</code><code class="plain"> Double Bed; </code><code class="value">2.1</code><code class="plain"> / Non-Smoking; </code><code class="value">5</code><code class="plain"> / This booking was made via HRS.comBookingprocess 144029704for a Corporate Traveler. If </code><code class="keyword">this</code><code class="plain"> booking is being paid with virtual credit card, further details will be provided via separate communication, otherwise please follow the usual Hotel Collect payment process. Please contact HRS </code><code class="keyword">for</code><code class="plain"> any related questions under +</code><code class="value">49</code><code class="plain"> </code><code class="value">221</code><code class="plain"> </code><code class="value">2077</code><code class="plain"> </code><code class="value">600</code><code class="plain"> and avoid cancellations without prior clarification.Hotel Collect Booking : Expedia Affiliate Network&lt;/Text&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/Comment&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/Comments&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;HotelReservationIDs&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;HotelReservationID ResID_Type=</code><code class="string">"14"</code><code class="plain"> ResID_Value=</code><code class="string">"C5R1736373963"</code><code class="plain"> ResID_Source=</code><code class="string">"CRS"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/HotelReservationIDs&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/ResGlobalInfo&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/HotelReservation&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/HotelReservations&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/OTA_HotelResNotifRQ&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/env:Envelope&gt;</code></div>
+</div>
+</div></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>5</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(0,0,0);">Test incoming Rate update </span></p><p><span style="color: rgb(0,0,0);">(OTA_HotelRatePlanNotifRQ)</span></p><div class="expand-container"><div class="expand-content"><ul><li><span style="color: rgb(23,43,77);">t</span><span style="color: rgb(23,43,77);">he integration partner should ask the customer to c</span><span style="color: rgb(23,43,77);">reate a Test rate code</span></li><li><span style="color: rgb(23,43,77);">after the&nbsp;Test rate code has been created, ask the integration partner to push some rates</span></li><li><span style="color: rgb(23,43,77);">Make sure that the rate which needs to be updated is set to yieldable. Ask in the channel for which day the rate has been pushed, check the date and send a screenshot from the Protel Daily Rates if the rate for the specific date is showing in the list.&nbsp;</span></li><li><p><span>as soon as this has been tested successfully repeat the tests for incoming rate updates chosen by the customer (normally this should always be one and the same rate)<br clear="none"><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);"><br clear="none"></span></span></span><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);"><u>Note</u><br clear="none">Hotelpartner usually uses ony <strong>one</strong> rate for the reservation import and rate updates, but can use multiple rates as well.&nbsp;</span></span></span><br clear="none"></span></p></li></ul></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p class="auto-cursor-target">Rate update inbound example</p><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;?xml version=</code><code class="string">'1.0'</code><code class="plain"> encoding=</code><code class="string">'utf-8'</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;env:Envelope xmlns:env=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Header&gt;</code></div>
+<div class="line"><code class="plain">        &lt;htnga:CorrelationID xmlns:htnga=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;PP2900_3778878&lt;/htnga:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Body&gt;</code></div>
+<div class="line"><code class="plain">        &lt;OTA_HotelRatePlanNotifRQ xmlns=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain"> xmlns:p=</code><code class="string">"http://protel.io/soap"</code><code class="plain"> xmlns:px=</code><code class="string">"http://protel.io/htng/extensions"</code><code class="plain"> xmlns:htng=</code><code class="string">"http://htng.org/2014B"</code><code class="plain"> CorrelationID=</code><code class="string">"PP2900_3778878"</code><code class="plain"> EchoToken=</code><code class="string">"PP2900_3778878"</code><code class="plain"> MessageContentCode=</code><code class="string">"8"</code><code class="plain"> TimeStamp=</code><code class="string">"2021-02-08T22:19:01Z"</code><code class="plain"> Version=</code><code class="string">"7.001"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;POS&gt;</code></div>
+<div class="line"><code class="plain">                &lt;Source&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RequestorID ID=</code><code class="string">"12413"</code><code class="plain"> ID_Context=</code><code class="string">"protelIO"</code><code class="plain"> Type=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/Source&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/POS&gt;</code></div>
+<div class="line"><code class="plain">            &lt;RatePlans HotelCode=</code><code class="string">"12413"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;RatePlan CurrencyCode=</code><code class="string">"GBP"</code><code class="plain"> RatePlanCode=</code><code class="string">"TEST"</code><code class="plain"> RatePlanNotifType=</code><code class="string">"Overlay"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;Rates&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;Rate InvTypeCode=</code><code class="string">"TWB"</code><code class="plain"> IsRoom=</code><code class="string">"true"</code><code class="plain"> RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"999.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"999.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"2"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/Rate&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/Rates&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/RatePlan&gt;</code></div>
+<div class="line"><code class="plain">                &lt;RatePlan CurrencyCode=</code><code class="string">"GBP"</code><code class="plain"> RatePlanCode=</code><code class="string">"TEST"</code><code class="plain"> RatePlanNotifType=</code><code class="string">"Overlay"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;Rates&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;Rate InvTypeCode=</code><code class="string">"TWC"</code><code class="plain"> IsRoom=</code><code class="string">"true"</code><code class="plain"> RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"999.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"999.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"2"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/Rate&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/Rates&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/RatePlan&gt;</code></div>
+<div class="line"><code class="plain">                &lt;RatePlan CurrencyCode=</code><code class="string">"GBP"</code><code class="plain"> RatePlanCode=</code><code class="string">"TEST"</code><code class="plain"> RatePlanNotifType=</code><code class="string">"Overlay"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;Rates&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;Rate InvTypeCode=</code><code class="string">"TW"</code><code class="plain"> IsRoom=</code><code class="string">"true"</code><code class="plain"> RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"1009.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"1009.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"2"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/Rate&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/Rates&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/RatePlan&gt;</code></div>
+<div class="line"><code class="plain">                &lt;RatePlan CurrencyCode=</code><code class="string">"GBP"</code><code class="plain"> RatePlanCode=</code><code class="string">"TEST"</code><code class="plain"> RatePlanNotifType=</code><code class="string">"Overlay"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;Rates&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;Rate InvTypeCode=</code><code class="string">"TWD"</code><code class="plain"> IsRoom=</code><code class="string">"true"</code><code class="plain"> RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"1044.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"1044.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"2"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/Rate&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/Rates&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/RatePlan&gt;</code></div>
+<div class="line"><code class="plain">                &lt;RatePlan CurrencyCode=</code><code class="string">"GBP"</code><code class="plain"> RatePlanCode=</code><code class="string">"TEST"</code><code class="plain"> RatePlanNotifType=</code><code class="string">"Overlay"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;Rates&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;Rate InvTypeCode=</code><code class="string">"TWE"</code><code class="plain"> IsRoom=</code><code class="string">"true"</code><code class="plain"> RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"1009.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"1009.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"2"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/Rate&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/Rates&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/RatePlan&gt;</code></div>
+<div class="line"><code class="plain">                &lt;RatePlan CurrencyCode=</code><code class="string">"GBP"</code><code class="plain"> RatePlanCode=</code><code class="string">"TEST"</code><code class="plain"> RatePlanNotifType=</code><code class="string">"Overlay"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;Rates&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;Rate InvTypeCode=</code><code class="string">"TWF"</code><code class="plain"> IsRoom=</code><code class="string">"true"</code><code class="plain"> RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"1044.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"1044.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"2"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/Rate&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/Rates&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/RatePlan&gt;</code></div>
+<div class="line"><code class="plain">                &lt;RatePlan CurrencyCode=</code><code class="string">"GBP"</code><code class="plain"> RatePlanCode=</code><code class="string">"TEST"</code><code class="plain"> RatePlanNotifType=</code><code class="string">"Overlay"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;Rates&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;Rate InvTypeCode=</code><code class="string">"DBL"</code><code class="plain"> IsRoom=</code><code class="string">"true"</code><code class="plain"> RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> End=</code><code class="string">"2021-02-08"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"999.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;BaseByGuestAmt AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> AmountAfterTax=</code><code class="string">"999.00"</code><code class="plain"> NumberOfGuests=</code><code class="string">"2"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/Rate&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/Rates&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/RatePlan&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/RatePlans&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/OTA_HotelRatePlanNotifRQ&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/env:Envelope&gt;</code></div>
+</div>
+</div></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>6</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(0,0,0);"><span class="inline-comment-marker" data-ref="3fd24f81-fbc5-4925-95e0-f64e4bda1245">Test incoming Restrictions</span>&nbsp;</span></p><p><span style="color: rgb(0,0,0);">(OTA_HotelAvailNotifRQ)</span></p><div class="expand-container"><div class="expand-content"><ul style="list-style-type: square;"><li><span style="color: rgb(23,43,77);">ask the Integration Partner in the Slack channel of the integration to push a restriction for a specific day on the Test rate code and then check in the Price availability for the given date if the restriction has been set.&nbsp;<br clear="none"></span></li><li><span style="color: rgb(23,43,77);">ask the Integration partner to clarify with the customer to have the&nbsp;Test rate code invalidated (through expired validity) after the verification of the Restriction message is done<br clear="none"><br clear="none"></span><span style="color: rgb(23,43,77);">The following restrictions are supported by Hotelpartner:<br clear="none"></span><p><span>&nbsp; -&nbsp; Close Out</span></p><span>&nbsp; -&nbsp; Close to Arrival<br clear="none"></span><span>&nbsp; -&nbsp; Minimum Length of Stay by stay</span><span><br clear="none"><br clear="none"></span><span style="color: rgb(23,43,77);"><u>If the property is a Best Western customer:</u> <br clear="none">-&nbsp;ask Hotelpartner to test a restriction on a rate group level that has been agreed with the customer<br clear="none">- ask Hotelpartner for which rate group level has the restriction been set, so you can check in the system if the restriction was applied&nbsp;</span></li></ul></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><div class="expand-container"><div class="expand-content"><p class="auto-cursor-target"><span>Restriction example - Close Out</span></p><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">    &lt;?xml version=</code><code class="string">'1.0'</code><code class="plain"> encoding=</code><code class="string">'utf-8'</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;env:Envelope xmlns:env=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Header&gt;</code></div>
+<div class="line"><code class="plain">        &lt;htnga:CorrelationID xmlns:htnga=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;R2873_67348640&lt;/htnga:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Body&gt;</code></div>
+<div class="line"><code class="plain">        &lt;OTA_HotelAvailNotifRQ xmlns=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain"> xmlns:p=</code><code class="string">"http://protel.io/soap"</code><code class="plain"> xmlns:px=</code><code class="string">"http://protel.io/htng/extensions"</code><code class="plain"> xmlns:htng=</code><code class="string">"http://htng.org/2014B"</code><code class="plain"> CorrelationID=</code><code class="string">"R2873_67348640"</code><code class="plain"> EchoToken=</code><code class="string">"R2873_67348640"</code><code class="plain"> MessageContentCode=</code><code class="string">"3"</code><code class="plain"> TimeStamp=</code><code class="string">"2021-02-08T02:19:27Z"</code><code class="plain"> Version=</code><code class="string">"2"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;POS&gt;</code></div>
+<div class="line"><code class="plain">                &lt;Source&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RequestorID ID=</code><code class="string">"2335"</code><code class="plain"> ID_Context=</code><code class="string">"protelIO"</code><code class="plain"> Type=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/Source&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/POS&gt;</code></div>
+<div class="line"><code class="plain">            &lt;AvailStatusMessages HotelCode=</code><code class="string">"2335"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"EZ SUP"</code><code class="plain"> RatePlanCode=</code><code class="string">"BOOK HBK5"</code><code class="plain"> Start=</code><code class="string">"2021-02-12"</code><code class="plain"> End=</code><code class="string">"2021-02-12"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RestrictionStatus Restriction=</code><code class="string">"Master"</code><code class="plain"> Status=</code><code class="string">"Close"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/AvailStatusMessages&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/OTA_HotelAvailNotifRQ&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/env:Envelope&gt;</code></div>
+</div>
+</div><p class="auto-cursor-target"><span>Restriction example - Close by Arrival&nbsp;&nbsp;</span></p><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">    &lt;?xml version=</code><code class="string">'1.0'</code><code class="plain"> encoding=</code><code class="string">'utf-8'</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;env:Envelope xmlns:env=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Header&gt;</code></div>
+<div class="line"><code class="plain">        &lt;wsa:MessageID xmlns:wsa=</code><code class="string">"http://www.w3.org/2005/08/addressing"</code><code class="plain">&gt;6afb24bacef4804bfabfc8ad5c384d71&lt;/wsa:MessageID&gt;</code></div>
+<div class="line"><code class="plain">        &lt;wsa:Action xmlns:wsa=</code><code class="string">"http://www.w3.org/2005/08/addressing"</code><code class="plain">&gt;http://htng.org/PWSWG/</code><code class="value">2010</code><code class="plain">/</code><code class="value">12</code><code class="plain">/OTA_HotelAvailNotifRQ_SubmitRequest&lt;/wsa:Action&gt;</code></div>
+<div class="line"><code class="plain">        &lt;wsa:To xmlns:wsa=</code><code class="string">"http://www.w3.org/2005/08/addressing"</code><code class="plain">&gt;https://service.protel.io/ProtelApiService.ProtelApiServiceHttpsSoap12Endpoint&lt;/wsa:To&gt;</code></div>
+<div class="line"><code class="plain">        &lt;wsa:ReplyTo xmlns:wsa=</code><code class="string">"http://www.w3.org/2005/08/addressing"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;wsa:Address&gt;http:</code><code class="comments">//www.w3.org/2005/08/addressing/role/anonymous&lt;/wsa:Address&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/wsa:ReplyTo&gt;</code></div>
+<div class="line"><code class="plain">        &lt;htnga:CorrelationID xmlns:htnga=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;6afb24bacef4804bfabfc8ad5c384d71&lt;/htnga:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">        &lt;htnga:ReplyTo xmlns:htnga=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;wsa:Address xmlns:wsa=</code><code class="string">"http://www.w3.org/2005/08/addressing"</code><code class="plain">&gt;https://integration.duettoresearch.com/external/async/1_0/availresp/fb3629?token=6afb24bacef4804bfabfc8ad5c384d71&lt;/wsa:Address&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/htnga:ReplyTo&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Body&gt;</code></div>
+<div class="line"><code class="plain">        &lt;otp:OTA_HotelAvailNotifRQ xmlns:otp=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain"> EchoToken=</code><code class="string">"6afb24bacef4804bfabfc8ad5c384d71"</code><code class="plain"> MessageContentCode=</code><code class="string">"1"</code><code class="plain"> TimeStamp=</code><code class="string">"2021-02-08T14:35:59.611Z"</code><code class="plain"> Version=</code><code class="string">"1.00"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;otp:AvailStatusMessages HotelCode=</code><code class="string">"13750"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;otp:AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;otp:StatusApplicationControl End=</code><code class="string">"2021-02-08"</code><code class="plain"> Fri=</code><code class="string">"1"</code><code class="plain"> InvTypeCode=</code><code class="string">"ST3"</code><code class="plain"> Mon=</code><code class="string">"1"</code><code class="plain"> Sat=</code><code class="string">"1"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> Sun=</code><code class="string">"1"</code><code class="plain"> Thur=</code><code class="string">"1"</code><code class="plain"> Tue=</code><code class="string">"1"</code><code class="plain"> Weds=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;otp:UniqueID ID=</code><code class="string">"1"</code><code class="plain"> Type=</code><code class="string">"16"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;otp:RestrictionStatus Restriction=</code><code class="string">"Master"</code><code class="plain"> Status=</code><code class="string">"Open"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/otp:AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                &lt;otp:AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;otp:StatusApplicationControl End=</code><code class="string">"2021-02-08"</code><code class="plain"> Fri=</code><code class="string">"1"</code><code class="plain"> InvTypeCode=</code><code class="string">"ST3"</code><code class="plain"> Mon=</code><code class="string">"1"</code><code class="plain"> Sat=</code><code class="string">"1"</code><code class="plain"> Start=</code><code class="string">"2021-02-08"</code><code class="plain"> Sun=</code><code class="string">"1"</code><code class="plain"> Thur=</code><code class="string">"1"</code><code class="plain"> Tue=</code><code class="string">"1"</code><code class="plain"> Weds=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;otp:UniqueID ID=</code><code class="string">"2"</code><code class="plain"> Type=</code><code class="string">"16"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;otp:RestrictionStatus Restriction=</code><code class="string">"Arrival"</code><code class="plain"> Status=</code><code class="string">"Close"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/otp:AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/otp:AvailStatusMessages&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/otp:OTA_HotelAvailNotifRQ&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/env:Envelope&gt;</code></div>
+</div>
+</div><p class="auto-cursor-target"><span><br clear="none">Restriction example - Minimum Length of Stay by stay&nbsp;</span></p><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;?xml version=</code><code class="string">'1.0'</code><code class="plain"> encoding=</code><code class="string">'utf-8'</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;env:Envelope xmlns:env=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Header&gt;</code></div>
+<div class="line"><code class="plain">        &lt;htnga:CorrelationID xmlns:htnga=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;R2873_35367644&lt;/htnga:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Body&gt;</code></div>
+<div class="line"><code class="plain">        &lt;OTA_HotelAvailNotifRQ xmlns=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain"> xmlns:p=</code><code class="string">"http://protel.io/soap"</code><code class="plain"> xmlns:px=</code><code class="string">"http://protel.io/htng/extensions"</code><code class="plain"> xmlns:htng=</code><code class="string">"http://htng.org/2014B"</code><code class="plain"> CorrelationID=</code><code class="string">"R2873_35367644"</code><code class="plain"> EchoToken=</code><code class="string">"R2873_35367644"</code><code class="plain"> MessageContentCode=</code><code class="string">"3"</code><code class="plain"> TimeStamp=</code><code class="string">"2021-02-04T16:50:44Z"</code><code class="plain"> Version=</code><code class="string">"2"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;POS&gt;</code></div>
+<div class="line"><code class="plain">                &lt;Source&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RequestorID ID=</code><code class="string">"2335"</code><code class="plain"> ID_Context=</code><code class="string">"protelIO"</code><code class="plain"> Type=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/Source&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/POS&gt;</code></div>
+<div class="line"><code class="plain">            &lt;AvailStatusMessages HotelCode=</code><code class="string">"2335"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"JS"</code><code class="plain"> RatePlanCode=</code><code class="string">"BOOK HBK5"</code><code class="plain"> Start=</code><code class="string">"2022-03-03"</code><code class="plain"> End=</code><code class="string">"2022-03-03"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;LengthOfStay MinMaxMessageType=</code><code class="string">"SetForwardMinStay"</code><code class="plain"> TimeUnit=</code><code class="string">"Day"</code><code class="plain"> Time=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"DZ LDEL"</code><code class="plain"> RatePlanCode=</code><code class="string">"BOOK HBK5"</code><code class="plain"> Start=</code><code class="string">"2022-03-03"</code><code class="plain"> End=</code><code class="string">"2022-03-03"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;LengthOfStay MinMaxMessageType=</code><code class="string">"SetForwardMinStay"</code><code class="plain"> TimeUnit=</code><code class="string">"Day"</code><code class="plain"> Time=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"SUI HAB"</code><code class="plain"> RatePlanCode=</code><code class="string">"PK-SKI5"</code><code class="plain"> Start=</code><code class="string">"2022-03-03"</code><code class="plain"> End=</code><code class="string">"2022-03-03"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;LengthOfStay MinMaxMessageType=</code><code class="string">"SetForwardMinStay"</code><code class="plain"> TimeUnit=</code><code class="string">"Day"</code><code class="plain"> Time=</code><code class="string">"5"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"SUI PAL"</code><code class="plain"> RatePlanCode=</code><code class="string">"BOOK HBK5"</code><code class="plain"> Start=</code><code class="string">"2022-03-03"</code><code class="plain"> End=</code><code class="string">"2022-03-03"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;LengthOfStay MinMaxMessageType=</code><code class="string">"SetForwardMinStay"</code><code class="plain"> TimeUnit=</code><code class="string">"Day"</code><code class="plain"> Time=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/AvailStatusMessages&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/OTA_HotelAvailNotifRQ&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/env:Envelope&gt;</code></div>
+</div>
+</div><p class="auto-cursor-target"><span>Restriction example - Combination of restriction "Close by Arrival" for one day with "Minimum Length of Stay by stay" for another day&nbsp;</span></p><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;?xml version=</code><code class="string">'1.0'</code><code class="plain"> encoding=</code><code class="string">'utf-8'</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;env:Envelope xmlns:env=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Header xmlns:p=</code><code class="string">"http://protel.io/soap"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">        &lt;p:JWT&gt;eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjb20uaG90ZWxwYXJ0bmVyLnJtcyIsInBBaXJIb3RlbCI6MSwiaXNzIjoiZXNiOnByb2QiLCJob3RlbCI6MjMzNSwiZXhwIjoxNjEyNDU5MjU2fQ.p4FPLFFpqtJSnCfg8BX3yxocyPIZ6_U8zOCrEVCvVwxJaqdqVfjjsDRbBDdzAqbP5SzOWabGaqEN75gC8mSx4MUAWLKPiEKkTlMbATgd7iT7AIXistt5EA9RZ1399lXj9_OrctBY3Cw6HP7_Dp7dnZFrFyOm5OvxrQPjx9WCfmo3pBlO7xwk5woKVRDi4Pvb0cVa9XoloKu-Y8j13dVFQigcS9SPFGW574wNbexbchpF7H7BvC4yoJOQEgeWe4WV6fAqFqR-lkV-mOa-WKcNstfmyUAR-kUQbMcs26MbRuCmAeTR8SYEYIopLewlNBY6ACrw02RfRZBhfV2NE41IBGswA_FzrcSwmi2fzyNsnbPKBFsNGPowkvs-iNk9Fntni2-tmINRhR0x8Tui5vc46M8D7QimnGQ2DRRMCzjgI3N44mXcVgRO-RF2tmXoC9bVoArTtCQPqmh6uSNGcF1idTLv4chYuKhWYkMrN0RwDltMMG_LBsQeRbmupe_LCrR0CMM5CFKRSKlq4b4GMBuKJ3560NKTq9U_h1DyrZ-up9ONzxX8J6-RrH8vEHVbSAspOLfOi4ja--0P4IelDItE8jfkuBtNeeRoldP3kozWozhE592iiVU0LdECki3raI0TIcmK6yQPCPkW7AXymsliCwDboYBMyWZmnIpllqp8G7A&lt;/p:JWT&gt;</code></div>
+<div class="line"><code class="plain">        &lt;htnga:CorrelationID xmlns:htnga=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;R2873_98671502&lt;/htnga:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Body&gt;</code></div>
+<div class="line"><code class="plain">        &lt;OTA_HotelAvailNotifRQ xmlns=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain"> CorrelationID=</code><code class="string">"R2873_98671502"</code><code class="plain"> EchoToken=</code><code class="string">"R2873_98671502"</code><code class="plain"> MessageContentCode=</code><code class="string">"3"</code><code class="plain"> TimeStamp=</code><code class="string">"2021-02-04T16:50:53Z"</code><code class="plain"> Version=</code><code class="string">"2"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;POS&gt;</code></div>
+<div class="line"><code class="plain">                &lt;Source&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RequestorID ID=</code><code class="string">"2335"</code><code class="plain"> ID_Context=</code><code class="string">"protelIO"</code><code class="plain"> Type=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/Source&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/POS&gt;</code></div>
+<div class="line"><code class="plain">            &lt;AvailStatusMessages HotelCode=</code><code class="string">"2335"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"SUI STM"</code><code class="plain"> RatePlanCode=</code><code class="string">"BOOK HBK5"</code><code class="plain"> Start=</code><code class="string">"2021-11-17"</code><code class="plain"> End=</code><code class="string">"2021-11-19"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RestrictionStatus Restriction=</code><code class="string">"Arrival"</code><code class="plain"> Status=</code><code class="string">"Close"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"SUI STM"</code><code class="plain"> RatePlanCode=</code><code class="string">"BOOK HBK5"</code><code class="plain"> Start=</code><code class="string">"2021-12-20"</code><code class="plain"> End=</code><code class="string">"2021-12-20"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;LengthOfStay MinMaxMessageType=</code><code class="string">"SetForwardMinStay"</code><code class="plain"> TimeUnit=</code><code class="string">"Day"</code><code class="plain"> Time=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/AvailStatusMessages&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/OTA_HotelAvailNotifRQ&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/env:Envelope&gt;</code></div>
+</div>
+</div><p class="auto-cursor-target"><span>Restriction example - Rate Group - Close Out</span></p><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;?xml version=</code><code class="string">'1.0'</code><code class="plain"> encoding=</code><code class="string">'utf-8'</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;env:Envelope xmlns:env=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Header&gt;</code></div>
+<div class="line"><code class="plain">        &lt;htnga:CorrelationID xmlns:htnga=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;R2511_21644976&lt;/htnga:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Body&gt;</code></div>
+<div class="line"><code class="plain">        &lt;OTA_HotelAvailNotifRQ xmlns=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain"> xmlns:p=</code><code class="string">"http://protel.io/soap"</code><code class="plain"> xmlns:px=</code><code class="string">"http://protel.io/htng/extensions"</code><code class="plain"> xmlns:htng=</code><code class="string">"http://htng.org/2014B"</code><code class="plain"> CorrelationID=</code><code class="string">"R2511_21644976"</code><code class="plain"> EchoToken=</code><code class="string">"R2511_21644976"</code><code class="plain"> MessageContentCode=</code><code class="string">"3"</code><code class="plain"> TimeStamp=</code><code class="string">"2021-02-04T14:20:53Z"</code><code class="plain"> Version=</code><code class="string">"2"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;POS&gt;</code></div>
+<div class="line"><code class="plain">                &lt;Source&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RequestorID ID=</code><code class="string">"2570"</code><code class="plain"> ID_Context=</code><code class="string">"protelIO"</code><code class="plain"> Type=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/Source&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/POS&gt;</code></div>
+<div class="line"><code class="plain">            &lt;AvailStatusMessages HotelCode=</code><code class="string">"2570"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"Klassik"</code><code class="plain"> RatePlanCategory=</code><code class="string">"BAR"</code><code class="plain"> Start=</code><code class="string">"2021-02-04"</code><code class="plain"> End=</code><code class="string">"2021-02-04"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RestrictionStatus Restriction=</code><code class="string">"Master"</code><code class="plain"> Status=</code><code class="string">"Close"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/AvailStatusMessages&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/OTA_HotelAvailNotifRQ&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/env:Envelope&gt;</code></div>
+</div>
+</div><p class="auto-cursor-target"><span>Restriction example - Rate Group - Close by Arrival&nbsp;&nbsp;</span></p><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">    &lt;?xml version=</code><code class="string">'1.0'</code><code class="plain"> encoding=</code><code class="string">'utf-8'</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;env:Envelope xmlns:env=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Header&gt;</code></div>
+<div class="line"><code class="plain">        &lt;htnga:CorrelationID xmlns:htnga=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;R2511_24601047&lt;/htnga:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Body&gt;</code></div>
+<div class="line"><code class="plain">        &lt;OTA_HotelAvailNotifRQ xmlns=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain"> xmlns:p=</code><code class="string">"http://protel.io/soap"</code><code class="plain"> xmlns:px=</code><code class="string">"http://protel.io/htng/extensions"</code><code class="plain"> xmlns:htng=</code><code class="string">"http://htng.org/2014B"</code><code class="plain"> CorrelationID=</code><code class="string">"R2511_24601047"</code><code class="plain"> EchoToken=</code><code class="string">"R2511_24601047"</code><code class="plain"> MessageContentCode=</code><code class="string">"3"</code><code class="plain"> TimeStamp=</code><code class="string">"2021-02-04T14:26:09Z"</code><code class="plain"> Version=</code><code class="string">"2"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;POS&gt;</code></div>
+<div class="line"><code class="plain">                &lt;Source&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RequestorID ID=</code><code class="string">"2570"</code><code class="plain"> ID_Context=</code><code class="string">"protelIO"</code><code class="plain"> Type=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/Source&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/POS&gt;</code></div>
+<div class="line"><code class="plain">            &lt;AvailStatusMessages HotelCode=</code><code class="string">"2570"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"Klassik"</code><code class="plain"> RatePlanCategory=</code><code class="string">"BAR"</code><code class="plain"> Start=</code><code class="string">"2021-02-05"</code><code class="plain"> End=</code><code class="string">"2021-02-05"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RestrictionStatus Restriction=</code><code class="string">"Arrival"</code><code class="plain"> Status=</code><code class="string">"Close"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/AvailStatusMessages&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/OTA_HotelAvailNotifRQ&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/env:Envelope&gt;</code></div>
+</div>
+</div><p class="auto-cursor-target"><span>Restriction example - Rate Group - Minimum Length of Stay by stay&nbsp;</span></p><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">&lt;?xml version=</code><code class="string">'1.0'</code><code class="plain"> encoding=</code><code class="string">'utf-8'</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;env:Envelope xmlns:env=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Header&gt;</code></div>
+<div class="line"><code class="plain">        &lt;htnga:CorrelationID xmlns:htnga=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;R2511_11969242&lt;/htnga:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Body&gt;</code></div>
+<div class="line"><code class="plain">        &lt;OTA_HotelAvailNotifRQ xmlns=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain"> xmlns:p=</code><code class="string">"http://protel.io/soap"</code><code class="plain"> xmlns:px=</code><code class="string">"http://protel.io/htng/extensions"</code><code class="plain"> xmlns:htng=</code><code class="string">"http://htng.org/2014B"</code><code class="plain"> CorrelationID=</code><code class="string">"R2511_11969242"</code><code class="plain"> EchoToken=</code><code class="string">"R2511_11969242"</code><code class="plain"> MessageContentCode=</code><code class="string">"3"</code><code class="plain"> TimeStamp=</code><code class="string">"2021-02-04T14:04:21Z"</code><code class="plain"> Version=</code><code class="string">"2"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;POS&gt;</code></div>
+<div class="line"><code class="plain">                &lt;Source&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RequestorID ID=</code><code class="string">"2570"</code><code class="plain"> ID_Context=</code><code class="string">"protelIO"</code><code class="plain"> Type=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/Source&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/POS&gt;</code></div>
+<div class="line"><code class="plain">            &lt;AvailStatusMessages HotelCode=</code><code class="string">"2570"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"Klassik"</code><code class="plain"> RatePlanCategory=</code><code class="string">"BAR"</code><code class="plain"> Start=</code><code class="string">"2021-02-04"</code><code class="plain"> End=</code><code class="string">"2021-02-04"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;LengthOfStay MinMaxMessageType=</code><code class="string">"SetForwardMinStay"</code><code class="plain"> TimeUnit=</code><code class="string">"Day"</code><code class="plain"> Time=</code><code class="string">"2"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/AvailStatusMessages&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/OTA_HotelAvailNotifRQ&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/env:Envelope&gt;</code></div>
+</div>
+</div><p class="auto-cursor-target"><span>Restriction example - Rate Group - Combination of restriction "Close by Arrival" for one day with "Minimum Length of Stay by stay" for another day&nbsp;</span></p><div class="scroll-code scroll-highlighted-code-block" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="defaultnew content">
+<div class="line"><code class="plain">    &lt;?xml version=</code><code class="string">'1.0'</code><code class="plain"> encoding=</code><code class="string">'utf-8'</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;env:Envelope xmlns:env=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Header&gt;</code></div>
+<div class="line"><code class="plain">        &lt;htnga:CorrelationID xmlns:htnga=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain">&gt;R2511_716030&lt;/htnga:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;env:Body&gt;</code></div>
+<div class="line"><code class="plain">        &lt;OTA_HotelAvailNotifRQ xmlns=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain"> xmlns:p=</code><code class="string">"http://protel.io/soap"</code><code class="plain"> xmlns:px=</code><code class="string">"http://protel.io/htng/extensions"</code><code class="plain"> xmlns:htng=</code><code class="string">"http://htng.org/2014B"</code><code class="plain"> CorrelationID=</code><code class="string">"R2511_716030"</code><code class="plain"> EchoToken=</code><code class="string">"R2511_716030"</code><code class="plain"> MessageContentCode=</code><code class="string">"3"</code><code class="plain"> TimeStamp=</code><code class="string">"2021-02-04T14:48:48Z"</code><code class="plain"> Version=</code><code class="string">"2"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;POS&gt;</code></div>
+<div class="line"><code class="plain">                &lt;Source&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RequestorID ID=</code><code class="string">"2570"</code><code class="plain"> ID_Context=</code><code class="string">"protelIO"</code><code class="plain"> Type=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/Source&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/POS&gt;</code></div>
+<div class="line"><code class="plain">            &lt;AvailStatusMessages HotelCode=</code><code class="string">"2570"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"Klassik"</code><code class="plain"> RatePlanCategory=</code><code class="string">"BAR"</code><code class="plain"> Start=</code><code class="string">"2021-02-05"</code><code class="plain"> End=</code><code class="string">"2021-02-05"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RestrictionStatus Restriction=</code><code class="string">"Master"</code><code class="plain"> Status=</code><code class="string">"Open"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"Klassik"</code><code class="plain"> RatePlanCategory=</code><code class="string">"BAR"</code><code class="plain"> Start=</code><code class="string">"2021-02-05"</code><code class="plain"> End=</code><code class="string">"2021-02-05"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RestrictionStatus Restriction=</code><code class="string">"Arrival"</code><code class="plain"> Status=</code><code class="string">"Close"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"Klassik"</code><code class="plain"> RatePlanCategory=</code><code class="string">"BAR"</code><code class="plain"> Start=</code><code class="string">"2021-02-05"</code><code class="plain"> End=</code><code class="string">"2021-02-05"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;LengthOfStay MinMaxMessageType=</code><code class="string">"SetForwardMinStay"</code><code class="plain"> TimeUnit=</code><code class="string">"Day"</code><code class="plain"> Time=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"Klassik"</code><code class="plain"> RatePlanCategory=</code><code class="string">"BAR"</code><code class="plain"> Start=</code><code class="string">"2021-02-06"</code><code class="plain"> End=</code><code class="string">"2021-02-06"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RestrictionStatus Restriction=</code><code class="string">"Master"</code><code class="plain"> Status=</code><code class="string">"Open"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                &lt;AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;StatusApplicationControl InvTypeCode=</code><code class="string">"Klassik"</code><code class="plain"> RatePlanCategory=</code><code class="string">"BAR"</code><code class="plain"> Start=</code><code class="string">"2021-02-06"</code><code class="plain"> End=</code><code class="string">"2021-02-06"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;LengthOfStay MinMaxMessageType=</code><code class="string">"SetForwardMinStay"</code><code class="plain"> TimeUnit=</code><code class="string">"Day"</code><code class="plain"> Time=</code><code class="string">"7"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/LengthsOfStay&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/AvailStatusMessage&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/AvailStatusMessages&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/OTA_HotelAvailNotifRQ&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/env:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/env:Envelope&gt;</code></div>
+</div>
+</div></div></div></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>7</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Ask the Integration partner to clarify with the customer to have the&nbsp;Test rate code invalidated (through expired validity) after the verification of the Restriction message is done</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>8</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span class="inline-comment-marker" data-ref="28e0c451-742a-426f-b851-423fe03ed174">Update the protel SMP page with the information about the installed customer</span></p><p><br clear="none"></p><p><br clear="none"></p><p style="text-align: left;">Check if the IO-Support-Tool is installed on the Hotelserver or workstation.</p><p style="text-align: left;">If an Installation is needed please install it according to:<br clear="none"><br clear="none"><a rel="nofollow" href="https://confluence.protel.net/display/ESB/Support+Tool" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/display/ESB/Support+Tool" data-scroll-link-local="false">Support Tool</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="5517cdab-c074-4051-a2d1-f34be35dcc60" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/0fb212259975/image2020-6-17_22-4-1.png" height="250"></span><br clear="none"><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="be7ede67-5fca-44a8-94cf-813d04c638e3" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/8ed58ea11f74/image2020-6-17_22-5-51.png" height="250"></span></p></div></td></tr></tbody></table></div>
+                        </div>
+                    </section>
+
+                </article>
+            </main>
+
+
+                <nav class="exp-post-navigation-prev">
+                    <a href="FAQ-Page.192228128.html" class="post-navigation-link">
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-prev">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                        <span>FAQ Page</span>
+                    </a>
+                </nav>
+
+                <nav class="exp-post-navigation-next">
+
+                    <a href="Hotelpartner---pAir-Installation-guide.192228099.html" class="post-navigation-link">
+                        <span>Hotelpartner - pAir Installation guide</span>
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-next">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-225.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                    </a>
+
+                </nav>
+
+
+            <nav class="exp-sidebar-toc js-tocBot">
+                <!-- content generated by toc.js  -->
+            </nav>
+
+            <div class="exp-sidebar-navigation-toggle">
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+            </div>
+
+            <div class="exp-scroll-to-top-container">
+                <a href="#Hotelpartner-onpremInstallationguide-top" class="exp-scroll-to-top-link">↑ Back to top</a>
+            </div>
+
+        </div>
+
+
+
+<dialog class="exp-lightbox-container" aria-modal="true">
+    <div class="lightbox-toolbar">
+        <button type="button" class="exp-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox-content content">
+    </div>
+</dialog>
+
+<template id="exp-lightbox-wrapper-template">
+    <div class="exp-lightbox-wrapper">
+        <div class="exp-lightbox-toggle">
+            <button type="button" class="exp-lightbox-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                    <path fill="currentColor" d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+        <script src="js/tocbot.min.js"></script>
+        <script src="js/article-toc.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/iframe-resizer.parent.js"></script>
+
+    </body>
+
+</html>

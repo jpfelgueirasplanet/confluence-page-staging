@@ -1,0 +1,253 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+        <link rel="icon" href="_scroll_external/logos/59f13d845123/default-space-logo.svg">
+
+        <!-- Primary Meta Tags -->
+        <meta name="exp-export-timestamp" content="2024-09-05T09:14:20.725+0000">
+        <meta name="exp-page-id" content="192228632">
+        <meta name="exp-page-title" content="ESB Release 326 (20th of July 2023)">
+        <meta name="exp-page-version" content="1">
+        <meta name="exp-page-scroll-page-id" content="">
+        <meta name="exp-page-created" content="2023-07-18T11:32:02.260+0000">
+        <meta name="exp-page-last-modified" content="2023-07-18T11:34:25.437+0000">
+        <meta name="exp-page-labels" content="">
+        <meta name="exp-page-context-keys" content="">
+        <meta name="exp-space-key" content="PIODOC">
+        <meta name="exp-space-title" content="protel.I/O documentation">
+
+        <!-- Additional Meta Tags -->
+        <meta name="exp-document-id" content="">
+        <meta name="exp-document-title" content="protel.I/O documentation">
+        <meta name="exp-version-status" content="">
+        <meta name="exp-version-id" content="">
+        <meta name="exp-version-name" content="">
+        <meta name="exp-version-description" content="">
+        <meta name="exp-version-date" content="">
+        <meta name="exp-variant-id" content="">
+        <meta name="exp-variant-name" content="">
+        <meta name="exp-variant-description" content="">
+        <meta name="exp-language-code" content="">
+        <meta name="exp-language-name" content="">
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/image-dimensions.css">
+
+
+            
+            
+<script src="js/search.js"></script>
+            <script id="search-worker" type="javascript/worker">
+    onmessage = function(event) {
+        // dispatch events to handling functions
+        var message = event.data;
+
+        if ((message.type === 'setup') && message.baseUrl) {
+            setup(message.baseUrl);
+        }
+
+        if (message.type === 'search-request') {
+            search(message.query);
+        }
+    }
+
+    var searchIndex;
+
+    function setup(baseUrl) {
+        importScripts(
+            baseUrl + 'js/lunr.js',
+            baseUrl + 'js/lunr-index.js',
+            baseUrl + 'js/lunr-data.js'
+        );
+        try {
+            // load lunr-extras if it exists, which contains language-specific files for languages other than english
+            importScripts(baseUrl + 'js/lunr-extras.js');
+        } catch (e) {}
+        searchIndex = lunr.Index.load(lunrIndex);
+    }
+
+    function search(query) {
+        var searchHits = searchIndex.search(query);
+        var results = searchHits.map(function (result) {
+            return lunrData.filter(function (d) {
+                return d.id === result.ref;
+            })[0]
+        });
+        postMessage({ type: 'search-results', results: results, query: query });
+    }
+</script>
+        <title>ESB Release 326 (20th of July 2023)</title>
+
+    <meta name="generator" content="Scroll HTML Exporter / K15t GmbH"></head>
+
+    <body id="ESBRelease326(20thofJuly2023)-top" data-pageid="192228632" data-confluence-editor-version="v1" data-confluence-deployment-type="DATACENTER">
+
+        <div class="exp-grid-container">
+
+            <header class="exp-header"></header>
+
+            <div class="exp-logo">
+                <a href="protel.I_O-documentation.192227604.html">
+                    <span class="exp-logo-image" style="background-image: url(_scroll_external/logos/59f13d845123/default-space-logo.svg)" alt="protel.I/O documentation" title="protel.I/O documentation"></span>
+                </a>
+            </div>
+
+            <div class="exp-document-title">
+                <h1 class="exp-document-title-heading scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h1 scroll-relative-h1" data-scroll-heading-rank="1" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="1" id="no-src_generated-id-926527b1b283e42d76c110bc967334f8ca0cb46ec37afe7216cc28e1571e10b2">
+                    <a href="protel.I_O-documentation.192227604.html">
+                        protel.I/O documentation
+                    </a>
+                </h1>
+            </div>
+
+<div class="exp-search-container">
+    <input type="search" id="search-textbox" autocomplete="off" class="exp-search-input" style="margin-right: 0;">
+    <div class="exp-search-input-icon">
+        <svg data-exp-id="magnifier-icon" data-exp-component="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8.99452 14.5C10.5121 14.5 11.809 13.9669 12.8854 12.9007C13.9618 11.8345 14.5 10.5361 14.5 9.00548C14.5 7.48794 13.9631 6.19097 12.8893 5.11458C11.8155 4.03819 10.519 3.5 9 3.5C7.46786 3.5 6.16816 4.0369 5.1009 5.11071C4.03363 6.18453 3.5 7.48096 3.5 9C3.5 10.5321 4.0331 11.8318 5.09929 12.8991C6.1655 13.9664 7.46391 14.5 8.99452 14.5ZM9 16C8.02913 16 7.11974 15.816 6.27185 15.4479C5.42395 15.0799 4.68056 14.5799 4.04167 13.9479C3.40278 13.316 2.90278 12.576 2.54167 11.728C2.18056 10.88 2 9.97053 2 8.99956C2 8.04152 2.18403 7.13542 2.55208 6.28125C2.92014 5.42708 3.41864 4.68387 4.04758 4.0516C4.67653 3.41935 5.41569 2.91935 6.26508 2.5516C7.11449 2.18387 8.02548 2 8.99806 2C9.95769 2 10.8646 2.18403 11.7188 2.55208C12.5729 2.92014 13.316 3.42014 13.9479 4.05208C14.5799 4.68403 15.0799 5.42612 15.4479 6.27835C15.816 7.13058 16 8.0381 16 9.00094C16 9.83365 15.8615 10.6213 15.5846 11.3638C15.3078 12.1062 14.9254 12.7836 14.4375 13.3958L18 16.9583L16.9375 18L13.375 14.4583C12.7668 14.9459 12.0939 15.3247 11.3564 15.5948C10.6188 15.8649 9.83333 16 9 16Z" fill="currentColor" />
+        </svg>
+    </div>
+    <div id="search-suggestion-container" class="exp-search-suggestion-panel" data-exp-component="search-suggestion"></div>
+    <template id="exp-search-suggestion-option-template">
+        <div class="exp-search-suggestion-option-container search-form-suggestion">
+            <a class="exp-search-suggestion-option search-form-suggestion" href=""></a>
+        </div>
+    </template>
+</div>
+
+
+            <nav class="exp-sidebar-navigation">
+                <div class="exp-sidebar-navigation-sticky-wrapper">
+                    <iframe src="toc.html?pageId=192228632" border="0"></iframe>
+                </div>
+
+            </nav>
+
+
+            <nav aria-label="Breadcrumb" class="exp-breadcrumbs-wrapper">
+                <ol class="breadcrumbs">
+                        <li class="breadcrumb">
+                            <a href="protel.I_O-documentation.192227604.html" rel="prev" target="_self">protel.I/O documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Release-Notes.192227610.html" rel="prev" target="_self">Release Notes</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Release-Notes-Archive.192227651.html" rel="prev" target="_self">Release Notes Archive</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Release-Notes-ESB-(Archive).192227835.html" rel="prev" target="_self">Release Notes ESB (Archive)</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Release-Notes-ESB-(Archive)-2023.192228162.html" rel="prev" target="_self">Release Notes ESB (Archive) 2023</a>
+                        </li>
+                    <li class="breadcrumb active" aria-current="page">
+                        ESB Release 326 (20th of July 2023)
+                    </li>
+                </ol>
+            </nav>
+
+
+            <main class="exp-content">
+                <article role="article">
+
+                    <header>
+                        <h1 class="article-heading scroll-h1 scroll-original-h1 scroll-relative-h1 scroll-custom-section-heading scroll-document-section-heading" role="heading" data-scroll-heading-rank="1" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="1" id="no-src_generated-id-db1b5d02e397e8f98f0b77ec3769e27eedda175db54e143e47786dd7696f23b5">
+                            ESB Release 326 (20th of July 2023)
+                        </h1>
+                    </header>
+
+                    <section class="page" id="content" role="main">
+                        <div id="main-content" class="wiki-content article-content js-tocBot-content">
+                            <h2 style="" id="ESBRelease326(20thofJuly2023)-Bug" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Bug</h2><ul style=""><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7503" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7503" data-scroll-link-local="false">IO-7503</a>] - IDEAS | Outbound | Failing template</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7544" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7544" data-scroll-link-local="false">IO-7544</a>] - OXI | outbound | Fault in RS messages flow</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7551" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7551" data-scroll-link-local="false">IO-7551</a>] - Custom HTTP Header are not shipped for SYNC messages</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7571" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7571" data-scroll-link-local="false">IO-7571</a>] - XSLT | SynXis | Wrong profile transformation for UniqueIDs, Type="5"</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7589" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7589" data-scroll-link-local="false">IO-7589</a>] - HOTFIX | WS | Error connecting ESB and PWS</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7609" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7609" data-scroll-link-local="false">IO-7609</a>] - TravelClick | outbound | Edit empty Hotel Code in ResNotifRS</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7612" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7612" data-scroll-link-local="false">IO-7612</a>] - BTS | Bulk job fails for wrong destination service</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7639" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7639" data-scroll-link-local="false">IO-7639</a>] - QA | ESB websockets service issue</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7642" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7642" data-scroll-link-local="false">IO-7642</a>] - BTS | Bulk Upload not starting</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7657" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7657" data-scroll-link-local="false">IO-7657</a>] - TS | outbound | Token removed from outgoing message</li></ul><h2 style="" id="ESBRelease326(20thofJuly2023)-Sub-task" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Sub-task</h2><ul style=""><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7557" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7557" data-scroll-link-local="false">IO-7557</a>] - Add use case for RegisterIdeasReplyEndpoint filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7558" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7558" data-scroll-link-local="false">IO-7558</a>] - Add use case for RegisterReplyEndpoint filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7559" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7559" data-scroll-link-local="false">IO-7559</a>] - Add use case for RemoveTracesFields filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7563" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7563" data-scroll-link-local="false">IO-7563</a>] - Add log message for filters that have try/catch handling</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7574" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7574" data-scroll-link-local="false">IO-7574</a>] - Add use case for ReorderUniqueIDFieldForType14 filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7575" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7575" data-scroll-link-local="false">IO-7575</a>] - Add use case for RevinateCrmTransposeRevenueCategory17 filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7576" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7576" data-scroll-link-local="false">IO-7576</a>] - Add use case for ReviewProUpdateOutgoingTarget filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7579" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7579" data-scroll-link-local="false">IO-7579</a>] - Add use case for RevinateSurveyTransposeRevenueCategory17 filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7580" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7580" data-scroll-link-local="false">IO-7580</a>] - Add use case for RightRevAddAdditionalLinesForBaseByGuestAmt filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7581" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7581" data-scroll-link-local="false">IO-7581</a>] - Add use case for SabreTypeFieldValueSwitchFrom14To10 filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7582" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7582" data-scroll-link-local="false">IO-7582</a>] - Add use case for SerenataTransposeRevenueCategory17 filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7583" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7583" data-scroll-link-local="false">IO-7583</a>] - Add use case for SerentataUpdateUniqueIDOnOtaReadRQ filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7584" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7584" data-scroll-link-local="false">IO-7584</a>] - Add use case for SetProtelAirSoapAction filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7585" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7585" data-scroll-link-local="false">IO-7585</a>] - Add use case for SetSerenataSoapAction filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7586" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7586" data-scroll-link-local="false">IO-7586</a>] - Add use case for ShrAddMissingRoomTypesField filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7587" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7587" data-scroll-link-local="false">IO-7587</a>] - Add use case for ShrChangeResIdSourceAndResIdTypeForHotelResNotifRS filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7588" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7588" data-scroll-link-local="false">IO-7588</a>] - Add use case for ShrHotelAvailNotifRQPmsToShr filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7591" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7591" data-scroll-link-local="false">IO-7591</a>] - Add use case for ShrHotelRateAmountNotifRQAfterToBeforeTaxAmount filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7592" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7592" data-scroll-link-local="false">IO-7592</a>] - Add use case for SynxisOtaHotelAvailNotifRQCleanup filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7593" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7593" data-scroll-link-local="false">IO-7593</a>] - Add use case for SynxisOtaHotelRatePlanNotifRQCleanup filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7594" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7594" data-scroll-link-local="false">IO-7594</a>] - Add use case for SynxisOtaHotelResNotifRQCleanup filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7598" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7598" data-scroll-link-local="false">IO-7598</a>] - Upgrade and migrate old project to new structure</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7601" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7601" data-scroll-link-local="false">IO-7601</a>] - Add use case for TravelclickBisTotalUpdate filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7602" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7602" data-scroll-link-local="false">IO-7602</a>] - Add use case for TravelClickChangeHotelCode filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7603" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7603" data-scroll-link-local="false">IO-7603</a>] - Add use case for TravelClickCRSAddArrivalTimeCommentBlock filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7605" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7605" data-scroll-link-local="false">IO-7605</a>] - Add use case for TravelclickCrsInOtaHotelResNotifRQProtelPmsOut filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7606" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7606" data-scroll-link-local="false">IO-7606</a>] - Add use case for TravelclickCrsInOtaHotelResNotifRSProtelPmsOut filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7607" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7607" data-scroll-link-local="false">IO-7607</a>] - Add use case for TravelclickCrsOtaHotelResNotifRSProtelPmsInTravelclickOut filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7608" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7608" data-scroll-link-local="false">IO-7608</a>] - Add use case for TravelclickMessagesContentCleanUp filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7620" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7620" data-scroll-link-local="false">IO-7620</a>] - Collect all properties for AWS parameters store</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7621" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7621" data-scroll-link-local="false">IO-7621</a>] - Refactor public and private key services</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7622" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7622" data-scroll-link-local="false">IO-7622</a>] - Refactor and add unit test for OXI core.services.bootstrap and elasticsearch packages</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7623" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7623" data-scroll-link-local="false">IO-7623</a>] - Refactor and add unit tests for OXI EsbService class</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7624" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7624" data-scroll-link-local="false">IO-7624</a>] - Add use case for TravelclickOtaHotelAvailNotifRQCleanup filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7625" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7625" data-scroll-link-local="false">IO-7625</a>] - Add use case for UpsellGuruTransposeRevenueCategory17 filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7626" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7626" data-scroll-link-local="false">IO-7626</a>] - Add use case for WindSurferSplitProfileOnHotelResNotif filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7627" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7627" data-scroll-link-local="false">IO-7627</a>] - Add use case for WindsurfersTransposeRevenueCategory17 filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7628" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7628" data-scroll-link-local="false">IO-7628</a>] - Add use case for WindsurfersTypeContextSourceValueSwitchRQRS filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7629" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7629" data-scroll-link-local="false">IO-7629</a>] - Add use case for WindsurfersTypeFieldValueSwitchFrom14To10 filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7630" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7630" data-scroll-link-local="false">IO-7630</a>] - Migrate TS to PROD</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7631" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7631" data-scroll-link-local="false">IO-7631</a>] - Add use case for WindsurfersUniqueIdContextSetToIataOnProfileType4 filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7632" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7632" data-scroll-link-local="false">IO-7632</a>] - Add use case for XsltDuettoResStatusFieldChange filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7633" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7633" data-scroll-link-local="false">IO-7633</a>] - Add use case for XsltIdeasChangeIdeasOTAHotelInvBlockNotifRQInvBlockCancelStatusTag filter</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7634" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7634" data-scroll-link-local="false">IO-7634</a>] - Add use case for XsltIdeasPosFieldAttributeValueSwitch filter</li></ul><h2 style="" id="ESBRelease326(20thofJuly2023)-WorkItem" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Work Item</h2><ul style=""><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7123" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7123" data-scroll-link-local="false">IO-7123</a>] - Documentation | Document LogMessage values and meaning</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7153" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7153" data-scroll-link-local="false">IO-7153</a>] - Esb-in/out and IOGW migration for Radisson</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7189" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7189" data-scroll-link-local="false">IO-7189</a>] - OxyProxy migration to ECS version</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7269" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7269" data-scroll-link-local="false">IO-7269</a>] - Investigate on the issues with ResNotif messages not going through CD Proxy</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7372" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7372" data-scroll-link-local="false">IO-7372</a>] - ESB | Outbound | Filter | Remove unneeded NotifRS HotelReservation contents</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7384" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7384" data-scroll-link-local="false">IO-7384</a>] - ESB Performance Management - Require Performance Metrics with more History</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7455" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7455" data-scroll-link-local="false">IO-7455</a>] - ESB | Documentation | Document ESB and its components: XSLT</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7530" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7530" data-scroll-link-local="false">IO-7530</a>] - Migrate ESB-XSLT service to Amazon ECS</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7541" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7541" data-scroll-link-local="false">IO-7541</a>] - Map2Any | Refactor SynXis transformations | Reservations | outbound</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7555" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7555" data-scroll-link-local="false">IO-7555</a>] - Logs | Kibana | ErrorMessage w/ root cause from ErrorDetails</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7561" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7561" data-scroll-link-local="false">IO-7561</a>] - ESB | Integration Testing | outbound | apply 'IdeasRequest' template for dropping msg</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7562" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7562" data-scroll-link-local="false">IO-7562</a>] - Logging | Detect wrong sender/destination and log accordingly</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7564" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7564" data-scroll-link-local="false">IO-7564</a>] - SynXis | Edit rule id synxis-ota-hotelresnotifrq-cleanup-profiles</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7567" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7567" data-scroll-link-local="false">IO-7567</a>] - XSLT | SynXis | Adjust namespace references</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7568" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7568" data-scroll-link-local="false">IO-7568</a>] - XSLT | Synxis | adjust to support multiple RoomRate for different RatePlanCodes</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7590" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7590" data-scroll-link-local="false">IO-7590</a>] - PROD | Push io.protel.air config manually</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7595" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7595" data-scroll-link-local="false">IO-7595</a>] - HOTFIX | FPS | outbound | Bypass "DeadEP Marker" for com.code2order.kiosk</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7596" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7596" data-scroll-link-local="false">IO-7596</a>] - Documentation | Generic ESB RS triggers</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7597" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7597" data-scroll-link-local="false">IO-7597</a>] - DynamoDB | Enable services on PROD env</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7599" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7599" data-scroll-link-local="false">IO-7599</a>] - TravelClick | Edit rule id travelclick-ota_hotelresnotifnotifrq-cleanup_2 for multiple ResGuest</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7600" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7600" data-scroll-link-local="false">IO-7600</a>] - TravelClick | outbound | Edit rule id for Rate Plan Description</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7604" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7604" data-scroll-link-local="false">IO-7604</a>] - TravelClick | outbound | Edit rule id for Rate Plan Amounts</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7610" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7610" data-scroll-link-local="false">IO-7610</a>] - TravelClick | Edit ResNotifRS rule id from TravelClick to PMS</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7611" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7611" data-scroll-link-local="false">IO-7611</a>] - TravelClick | Edit outbound reservation Unique ID</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7615" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7615" data-scroll-link-local="false">IO-7615</a>] - TravelClick | Edit logic for dropping messages to destination</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7618" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7618" data-scroll-link-local="false">IO-7618</a>] - Automate Configuration Bulk to pAir</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7635" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7635" data-scroll-link-local="false">IO-7635</a>] - GHA | Edit stay.fidelio.3.0 for cancellationDate</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7636" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7636" data-scroll-link-local="false">IO-7636</a>] - Unable to view Kibana Dashboard</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7637" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7637" data-scroll-link-local="false">IO-7637</a>] - SynXis proxy | Edit rule id synxis-ota-hotelresnotifrq-cleanup-profiles</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7641" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7641" data-scroll-link-local="false">IO-7641</a>] - Reevaluate inbound auth validation flow</li></ul><h2 style="" id="ESBRelease326(20thofJuly2023)-Spike" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="2" class="scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Spike</h2><ul style=""><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7573" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7573" data-scroll-link-local="false">IO-7573</a>] - Novum | Inbound OTA_HotelRatePlanNotifRQ message reaches the wrong PWS</li><li>[<a rel="nofollow" style="" href="https://jira-live.protel.net/browse/IO-7616" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://jira-live.protel.net/browse/IO-7616" data-scroll-link-local="false">IO-7616</a>] - TravelClick GMS | outbound | Wrong HotelReservation/UniqueID/@ID</li></ul>
+                        </div>
+                    </section>
+
+                </article>
+            </main>
+
+
+                <nav class="exp-post-navigation-prev">
+                    <a href="ESB-Release-325-(14th-of-June-2023).192228548.html" class="post-navigation-link">
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-prev">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                        <span>ESB Release 325 (14th of June 2023)</span>
+                    </a>
+                </nav>
+
+                <nav class="exp-post-navigation-next">
+
+                    <a href="ESB-Release-327-(28th-of-August-2023).192228454.html" class="post-navigation-link">
+                        <span>ESB Release 327 (28th of August 2023)</span>
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-next">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-225.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                    </a>
+
+                </nav>
+
+
+            <nav class="exp-sidebar-toc js-tocBot">
+                <!-- content generated by toc.js  -->
+            </nav>
+
+            <div class="exp-sidebar-navigation-toggle">
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+            </div>
+
+            <div class="exp-scroll-to-top-container">
+                <a href="#ESBRelease326(20thofJuly2023)-top" class="exp-scroll-to-top-link">↑ Back to top</a>
+            </div>
+
+        </div>
+
+
+
+<dialog class="exp-lightbox-container" aria-modal="true">
+    <div class="lightbox-toolbar">
+        <button type="button" class="exp-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox-content content">
+    </div>
+</dialog>
+
+<template id="exp-lightbox-wrapper-template">
+    <div class="exp-lightbox-wrapper">
+        <div class="exp-lightbox-toggle">
+            <button type="button" class="exp-lightbox-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                    <path fill="currentColor" d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+        <script src="js/tocbot.min.js"></script>
+        <script src="js/article-toc.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/iframe-resizer.parent.js"></script>
+
+    </body>
+
+</html>

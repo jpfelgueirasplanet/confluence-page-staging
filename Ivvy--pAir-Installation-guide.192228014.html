@@ -1,0 +1,461 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+        <link rel="icon" href="_scroll_external/logos/59f13d845123/default-space-logo.svg">
+
+        <!-- Primary Meta Tags -->
+        <meta name="exp-export-timestamp" content="2024-09-05T09:14:06.803+0000">
+        <meta name="exp-page-id" content="192228014">
+        <meta name="exp-page-title" content="Ivvy- pAir Installation guide">
+        <meta name="exp-page-version" content="19">
+        <meta name="exp-page-scroll-page-id" content="">
+        <meta name="exp-page-created" content="2022-04-15T14:31:22.067+0000">
+        <meta name="exp-page-last-modified" content="2024-02-16T15:48:54.120+0000">
+        <meta name="exp-page-labels" content="">
+        <meta name="exp-page-context-keys" content="">
+        <meta name="exp-space-key" content="PIODOC">
+        <meta name="exp-space-title" content="protel.I/O documentation">
+
+        <!-- Additional Meta Tags -->
+        <meta name="exp-document-id" content="">
+        <meta name="exp-document-title" content="protel.I/O documentation">
+        <meta name="exp-version-status" content="">
+        <meta name="exp-version-id" content="">
+        <meta name="exp-version-name" content="">
+        <meta name="exp-version-description" content="">
+        <meta name="exp-version-date" content="">
+        <meta name="exp-variant-id" content="">
+        <meta name="exp-variant-name" content="">
+        <meta name="exp-variant-description" content="">
+        <meta name="exp-language-code" content="">
+        <meta name="exp-language-name" content="">
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/image-dimensions.css">
+
+
+            
+            
+<script src="js/search.js"></script>
+            <script id="search-worker" type="javascript/worker">
+    onmessage = function(event) {
+        // dispatch events to handling functions
+        var message = event.data;
+
+        if ((message.type === 'setup') && message.baseUrl) {
+            setup(message.baseUrl);
+        }
+
+        if (message.type === 'search-request') {
+            search(message.query);
+        }
+    }
+
+    var searchIndex;
+
+    function setup(baseUrl) {
+        importScripts(
+            baseUrl + 'js/lunr.js',
+            baseUrl + 'js/lunr-index.js',
+            baseUrl + 'js/lunr-data.js'
+        );
+        try {
+            // load lunr-extras if it exists, which contains language-specific files for languages other than english
+            importScripts(baseUrl + 'js/lunr-extras.js');
+        } catch (e) {}
+        searchIndex = lunr.Index.load(lunrIndex);
+    }
+
+    function search(query) {
+        var searchHits = searchIndex.search(query);
+        var results = searchHits.map(function (result) {
+            return lunrData.filter(function (d) {
+                return d.id === result.ref;
+            })[0]
+        });
+        postMessage({ type: 'search-results', results: results, query: query });
+    }
+</script>
+        <title>Ivvy- pAir Installation guide</title>
+
+    <meta name="generator" content="Scroll HTML Exporter / K15t GmbH"></head>
+
+    <body id="Ivvy-pAirInstallationguide-top" data-pageid="192228014" data-confluence-editor-version="v1" data-confluence-deployment-type="DATACENTER">
+
+        <div class="exp-grid-container">
+
+            <header class="exp-header"></header>
+
+            <div class="exp-logo">
+                <a href="protel.I_O-documentation.192227604.html">
+                    <span class="exp-logo-image" style="background-image: url(_scroll_external/logos/59f13d845123/default-space-logo.svg)" alt="protel.I/O documentation" title="protel.I/O documentation"></span>
+                </a>
+            </div>
+
+            <div class="exp-document-title">
+                <h1 class="exp-document-title-heading scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h1 scroll-relative-h1" data-scroll-heading-rank="1" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="1" id="no-src_generated-id-527147af7579420ce19a566e380b1eaaf0e69f70160c7ba73e9345a59708c906">
+                    <a href="protel.I_O-documentation.192227604.html">
+                        protel.I/O documentation
+                    </a>
+                </h1>
+            </div>
+
+<div class="exp-search-container">
+    <input type="search" id="search-textbox" autocomplete="off" class="exp-search-input" style="margin-right: 0;">
+    <div class="exp-search-input-icon">
+        <svg data-exp-id="magnifier-icon" data-exp-component="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8.99452 14.5C10.5121 14.5 11.809 13.9669 12.8854 12.9007C13.9618 11.8345 14.5 10.5361 14.5 9.00548C14.5 7.48794 13.9631 6.19097 12.8893 5.11458C11.8155 4.03819 10.519 3.5 9 3.5C7.46786 3.5 6.16816 4.0369 5.1009 5.11071C4.03363 6.18453 3.5 7.48096 3.5 9C3.5 10.5321 4.0331 11.8318 5.09929 12.8991C6.1655 13.9664 7.46391 14.5 8.99452 14.5ZM9 16C8.02913 16 7.11974 15.816 6.27185 15.4479C5.42395 15.0799 4.68056 14.5799 4.04167 13.9479C3.40278 13.316 2.90278 12.576 2.54167 11.728C2.18056 10.88 2 9.97053 2 8.99956C2 8.04152 2.18403 7.13542 2.55208 6.28125C2.92014 5.42708 3.41864 4.68387 4.04758 4.0516C4.67653 3.41935 5.41569 2.91935 6.26508 2.5516C7.11449 2.18387 8.02548 2 8.99806 2C9.95769 2 10.8646 2.18403 11.7188 2.55208C12.5729 2.92014 13.316 3.42014 13.9479 4.05208C14.5799 4.68403 15.0799 5.42612 15.4479 6.27835C15.816 7.13058 16 8.0381 16 9.00094C16 9.83365 15.8615 10.6213 15.5846 11.3638C15.3078 12.1062 14.9254 12.7836 14.4375 13.3958L18 16.9583L16.9375 18L13.375 14.4583C12.7668 14.9459 12.0939 15.3247 11.3564 15.5948C10.6188 15.8649 9.83333 16 9 16Z" fill="currentColor" />
+        </svg>
+    </div>
+    <div id="search-suggestion-container" class="exp-search-suggestion-panel" data-exp-component="search-suggestion"></div>
+    <template id="exp-search-suggestion-option-template">
+        <div class="exp-search-suggestion-option-container search-form-suggestion">
+            <a class="exp-search-suggestion-option search-form-suggestion" href=""></a>
+        </div>
+    </template>
+</div>
+
+
+            <nav class="exp-sidebar-navigation">
+                <div class="exp-sidebar-navigation-sticky-wrapper">
+                    <iframe src="toc.html?pageId=192228014" border="0"></iframe>
+                </div>
+
+            </nav>
+
+
+            <nav aria-label="Breadcrumb" class="exp-breadcrumbs-wrapper">
+                <ol class="breadcrumbs">
+                        <li class="breadcrumb">
+                            <a href="protel.I_O-documentation.192227604.html" rel="prev" target="_self">protel.I/O documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Integrations.192227608.html" rel="prev" target="_self">Integrations</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="iVvy.192227693.html" rel="prev" target="_self">iVvy</a>
+                        </li>
+                    <li class="breadcrumb active" aria-current="page">
+                        Ivvy- pAir Installation guide
+                    </li>
+                </ol>
+            </nav>
+
+
+            <main class="exp-content">
+                <article role="article">
+
+                    <header>
+                        <h1 class="article-heading scroll-h1 scroll-original-h1 scroll-relative-h1 scroll-custom-section-heading scroll-document-section-heading" role="heading" data-scroll-heading-rank="1" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="1" id="no-src_generated-id-63ccdb575c2e2d2f56cf0ea62b982b2b79c4ec75f90bf6856558045dabdba5ed">
+                            Ivvy- pAir Installation guide
+                        </h1>
+                    </header>
+
+                    <section class="page" id="content" role="main">
+                        <div id="main-content" class="wiki-content article-content js-tocBot-content">
+                            <p><strong><style type="text/css">/*<![CDATA[*/
+div.rbtoc1725527646847 {padding: 0px;}
+div.rbtoc1725527646847 ul {margin-left: 0px;}
+div.rbtoc1725527646847 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></strong></p><div class="toc-macro rbtoc1725527646847"><strong>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228014" data-scroll-link-target-source-id="192228014" data-scroll-link-type="document" href="Ivvy--pAir-Installation-guide.192228014.html#IvvypAirInstallationguide-AbouttheInterface:SCB-Ivvy" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Ivvy-+pAir+Installation+guide#src-192228014_IvvypAirInstallationguide-AbouttheInterface:SCB-Ivvy">About the Interface: SCB - Ivvy</a></li>
+<li><a data-scroll-target-source-id="192228014" data-scroll-link-target-source-id="192228014" data-scroll-link-type="document" href="Ivvy--pAir-Installation-guide.192228014.html#IvvypAirInstallationguide-ContactInformation-IntegrationPartner" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Ivvy-+pAir+Installation+guide#src-192228014_IvvypAirInstallationguide-ContactInformation-IntegrationPartner">Contact Information - Integration Partner</a></li>
+<li><a data-scroll-target-source-id="192228014" data-scroll-link-target-source-id="192228014" data-scroll-link-type="document" href="Ivvy--pAir-Installation-guide.192228014.html#IvvypAirInstallationguide-InstallationSteps" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Ivvy-+pAir+Installation+guide#src-192228014_IvvypAirInstallationguide-InstallationSteps">Installation Steps</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228014" data-scroll-link-target-source-id="192228014" data-scroll-link-type="document" href="Ivvy--pAir-Installation-guide.192228014.html#IvvypAirInstallationguide-Generalsteps" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Ivvy-+pAir+Installation+guide#src-192228014_IvvypAirInstallationguide-Generalsteps">General steps</a></li>
+<li><a data-scroll-target-source-id="192228014" data-scroll-link-target-source-id="192228014" data-scroll-link-type="document" href="Ivvy--pAir-Installation-guide.192228014.html#IvvypAirInstallationguide-OnewayInstallation" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Ivvy-+pAir+Installation+guide#src-192228014_IvvypAirInstallationguide-OnewayInstallation">One way Installation</a></li>
+<li><a data-scroll-target-source-id="192228014" data-scroll-link-target-source-id="192228014" data-scroll-link-type="document" href="Ivvy--pAir-Installation-guide.192228014.html#IvvypAirInstallationguide-TwowayInstallation" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/Ivvy-+pAir+Installation+guide#src-192228014_IvvypAirInstallationguide-TwowayInstallation">Two way Installation</a></li>
+</ul>
+</li>
+</ul>
+</strong></div><p></p><h2 id="IvvypAirInstallationguide-AbouttheInterface:SCB-Ivvy" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">About the Interface: <a rel="nofollow" href="https://confluence.protel.net/display/ESB/SCB+-+iVvy" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/display/ESB/SCB+-+iVvy" data-scroll-link-local="false">SCB - Ivvy</a></h2><h2 id="IvvypAirInstallationguide-ContactInformation-IntegrationPartner" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2"><strong>Contact Information&nbsp;</strong><strong>- Integration Partner</strong></h2><p><strong>Slack Channel: &nbsp;<span style="color: rgb(255,0,0);"><span style="color: rgb(0,51,102);"> #htng_Ivvy</span></span></strong></p><p><strong>General phone numbers:&nbsp;<br clear="none"></strong><span style="color: rgb(0,0,0);">AU: +1300 004 889</span><strong><br clear="none" style="text-align: left;"></strong><span style="color: rgb(0,0,0);">NZ: 0800 343 473</span><strong><br clear="none" style="text-align: left;"></strong><span style="color: rgb(0,0,0);">UK:</span><span style="color: rgb(23,43,77);">&nbsp;+44 800 520 2335</span><br clear="none" style="text-align: left;"><span style="color: rgb(23,43,77);">US:&nbsp;+1 8774 000 401</span><br clear="none"><span style="color: rgb(0,0,0);">Other countries: +61 7 5636 3755</span><strong><br clear="none"><br clear="none"></strong><strong>General email address: &nbsp;</strong><a rel="nofollow" href="mailto:support@ivvy.com" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="mailto:support@ivvy.com" data-scroll-link-local="false">support@ivvy.com</a><strong>&nbsp;</strong><span style="color: rgb(255,0,0);"><br clear="none"></span><strong>Support / Installer email address: </strong><a rel="nofollow" style="text-decoration: none;text-align: left;" href="mailto:support@ivvy.com" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="mailto:support@ivvy.com" data-scroll-link-local="false">support@ivvy.com</a><strong><span style="color: rgb(23,43,77);">&nbsp;/&nbsp;</span><a rel="nofollow" style="text-decoration: none;text-align: left;" href="mailto:extensions@ivvy.com" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="mailto:extensions@ivvy.com" data-scroll-link-local="false">extensions@ivvy.com</a></strong><span style="color: rgb(255,0,0);"><br clear="none"></span></p><p><br clear="none"></p><p><strong>Contact persons for installations</strong></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup span="1"><col span="1"><col span="1"><col span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Name</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Position (Support / Installer)</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Email</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Slack</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Phone number</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">Tim Whitcroft</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">Integrations Manager</span><br clear="none" style="text-align: left;"><strong style="text-align: left;"><em>(please use only if everything else fails)</em></strong></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a rel="nofollow" style="text-align: left;" href="mailto:tim.whitcroft@ivvy.com" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="mailto:tim.whitcroft@ivvy.com" data-scroll-link-local="false">tim.whitcroft@ivvy.com</a></p></td><td colspan="1" rowspan="1" style="text-align: center;" class="confluenceTd"><p><span style="color: rgb(255,0,0);"><img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:">&nbsp;</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&nbsp; &nbsp; &nbsp; <span style="color: rgb(0,51,102);">&nbsp;N/A</span></p></td></tr></tbody></table></div><p><br clear="none"></p><h2 id="IvvypAirInstallationguide-InstallationSteps" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Installation Steps</h2><div class="table-wrap"><table class="wrapped confluenceTable tableenhancer tableenhancer-rownums-onceBeforeSorting"><colgroup span="1"><col span="1" style="width: 884.0px;"><col span="1" style="width: 925.0px;"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><h3 id="IvvypAirInstallationguide-Generalsteps" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="3" class="scroll-original-h4 scroll-non-section-heading scroll-h3 scroll-relative-h3"><strong><em>General steps</em></strong></h3></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Examples</p></th></tr></thead><tbody><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(23,43,77);">Request authentication details from the Integration partner for the new installation and request them to send you the authentication details.</span></p><p><span style="color: rgb(23,43,77);"> Please provide them the HotelID as well - internally for Protel this is the CloudID&nbsp;</span></p><div class="confluence-information-macro confluence-information-macro-information"><p class="title conf-macro-render">Data Security</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p><span style="color: rgb(0,0,0);">Please have in mind that both vendor and IO interface token information is sensitive information that might be transported by Slack, <br clear="none"></span><span style="color: rgb(0,0,0);">team viewer session in case of a 1:1 session, </span><span style="color: rgb(23,43,77);">or with two-way&nbsp;authentication methods by other media.&nbsp;</span></p></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><ul><li><span style="color: rgb(255,0,0);"><span style="color: rgb(0,51,102);">Authentication method using a specific given Endpoint and a specific Token &nbsp;for each hotel customer</span><br clear="none"><br clear="none"></span><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="500" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/6e5fb7e49bba/ivvy_bob_pair.png"></span></li></ul></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">General Preparation for pAir&nbsp;<br clear="none"><a rel="nofollow" href="https://confluence.protel.net/display/PIODOC/pAir+%7C+General+preparation" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/display/PIODOC/pAir+%7C+General+preparation" data-scroll-link-local="false">https://confluence.protel.net/display/PIODOC/pAir+%7C+General+preparation</a></span></p><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><br clear="none"><br clear="none"></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">Bob installation:</span> one for pAir (if not existing) and one for the Integration <span>&nbsp;</span></span></p><p><br clear="none"></p><p><br clear="none"></p><div class="confluence-information-macro confluence-information-macro-information"><p class="title conf-macro-render">Data Security</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p><span style="color: rgb(0,0,0);">Please have in mind that both vendor and IO interface token information is sensitive information that might be transported by Slack, <br clear="none"></span><span style="color: rgb(0,0,0);">team viewer session in case of a 1:1 session, </span><span style="color: rgb(0,0,0);">or with two-way&nbsp;authentication methods by other media.&nbsp;</span></p></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="900" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/759431df0ee8/ivvy_bob_hotelinst.png"></span><br clear="none"><br clear="none"></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>4</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Special Configuration<br clear="none">In case the Hotel would like to have a specific Reservation status for Ivvy's Booking, Installer providing them with the values of the System data</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p class="auto-cursor-target"><span style="color: rgb(23,43,77);"><span style="color: rgb(23,43,77);">Map protel Reservation Statuses with IVvy reservation statuses</span></span><strong><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="300" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/9e03ff283cd1/image2022-6-20_11-6-35.png"></span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br clear="none"></strong></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>5</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p class="auto-cursor-target"><span style="color: rgb(23,43,77);"><span style="color: rgb(23,43,77);"><br clear="none"></span></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>6</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p style="text-align: left;"><span style="color: rgb(0,0,0);">Configuring an IDS Instance for I/O for rate and restriction export:&nbsp;</span></p><p><span style="color: rgb(23,43,77);"><a data-scroll-target-source-id="192228249" data-scroll-link-target-source-id="192228249" data-scroll-link-type="document" href="pAir-_-How-to-configure-a-protel-I_O-IDS.192228249.html" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/pages/viewpage.action?pageId=192228249">pAir | How to configure a protel I/O IDS</a></span></p><p><a rel="nofollow" href="https://confluence.protel.net/pages/viewpage.action?pageId=80316518#pAir|HowtoconfigureaprotelI/OIDS-Exporthandling" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/pages/viewpage.action?pageId=80316518#pAir|HowtoconfigureaprotelI/OIDS-Exporthandling" data-scroll-link-local="false">pAir | Export Handling</a></p><p><a rel="nofollow" href="https://confluence.protel.net/pages/viewpage.action?pageId=80316518#pAir|HowtoconfigureaprotelI/OIDS-CreateMappings" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/pages/viewpage.action?pageId=80316518#pAir|HowtoconfigureaprotelI/OIDS-CreateMappings" data-scroll-link-local="false">pAir | How to configure a protel I/O IDS#CreateMapping</a><br clear="none">(Room types, Rate Codes, Market Code )</p><ul style="text-align: left;"><li><span style="color: rgb(0,0,0);">Export should be set to every<strong> 5 mins</strong> for the next <strong>24 Months</strong></span></li><li><span style="color: rgb(0,0,0);">Rate values and Restriction Values are necessary to be ticked in order to be exported</span></li><li><span style="color: rgb(0,0,0);"><u style="text-align: left;">Please note</u>&nbsp;that availability Values are not needed, so no tick is necessary!</span></li><li><span style="color: rgb(0,0,0);">Ask Ivvy and the customer which<strong> rate plan</strong> codes and <strong>room types</strong> and <strong>Market Codes</strong> are needed to be mapped in Protel and then include them in the Mappings.<span>&nbsp;</span><u style="text-align: left;">Please note</u> that the codes are case sensitive and have to be matched exactly as they are mentioned!<br clear="none"></span></li></ul><p><span style="color: rgb(0,0,0);">Rates:</span></p><ul style="text-align: left;"><li>Receiving Child rates is not supported&nbsp;by iVvy (they will send them to us with the blocks)</li><li>iVvy can store rate values for up to 4 adults</li></ul><p><span style="color: rgb(0,0,0);"><br clear="none"></span></p><p><span style="color: rgb(0,0,0);">Restrictions:</span></p><ul><li>Only Master Close is supported (no MINLOS, CTA etc.) by iVvy</li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="500" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/cad66e5a52b0/image-2024-2-16_10-35-36.png"></span><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="500" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/216716d158fd/image-2024-2-16_15-38-40.png"></span><br clear="none"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="500" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/6053b245049a/image-2024-2-16_15-46-43.png"></span></p></div><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="28b94364-d5fd-4c22-b2ee-c33a8f87c38a" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/758fe89592bd/image-2024-2-16_10-38-3.png" height="250"></span></td></tr></tbody></table></div><div class="table-wrap"><table class="wrapped confluenceTable tableenhancer tableenhancer-rownums-onceBeforeSorting"><colgroup span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><h3 id="IvvypAirInstallationguide-OnewayInstallation" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="3" class="scroll-original-h4 scroll-non-section-heading scroll-h3 scroll-relative-h3"><em><strong>One way Installation</strong></em></h3></th><th colspan="1" rowspan="1" class="confluenceTh"><p><br clear="none"></p></th></tr></thead><tbody><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">Create a test reservation in the future (at least one year after the system date) &amp;&nbsp;provide the reservation number to your integration partner</span></p><ul><li>make a modification and finally a cancellation of your test reservation. Verify in Kibana that outgoing OTA_HotelResNotifRQ is answered by OTA_HotelResNotifRS and no error occurs.&nbsp;</li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(23,43,77);">Create and start bulk uploads</span></p><ul><li><span style="color: rgb(23,43,77);">For Blocks (OTA_HotelInvBlockNotifRQ)<br clear="none"></span>from current date until 31/12/2099</li></ul><p><br clear="none"></p><ul><li><span style="color: rgb(23,43,77);">for reservations (OTA_HotelResNotifRQ) <br clear="none"></span><span style="color: rgb(23,43,77);">from current date until 31/12/2099<br clear="none"></span><span style="color: rgb(23,43,77);"><br clear="none"><br clear="none"></span></li></ul><div class="expand-container"><div class="expand-content"><p><span style="color: rgb(23,43,77);">BTS Jobs will be processed one by one as only one bulk per property is allowed at the same time.&nbsp;</span></p><p><span style="color: rgb(23,43,77);">Bulks should be starting with 1 January and ending with 31 of December (i.e. 01.01.2017 - 31.12.2021).</span></p><p><span style="color: rgb(23,43,77);">In case you have issues with a stuck bulk upload, investigate why messages were not sent. As an option, delete the old job and create a new one.&nbsp;</span></p></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(0,51,102);">Trigger export of </span></p><ul><li><span style="color: rgb(0,51,102);">availabilities sent with OTA_HotelInvCountNotifRQ (via Trigger URL)</span></li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(255,0,0);"><a rel="nofollow" href="https://confluence.protel.net/pages/viewpage.action?spaceKey=PIODOC&amp;title=pAir+%7C+Triggering+messages%3A+API+calls" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/pages/viewpage.action?spaceKey=PIODOC&amp;title=pAir+%7C+Triggering+messages%3A+API+calls" data-scroll-link-local="false">pAir | Triggering Messages or API calls</a><br clear="none"><span style="color: rgb(0,51,102);">Trigger OTA_HotelInvCountNotifRQ for the next 2 years</span><br clear="none"></span></p><p><span style="color: rgb(255,0,0);"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="500" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/a5a6ae83bbaa/image2022-4-19_10-52-15.png"></span></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>4</p></td><td colspan="1" rowspan="1" class="confluenceTd"><ul style="text-align: left;"><li><span style="color: rgb(0,0,0);">rates sent with OTA_HotelRatePlanNotifRQ (via IDS → start full export)</span></li><li><span style="color: rgb(0,0,0);">rate restrictions with OTA_HotelAvailNotifRQ&nbsp;(via IDS → start full export)</span></li></ul><p><span style="color: rgb(0,51,102);"><br clear="none"></span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(255,0,0);"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="400" class="confluence-embedded-image scroll-document-image" src="_scroll_external/remote/86ae2275794c/image2022-4-27_13-15-21.png"></span></span></p></div></td></tr></tbody></table></div><div class="table-wrap"><table class="wrapped confluenceTable tableenhancer tableenhancer-rownums-onceBeforeSorting"><colgroup span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><h3 id="IvvypAirInstallationguide-TwowayInstallation" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="3" class="scroll-original-h4 scroll-non-section-heading scroll-h3 scroll-relative-h3"><span style="color: rgb(0,0,0);"><em><strong>Two way Installation</strong></em></span></h3></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Examples</p></th></tr></thead><tbody><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p style="text-align: left;"><span style="color: rgb(0,0,0);">Test an incoming Block / allotment</span></p><p style="text-align: left;"><span style="color: rgb(0,0,0);">(OTA_HotelInvBlockNotifRQ)</span></p><div class="expand-container"><div class="expand-content"><ul><li><span style="color: rgb(23,43,77);">t</span><span style="color: rgb(23,43,77);">he integration partner should ask the customer to c</span><span style="color: rgb(23,43,77);">reate a Test Block.</span></li><li><span style="color: rgb(23,43,77);">as soon as this has been tested successfully repeat the tests for incoming rate updates for a rate or rate group chosen by the customer</span></li></ul></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><div class="scroll-code scroll-highlighted-code-block" data-title="Block Creation" data-linenumbers="true" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="title">Block Creation</div><div class="defaultnew content" data-title="Block Creation">
+<div class="line"><code class="plain">&lt;?xml version=</code><code class="string">"1.0"</code><code class="plain"> encoding=</code><code class="string">"utf-16"</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;soap:Envelope xmlns:xsd=</code><code class="string">"http://www.w3.org/2001/XMLSchema"</code><code class="plain"> xmlns:xsi=</code><code class="string">"http://www.w3.org/2001/XMLSchema-instance"</code><code class="plain"> xmlns:soap=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain"> xmlns:wsa=</code><code class="string">"http://www.w3.org/2005/08/addressing"</code><code class="plain"> xmlns:as=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain"> xmlns:wsse=</code><code class="string">"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"</code><code class="plain"> xmlns:wsu=</code><code class="string">"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"</code><code class="plain"> xmlns:xml=</code><code class="string">"http://www.w3.org/XML/1998/namespace"</code><code class="plain"> xmlns:px=</code><code class="string">"http://protel.io/htng/extensions"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">    &lt;soap:Header&gt;</code></div>
+<div class="line"><code class="plain">        &lt;wsa:MessageID&gt;2247a76d-9d6d-48ad-af60-72edb147da4d&lt;/wsa:MessageID&gt;</code></div>
+<div class="line"><code class="plain">        &lt;wsa:To mustUnderstand=</code><code class="string">"1"</code><code class="plain">&gt;https:</code><code class="comments">//service-test.protel.io/services/ProtelApiService.ProtelApiServiceHttpsSoap12Endpoint&lt;/wsa:To&gt;</code></div>
+<div class="line"><code class="plain">        &lt;as:CorrelationID&gt;1fa89e1d-8ef9-4c39-9eb3-60b714c6dffd&lt;/as:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">        &lt;wsa:Action mustUnderstand=</code><code class="string">"1"</code><code class="plain">&gt;http:</code><code class="comments">//htng.org/2010A/OTA_HotelInvBlockNotifRQ_SubmitRequest&lt;/wsa:Action&gt;</code></div>
+<div class="line"><code class="plain">        &lt;wsa:ReplyTo&gt;</code></div>
+<div class="line"><code class="plain">            &lt;wsa:Address&gt;https:</code><code class="comments">//b49tx1d5j9.execute-api.ap-southeast-2.amazonaws.com/stage/protelmessages/incoming?region=stage&amp;venueId=5383&lt;/wsa:Address&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/wsa:ReplyTo&gt;</code></div>
+<div class="line"><code class="plain">        &lt;as:ReplyTo&gt;</code></div>
+<div class="line"><code class="plain">            &lt;wsa:Address&gt;https:</code><code class="comments">//b49tx1d5j9.execute-api.ap-southeast-2.amazonaws.com/stage/protelmessages/incoming?region=stage&amp;venueId=5383&lt;/wsa:Address&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/as:ReplyTo&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/soap:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;soap:Body&gt;</code></div>
+<div class="line"><code class="plain">        &lt;OTA_HotelInvBlockNotifRQ xmlns:xsi=</code><code class="string">"http://www.w3.org/2001/XMLSchema-instance"</code><code class="plain"> xmlns:xsd=</code><code class="string">"http://www.w3.org/2001/XMLSchema"</code><code class="plain"> EchoToken=</code><code class="string">"1fa89e1d-8ef9-4c39-9eb3-60b714c6dffd"</code><code class="plain"> TimeStamp=</code><code class="string">"2021-12-22T11:28:29.3076899Z"</code><code class="plain"> Version=</code><code class="string">"1"</code><code class="plain"> CorrelationID=</code><code class="string">"1fa89e1d-8ef9-4c39-9eb3-60b714c6dffd"</code><code class="plain"> xmlns=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">            &lt;POS&gt;</code></div>
+<div class="line"><code class="plain">                &lt;Source&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RequestorID Type=</code><code class="string">"10"</code><code class="plain"> ID=</code><code class="string">"3137"</code><code class="plain"> ID_Context=</code><code class="string">"protelIO"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;BookingChannel Type=</code><code class="string">"4"</code><code class="plain"> Primary=</code><code class="string">"true"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/Source&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/POS&gt;</code></div>
+<div class="line"><code class="plain">            &lt;InvBlocks&gt;</code></div>
+<div class="line"><code class="plain">                &lt;InvBlock InvBlockCode=</code><code class="string">"0"</code><code class="plain"> InvBlockName=</code><code class="string">"TEST 2021122202"</code><code class="plain"> InvBlockLongName=</code><code class="string">"TEST 2021122202"</code><code class="plain"> InvBlockStatusCode=</code><code class="string">"5"</code><code class="plain"> PMS_InvBlockID=</code><code class="string">"Key_Word:127690"</code><code class="plain"> TransactionAction=</code><code class="string">"Book"</code><code class="plain"> BookingStatus=</code><code class="string">"Closed"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;HotelRef HotelCode=</code><code class="string">"3137"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;InvBlockDates Start=</code><code class="string">"2022-03-17"</code><code class="plain"> End=</code><code class="string">"2022-03-17"</code><code class="plain"> AbsoluteCutoff=</code><code class="string">"2022-03-01"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;RoomTypes&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;RoomType RoomTypeCode=</code><code class="string">"CLASS"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;RoomTypeAllocations RoomTypePickUpStatus=</code><code class="string">"1"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;RoomTypeAllocation Start=</code><code class="string">"2022-03-17"</code><code class="plain"> Duration=</code><code class="string">"P1D"</code><code class="plain"> End=</code><code class="string">"2022-03-17"</code><code class="plain"> NumberOfUnits=</code><code class="string">"3"</code><code class="plain"> SellLimit=</code><code class="string">"1"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/RoomTypeAllocations&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;RatePlans&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;RatePlan Start=</code><code class="string">"2022-03-17"</code><code class="plain"> Duration=</code><code class="string">"P1D"</code><code class="plain"> End=</code><code class="string">"2022-03-17"</code><code class="plain"> CurrencyCode=</code><code class="string">"AUD"</code><code class="plain"> RatePlanCode=</code><code class="string">"LOCAL"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;BaseByGuestAmt AmountAfterTax=</code><code class="string">"330"</code><code class="plain"> CurrencyCode=</code><code class="string">"AUD"</code><code class="plain"> NumberOfGuests=</code><code class="string">"1"</code><code class="plain"> AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;BaseByGuestAmt AmountAfterTax=</code><code class="string">"0"</code><code class="plain"> CurrencyCode=</code><code class="string">"AUD"</code><code class="plain"> NumberOfGuests=</code><code class="string">"2"</code><code class="plain"> AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;BaseByGuestAmt AmountAfterTax=</code><code class="string">"0"</code><code class="plain"> CurrencyCode=</code><code class="string">"AUD"</code><code class="plain"> NumberOfGuests=</code><code class="string">"3"</code><code class="plain"> AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;BaseByGuestAmt AmountAfterTax=</code><code class="string">"0"</code><code class="plain"> CurrencyCode=</code><code class="string">"AUD"</code><code class="plain"> NumberOfGuests=</code><code class="string">"4"</code><code class="plain"> AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;/BaseByGuestAmts&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;AdditionalGuestAmounts&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;AdditionalGuestAmount AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> Amount=</code><code class="string">"0"</code><code class="plain"> CurrencyCode=</code><code class="string">"AUD"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;AdditionalGuestAmount AgeQualifyingCode=</code><code class="string">"8"</code><code class="plain"> Amount=</code><code class="string">"0"</code><code class="plain"> CurrencyCode=</code><code class="string">"AUD"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;/AdditionalGuestAmounts&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;MarketCode MarketCode=</code><code class="string">"N/A"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;/RatePlan&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/RatePlans&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/RoomType&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/RoomTypes&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;BlockDescriptions&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;BlockDescription&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;Text Language=</code><code class="string">"en-us"</code><code class="plain"> TextFormat=</code><code class="string">"PlainText"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/BlockDescription&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/BlockDescriptions&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;Contacts&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;Contact ContactType=</code><code class="string">"Company"</code><code class="plain"> RPH=</code><code class="string">"1"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;PersonName&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;GivenName&gt;Lavera&lt;/GivenName&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;Surname&gt;Perin&lt;/Surname&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/PersonName&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;Email/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;CompanyName CompanyShortName=</code><code class="string">"Abc Enterprises Inc"</code><code class="plain">&gt;Abc Enterprises Inc&lt;/CompanyName&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/Contact&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/Contacts&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/InvBlock&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/InvBlocks&gt;</code></div>
+<div class="line"><code class="plain">            &lt;TPA_Extensions&gt;</code></div>
+<div class="line"><code class="plain">                &lt;ProfileInfoExtensions xmlns:xsi=</code><code class="string">"http://www.w3.org/2001/XMLSchema-instance"</code><code class="plain"> xmlns:xsd=</code><code class="string">"http://www.w3.org/2001/XMLSchema"</code><code class="plain"> xmlns=</code><code class="string">"http://protel.io/htng/extensions"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;ContactDetails&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;AdditionalInfo&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;Entry ID=</code><code class="string">"Venue_stage:5383_Company_58200"</code><code class="plain"> RPH=</code><code class="string">"1"</code><code class="plain"> Type=</code><code class="string">"4"</code><code class="plain"> ID_Context=</code><code class="string">"iVvy"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/AdditionalInfo&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/ContactDetails&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/ProfileInfoExtensions&gt;</code></div>
+<div class="line"><code class="plain">                &lt;InvBlockExtensions xmlns:xsi=</code><code class="string">"http://www.w3.org/2001/XMLSchema-instance"</code><code class="plain"> xmlns:xsd=</code><code class="string">"http://www.w3.org/2001/XMLSchema"</code><code class="plain"> xmlns=</code><code class="string">"http://protel.io/htng/extensions"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;InvBlockID ID=</code><code class="string">"127690"</code><code class="plain"> ID_Context=</code><code class="string">"iVvy"</code><code class="plain"> Type=</code><code class="string">"18"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/InvBlockExtensions&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/TPA_Extensions&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/OTA_HotelInvBlockNotifRQ&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/soap:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/soap:Envelope&gt;</code></div>
+</div>
+</div></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(0,0,0);">Test an incoming Reservation&nbsp;</span></p><p><span style="color: rgb(0,0,0);">(OTA_HotelResNotifRQ) </span></p><div class="expand-container"><div class="expand-content"><ul><li><span style="color: rgb(23,43,77);">ask the Integration partner to cancel the reservation after the verification is done.</span></li><li><span style="color: rgb(23,43,77);">Important: check if the integration needs reservations with Credit Card, and create a test reservation with CC details. Verify if the details have been correctly saved in the PMS.</span></li></ul></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><br clear="none"></p><div class="scroll-code scroll-highlighted-code-block" data-title="Reservation Creation" data-linenumbers="true" data-title-type="code" data-theme="defaultnew" style="  counter-reset: scroll-code-numbering 0;"><div class="title">Reservation Creation</div><div class="defaultnew content" data-title="Reservation Creation">
+<div class="line"><code class="plain">&lt;?xml version=</code><code class="string">"1.0"</code><code class="plain"> encoding=</code><code class="string">"utf-16"</code><code class="plain">?&gt;</code></div>
+<div class="line"><code class="plain">&lt;soap:Envelope xmlns:xsd=</code><code class="string">"http://www.w3.org/2001/XMLSchema"</code><code class="plain"> xmlns:xsi=</code><code class="string">"http://www.w3.org/2001/XMLSchema-instance"</code><code class="plain"> xmlns:soap=</code><code class="string">"http://www.w3.org/2003/05/soap-envelope"</code><code class="plain"> xmlns:wsa=</code><code class="string">"http://www.w3.org/2005/08/addressing"</code><code class="plain"> xmlns:as=</code><code class="string">"http://htng.org/PWSWG/2007/02/AsyncHeaders"</code><code class="plain"> xmlns:wsse=</code><code class="string">"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"</code><code class="plain"> xmlns:wsu=</code><code class="string">"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"</code><code class="plain"> xmlns:xml=</code><code class="string">"http://www.w3.org/XML/1998/namespace"</code><code class="plain"> xmlns:px=</code><code class="string">"http://protel.io/htng/extensions"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">  &lt;soap:Header&gt;</code></div>
+<div class="line"><code class="plain">    &lt;wsa:MessageID&gt;</code><code class="value">87953956</code><code class="plain">-b8f1-4c0c-93f9-5a2973aef0f3&lt;/wsa:MessageID&gt;</code></div>
+<div class="line"><code class="plain">    &lt;wsa:To mustUnderstand=</code><code class="string">"1"</code><code class="plain">&gt;https:</code><code class="comments">//qa-pci.protel.net/cd-proxy-io/pci/1/io/reservations&lt;/wsa:To&gt;</code></div>
+<div class="line"><code class="plain">    &lt;as:CorrelationID&gt;06f5120b-aed1-</code><code class="value">4310</code><code class="plain">-af8b-7f1d66e42aaa&lt;/as:CorrelationID&gt;</code></div>
+<div class="line"><code class="plain">    &lt;wsa:Action mustUnderstand=</code><code class="string">"1"</code><code class="plain">&gt;http:</code><code class="comments">//htng.org/2010A/OTA_HotelResNotifRQ_SubmitRequest&lt;/wsa:Action&gt;</code></div>
+<div class="line"><code class="plain">    &lt;wsa:ReplyTo&gt;</code></div>
+<div class="line"><code class="plain">      &lt;wsa:Address&gt;https:</code><code class="comments">//b49tx1d5j9.execute-api.ap-southeast-2.amazonaws.com/stage/protelmessages/incoming?region=stage&amp;venueId=5383&lt;/wsa:Address&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/wsa:ReplyTo&gt;</code></div>
+<div class="line"><code class="plain">    &lt;as:ReplyTo&gt;</code></div>
+<div class="line"><code class="plain">      &lt;wsa:Address&gt;https:</code><code class="comments">//b49tx1d5j9.execute-api.ap-southeast-2.amazonaws.com/stage/protelmessages/incoming?region=stage&amp;venueId=5383&lt;/wsa:Address&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/as:ReplyTo&gt;</code></div>
+<div class="line"><code class="plain">  &lt;/soap:Header&gt;</code></div>
+<div class="line"><code class="plain">  &lt;soap:Body&gt;</code></div>
+<div class="line"><code class="plain">    &lt;OTA_HotelResNotifRQ xmlns:xsi=</code><code class="string">"http://www.w3.org/2001/XMLSchema-instance"</code><code class="plain"> xmlns:xsd=</code><code class="string">"http://www.w3.org/2001/XMLSchema"</code><code class="plain"> EchoToken=</code><code class="string">"06f5120b-aed1-4310-af8b-7f1d66e42aaa"</code><code class="plain"> TimeStamp=</code><code class="string">"2021-12-22T11:40:38.5212766Z"</code><code class="plain"> Version=</code><code class="string">"0"</code><code class="plain"> CorrelationID=</code><code class="string">"06f5120b-aed1-4310-af8b-7f1d66e42aaa"</code><code class="plain"> ResStatus=</code><code class="string">"Commit"</code><code class="plain"> xmlns=</code><code class="string">"http://www.opentravel.org/OTA/2003/05"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">      &lt;POS&gt;</code></div>
+<div class="line"><code class="plain">        &lt;Source&gt;</code></div>
+<div class="line"><code class="plain">          &lt;RequestorID Type=</code><code class="string">"10"</code><code class="plain"> ID=</code><code class="string">"3137"</code><code class="plain"> ID_Context=</code><code class="string">"protelIO"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">          &lt;BookingChannel Type=</code><code class="string">"4"</code><code class="plain"> Primary=</code><code class="string">"true"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/Source&gt;</code></div>
+<div class="line"><code class="plain">      &lt;/POS&gt;</code></div>
+<div class="line"><code class="plain">      &lt;HotelReservations&gt;</code></div>
+<div class="line"><code class="plain">        &lt;HotelReservation CreateDateTime=</code><code class="string">"2021-12-22T11:40:35Z"</code><code class="plain"> CreatorID=</code><code class="string">"iVvy"</code><code class="plain"> ResStatus=</code><code class="string">"Requested"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">          &lt;UniqueID Type=</code><code class="string">"14"</code><code class="plain"> ID=</code><code class="string">"6241-6913"</code><code class="plain"> ID_Context=</code><code class="string">"iVvy"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">          &lt;RoomStays&gt;</code></div>
+<div class="line"><code class="plain">            &lt;RoomStay MarketCode=</code><code class="string">"FOC"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">              &lt;RoomTypes&gt;</code></div>
+<div class="line"><code class="plain">                &lt;RoomType NumberOfUnits=</code><code class="string">"1"</code><code class="plain"> RoomTypeCode=</code><code class="string">"PVV"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">              &lt;/RoomTypes&gt;</code></div>
+<div class="line"><code class="plain">              &lt;RatePlans&gt;</code></div>
+<div class="line"><code class="plain">                &lt;RatePlan RatePlanCode=</code><code class="string">"TEST_IVVY"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                  &lt;RatePlanInclusions TaxInclusive=</code><code class="string">"true"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/RatePlan&gt;</code></div>
+<div class="line"><code class="plain">              &lt;/RatePlans&gt;</code></div>
+<div class="line"><code class="plain">              &lt;RoomRates&gt;</code></div>
+<div class="line"><code class="plain">                &lt;RoomRate EffectiveDate=</code><code class="string">"2022-03-05"</code><code class="plain"> ExpireDate=</code><code class="string">"2022-03-06"</code><code class="plain"> RoomTypeCode=</code><code class="string">"PVV"</code><code class="plain"> InvBlockCode=</code><code class="string">"54"</code><code class="plain"> NumberOfUnits=</code><code class="string">"1"</code><code class="plain"> RatePlanCode=</code><code class="string">"TEST_IVVY"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                  &lt;Rates&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;Rate EffectiveDate=</code><code class="string">"2022-03-05"</code><code class="plain"> ExpireDate=</code><code class="string">"2022-03-06"</code><code class="plain"> RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> UnitMultiplier=</code><code class="string">"1"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                      &lt;Base AmountAfterTax=</code><code class="string">"177"</code><code class="plain"> CurrencyCode=</code><code class="string">"AUD"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/Rate&gt;</code></div>
+<div class="line"><code class="plain">                  &lt;/Rates&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/RoomRate&gt;</code></div>
+<div class="line"><code class="plain">                &lt;RoomRate EffectiveDate=</code><code class="string">"2022-03-06"</code><code class="plain"> ExpireDate=</code><code class="string">"2022-03-07"</code><code class="plain"> RoomTypeCode=</code><code class="string">"PVV"</code><code class="plain"> InvBlockCode=</code><code class="string">"54"</code><code class="plain"> NumberOfUnits=</code><code class="string">"1"</code><code class="plain"> RatePlanCode=</code><code class="string">"TEST_IVVY"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                  &lt;Rates&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;Rate EffectiveDate=</code><code class="string">"2022-03-06"</code><code class="plain"> ExpireDate=</code><code class="string">"2022-03-07"</code><code class="plain"> RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> UnitMultiplier=</code><code class="string">"1"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                      &lt;Base AmountAfterTax=</code><code class="string">"177"</code><code class="plain"> CurrencyCode=</code><code class="string">"AUD"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/Rate&gt;</code></div>
+<div class="line"><code class="plain">                  &lt;/Rates&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/RoomRate&gt;</code></div>
+<div class="line"><code class="plain">                &lt;RoomRate EffectiveDate=</code><code class="string">"2022-03-07"</code><code class="plain"> ExpireDate=</code><code class="string">"2022-03-08"</code><code class="plain"> RoomTypeCode=</code><code class="string">"PVV"</code><code class="plain"> InvBlockCode=</code><code class="string">"54"</code><code class="plain"> NumberOfUnits=</code><code class="string">"1"</code><code class="plain"> RatePlanCode=</code><code class="string">"TEST_IVVY"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                  &lt;Rates&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;Rate EffectiveDate=</code><code class="string">"2022-03-07"</code><code class="plain"> ExpireDate=</code><code class="string">"2022-03-08"</code><code class="plain"> RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> UnitMultiplier=</code><code class="string">"1"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                      &lt;Base AmountAfterTax=</code><code class="string">"177"</code><code class="plain"> CurrencyCode=</code><code class="string">"AUD"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/Rate&gt;</code></div>
+<div class="line"><code class="plain">                  &lt;/Rates&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/RoomRate&gt;</code></div>
+<div class="line"><code class="plain">                &lt;RoomRate EffectiveDate=</code><code class="string">"2022-03-08"</code><code class="plain"> ExpireDate=</code><code class="string">"2022-03-09"</code><code class="plain"> RoomTypeCode=</code><code class="string">"PVV"</code><code class="plain"> InvBlockCode=</code><code class="string">"54"</code><code class="plain"> NumberOfUnits=</code><code class="string">"1"</code><code class="plain"> RatePlanCode=</code><code class="string">"TEST_IVVY"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                  &lt;Rates&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;Rate EffectiveDate=</code><code class="string">"2022-03-08"</code><code class="plain"> ExpireDate=</code><code class="string">"2022-03-09"</code><code class="plain"> RateTimeUnit=</code><code class="string">"Day"</code><code class="plain"> UnitMultiplier=</code><code class="string">"1"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                      &lt;Base AmountAfterTax=</code><code class="string">"177"</code><code class="plain"> CurrencyCode=</code><code class="string">"AUD"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/Rate&gt;</code></div>
+<div class="line"><code class="plain">                  &lt;/Rates&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/RoomRate&gt;</code></div>
+<div class="line"><code class="plain">              &lt;/RoomRates&gt;</code></div>
+<div class="line"><code class="plain">              &lt;GuestCounts IsPerRoom=</code><code class="string">"true"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                &lt;GuestCount AgeQualifyingCode=</code><code class="string">"10"</code><code class="plain"> Count=</code><code class="string">"1"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">              &lt;/GuestCounts&gt;</code></div>
+<div class="line"><code class="plain">              &lt;TimeSpan Start=</code><code class="string">"2022-03-05"</code><code class="plain"> End=</code><code class="string">"2022-03-09"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">              &lt;Guarantee GuaranteeCode=</code><code class="string">"4PM"</code><code class="plain"> GuaranteeType=</code><code class="string">"None"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">              &lt;Total AmountAfterTax=</code><code class="string">"708"</code><code class="plain"> CurrencyCode=</code><code class="string">"AUD"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">              &lt;BasicPropertyInfo HotelCode=</code><code class="string">"3137"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">              &lt;ResGuestRPHs&gt;</code></div>
+<div class="line"><code class="plain">                &lt;ResGuestRPH RPH=</code><code class="string">"0"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">              &lt;/ResGuestRPHs&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/RoomStay&gt;</code></div>
+<div class="line"><code class="plain">          &lt;/RoomStays&gt;</code></div>
+<div class="line"><code class="plain">          &lt;ResGuests&gt;</code></div>
+<div class="line"><code class="plain">            &lt;ResGuest ResGuestRPH=</code><code class="string">"0"</code><code class="plain"> PrimaryIndicator=</code><code class="string">"true"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">              &lt;Profiles&gt;</code></div>
+<div class="line"><code class="plain">                &lt;ProfileInfo&gt;</code></div>
+<div class="line"><code class="plain">                  &lt;UniqueID Type=</code><code class="string">"1"</code><code class="plain"> ID=</code><code class="string">"Venue_stage:5383_Contact_7491193"</code><code class="plain"> ID_Context=</code><code class="string">"iVvy"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                  &lt;Profile ProfileType=</code><code class="string">"1"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;Customer&gt;</code></div>
+<div class="line"><code class="plain">                      &lt;PersonName&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;GivenName&gt;Wayne&lt;/GivenName&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;Surname&gt;Champion&lt;/Surname&gt;</code></div>
+<div class="line"><code class="plain">                      &lt;/PersonName&gt;</code></div>
+<div class="line"><code class="plain">                      &lt;Telephone PhoneLocationType=</code><code class="string">"6"</code><code class="plain"> PhoneTechType=</code><code class="string">"1"</code><code class="plain"> PhoneNumber=</code><code class="string">"99532"</code><code class="plain"> FormattedInd=</code><code class="string">"false"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                      &lt;Email&gt;anonym</code><code class="color1">@protel</code><code class="plain">.net&lt;/Email&gt;</code></div>
+<div class="line"><code class="plain">                      &lt;Address Type=</code><code class="string">"3"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;AddressLine&gt;line </code><code class="value">1</code><code class="plain">-</code><code class="value">1</code><code class="plain">&lt;/AddressLine&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;CityName&gt;Brisbane&lt;/CityName&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;CountryName Code=</code><code class="string">"AU"</code><code class="plain">&gt;Australia&lt;/CountryName&gt;</code></div>
+<div class="line"><code class="plain">                      &lt;/Address&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;/Customer&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;UserID Type=</code><code class="string">"1"</code><code class="plain"> ID=</code><code class="string">"36016"</code><code class="plain"> ID_Context=</code><code class="string">"protelIO"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">                    &lt;CompanyInfo /&gt;</code></div>
+<div class="line"><code class="plain">                  &lt;/Profile&gt;</code></div>
+<div class="line"><code class="plain">                &lt;/ProfileInfo&gt;</code></div>
+<div class="line"><code class="plain">              &lt;/Profiles&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/ResGuest&gt;</code></div>
+<div class="line"><code class="plain">          &lt;/ResGuests&gt;</code></div>
+<div class="line"><code class="plain">          &lt;ResGlobalInfo&gt;</code></div>
+<div class="line"><code class="plain">            &lt;HotelReservationIDs&gt;</code></div>
+<div class="line"><code class="plain">              &lt;HotelReservationID ResID_Type=</code><code class="string">"14"</code><code class="plain"> ResID_Value=</code><code class="string">"6241-6913"</code><code class="plain"> ResID_Source=</code><code class="string">"CRS"</code><code class="plain"> ForGuest=</code><code class="string">"true"</code><code class="plain"> /&gt;</code></div>
+<div class="line"><code class="plain">            &lt;/HotelReservationIDs&gt;</code></div>
+<div class="line"><code class="plain">          &lt;/ResGlobalInfo&gt;</code></div>
+<div class="line"><code class="plain">        &lt;/HotelReservation&gt;</code></div>
+<div class="line"><code class="plain">      &lt;/HotelReservations&gt;</code></div>
+<div class="line"><code class="plain">    &lt;/OTA_HotelResNotifRQ&gt;</code></div>
+<div class="line"><code class="plain">  &lt;/soap:Body&gt;</code></div>
+<div class="line"><code class="plain">&lt;/soap:Envelope&gt;</code></div>
+</div>
+</div></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p style="text-align: left;">Update the developer portal with the information about the installed customer</p><p style="text-align: left;">To be found here:&nbsp;</p><p style="text-align: left;">Developer portal / Development / Services / Prospect Hotels / Add</p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="5dc10804-7e91-4079-a970-874faed4bd65" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/d852c5f3f6a0/ivvy_smp1.png" height="250"></span></p><p><br clear="none"></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="c2769f2f-8bde-4b48-9675-22b09749a490" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/30bbb7133ce4/ivvy_smp2.png" height="250"></span></p></div></td></tr></tbody></table></div>
+                        </div>
+                    </section>
+
+                </article>
+            </main>
+
+
+                <nav class="exp-post-navigation-prev">
+                    <a href="iVvy.192227693.html" class="post-navigation-link">
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-prev">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                        <span>iVvy</span>
+                    </a>
+                </nav>
+
+                <nav class="exp-post-navigation-next">
+
+                    <a href="iWTX.192227654.html" class="post-navigation-link">
+                        <span>iWTX</span>
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-next">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-225.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                    </a>
+
+                </nav>
+
+
+            <nav class="exp-sidebar-toc js-tocBot">
+                <!-- content generated by toc.js  -->
+            </nav>
+
+            <div class="exp-sidebar-navigation-toggle">
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+            </div>
+
+            <div class="exp-scroll-to-top-container">
+                <a href="#Ivvy-pAirInstallationguide-top" class="exp-scroll-to-top-link">↑ Back to top</a>
+            </div>
+
+        </div>
+
+
+
+<dialog class="exp-lightbox-container" aria-modal="true">
+    <div class="lightbox-toolbar">
+        <button type="button" class="exp-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox-content content">
+    </div>
+</dialog>
+
+<template id="exp-lightbox-wrapper-template">
+    <div class="exp-lightbox-wrapper">
+        <div class="exp-lightbox-toggle">
+            <button type="button" class="exp-lightbox-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                    <path fill="currentColor" d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+        <script src="js/tocbot.min.js"></script>
+        <script src="js/article-toc.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/iframe-resizer.parent.js"></script>
+
+    </body>
+
+</html>

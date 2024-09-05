@@ -1,0 +1,330 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+        <link rel="icon" href="_scroll_external/logos/59f13d845123/default-space-logo.svg">
+
+        <!-- Primary Meta Tags -->
+        <meta name="exp-export-timestamp" content="2024-09-05T09:13:52.153+0000">
+        <meta name="exp-page-id" content="192227990">
+        <meta name="exp-page-title" content="Amadeus GMS - pAir Installation guide&nbsp;">
+        <meta name="exp-page-version" content="16">
+        <meta name="exp-page-scroll-page-id" content="">
+        <meta name="exp-page-created" content="2022-12-08T16:49:10.270+0000">
+        <meta name="exp-page-last-modified" content="2023-08-21T09:35:08.967+0000">
+        <meta name="exp-page-labels" content="">
+        <meta name="exp-page-context-keys" content="">
+        <meta name="exp-space-key" content="PIODOC">
+        <meta name="exp-space-title" content="protel.I/O documentation">
+
+        <!-- Additional Meta Tags -->
+        <meta name="exp-document-id" content="">
+        <meta name="exp-document-title" content="protel.I/O documentation">
+        <meta name="exp-version-status" content="">
+        <meta name="exp-version-id" content="">
+        <meta name="exp-version-name" content="">
+        <meta name="exp-version-description" content="">
+        <meta name="exp-version-date" content="">
+        <meta name="exp-variant-id" content="">
+        <meta name="exp-variant-name" content="">
+        <meta name="exp-variant-description" content="">
+        <meta name="exp-language-code" content="">
+        <meta name="exp-language-name" content="">
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/image-dimensions.css">
+
+
+            
+            
+<script src="js/search.js"></script>
+            <script id="search-worker" type="javascript/worker">
+    onmessage = function(event) {
+        // dispatch events to handling functions
+        var message = event.data;
+
+        if ((message.type === 'setup') && message.baseUrl) {
+            setup(message.baseUrl);
+        }
+
+        if (message.type === 'search-request') {
+            search(message.query);
+        }
+    }
+
+    var searchIndex;
+
+    function setup(baseUrl) {
+        importScripts(
+            baseUrl + 'js/lunr.js',
+            baseUrl + 'js/lunr-index.js',
+            baseUrl + 'js/lunr-data.js'
+        );
+        try {
+            // load lunr-extras if it exists, which contains language-specific files for languages other than english
+            importScripts(baseUrl + 'js/lunr-extras.js');
+        } catch (e) {}
+        searchIndex = lunr.Index.load(lunrIndex);
+    }
+
+    function search(query) {
+        var searchHits = searchIndex.search(query);
+        var results = searchHits.map(function (result) {
+            return lunrData.filter(function (d) {
+                return d.id === result.ref;
+            })[0]
+        });
+        postMessage({ type: 'search-results', results: results, query: query });
+    }
+</script>
+        <title>Amadeus GMS - pAir Installation guide&nbsp;</title>
+
+    <meta name="generator" content="Scroll HTML Exporter / K15t GmbH"></head>
+
+    <body id="AmadeusGMS-pAirInstallationguide-top" data-pageid="192227990" data-confluence-editor-version="v1" data-confluence-deployment-type="DATACENTER">
+
+        <div class="exp-grid-container">
+
+            <header class="exp-header"></header>
+
+            <div class="exp-logo">
+                <a href="protel.I_O-documentation.192227604.html">
+                    <span class="exp-logo-image" style="background-image: url(_scroll_external/logos/59f13d845123/default-space-logo.svg)" alt="protel.I/O documentation" title="protel.I/O documentation"></span>
+                </a>
+            </div>
+
+            <div class="exp-document-title">
+                <h1 class="exp-document-title-heading scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h1 scroll-relative-h1" data-scroll-heading-rank="1" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="1" id="no-src_generated-id-efed816af0ed7805f7d518b5688e43c64ec25425f15fca6cba41210442b91b78">
+                    <a href="protel.I_O-documentation.192227604.html">
+                        protel.I/O documentation
+                    </a>
+                </h1>
+            </div>
+
+<div class="exp-search-container">
+    <input type="search" id="search-textbox" autocomplete="off" class="exp-search-input" style="margin-right: 0;">
+    <div class="exp-search-input-icon">
+        <svg data-exp-id="magnifier-icon" data-exp-component="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8.99452 14.5C10.5121 14.5 11.809 13.9669 12.8854 12.9007C13.9618 11.8345 14.5 10.5361 14.5 9.00548C14.5 7.48794 13.9631 6.19097 12.8893 5.11458C11.8155 4.03819 10.519 3.5 9 3.5C7.46786 3.5 6.16816 4.0369 5.1009 5.11071C4.03363 6.18453 3.5 7.48096 3.5 9C3.5 10.5321 4.0331 11.8318 5.09929 12.8991C6.1655 13.9664 7.46391 14.5 8.99452 14.5ZM9 16C8.02913 16 7.11974 15.816 6.27185 15.4479C5.42395 15.0799 4.68056 14.5799 4.04167 13.9479C3.40278 13.316 2.90278 12.576 2.54167 11.728C2.18056 10.88 2 9.97053 2 8.99956C2 8.04152 2.18403 7.13542 2.55208 6.28125C2.92014 5.42708 3.41864 4.68387 4.04758 4.0516C4.67653 3.41935 5.41569 2.91935 6.26508 2.5516C7.11449 2.18387 8.02548 2 8.99806 2C9.95769 2 10.8646 2.18403 11.7188 2.55208C12.5729 2.92014 13.316 3.42014 13.9479 4.05208C14.5799 4.68403 15.0799 5.42612 15.4479 6.27835C15.816 7.13058 16 8.0381 16 9.00094C16 9.83365 15.8615 10.6213 15.5846 11.3638C15.3078 12.1062 14.9254 12.7836 14.4375 13.3958L18 16.9583L16.9375 18L13.375 14.4583C12.7668 14.9459 12.0939 15.3247 11.3564 15.5948C10.6188 15.8649 9.83333 16 9 16Z" fill="currentColor" />
+        </svg>
+    </div>
+    <div id="search-suggestion-container" class="exp-search-suggestion-panel" data-exp-component="search-suggestion"></div>
+    <template id="exp-search-suggestion-option-template">
+        <div class="exp-search-suggestion-option-container search-form-suggestion">
+            <a class="exp-search-suggestion-option search-form-suggestion" href=""></a>
+        </div>
+    </template>
+</div>
+
+
+            <nav class="exp-sidebar-navigation">
+                <div class="exp-sidebar-navigation-sticky-wrapper">
+                    <iframe src="toc.html?pageId=192227990" border="0"></iframe>
+                </div>
+
+            </nav>
+
+
+            <nav aria-label="Breadcrumb" class="exp-breadcrumbs-wrapper">
+                <ol class="breadcrumbs">
+                        <li class="breadcrumb">
+                            <a href="protel.I_O-documentation.192227604.html" rel="prev" target="_self">protel.I/O documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Integrations.192227608.html" rel="prev" target="_self">Integrations</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Amadeus-GMS-(Former-Travelclick).192227762.html" rel="prev" target="_self">Amadeus GMS (Former Travelclick)</a>
+                        </li>
+                    <li class="breadcrumb active" aria-current="page">
+                        Amadeus GMS - pAir Installation guide&nbsp;
+                    </li>
+                </ol>
+            </nav>
+
+
+            <main class="exp-content">
+                <article role="article">
+
+                    <header>
+                        <h1 class="article-heading scroll-h1 scroll-original-h1 scroll-relative-h1 scroll-custom-section-heading scroll-document-section-heading" role="heading" data-scroll-heading-rank="1" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="1" id="no-src_generated-id-1ca9995624a18aeb77615bd66bc63c95e9ef03caf09b7fd9fb6ba976ce23e0fa">
+                            Amadeus GMS - pAir Installation guide&nbsp;
+                        </h1>
+                    </header>
+
+                    <section class="page" id="content" role="main">
+                        <div id="main-content" class="wiki-content article-content js-tocBot-content">
+                            <p><strong><style type="text/css">/*<![CDATA[*/
+div.rbtoc1725527632188 {padding: 0px;}
+div.rbtoc1725527632188 ul {margin-left: 0px;}
+div.rbtoc1725527632188 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></strong></p><div class="toc-macro rbtoc1725527632188"><strong>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192227990" data-scroll-link-target-source-id="192227990" data-scroll-link-type="document" href="Amadeus-GMS---pAir-Installation-guide-.192227990.html#AmadeusGMSpAirInstallationguide-AbouttheInterface:AmadeusGMS(FormerTravelclick)" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/pages/viewpage.action?pageId=192227990#src-192227990_AmadeusGMSpAirInstallationguide-AbouttheInterface:AmadeusGMS(FormerTravelclick)">About the Interface: Amadeus GMS (Former Travelclick)</a></li>
+<li><a data-scroll-target-source-id="192227990" data-scroll-link-target-source-id="192227990" data-scroll-link-type="document" href="Amadeus-GMS---pAir-Installation-guide-.192227990.html#AmadeusGMSpAirInstallationguide-ContactInformation-IntegrationPartner" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/pages/viewpage.action?pageId=192227990#src-192227990_AmadeusGMSpAirInstallationguide-ContactInformation-IntegrationPartner">Contact Information - Integration Partner</a></li>
+<li><a data-scroll-target-source-id="192227990" data-scroll-link-target-source-id="192227990" data-scroll-link-type="document" href="Amadeus-GMS---pAir-Installation-guide-.192227990.html#AmadeusGMSpAirInstallationguide-InstallationSteps" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/pages/viewpage.action?pageId=192227990#src-192227990_AmadeusGMSpAirInstallationguide-InstallationSteps">Installation Steps</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192227990" data-scroll-link-target-source-id="192227990" data-scroll-link-type="document" href="Amadeus-GMS---pAir-Installation-guide-.192227990.html#AmadeusGMSpAirInstallationguide-Generalsteps" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/pages/viewpage.action?pageId=192227990#src-192227990_AmadeusGMSpAirInstallationguide-Generalsteps">General steps</a></li>
+<li><a data-scroll-target-source-id="192227990" data-scroll-link-target-source-id="192227990" data-scroll-link-type="document" href="Amadeus-GMS---pAir-Installation-guide-.192227990.html#AmadeusGMSpAirInstallationguide-OnewayInstallation" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/pages/viewpage.action?pageId=192227990#src-192227990_AmadeusGMSpAirInstallationguide-OnewayInstallation">One way Installation</a></li>
+</ul>
+</li>
+</ul>
+</strong></div><p></p><p><br clear="none"></p><h2 id="AmadeusGMSpAirInstallationguide-AbouttheInterface:AmadeusGMS(FormerTravelclick)" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">About the Interface: <a data-scroll-target-source-id="192227762" data-scroll-link-target-source-id="192227762" data-scroll-link-type="document" href="Amadeus-GMS-(Former-Travelclick).192227762.html" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/pages/viewpage.action?pageId=192227762">Amadeus GMS (Former Travelclick)</a></h2><h2 id="AmadeusGMSpAirInstallationguide-ContactInformation-IntegrationPartner" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2"><strong>Contact Information&nbsp;</strong><strong>- Integration Partner</strong></h2><p><strong>Slack Channel: </strong>#htng_travelclick_gms</p><p><strong>General phone number: </strong>NA<strong><br clear="none">Support / Installer phone number: &nbsp;</strong><span style="color: rgb(23,43,77);">&nbsp;</span><a rel="nofollow" href="mailto:ccservice.tc@amadeus.com" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="mailto:ccservice.tc@amadeus.com" data-scroll-link-local="false">ccservice.tc@amadeus.com</a><span style="color: rgb(23,43,77);">&nbsp;(for customer support)</span></p><p><strong>General email address:&nbsp;</strong><span style="color: rgb(255,0,0);"><br clear="none"></span><strong>Support Level 3: &nbsp;</strong><a rel="nofollow" href="mailto:gmsl3.tc@amadues.com" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="mailto:gmsl3.tc@amadues.com" data-scroll-link-local="false">gmsl3.tc@amadues.com</a><strong> (technical issues after installation)</strong><span style="color: rgb(255,0,0);"><br clear="none"></span></p><p><strong><strong>Installer email address:&nbsp;<span>&nbsp;</span></strong></strong><span style="color: rgb(23,43,77);">An implementation Manager will be assigned by Amadeus to each installation</span><strong><span style="color: rgb(23,43,77);">&nbsp;</span></strong></p><p><br clear="none"></p><p><strong>Contact persons for installations</strong></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup span="1"><col span="1"><col span="1"><col span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Name</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Position (Support / Installer)</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Slack</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Phone number</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Comments</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><strong><span style="color: rgb(255,0,0);"><span style="color: rgb(34,34,34);">Evandro Ramos</span></span></strong></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(34,34,34);">Manager, L3 GMS Support</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(255,0,0);"><img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:">&nbsp;</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(34,34,34);">&nbsp;+1 303.803.8600 ext.# 8627</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Please copy Karthik in on all mails to level 3 support</span></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);"><strong style="text-align: left;">Implementation Managers</strong></span></span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>NA</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(255,0,0);"><img alt="(error)" data-emoticon-name="cross" class="emoticon emoticon-cross scroll-document-image" src="_scroll_external/icons/c9cc713fcf92/error.svg" data-emoji-short-name=":cross:"></span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>NA&nbsp; &nbsp;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p style="text-align: left;">Amadeus GMS assigns an Implementation Manager per install and provide these</p><p style="text-align: left;">information to the property</p></td></tr></tbody></table></div><p><br clear="none"></p><h2 id="AmadeusGMSpAirInstallationguide-InstallationSteps" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Installation Steps</h2><div class="table-wrap"><table class="wrapped confluenceTable tableenhancer tableenhancer-rownums-onceBeforeSorting"><colgroup span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><h3 id="AmadeusGMSpAirInstallationguide-Generalsteps" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="3" class="scroll-original-h4 scroll-non-section-heading scroll-h3 scroll-relative-h3"><strong><em>General steps</em></strong></h3></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Examples</p></th></tr></thead><tbody><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p style="text-align: left;"><span style="color: rgb(23,43,77);">Request authentication details from the Integration partner for the new installation and request them to send you the authentication details on private Slack message or encrypted file by email and inform you by phone about the password.</span></p><p style="text-align: left;"><span style="color: rgb(23,43,77);">Please provide them the HotelID as well - internally for Protel this is the CloudID&nbsp;</span></p><p style="text-align: left;">Authentication methods are saved as defaults (endpoint, username and password).&nbsp;</p><div class="confluence-information-macro confluence-information-macro-information"><p class="title conf-macro-render">Username and Password</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p><span style="color: rgb(51,51,51);">Amadeus GMS will attempt to provide a unique username and password for each installation, but these have failed so far and only the defaults entered into BoB have been successful. Therefore please insist that Amadeus GMS amend their settings to use the ones populated within bob</span></p></div></div><p style="text-align: left;"><br clear="none"></p><div class="confluence-information-macro confluence-information-macro-information"><p class="title conf-macro-render">Data Security</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p><span style="color: rgb(0,0,0);">Please have in mind that both vendor and IO interface token information is sensitive information that might be transported by Slack, <br clear="none"></span><span style="color: rgb(0,0,0);">team viewer session in case of a 1:1 session, </span><span style="color: rgb(0,0,0);">or with two-way&nbsp;authentication methods by other media.&nbsp;</span></p></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="563" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/70b97d1a8912/image2022-12-8_17-4-55.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">General Preparation for pAir&nbsp;<br clear="none"><a rel="nofollow" href="https://confluence.protel.net/display/PIODOC/pAir+%7C+General+preparation" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/display/PIODOC/pAir+%7C+General+preparation" data-scroll-link-local="false">https://confluence.protel.net/display/PIODOC/pAir+%7C+General+preparation</a></span></p><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><br clear="none"><br clear="none"></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><br clear="none"></p><p style="text-align: left;"><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">Bob installation:</span><span>&nbsp;</span>one for pAir (if not existing) and one for the Integration<span>&nbsp;</span><span>&nbsp;</span></span></p><ul style="text-align: left;"><li>provide the token corresponding to the integration<span>&nbsp;</span>partner&nbsp;<span style="color: rgb(23,43,77);">on private Slack message<span>&nbsp;</span>or encrypted file by email and inform you by phone about the password.</span></li></ul><p><br clear="none"></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="500" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/8d6ed34ff0b5/image2023-6-13_15-39-32.png"></span></p></div></td></tr></tbody></table></div><div class="table-wrap"><table class="wrapped confluenceTable tableenhancer tableenhancer-rownums-onceBeforeSorting"><colgroup span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><h3 id="AmadeusGMSpAirInstallationguide-OnewayInstallation" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="3" class="scroll-original-h4 scroll-non-section-heading scroll-h3 scroll-relative-h3"><em><strong>One way Installation</strong></em></h3></th><th colspan="1" rowspan="1" class="confluenceTh"><p><br clear="none"></p></th></tr></thead><tbody><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">Create a test reservation in the future (at least one year after the system date) &amp;&nbsp;provide the reservation number to your integration partner</span></p><p><span style="color: rgb(0,0,0);"><br clear="none"><strong style="text-align: left;"><span style="color: rgb(255,0,0);">***</span></strong>Please note Amadeus will require an email address to be entered for their communications with guests<br clear="none"></span></p><ul><li>make a modification and finally a cancellation of your test reservation. Verify in Kibana that outgoing OTA_HotelResNotifRQ is answered by OTA_HotelResNotifRS and no error occurs.&nbsp;</li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(23,43,77);">Create and start bulk uploads</span></p><ul><li><span style="color: rgb(23,43,77);">for reservations (OTA_HotelResNotifRQ) <br clear="none">for the last 2 years and ending with 2099</span><span style="color: rgb(23,43,77);"><br clear="none"></span><span style="color: rgb(23,43,77);"><br clear="none"></span></li><li><span style="color: rgb(23,43,77);">for revenue attached to profiles (OTA_HotelStayInfoNotifRQ)&nbsp;<br clear="none">for<span>&nbsp;</span>the last<span>&nbsp;</span><span style="color: rgb(255,0,0);"><span style="color: rgb(0,51,102);">2</span>&nbsp;</span>years, ending with the installation date.<br clear="none"></span><span style="color: rgb(23,43,77);"><br clear="none"><br clear="none"></span><span style="color: rgb(23,43,77);"><br clear="none"></span></li></ul><div class="expand-container"><div class="expand-content"><p><span style="color: rgb(23,43,77);">BTS Jobs will be processed one by one as only one bulk per property is allowed at the same time.&nbsp;</span></p><p><span style="color: rgb(23,43,77);">Bulks should be starting with 1 January and ending with 31 of December (i.e. 01.01.2017 - 31.12.2021).</span></p><p><span style="color: rgb(23,43,77);"><span style="color: rgb(29,28,29);">Check for failed messages after the bulk upload</span>:&nbsp;<a rel="nofollow" style="text-decoration: none;text-align: left;" href="https://confluence.protel.net/pages/viewpage.action?pageId=51250278" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/pages/viewpage.action?pageId=51250278" data-scroll-link-local="false">Manual Correction (Support-Tool Use Cases)</a></span></p><p><span style="color: rgb(23,43,77);">In case you have issues with a stuck bulk upload, investigate why messages were not sent. As an option, delete the old job and create a new one.&nbsp;</span></p></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p><span>Packages</span></p><ul><li><span>Bookable packages attached to a reservation and the package attached to a rate plan detail will be sent out with the OTA_HotelResNotifRQ message as per example (&lt;Services&gt; element)</span></li></ul></div></div><p><br clear="none"></p><p><br clear="none"></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="100efd9c-3da5-45fb-96b1-7b022d7f5704" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/b8cf949d8550/image2023-6-14_16-26-13.png" height="250"></span> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="606bc2c3-99c6-44c3-a763-9c054340308b" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/00f0a7e4feed/image2023-6-14_16-26-56.png" height="250"></span></p><div class="scroll-code scroll-highlighted-code-block" data-language="xml" data-theme="DJango" data-title="Service from OTA_HotelResNotifRQ" data-title-type="code" style="  counter-reset: scroll-code-numbering 0;"><div class="title">Service from OTA_HotelResNotifRQ</div><div class="django content" data-title="Service from OTA_HotelResNotifRQ">
+<div class="line"><code class="plain">Services&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;</code><code class="keyword">Service</code><code class="plain"> </code><code class="color1">ID</code><code class="plain">=</code><code class="string">"582"</code><code class="plain"> </code><code class="color1">ID_Context</code><code class="plain">=</code><code class="string">"protelIO"</code><code class="plain"> </code><code class="color1">Inclusive</code><code class="plain">=</code><code class="string">"true"</code><code class="plain"> </code><code class="color1">Quantity</code><code class="plain">=</code><code class="string">"1"</code><code class="plain"> </code><code class="color1">RatePlanCode</code><code class="plain">=</code><code class="string">"METB"</code><code class="plain"> </code><code class="color1">RequestedIndicator</code><code class="plain">=</code><code class="string">"false"</code><code class="plain"> </code><code class="color1">ServiceInventoryCode</code><code class="plain">=</code><code class="string">"BBUF_IR"</code><code class="plain"> </code><code class="color1">ServicePricingType</code><code class="plain">=</code><code class="string">"Per person per night"</code><code class="plain"> </code><code class="color1">Type</code><code class="plain">=</code><code class="string">"16"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;</code><code class="keyword">Price</code><code class="plain"> </code><code class="color1">EffectiveDate</code><code class="plain">=</code><code class="string">"2023-09-17"</code><code class="plain"> </code><code class="color1">ExpireDate</code><code class="plain">=</code><code class="string">"2023-09-19"</code><code class="plain"> </code><code class="color1">NumberOfUnits</code><code class="plain">=</code><code class="string">"1"</code><code class="plain"> </code><code class="color1">RateTimeUnit</code><code class="plain">=</code><code class="string">"Day"</code><code class="plain"> </code><code class="color1">UnitMultiplier</code><code class="plain">=</code><code class="string">"2"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">Base</code><code class="plain"> </code><code class="color1">AmountAfterTax</code><code class="plain">=</code><code class="string">"0.00"</code><code class="plain"> </code><code class="color1">AmountBeforeTax</code><code class="plain">=</code><code class="string">"0.00"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"CHF"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">Total</code><code class="plain"> </code><code class="color1">AmountAfterTax</code><code class="plain">=</code><code class="string">"0.00"</code><code class="plain"> </code><code class="color1">AmountBeforeTax</code><code class="plain">=</code><code class="string">"0.00"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"CHF"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">RateDescription</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;</code><code class="keyword">Text</code><code class="plain"> </code><code class="color1">TextFormat</code><code class="plain">=</code><code class="string">"PlainText"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                        zzz don't use breakfast erw</code></div>
+<div class="line"><code class="plain">                                    &lt;/</code><code class="keyword">Text</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;/</code><code class="keyword">RateDescription</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/</code><code class="keyword">Price</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;</code><code class="keyword">Price</code><code class="plain"> </code><code class="color1">EffectiveDate</code><code class="plain">=</code><code class="string">"2023-09-17"</code><code class="plain"> </code><code class="color1">ExpireDate</code><code class="plain">=</code><code class="string">"2023-09-19"</code><code class="plain"> </code><code class="color1">NumberOfUnits</code><code class="plain">=</code><code class="string">"1"</code><code class="plain"> </code><code class="color1">RateTimeUnit</code><code class="plain">=</code><code class="string">"Day"</code><code class="plain"> </code><code class="color1">UnitMultiplier</code><code class="plain">=</code><code class="string">"2"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">Base</code><code class="plain"> </code><code class="color1">AmountAfterTax</code><code class="plain">=</code><code class="string">"2.50"</code><code class="plain"> </code><code class="color1">AmountBeforeTax</code><code class="plain">=</code><code class="string">"2.41"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"CHF"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">Total</code><code class="plain"> </code><code class="color1">AmountAfterTax</code><code class="plain">=</code><code class="string">"5.00"</code><code class="plain"> </code><code class="color1">AmountBeforeTax</code><code class="plain">=</code><code class="string">"4.82"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"CHF"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">RateDescription</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;</code><code class="keyword">Text</code><code class="plain"> </code><code class="color1">TextFormat</code><code class="plain">=</code><code class="string">"PlainText"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                        2073</code></div>
+<div class="line"><code class="plain">                                    &lt;/</code><code class="keyword">Text</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;/</code><code class="keyword">RateDescription</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/</code><code class="keyword">Price</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;</code><code class="keyword">Price</code><code class="plain"> </code><code class="color1">EffectiveDate</code><code class="plain">=</code><code class="string">"2023-09-17"</code><code class="plain"> </code><code class="color1">ExpireDate</code><code class="plain">=</code><code class="string">"2023-09-19"</code><code class="plain"> </code><code class="color1">NumberOfUnits</code><code class="plain">=</code><code class="string">"1"</code><code class="plain"> </code><code class="color1">RateTimeUnit</code><code class="plain">=</code><code class="string">"Day"</code><code class="plain"> </code><code class="color1">UnitMultiplier</code><code class="plain">=</code><code class="string">"2"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">Base</code><code class="plain"> </code><code class="color1">AmountAfterTax</code><code class="plain">=</code><code class="string">"12.00"</code><code class="plain"> </code><code class="color1">AmountBeforeTax</code><code class="plain">=</code><code class="string">"11.57"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"CHF"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">Total</code><code class="plain"> </code><code class="color1">AmountAfterTax</code><code class="plain">=</code><code class="string">"24.00"</code><code class="plain"> </code><code class="color1">AmountBeforeTax</code><code class="plain">=</code><code class="string">"23.14"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"CHF"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">RateDescription</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;</code><code class="keyword">Text</code><code class="plain"> </code><code class="color1">TextFormat</code><code class="plain">=</code><code class="string">"PlainText"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                        2071</code></div>
+<div class="line"><code class="plain">                                    &lt;/</code><code class="keyword">Text</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;/</code><code class="keyword">RateDescription</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/</code><code class="keyword">Price</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;</code><code class="keyword">Price</code><code class="plain"> </code><code class="color1">EffectiveDate</code><code class="plain">=</code><code class="string">"2023-09-17"</code><code class="plain"> </code><code class="color1">ExpireDate</code><code class="plain">=</code><code class="string">"2023-09-19"</code><code class="plain"> </code><code class="color1">NumberOfUnits</code><code class="plain">=</code><code class="string">"1"</code><code class="plain"> </code><code class="color1">RateTimeUnit</code><code class="plain">=</code><code class="string">"Day"</code><code class="plain"> </code><code class="color1">UnitMultiplier</code><code class="plain">=</code><code class="string">"2"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">Base</code><code class="plain"> </code><code class="color1">AmountAfterTax</code><code class="plain">=</code><code class="string">"2.50"</code><code class="plain"> </code><code class="color1">AmountBeforeTax</code><code class="plain">=</code><code class="string">"2.41"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"CHF"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">Total</code><code class="plain"> </code><code class="color1">AmountAfterTax</code><code class="plain">=</code><code class="string">"5.00"</code><code class="plain"> </code><code class="color1">AmountBeforeTax</code><code class="plain">=</code><code class="string">"4.82"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"CHF"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">RateDescription</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;</code><code class="keyword">Text</code><code class="plain"> </code><code class="color1">TextFormat</code><code class="plain">=</code><code class="string">"PlainText"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                        2072</code></div>
+<div class="line"><code class="plain">                                    &lt;/</code><code class="keyword">Text</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;/</code><code class="keyword">RateDescription</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/</code><code class="keyword">Price</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;</code><code class="keyword">ServiceDetails</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">TimeSpan</code><code class="plain"> </code><code class="color1">End</code><code class="plain">=</code><code class="string">"2023-09-19"</code><code class="plain"> </code><code class="color1">Start</code><code class="plain">=</code><code class="string">"2023-09-17"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">Comments</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;</code><code class="keyword">Comment</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;</code><code class="keyword">Text</code><code class="plain"> </code><code class="color1">TextFormat</code><code class="plain">=</code><code class="string">"PlainText"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                            zzz don't use breakfast erw</code></div>
+<div class="line"><code class="plain">                                        &lt;/</code><code class="keyword">Text</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;/</code><code class="keyword">Comment</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;</code><code class="keyword">Comment</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;</code><code class="keyword">Text</code><code class="plain"> </code><code class="color1">TextFormat</code><code class="plain">=</code><code class="string">"PlainText"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                            2073</code></div>
+<div class="line"><code class="plain">                                        &lt;/</code><code class="keyword">Text</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;/</code><code class="keyword">Comment</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;</code><code class="keyword">Comment</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;</code><code class="keyword">Text</code><code class="plain"> </code><code class="color1">TextFormat</code><code class="plain">=</code><code class="string">"PlainText"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                            2071</code></div>
+<div class="line"><code class="plain">                                        &lt;/</code><code class="keyword">Text</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;/</code><code class="keyword">Comment</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;</code><code class="keyword">Comment</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                        &lt;</code><code class="keyword">Text</code><code class="plain"> </code><code class="color1">TextFormat</code><code class="plain">=</code><code class="string">"PlainText"</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                            2072</code></div>
+<div class="line"><code class="plain">                                        &lt;/</code><code class="keyword">Text</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                    &lt;/</code><code class="keyword">Comment</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;/</code><code class="keyword">Comments</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                                &lt;</code><code class="keyword">Total</code><code class="plain"> </code><code class="color1">AmountAfterTax</code><code class="plain">=</code><code class="string">"34.00"</code><code class="plain"> </code><code class="color1">AmountBeforeTax</code><code class="plain">=</code><code class="string">"32.79"</code><code class="plain"> </code><code class="color1">CurrencyCode</code><code class="plain">=</code><code class="string">"CHF"</code><code class="plain">/&gt;</code></div>
+<div class="line"><code class="plain">                            &lt;/</code><code class="keyword">ServiceDetails</code><code class="plain">&gt;</code></div>
+<div class="line"><code class="plain">                        &lt;/</code><code class="keyword">Service</code><code class="plain">&gt;</code></div>
+</div>
+</div></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>4</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p style="text-align: left;">Update the protel SMP page with the information about the installed customer</p><p style="text-align: left;">To be found here:&nbsp;</p><p style="text-align: left;">Development SMP page / Development / Services / Prospect Hotels / Add</p><p style="text-align: left;"><br clear="none"></p><p style="text-align: left;"><br clear="none"></p><p style="text-align: left;">Check if the IO-Support-Tool is installed on the Hotelserver or workstation.</p><p style="text-align: left;">If an Installation is needed please install it according to:<br clear="none"><br clear="none"><a rel="nofollow" href="https://confluence.protel.net/display/ESB/Support+Tool" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/display/ESB/Support+Tool" data-scroll-link-local="false">Support Tool</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img alt="image2022-4-4_11-3-3.png" width="500" class="confluence-embedded-image scroll-document-image" src="_scroll_external/remote/6e832cc35490/image2022-4-4_11-3-3.png"></span></p><p><span class="confluence-embedded-file-wrapper"><img alt="image2022-4-4_11-1-32.png" class="confluence-embedded-image scroll-document-image" src="_scroll_external/remote/d4e7cf1e7f5d/image2022-4-4_11-1-32.png"></span></p></div></td></tr></tbody></table></div>
+                        </div>
+                    </section>
+
+                </article>
+            </main>
+
+
+                <nav class="exp-post-navigation-prev">
+                    <a href="Amadeus-GMS---on-prem-Installation-guide.192227932.html" class="post-navigation-link">
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-prev">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                        <span>Amadeus GMS - on prem Installation guide</span>
+                    </a>
+                </nav>
+
+                <nav class="exp-post-navigation-next">
+
+                    <a href="Amadeus-GMS-V2---on-prem-Installation-guide.192227886.html" class="post-navigation-link">
+                        <span>Amadeus GMS V2 - on prem Installation guide</span>
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-next">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-225.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                    </a>
+
+                </nav>
+
+
+            <nav class="exp-sidebar-toc js-tocBot">
+                <!-- content generated by toc.js  -->
+            </nav>
+
+            <div class="exp-sidebar-navigation-toggle">
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+            </div>
+
+            <div class="exp-scroll-to-top-container">
+                <a href="#AmadeusGMS-pAirInstallationguide-top" class="exp-scroll-to-top-link">↑ Back to top</a>
+            </div>
+
+        </div>
+
+
+
+<dialog class="exp-lightbox-container" aria-modal="true">
+    <div class="lightbox-toolbar">
+        <button type="button" class="exp-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox-content content">
+    </div>
+</dialog>
+
+<template id="exp-lightbox-wrapper-template">
+    <div class="exp-lightbox-wrapper">
+        <div class="exp-lightbox-toggle">
+            <button type="button" class="exp-lightbox-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                    <path fill="currentColor" d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+        <script src="js/tocbot.min.js"></script>
+        <script src="js/article-toc.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/iframe-resizer.parent.js"></script>
+
+    </body>
+
+</html>

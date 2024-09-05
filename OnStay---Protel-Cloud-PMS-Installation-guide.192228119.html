@@ -1,0 +1,263 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+        <link rel="icon" href="_scroll_external/logos/59f13d845123/default-space-logo.svg">
+
+        <!-- Primary Meta Tags -->
+        <meta name="exp-export-timestamp" content="2024-09-05T09:14:10.808+0000">
+        <meta name="exp-page-id" content="192228119">
+        <meta name="exp-page-title" content="OnStay - Protel Cloud PMS Installation guide">
+        <meta name="exp-page-version" content="7">
+        <meta name="exp-page-scroll-page-id" content="">
+        <meta name="exp-page-created" content="2023-08-22T10:21:03.387+0000">
+        <meta name="exp-page-last-modified" content="2023-08-28T13:34:43.450+0000">
+        <meta name="exp-page-labels" content="">
+        <meta name="exp-page-context-keys" content="">
+        <meta name="exp-space-key" content="PIODOC">
+        <meta name="exp-space-title" content="protel.I/O documentation">
+
+        <!-- Additional Meta Tags -->
+        <meta name="exp-document-id" content="">
+        <meta name="exp-document-title" content="protel.I/O documentation">
+        <meta name="exp-version-status" content="">
+        <meta name="exp-version-id" content="">
+        <meta name="exp-version-name" content="">
+        <meta name="exp-version-description" content="">
+        <meta name="exp-version-date" content="">
+        <meta name="exp-variant-id" content="">
+        <meta name="exp-variant-name" content="">
+        <meta name="exp-variant-description" content="">
+        <meta name="exp-language-code" content="">
+        <meta name="exp-language-name" content="">
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/image-dimensions.css">
+
+
+            
+            
+<script src="js/search.js"></script>
+            <script id="search-worker" type="javascript/worker">
+    onmessage = function(event) {
+        // dispatch events to handling functions
+        var message = event.data;
+
+        if ((message.type === 'setup') && message.baseUrl) {
+            setup(message.baseUrl);
+        }
+
+        if (message.type === 'search-request') {
+            search(message.query);
+        }
+    }
+
+    var searchIndex;
+
+    function setup(baseUrl) {
+        importScripts(
+            baseUrl + 'js/lunr.js',
+            baseUrl + 'js/lunr-index.js',
+            baseUrl + 'js/lunr-data.js'
+        );
+        try {
+            // load lunr-extras if it exists, which contains language-specific files for languages other than english
+            importScripts(baseUrl + 'js/lunr-extras.js');
+        } catch (e) {}
+        searchIndex = lunr.Index.load(lunrIndex);
+    }
+
+    function search(query) {
+        var searchHits = searchIndex.search(query);
+        var results = searchHits.map(function (result) {
+            return lunrData.filter(function (d) {
+                return d.id === result.ref;
+            })[0]
+        });
+        postMessage({ type: 'search-results', results: results, query: query });
+    }
+</script>
+        <title>OnStay - Protel Cloud PMS Installation guide</title>
+
+    <meta name="generator" content="Scroll HTML Exporter / K15t GmbH"></head>
+
+    <body id="OnStay-ProtelCloudPMSInstallationguide-top" data-pageid="192228119" data-confluence-editor-version="v1" data-confluence-deployment-type="DATACENTER">
+
+        <div class="exp-grid-container">
+
+            <header class="exp-header"></header>
+
+            <div class="exp-logo">
+                <a href="protel.I_O-documentation.192227604.html">
+                    <span class="exp-logo-image" style="background-image: url(_scroll_external/logos/59f13d845123/default-space-logo.svg)" alt="protel.I/O documentation" title="protel.I/O documentation"></span>
+                </a>
+            </div>
+
+            <div class="exp-document-title">
+                <h1 class="exp-document-title-heading scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h1 scroll-relative-h1" data-scroll-heading-rank="1" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="1" id="no-src_generated-id-b2d179c5c9ad898d334016f8a610cd3e6d10bb8fce6f19030fcdd5b413e47a6d">
+                    <a href="protel.I_O-documentation.192227604.html">
+                        protel.I/O documentation
+                    </a>
+                </h1>
+            </div>
+
+<div class="exp-search-container">
+    <input type="search" id="search-textbox" autocomplete="off" class="exp-search-input" style="margin-right: 0;">
+    <div class="exp-search-input-icon">
+        <svg data-exp-id="magnifier-icon" data-exp-component="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8.99452 14.5C10.5121 14.5 11.809 13.9669 12.8854 12.9007C13.9618 11.8345 14.5 10.5361 14.5 9.00548C14.5 7.48794 13.9631 6.19097 12.8893 5.11458C11.8155 4.03819 10.519 3.5 9 3.5C7.46786 3.5 6.16816 4.0369 5.1009 5.11071C4.03363 6.18453 3.5 7.48096 3.5 9C3.5 10.5321 4.0331 11.8318 5.09929 12.8991C6.1655 13.9664 7.46391 14.5 8.99452 14.5ZM9 16C8.02913 16 7.11974 15.816 6.27185 15.4479C5.42395 15.0799 4.68056 14.5799 4.04167 13.9479C3.40278 13.316 2.90278 12.576 2.54167 11.728C2.18056 10.88 2 9.97053 2 8.99956C2 8.04152 2.18403 7.13542 2.55208 6.28125C2.92014 5.42708 3.41864 4.68387 4.04758 4.0516C4.67653 3.41935 5.41569 2.91935 6.26508 2.5516C7.11449 2.18387 8.02548 2 8.99806 2C9.95769 2 10.8646 2.18403 11.7188 2.55208C12.5729 2.92014 13.316 3.42014 13.9479 4.05208C14.5799 4.68403 15.0799 5.42612 15.4479 6.27835C15.816 7.13058 16 8.0381 16 9.00094C16 9.83365 15.8615 10.6213 15.5846 11.3638C15.3078 12.1062 14.9254 12.7836 14.4375 13.3958L18 16.9583L16.9375 18L13.375 14.4583C12.7668 14.9459 12.0939 15.3247 11.3564 15.5948C10.6188 15.8649 9.83333 16 9 16Z" fill="currentColor" />
+        </svg>
+    </div>
+    <div id="search-suggestion-container" class="exp-search-suggestion-panel" data-exp-component="search-suggestion"></div>
+    <template id="exp-search-suggestion-option-template">
+        <div class="exp-search-suggestion-option-container search-form-suggestion">
+            <a class="exp-search-suggestion-option search-form-suggestion" href=""></a>
+        </div>
+    </template>
+</div>
+
+
+            <nav class="exp-sidebar-navigation">
+                <div class="exp-sidebar-navigation-sticky-wrapper">
+                    <iframe src="toc.html?pageId=192228119" border="0"></iframe>
+                </div>
+
+            </nav>
+
+
+            <nav aria-label="Breadcrumb" class="exp-breadcrumbs-wrapper">
+                <ol class="breadcrumbs">
+                        <li class="breadcrumb">
+                            <a href="protel.I_O-documentation.192227604.html" rel="prev" target="_self">protel.I/O documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Integrations.192227608.html" rel="prev" target="_self">Integrations</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="OnStay-Kiosk---General-Information.192227713.html" rel="prev" target="_self">OnStay Kiosk - General Information</a>
+                        </li>
+                    <li class="breadcrumb active" aria-current="page">
+                        OnStay - Protel Cloud PMS Installation guide
+                    </li>
+                </ol>
+            </nav>
+
+
+            <main class="exp-content">
+                <article role="article">
+
+                    <header>
+                        <h1 class="article-heading scroll-h1 scroll-original-h1 scroll-relative-h1 scroll-custom-section-heading scroll-document-section-heading" role="heading" data-scroll-heading-rank="1" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="1" id="no-src_generated-id-2a0418c3aae864808a946de56666e7324f5325bcd6fc71027d1bce1ab869323b">
+                            OnStay - Protel Cloud PMS Installation guide
+                        </h1>
+                    </header>
+
+                    <section class="page" id="content" role="main">
+                        <div id="main-content" class="wiki-content article-content js-tocBot-content">
+                            <p><strong><style type="text/css">/*<![CDATA[*/
+div.rbtoc1725527650847 {padding: 0px;}
+div.rbtoc1725527650847 ul {margin-left: 0px;}
+div.rbtoc1725527650847 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></strong></p><div class="toc-macro rbtoc1725527650847"><strong>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228119" data-scroll-link-target-source-id="192228119" data-scroll-link-type="document" href="OnStay---Protel-Cloud-PMS-Installation-guide.192228119.html#OnStayProtelCloudPMSInstallationguide-AbouttheInterface:OnStayKiosk-GeneralInformation" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/OnStay+-+Protel+Cloud+PMS+Installation+guide#src-192228119_OnStayProtelCloudPMSInstallationguide-AbouttheInterface:OnStayKiosk-GeneralInformation">About the Interface: OnStay Kiosk - General Information</a></li>
+<li><a data-scroll-target-source-id="192228119" data-scroll-link-target-source-id="192228119" data-scroll-link-type="document" href="OnStay---Protel-Cloud-PMS-Installation-guide.192228119.html#OnStayProtelCloudPMSInstallationguide-ContactInformation-IntegrationPartner" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/OnStay+-+Protel+Cloud+PMS+Installation+guide#src-192228119_OnStayProtelCloudPMSInstallationguide-ContactInformation-IntegrationPartner">Contact Information - Integration Partner</a></li>
+<li><a data-scroll-target-source-id="192228119" data-scroll-link-target-source-id="192228119" data-scroll-link-type="document" href="OnStay---Protel-Cloud-PMS-Installation-guide.192228119.html#OnStayProtelCloudPMSInstallationguide-InstallationSteps" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/OnStay+-+Protel+Cloud+PMS+Installation+guide#src-192228119_OnStayProtelCloudPMSInstallationguide-InstallationSteps">Installation Steps</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192228119" data-scroll-link-target-source-id="192228119" data-scroll-link-type="document" href="OnStay---Protel-Cloud-PMS-Installation-guide.192228119.html#OnStayProtelCloudPMSInstallationguide-Generalsteps" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/OnStay+-+Protel+Cloud+PMS+Installation+guide#src-192228119_OnStayProtelCloudPMSInstallationguide-Generalsteps">General steps</a></li>
+<li><a data-scroll-target-source-id="192228119" data-scroll-link-target-source-id="192228119" data-scroll-link-type="document" href="OnStay---Protel-Cloud-PMS-Installation-guide.192228119.html#OnStayProtelCloudPMSInstallationguide-TwowayInstallation" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/OnStay+-+Protel+Cloud+PMS+Installation+guide#src-192228119_OnStayProtelCloudPMSInstallationguide-TwowayInstallation">Two way Installation</a></li>
+</ul>
+</li>
+</ul>
+</strong></div><p></p><h2 id="OnStayProtelCloudPMSInstallationguide-AbouttheInterface:OnStayKiosk-GeneralInformation" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">About the Interface:&nbsp;<span style="color: rgb(255,0,0);"><strong><a data-scroll-target-source-id="192227713" data-scroll-link-target-source-id="192227713" data-scroll-link-type="document" href="OnStay-Kiosk---General-Information.192227713.html" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/OnStay+Kiosk+-+General+Information">OnStay Kiosk - General Information</a></strong></span></h2><h2 id="OnStayProtelCloudPMSInstallationguide-ContactInformation-IntegrationPartner" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2"><strong>Contact Information&nbsp;</strong><strong>- Integration Partner</strong></h2><p><strong>General phone number:&nbsp;</strong><span style="color: rgb(0,0,0);"><span><span class="ui-provider bex bey c d e f g h i j k l m n o p q r s t bez bfa w x y z ab ac ae af ag ah ai aj ak"><strong>+41 52 354 53 00</strong></span></span></span><strong><br clear="none">Support / Installer phone number:&nbsp;&nbsp;</strong><span style="color: rgb(0,0,0);"><span><span class="ui-provider bex bey c d e f g h i j k l m n o p q r s t bez bfa w x y z ab ac ae af ag ah ai aj ak"><strong>+41 52 354 53 00</strong></span></span></span></p><p><strong>General email address: </strong><span style="color: rgb(0,0,0);">support@onstay.ch</span><span style="color: rgb(255,0,0);"><br clear="none"></span><strong>Support / Installer email address:&nbsp;&nbsp;</strong>support@onstay.ch<span style="color: rgb(255,0,0);"><br clear="none"></span></p><p><br clear="none"></p><p><strong>Contact persons for installations</strong></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup span="1"><col span="1"><col span="1"><col span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Name</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Position (Support / Installer)</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Email</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Slack</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Phone number</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);">Support</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>support@onstay.ch</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(255,0,0);"><img alt="(error)" data-emoticon-name="cross" class="emoticon emoticon-cross scroll-document-image" src="_scroll_external/icons/c9cc713fcf92/error.svg" data-emoji-short-name=":cross:"></span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span><span class="ui-provider bex bey c d e f g h i j k l m n o p q r s t bez bfa w x y z ab ac ae af ag ah ai aj ak"><strong>+41 52 354 53 00</strong></span></span></p></td></tr></tbody></table></div><p><br clear="none"></p><h2 id="OnStayProtelCloudPMSInstallationguide-InstallationSteps" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Installation Steps</h2><div class="table-wrap"><table class="wrapped confluenceTable tableenhancer tableenhancer-rownums-onceBeforeSorting"><colgroup span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><h3 id="OnStayProtelCloudPMSInstallationguide-Generalsteps" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="3" class="scroll-original-h4 scroll-non-section-heading scroll-h3 scroll-relative-h3"><strong><em>General steps</em></strong></h3></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Examples</p></th></tr></thead><tbody><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(23,43,77);">Request authentication details from the Integration partner for the new installation and request them to send you the authentication details.</span></p><p><span style="color: rgb(23,43,77);"> Please provide them the HotelID as well - internally for Protel this is the CloudID&nbsp;</span></p><div class="confluence-information-macro confluence-information-macro-information"><p class="title conf-macro-render">Data Security</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p><span style="color: rgb(0,0,0);">Please have in mind that both vendor and IO interface token information is sensitive information that might be transported by Slack, <br clear="none"></span><span style="color: rgb(0,0,0);">team viewer session in case of a 1:1 session, </span><span style="color: rgb(0,0,0);">or with two-way&nbsp;authentication methods by other media.&nbsp;</span></p></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><ul><li><span style="color: rgb(0,0,0);">Authentication method using the same Endpoint as default.&nbsp; No token required - OnStay uses the combination of CorrelationID and HotelID to authenticate the message on their end.&nbsp; All messages threads originate from OnStay and no messages are pushed from the PMS to the Kiosk System.</span></li></ul><p><span style="color: rgb(0,0,0);"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="b308d46e-ae05-4a05-8a68-39d0a728a1ef" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/15405e638fd2/image2023-8-25_6-52-47.png" height="150"></span></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">General Preparation for pAir&nbsp;<br clear="none"><a rel="nofollow" href="https://confluence.protel.net/display/PIODOC/pAir+%7C+General+preparation" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/display/PIODOC/pAir+%7C+General+preparation" data-scroll-link-local="false">https://confluence.protel.net/display/PIODOC/pAir+%7C+General+preparation</a></span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><br clear="none"><br clear="none"></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Special COnfiguration</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><strong>Payment Methods</strong></p><p>Send a list of payment methods from the system data to OnStay.</p><p><a rel="nofollow" href="https://app.protel.net/settings/financial/payments/payment-methods" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://app.protel.net/settings/financial/payments/payment-methods" data-scroll-link-local="false">https://app.protel.net/settings/financial/payments/payment-methods</a></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="7dfeadea-91ae-4c2e-b82d-5c6ee130ed5c" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/e2a3d9805c66/image2023-8-25_6-58-13.png" height="250"></span></p><p><br clear="none"></p><p><strong>Default Cash Register</strong></p><p><strong><a rel="nofollow" href="https://confluence.protel.net/display/PIODOC/pAir+%7C+Special+Configuration+settings#pAir|SpecialConfigurationsettings-Setdefaultcashregisterforincomingpayments" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/display/PIODOC/pAir+%7C+Special+Configuration+settings#pAir|SpecialConfigurationsettings-Setdefaultcashregisterforincomingpayments" data-scroll-link-local="false">Set Default Cash Register for incoming PostPayments</a></strong></p><p><br clear="none"></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>4</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">Bob installation:</span> one for pAir (if not existing) and one for the Integration <span>&nbsp;</span></span></p><p><br clear="none"></p><div class="confluence-information-macro confluence-information-macro-information"><p class="title conf-macro-render">Data Security</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p><span style="color: rgb(0,0,0);">Please have in mind that both vendor and IO interface token information is sensitive information that might be transported by Slack, <br clear="none"></span><span style="color: rgb(0,0,0);">team viewer session in case of a 1:1 session, </span><span style="color: rgb(0,0,0);">or with two-way&nbsp;authentication methods by other media.&nbsp;</span></p></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(255,0,0);"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="cb53ee23-4e66-4119-9d35-55c0fe099ec4" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/41c394efd68c/image2023-8-25_6-59-15.png" height="150"></span></span></p></div></td></tr></tbody></table></div><div class="table-wrap"><table class="wrapped confluenceTable tableenhancer tableenhancer-rownums-onceBeforeSorting"><colgroup span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><h3 id="OnStayProtelCloudPMSInstallationguide-TwowayInstallation" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="3" class="scroll-original-h4 scroll-non-section-heading scroll-h3 scroll-relative-h3"><span style="color: rgb(0,0,0);"><em><strong>Two way Installation</strong></em></span></h3></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Examples</p></th></tr></thead><tbody><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><strong><span style="color: rgb(0,0,0);">Test a Check In&nbsp;</span></strong></p><p><span style="color: rgb(0,0,0);">Check In Flow:</span></p><ul><li><span style="color: rgb(0,0,0);"><em><strong>Kiosk searches for the guest reservation&nbsp;</strong></em><br clear="none"><strong>OTA_ReadRQ<br clear="none">HTNG_HotelFolioRQ</strong></span></li><li>Reservation Info is shown to the guest</li><li>Guest is shown profile information</li><li>Guest completes profile information</li><li>Window appears asking if an email invoice is required and the possibility to enter an invoice address</li></ul><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>This information is <strong>NOT</strong> pushed back to the PMS.&nbsp; An email is sent to the hotel with the information and has to handled manually by the hotel staff!</p></div></div><ul><li>Guest chooses how many key cards are required</li><li><strong><em>Profile information is pushed to PMS</em></strong><br clear="none"><strong>OTA_ProfileModifyRQ</strong></li><li>Guest makes payment at the Kiosk&nbsp; (Invoices with Payment Method set to "Accounts Receivable" are not considered and not shown on the Kiosk)</li><li>Key cards are created</li><li><em><strong>Payment is posted to PMS</strong></em><br clear="none"><strong>HTNG_ChargePostingRQ</strong></li><li><em><strong>Check In is completed</strong></em><br clear="none"><strong>HTNG_HotelCheckInNotifRQ</strong></li></ul><p><br clear="none"></p><div class="expand-container"><div class="expand-content"><ul><li>To test the check in flow, create a reservation in the PMS for the actual business date and provide the reservation ID, Last name and firstname to OnStay.</li></ul></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="f7ef2a88-bdd6-44b3-b114-5390d6435411" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/da65af6520cf/image2023-8-25_8-44-42.png" height="250"></span></p><p class="auto-cursor-target"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="b3ba2e23-b8a2-4a1a-bbed-a35c3bfac3b4" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/1dd330772b87/image2023-8-25_8-46-12.png" height="250"></span></p><p class="auto-cursor-target"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="656bc78f-4052-47c4-92f4-c8fa1ca0852b" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/f1bd916ba6c7/image2023-8-25_8-47-12.png" height="250"></span></p><p class="auto-cursor-target"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="8b2126e7-61d3-4bc3-8e03-0f2b03174d91" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/7e7c1b570cbc/image2023-8-25_8-49-54.png" height="250"></span></p><p class="auto-cursor-target"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="ede31de8-6162-4c50-bda7-0f3818e06b9a" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/b08978a80bf8/image2023-8-25_8-50-44.png" height="250"></span></p><p class="auto-cursor-target"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="8949fa0d-4d7b-4946-b783-91692bed291c" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/563aa23094dc/image2023-8-25_8-50-59.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><strong><span style="color: rgb(0,0,0);">Test a Walk In</span></strong></p><p><span style="color: rgb(0,0,0);">Walk In Flow:</span></p><ul><li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);"><em><strong>Guest checks for availability on the Kiosk</strong><strong><br clear="none"></strong></em></span><span style="color: rgb(0,0,0);"><strong>OTA_HotelAvailRQ<br clear="none"></strong></span><span style="color: rgb(0,0,0);"><span style="color: rgb(0,0,0);"><strong><br clear="none"></strong></span></span></p><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>There must be free and clean rooms available, otherwise the kiosk will show no availability.</p></div></div><p class="auto-cursor-target"><span style="color: rgb(0,0,0);"><strong><br clear="none" class="auto-cursor-target"></strong></span></p></li><li>Guest can choose room type</li><li>Guest is shown profile information</li><li>Guest completes profile information and signs</li><li>Summary of booking is shown</li><li><strong><em>Profile information and reservation is pushed to PMS</em></strong><br clear="none"><strong>OTA_ProfileModifyRQ<br clear="none">OTA_HotelResNotifRQ</strong></li><li>Reservation Info is shown to the guest</li><li>Key cards are created</li><li>Guest makes payment at the Kiosk</li><li><em><strong>Payment is posted to PMS</strong></em><br clear="none"><strong>HTNG_ChargePostingRQ</strong></li><li><em><strong>Check In is completed</strong></em><br clear="none"><strong>HTNG_HotelCheckInNotifRQ</strong></li></ul><p><br clear="none"></p><div class="expand-container"><div class="expand-content"><ul><li>To test the walk In flow, as the partner or Customer to create a new booking via the Buchen or Booking button on the kiosk and complete the check in immediately.</li></ul></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><br clear="none"></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="511e7acb-9e05-4411-9dc6-31a778f0e8f2" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/c90a8ce2c6e6/image2023-8-25_8-37-21.png" height="250"></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="d24151a7-5fd4-4871-b268-09fa12f37b24" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/14e409be612e/image2023-8-25_8-38-18.png" height="250"></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="041f2986-fa82-4bb8-8fcd-5b490fcad2eb" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/51fb80539ecc/image2023-8-25_8-38-56.png" height="250"></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="87dd03d0-9082-48be-bdbd-a78fd3576357" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/44b189b7115a/image2023-8-25_8-39-40.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><strong>Check Out</strong></p><p>A Check Out option is available on the kiosk. This option only sends the Check Out Message to the PMS.&nbsp; It does not capture the invoice document and send it to the guest.&nbsp;&nbsp;<br clear="none">Invoice balance must be 0.00, otherwise the Check Out will fail.&nbsp; Payment will not be processed in the Check Out process.</p><ul><li><em><strong>Guest searches for reservation</strong></em><br clear="none"><strong>OTA_ReadRQ</strong></li><li>Reservation shown in the Kiosk</li><li>Guest confirms check out</li><li><em><strong>Check Out is done</strong></em><br clear="none"><strong>HTNG_HotelCheckOutNotifRQ</strong></li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="07805ca4-ce8b-4261-bbfd-45b36ffec3ea" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/4d4c4ea4c2ed/image2023-8-25_9-5-59.png" height="250"></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="437ae00b-f7f5-4983-abd0-98d92743e89a" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/8228bbc9fbcd/image2023-8-25_9-9-29.png" height="250"></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="bd7ebfbd-6fbe-40d3-a5ea-5937b37c201f" class="confluence-embedded-image confluence-thumbnail scroll-document-image" src="_scroll_external/attachments/059dd6202ea1/image2023-8-25_9-10-12.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>4</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><strong>Lost Key</strong></p><ul><li><strong><span style="color: rgb(0,0,0);"><em>Kiosk searches for the guest reservation&nbsp;</em><br clear="none">OTA_ReadRQ</span></strong></li><li><span style="color: rgb(0,0,0);">Kiosk confirms the number of keys to be created</span></li><li><span style="color: rgb(0,0,0);">Keys are created</span></li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>5</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p style="text-align: left;">Update the developer portal with the information about the installed customer</p><p style="text-align: left;">To be found here:&nbsp;</p><p style="text-align: left;">Developer portal / Development / Services / Prospect Hotels / Add</p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="319d7ab5-9a46-4a7b-be87-1fcf624533f9" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/cce0ce4bbf2e/image2023-8-25_7-37-52.png" height="250"></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img data-scroll-image-id="6fbd9124-b5f4-4621-821b-6cc0e2825a7f" class="confluence-embedded-image scroll-document-image" src="_scroll_external/attachments/2d69d8469959/image2023-8-25_7-39-8.png" height="250"></span></p><p><br clear="none"></p></div></td></tr></tbody></table></div>
+                        </div>
+                    </section>
+
+                </article>
+            </main>
+
+
+                <nav class="exp-post-navigation-prev">
+                    <a href="OnStay-Kiosk---on-prem-Installation-guide.192227959.html" class="post-navigation-link">
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-prev">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                        <span>OnStay Kiosk - on prem Installation guide</span>
+                    </a>
+                </nav>
+
+                <nav class="exp-post-navigation-next">
+
+                    <a href="Opentec.192227740.html" class="post-navigation-link">
+                        <span>Opentec</span>
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-next">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-225.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                    </a>
+
+                </nav>
+
+
+            <nav class="exp-sidebar-toc js-tocBot">
+                <!-- content generated by toc.js  -->
+            </nav>
+
+            <div class="exp-sidebar-navigation-toggle">
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+            </div>
+
+            <div class="exp-scroll-to-top-container">
+                <a href="#OnStay-ProtelCloudPMSInstallationguide-top" class="exp-scroll-to-top-link">↑ Back to top</a>
+            </div>
+
+        </div>
+
+
+
+<dialog class="exp-lightbox-container" aria-modal="true">
+    <div class="lightbox-toolbar">
+        <button type="button" class="exp-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox-content content">
+    </div>
+</dialog>
+
+<template id="exp-lightbox-wrapper-template">
+    <div class="exp-lightbox-wrapper">
+        <div class="exp-lightbox-toggle">
+            <button type="button" class="exp-lightbox-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                    <path fill="currentColor" d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+        <script src="js/tocbot.min.js"></script>
+        <script src="js/article-toc.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/iframe-resizer.parent.js"></script>
+
+    </body>
+
+</html>

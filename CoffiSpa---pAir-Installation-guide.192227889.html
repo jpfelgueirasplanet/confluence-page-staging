@@ -1,0 +1,264 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+        <link rel="icon" href="_scroll_external/logos/59f13d845123/default-space-logo.svg">
+
+        <!-- Primary Meta Tags -->
+        <meta name="exp-export-timestamp" content="2024-09-05T09:13:57.127+0000">
+        <meta name="exp-page-id" content="192227889">
+        <meta name="exp-page-title" content="CoffiSpa - pAir Installation guide">
+        <meta name="exp-page-version" content="14">
+        <meta name="exp-page-scroll-page-id" content="">
+        <meta name="exp-page-created" content="2020-08-11T06:20:55.570+0000">
+        <meta name="exp-page-last-modified" content="2022-02-25T08:35:12.920+0000">
+        <meta name="exp-page-labels" content="">
+        <meta name="exp-page-context-keys" content="">
+        <meta name="exp-space-key" content="PIODOC">
+        <meta name="exp-space-title" content="protel.I/O documentation">
+
+        <!-- Additional Meta Tags -->
+        <meta name="exp-document-id" content="">
+        <meta name="exp-document-title" content="protel.I/O documentation">
+        <meta name="exp-version-status" content="">
+        <meta name="exp-version-id" content="">
+        <meta name="exp-version-name" content="">
+        <meta name="exp-version-description" content="">
+        <meta name="exp-version-date" content="">
+        <meta name="exp-variant-id" content="">
+        <meta name="exp-variant-name" content="">
+        <meta name="exp-variant-description" content="">
+        <meta name="exp-language-code" content="">
+        <meta name="exp-language-name" content="">
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/image-dimensions.css">
+
+
+            
+            
+<script src="js/search.js"></script>
+            <script id="search-worker" type="javascript/worker">
+    onmessage = function(event) {
+        // dispatch events to handling functions
+        var message = event.data;
+
+        if ((message.type === 'setup') && message.baseUrl) {
+            setup(message.baseUrl);
+        }
+
+        if (message.type === 'search-request') {
+            search(message.query);
+        }
+    }
+
+    var searchIndex;
+
+    function setup(baseUrl) {
+        importScripts(
+            baseUrl + 'js/lunr.js',
+            baseUrl + 'js/lunr-index.js',
+            baseUrl + 'js/lunr-data.js'
+        );
+        try {
+            // load lunr-extras if it exists, which contains language-specific files for languages other than english
+            importScripts(baseUrl + 'js/lunr-extras.js');
+        } catch (e) {}
+        searchIndex = lunr.Index.load(lunrIndex);
+    }
+
+    function search(query) {
+        var searchHits = searchIndex.search(query);
+        var results = searchHits.map(function (result) {
+            return lunrData.filter(function (d) {
+                return d.id === result.ref;
+            })[0]
+        });
+        postMessage({ type: 'search-results', results: results, query: query });
+    }
+</script>
+        <title>CoffiSpa - pAir Installation guide</title>
+
+    <meta name="generator" content="Scroll HTML Exporter / K15t GmbH"></head>
+
+    <body id="CoffiSpa-pAirInstallationguide-top" data-pageid="192227889" data-confluence-editor-version="v1" data-confluence-deployment-type="DATACENTER">
+
+        <div class="exp-grid-container">
+
+            <header class="exp-header"></header>
+
+            <div class="exp-logo">
+                <a href="protel.I_O-documentation.192227604.html">
+                    <span class="exp-logo-image" style="background-image: url(_scroll_external/logos/59f13d845123/default-space-logo.svg)" alt="protel.I/O documentation" title="protel.I/O documentation"></span>
+                </a>
+            </div>
+
+            <div class="exp-document-title">
+                <h1 class="exp-document-title-heading scroll-original-h2 scroll-custom-section-heading scroll-document-section-heading scroll-h1 scroll-relative-h1" data-scroll-heading-rank="1" data-scroll-original-heading-rank="2" data-scroll-relative-heading-rank="1" id="no-src_generated-id-08ac8e10e83f1ffef23b825e97642eb0e53d7a172a0a199a3f69d240b3200761">
+                    <a href="protel.I_O-documentation.192227604.html">
+                        protel.I/O documentation
+                    </a>
+                </h1>
+            </div>
+
+<div class="exp-search-container">
+    <input type="search" id="search-textbox" autocomplete="off" class="exp-search-input" style="margin-right: 0;">
+    <div class="exp-search-input-icon">
+        <svg data-exp-id="magnifier-icon" data-exp-component="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8.99452 14.5C10.5121 14.5 11.809 13.9669 12.8854 12.9007C13.9618 11.8345 14.5 10.5361 14.5 9.00548C14.5 7.48794 13.9631 6.19097 12.8893 5.11458C11.8155 4.03819 10.519 3.5 9 3.5C7.46786 3.5 6.16816 4.0369 5.1009 5.11071C4.03363 6.18453 3.5 7.48096 3.5 9C3.5 10.5321 4.0331 11.8318 5.09929 12.8991C6.1655 13.9664 7.46391 14.5 8.99452 14.5ZM9 16C8.02913 16 7.11974 15.816 6.27185 15.4479C5.42395 15.0799 4.68056 14.5799 4.04167 13.9479C3.40278 13.316 2.90278 12.576 2.54167 11.728C2.18056 10.88 2 9.97053 2 8.99956C2 8.04152 2.18403 7.13542 2.55208 6.28125C2.92014 5.42708 3.41864 4.68387 4.04758 4.0516C4.67653 3.41935 5.41569 2.91935 6.26508 2.5516C7.11449 2.18387 8.02548 2 8.99806 2C9.95769 2 10.8646 2.18403 11.7188 2.55208C12.5729 2.92014 13.316 3.42014 13.9479 4.05208C14.5799 4.68403 15.0799 5.42612 15.4479 6.27835C15.816 7.13058 16 8.0381 16 9.00094C16 9.83365 15.8615 10.6213 15.5846 11.3638C15.3078 12.1062 14.9254 12.7836 14.4375 13.3958L18 16.9583L16.9375 18L13.375 14.4583C12.7668 14.9459 12.0939 15.3247 11.3564 15.5948C10.6188 15.8649 9.83333 16 9 16Z" fill="currentColor" />
+        </svg>
+    </div>
+    <div id="search-suggestion-container" class="exp-search-suggestion-panel" data-exp-component="search-suggestion"></div>
+    <template id="exp-search-suggestion-option-template">
+        <div class="exp-search-suggestion-option-container search-form-suggestion">
+            <a class="exp-search-suggestion-option search-form-suggestion" href=""></a>
+        </div>
+    </template>
+</div>
+
+
+            <nav class="exp-sidebar-navigation">
+                <div class="exp-sidebar-navigation-sticky-wrapper">
+                    <iframe src="toc.html?pageId=192227889" border="0"></iframe>
+                </div>
+
+            </nav>
+
+
+            <nav aria-label="Breadcrumb" class="exp-breadcrumbs-wrapper">
+                <ol class="breadcrumbs">
+                        <li class="breadcrumb">
+                            <a href="protel.I_O-documentation.192227604.html" rel="prev" target="_self">protel.I/O documentation</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="Integrations.192227608.html" rel="prev" target="_self">Integrations</a>
+                        </li>
+                        <li class="breadcrumb">
+                            <a href="CoffiSpa.192227673.html" rel="prev" target="_self">CoffiSpa</a>
+                        </li>
+                    <li class="breadcrumb active" aria-current="page">
+                        CoffiSpa - pAir Installation guide
+                    </li>
+                </ol>
+            </nav>
+
+
+            <main class="exp-content">
+                <article role="article">
+
+                    <header>
+                        <h1 class="article-heading scroll-h1 scroll-original-h1 scroll-relative-h1 scroll-custom-section-heading scroll-document-section-heading" role="heading" data-scroll-heading-rank="1" data-scroll-original-heading-rank="1" data-scroll-relative-heading-rank="1" id="no-src_generated-id-12515e80ddbc092e8a817e38f7aafa54057772ff44ef0580961c0481b5bf9f86">
+                            CoffiSpa - pAir Installation guide
+                        </h1>
+                    </header>
+
+                    <section class="page" id="content" role="main">
+                        <div id="main-content" class="wiki-content article-content js-tocBot-content">
+                            <p><strong><style type="text/css">/*<![CDATA[*/
+div.rbtoc1725527637159 {padding: 0px;}
+div.rbtoc1725527637159 ul {margin-left: 0px;}
+div.rbtoc1725527637159 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></strong></p><div class="toc-macro rbtoc1725527637159"><strong>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192227889" data-scroll-link-target-source-id="192227889" data-scroll-link-type="document" href="CoffiSpa---pAir-Installation-guide.192227889.html#CoffiSpapAirInstallationguide-AbouttheInterface:CoffiSpa" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/CoffiSpa+-+pAir+Installation+guide#src-192227889_CoffiSpapAirInstallationguide-AbouttheInterface:CoffiSpa">About the Interface: CoffiSpa</a></li>
+<li><a data-scroll-target-source-id="192227889" data-scroll-link-target-source-id="192227889" data-scroll-link-type="document" href="CoffiSpa---pAir-Installation-guide.192227889.html#CoffiSpapAirInstallationguide-ContactInformation-IntegrationPartner" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/CoffiSpa+-+pAir+Installation+guide#src-192227889_CoffiSpapAirInstallationguide-ContactInformation-IntegrationPartner">Contact Information - Integration Partner</a></li>
+<li><a data-scroll-target-source-id="192227889" data-scroll-link-target-source-id="192227889" data-scroll-link-type="document" href="CoffiSpa---pAir-Installation-guide.192227889.html#CoffiSpapAirInstallationguide-InstallationSteps" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/CoffiSpa+-+pAir+Installation+guide#src-192227889_CoffiSpapAirInstallationguide-InstallationSteps">Installation Steps</a>
+<ul class="toc-indentation">
+<li><a data-scroll-target-source-id="192227889" data-scroll-link-target-source-id="192227889" data-scroll-link-type="document" href="CoffiSpa---pAir-Installation-guide.192227889.html#CoffiSpapAirInstallationguide-Generalsteps" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/CoffiSpa+-+pAir+Installation+guide#src-192227889_CoffiSpapAirInstallationguide-Generalsteps">General steps</a></li>
+<li><a data-scroll-target-source-id="192227889" data-scroll-link-target-source-id="192227889" data-scroll-link-type="document" href="CoffiSpa---pAir-Installation-guide.192227889.html#CoffiSpapAirInstallationguide-OnewayInstallation" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/CoffiSpa+-+pAir+Installation+guide#src-192227889_CoffiSpapAirInstallationguide-OnewayInstallation">One way Installation</a></li>
+<li><a data-scroll-target-source-id="192227889" data-scroll-link-target-source-id="192227889" data-scroll-link-type="document" href="CoffiSpa---pAir-Installation-guide.192227889.html#CoffiSpapAirInstallationguide-TwowayInstallation" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/CoffiSpa+-+pAir+Installation+guide#src-192227889_CoffiSpapAirInstallationguide-TwowayInstallation">Two way Installation</a></li>
+</ul>
+</li>
+</ul>
+</strong></div><p></p><p><br clear="none"></p><h2 id="CoffiSpapAirInstallationguide-AbouttheInterface:CoffiSpa" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">About the Interface:&nbsp;<a data-scroll-target-source-id="192227673" data-scroll-link-target-source-id="192227673" data-scroll-link-type="document" href="CoffiSpa.192227673.html" class=" scroll-document-link" data-scroll-link-target="https://confluence.weareplanet.com/display/PIODOC/CoffiSpa">CoffiSpa</a></h2><h2 id="CoffiSpapAirInstallationguide-ContactInformation-IntegrationPartner" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2"><strong>Contact Information&nbsp;</strong><strong>- Integration Partner</strong></h2><p><strong>Slack Channel: </strong>#htng_coffispa</p><p><strong>General phone number: </strong>+39&nbsp;<span style="color: rgb(153,153,153);"><span style="color: rgb(0,51,102);">0461 042200</span></span><strong><br clear="none"><span style="color: rgb(51,51,51);">Support / Installer phone number:&nbsp;&nbsp;</span></strong><span style="color: rgb(51,51,51);">+39 0461 042222</span></p><p><strong>General email address:</strong>&nbsp;<a rel="nofollow" href="mailto:info@deltainformatica.eu" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="mailto:info@deltainformatica.eu" data-scroll-link-local="false">info@deltainformatica.eu</a><strong><span style="color: rgb(255,0,0);"><br clear="none"></span></strong><strong>Support / Installer email address:&nbsp;</strong><a rel="nofollow" href="mailto:assistenza@deltainformatica.eu" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="mailto:assistenza@deltainformatica.eu" data-scroll-link-local="false">assistenza@deltainformatica.eu</a></p><p><br clear="none"></p><p><strong>Contact persons for installations</strong></p><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 40.4621%;"><colgroup span="1"><col span="1" style="width: 12.9923%;"><col span="1" style="width: 25.0372%;"><col span="1" style="width: 31.6687%;"><col span="1" style="width: 15.293%;"><col span="1" style="width: 14.6163%;"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Name</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Position (Support / Installer)</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Email</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Slack</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Phone number</p></th></tr></thead><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>Andrea Miotto</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Support</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(51,51,51);"><a rel="nofollow" href="mailto:andrea.miotto@deltainformatica.eu" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="mailto:andrea.miotto@deltainformatica.eu" data-scroll-link-local="false">andrea.miotto@deltainformatica.eu</a></span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><img alt="(tick)" data-emoticon-name="tick" class="emoticon emoticon-tick scroll-document-image" src="_scroll_external/icons/ea52f49b26f0/check.svg" data-emoji-short-name=":tick:"></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&nbsp; &nbsp; &nbsp;&nbsp;<img alt="(error)" data-emoticon-name="cross" class="emoticon emoticon-cross scroll-document-image" src="_scroll_external/icons/c9cc713fcf92/error.svg" data-emoji-short-name=":cross:"></p></td></tr></tbody></table></div><p><br clear="none"></p><h2 id="CoffiSpapAirInstallationguide-InstallationSteps" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="2" data-scroll-original-heading-rank="3" data-scroll-relative-heading-rank="2" class="scroll-original-h3 scroll-custom-section-heading scroll-document-section-heading scroll-h2 scroll-relative-h2">Installation Steps</h2><div class="table-wrap"><table class="wrapped confluenceTable tableenhancer tableenhancer-rownums-onceBeforeSorting"><colgroup span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><h3 id="CoffiSpapAirInstallationguide-Generalsteps" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="3" class="scroll-original-h4 scroll-non-section-heading scroll-h3 scroll-relative-h3"><strong><em>General steps</em></strong></h3></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Examples</p></th></tr></thead><tbody><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Request authentication details from the Integration partner for the new installation and request them to send you the authentication details on a private Slack message&nbsp;<span style="color: rgb(29,28,29);">or encrypted file by email and inform you by phone about the password.</span></span></p><p><span style="color: rgb(23,43,77);"> Please provide them the HotelID as well - internally for Protel this is the CloudID&nbsp;</span></p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><ul><li><span style="color: rgb(51,51,51);">Authentication method using the same default Endpoint and a default Token given by the third party system for all hotel customer</span></li></ul><p><span style="color: rgb(51,51,51);">The endpoint for each message is different, so the endpoint is defined directly in the message set up and not via variable.</span></p><p><span style="color: rgb(51,51,51);">Example OTA_HotelResNotifRQ:</span></p><p><span style="color: rgb(51,51,51);"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="471" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/7803cd36ee8a/2020-08-11_06h33_38.png" height="150"></span></span></p><p><span style="color: rgb(51,51,51);"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="907" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/60b978e7e27f/image2020-8-11_6-36-33.png" height="155"></span></span></p><p><br clear="none"></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(23,43,77);">General Preparation for pAir&nbsp;</span><a rel="nofollow" style="text-decoration: none;" href="https://confluence.protel.net/pages/viewpage.action?pageId=34972583" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://confluence.protel.net/pages/viewpage.action?pageId=34972583" data-scroll-link-local="false">General (pAir)</a></p><p><br clear="none"></p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p>Go to</p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Special Configuration</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><strong>Bookable Packages</strong></p><p>So the Spa programm can plan the treatments, the treatments must be set up in protel Air as bookable packages, which are then added on to the reservation by the reservation staff and sent to the Spa programm for planning purposes via OTA_HotelResNotifRQ.&nbsp;</p><p><br clear="none">This is set up in the system data under Pricing as an article calculation with the Flag Optionally bookable set to true.</p><p>Set up information for bookable packages&nbsp;→&nbsp;<a rel="nofollow" href="https://protelair.helpjuice.com/en_US/system-data-rate-configuration-en/advanced-rates-edit-bookable-packages" shape="rect" class="external-link scroll-external-link" data-scroll-link-type="default" data-scroll-link-target="https://protelair.helpjuice.com/en_US/system-data-rate-configuration-en/advanced-rates-edit-bookable-packages" data-scroll-link-local="false">https://protelair.helpjuice.com/en_US/system-data-rate-configuration-en/advanced-rates-edit-bookable-packages</a></p><p><br clear="none"></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="673" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/9c8065331022/image2022-2-16_8-31-18.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>4</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">Bob installation:</span> one for pAir (if not existing) and one for the Integration <span>&nbsp;</span></span></p><ul><li>provide the token corresponding to the integration partner <span style="color: rgb(29,28,29);">on private Slack message or encrypted file by email and inform them by phone about the password.</span></li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="682" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/46235d97362f/2020-08-11_06h38_44.png" height="109"></span></p></div></td></tr></tbody></table></div><div class="table-wrap"><table class="wrapped confluenceTable tableenhancer tableenhancer-rownums-onceBeforeSorting"><colgroup span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><h3 id="CoffiSpapAirInstallationguide-OnewayInstallation" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="3" class="scroll-original-h4 scroll-non-section-heading scroll-h3 scroll-relative-h3"><em><strong>One way Installation</strong></em></h3></th><th colspan="1" rowspan="1" class="confluenceTh"><p><br clear="none"></p></th></tr></thead><tbody><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p style="text-align: left;">Create test examples of the individual, company, and travel agents profiles and provide the correlation ID's and profile numbers to the integration partner</p><ul style="text-align: left;"><li>modify the individual.company and travel agent profiles by changing name and address detail. Verify in Kibana that the OTA_ProfileModifyRQ is answered by the a OTA_ProfileModifyRS and no errors are present.&nbsp;</li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><span style="color: rgb(0,0,0);"><span class="inline-comment-marker" data-ref="d4d845c4-17d7-461c-b215-8eeb86166e0e">Create a test reservation in the future (at least one year after the system date) &amp;&nbsp;provide the reservation number to your integration partner</span></span></p><ul><li>make a modification and finally a cancellation of your test reservation. Verify in Kibana that outgoing OTA_HotelResNotifRQ is answered by OTA_HotelResNotifRS and no error occurs.&nbsp;</li></ul></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>3</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(23,43,77);">Create and start bulk uploads</span></p><ul><li><span style="color: rgb(0,51,102);">for profiles (OTA_ProfileCreateRQ)&nbsp;<br clear="none"></span><span style="color: rgb(23,43,77);">for the last 2&nbsp;</span><span>years and ending with today</span></li></ul><ul><li><span style="color: rgb(23,43,77);">for reservations (OTA_HotelResNotifRQ) <br clear="none"></span><span style="color: rgb(23,43,77);">all future reservations</span></li></ul><p><span style="color: rgb(23,43,77);">Please do the bulk upload for profiles <strong>FIRST</strong>. (required by CoffiSpa)</span></p><div class="expand-container"><div class="expand-content"><p><span style="color: rgb(23,43,77);">BTS Jobs will be processed one by one as only one bulk per property is allowed at the same time.&nbsp;</span></p><p><span style="color: rgb(23,43,77);">Bulks should be starting with 1 January and ending with 31 of December (i.e. 01.01.2017 - 31.12.2021).</span></p><p><span style="color: rgb(23,43,77);">In case you have issues with a stuck bulk upload, investigate why messages were not sent. As an option, delete the old job and create a new one.&nbsp;</span></p></div></div></div></td><td colspan="1" rowspan="1" class="confluenceTd"><p><br clear="none"></p></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>4</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(51,51,51);"><span class="inline-comment-marker" data-ref="29047100-9aff-4628-a206-e192cb656733">Data Validation Report - DQE</span></span></p><p class="auto-cursor-target">No DQE required - comapre the number of messages sent for both bulk uploads</p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><br clear="none"></p></div></td></tr></tbody></table></div><div class="table-wrap"><table class="wrapped confluenceTable tableenhancer tableenhancer-rownums-onceBeforeSorting"><colgroup span="1"><col span="1"><col span="1"></colgroup><thead><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>&nbsp;</p></th><th colspan="1" rowspan="1" class="confluenceTh"><h3 id="CoffiSpapAirInstallationguide-TwowayInstallation" data-scroll-heading-rank-offset="1" data-scroll-heading-rank="3" data-scroll-original-heading-rank="4" data-scroll-relative-heading-rank="3" class="scroll-original-h4 scroll-non-section-heading scroll-h3 scroll-relative-h3"><span style="color: rgb(0,0,0);"><em><strong>Two way Installation</strong></em></span></h3></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Examples</p></th></tr></thead><tbody><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>1</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span style="color: rgb(51,51,51);">Test incoming Postings</span></p><p><span style="color: rgb(51,51,51);">(HTNG_ChargePostingRQ)</span></p><div class="expand-container"><div class="expand-content"><ul style="text-align: left;"><li><span style="color: rgb(23,43,77);">Create a test reservation on the client´s database. Date of arrival should be set to today. Please check in the reservation</span></li><li><span style="color: rgb(23,43,77);">wait for the HTNG_ChargePostingRQ from CoffiSpa</span></li><li><span style="color: rgb(23,43,77);">Validate if the incoming ChargePosting is displayed correctly on the clients invoice, looking at payment and revenue numbers</span></li></ul></div></div><p class="auto-cursor-target">CoffiSpa does not charge Payments to the invoice.</p><p class="auto-cursor-target">CoffiSpa sends separate messages for each posting, even if the postings will go to the same invoice.&nbsp; There is a pause of 20 seconds between each posting message, since the posting messages coming in concurrently to the same invoice were causing a lot of errors.</p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="739" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/9991684af3b4/2020-08-11_06h58_49.png" height="250"></span></p></div></td></tr><tr><td class="confluenceTd highlight-grey" data-highlight-colour="grey"><p>2</p></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p style="text-align: left;">Update the protel SMP page with the information about the installed customer</p><p style="text-align: left;">To be found here:&nbsp;</p><p style="text-align: left;">Development SMP page / Development / Services / Prospect Hotels / Add</p></div></td><td colspan="1" rowspan="1" class="confluenceTd"><div class="content-wrapper"><p><br clear="none"></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="478" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/78008099f37e/image2022-2-16_8-37-58.png" height="250"></span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img width="709" class="confluence-embedded-image confluence-content-image-border scroll-document-image" src="_scroll_external/attachments/99a28621a059/image2022-2-16_8-38-4.png" height="150"></span></p></div></td></tr></tbody></table></div>
+                        </div>
+                    </section>
+
+                </article>
+            </main>
+
+
+                <nav class="exp-post-navigation-prev">
+                    <a href="CoffiSpa.192227673.html" class="post-navigation-link">
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-prev">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                        <span>CoffiSpa</span>
+                    </a>
+                </nav>
+
+                <nav class="exp-post-navigation-next">
+
+                    <a href="Concierge-Organizer-(Cogifor).192227794.html" class="post-navigation-link">
+                        <span>Concierge Organizer (Cogifor)</span>
+                        <svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ht-icon-next">
+                                <path fill="currentColor" d="M16,8 L16,6 L6,6 L6,16 L8,16 L8,8 L16,8 Z" id="Rectangle-2" transform="translate(11.000000, 11.000000) rotate(-225.000000) translate(-11.000000, -11.000000) " />
+                            </g>
+                        </svg>
+                    </a>
+
+                </nav>
+
+
+            <nav class="exp-sidebar-toc js-tocBot">
+                <!-- content generated by toc.js  -->
+            </nav>
+
+            <div class="exp-sidebar-navigation-toggle">
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+                <div class="exp-sidebar-navigation-toggle-icon-line"></div>
+            </div>
+
+            <div class="exp-scroll-to-top-container">
+                <a href="#CoffiSpa-pAirInstallationguide-top" class="exp-scroll-to-top-link">↑ Back to top</a>
+            </div>
+
+        </div>
+
+
+
+<dialog class="exp-lightbox-container" aria-modal="true">
+    <div class="lightbox-toolbar">
+        <button type="button" class="exp-lightbox-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                <path fill="currentColor" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="lightbox-content content">
+    </div>
+</dialog>
+
+<template id="exp-lightbox-wrapper-template">
+    <div class="exp-lightbox-wrapper">
+        <div class="exp-lightbox-toggle">
+            <button type="button" class="exp-lightbox-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" aria-hidden="true">
+                    <path fill="currentColor" d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</template>
+
+        <script src="js/tocbot.min.js"></script>
+        <script src="js/article-toc.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/iframe-resizer.parent.js"></script>
+
+    </body>
+
+</html>
